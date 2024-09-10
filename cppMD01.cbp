@@ -1,0 +1,70 @@
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="cppMD01" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/cppMD01" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="./" />
+					<Add directory="/usr/include/mysql++/" />
+					<Add directory="/usr/include/mysql/" />
+				</Compiler>
+				<Linker>
+					<Add option="-L /usr/lib/" />
+					<Add library="libmysqlpp" />
+					<Add library="curl" />
+					<Add library="boost_system" />
+					<Add library="boost_filesystem" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/cppMD01" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-L /usr/lib/" />
+					<Add library="libmysqlpp" />
+					<Add library="curl" />
+					<Add library="boost_system" />
+					<Add library="boost_filesystem" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="cppMD01App.cpp" />
+		<Unit filename="cppMD01App.h" />
+		<Unit filename="cppMD01Main.cpp" />
+		<Unit filename="cppMD01Main.h" />
+		<Unit filename="wxsmith/cppMD01frame.wxs" />
+		<Extensions>
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="cppMD01App.cpp" main="cppMD01Frame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/cppMD01frame.wxs" src="cppMD01Main.cpp" hdr="cppMD01Main.h" fwddecl="0" i18n="1" name="cppMD01Frame" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
+
+
