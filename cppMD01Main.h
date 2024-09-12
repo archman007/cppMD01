@@ -17,6 +17,7 @@
 #include <wx/menu.h>
 #include <wx/panel.h>
 #include <wx/sizer.h>
+#include <wx/stattext.h>
 #include <wx/statusbr.h>
 //*)
 
@@ -29,6 +30,7 @@ public:
     mysqlpp::Connection conn;
     wxGrid* masterGrid;
     wxGrid* detailGrid;
+    std::string cmd;
 
 private:
     void PopulateMasterGrid();
@@ -47,6 +49,7 @@ private:
     //(*Identifiers(cppMD01Frame)
     static const long ID_PANEL1;
     static const long ID_PANEL3;
+    static const long ID_STATICTEXT2;
     static const long idMenuQuit;
     static const long idMenuAbout;
     static const long ID_STATUSBAR1;
@@ -61,6 +64,7 @@ private:
     wxMenuItem* MenuItem4;
     wxPanel* Panel1;
     wxPanel* Panel2;
+    wxStaticText* StaticText2;
     wxStatusBar* StatusBar1;
     //*)
 

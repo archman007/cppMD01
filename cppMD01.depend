@@ -1511,13 +1511,14 @@
 1715637389 /usr/include/wx-3.2/wx/univ/theme.h
 	"wx/string.h"
 
-1725956016 /home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h
+1726010181 /home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h
 	<mysql++.h>
 	<wx/grid.h>
 	<wx/frame.h>
 	<wx/menu.h>
 	<wx/panel.h>
 	<wx/sizer.h>
+	<wx/stattext.h>
 	<wx/statusbr.h>
 
 1715637389 /usr/include/wx-3.2/wx/menu.h
@@ -1603,7 +1604,7 @@
 	"wx/defs.h"
 	"wx/window.h"
 
-1725963775 source:/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp
+1726090866 source:/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp
 	"cppMD01Main.h"
 	<wx/msgdlg.h>
 	<wx/grid.h>
@@ -2075,4 +2076,33 @@
 
 1715637389 /usr/include/wx-3.2/wx/msw/hyperlink.h
 	"wx/generic/hyperlink.h"
+
+1715637389 /usr/include/wx-3.2/wx/stattext.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/stattext.h"
+	"wx/msw/stattext.h"
+	"wx/motif/stattext.h"
+	"wx/gtk/stattext.h"
+	"wx/gtk1/stattext.h"
+	"wx/osx/stattext.h"
+	"wx/qt/stattext.h"
+
+1715637389 /usr/include/wx-3.2/wx/univ/stattext.h
+	"wx/generic/stattextg.h"
+
+1715637389 /usr/include/wx-3.2/wx/generic/stattextg.h
+	"wx/stattext.h"
+
+1715637389 /usr/include/wx-3.2/wx/msw/stattext.h
+
+1715637389 /usr/include/wx-3.2/wx/motif/stattext.h
+
+1715637389 /usr/include/wx-3.2/wx/gtk/stattext.h
+
+1715637389 /usr/include/wx-3.2/wx/gtk1/stattext.h
+
+1715637389 /usr/include/wx-3.2/wx/osx/stattext.h
+
+1715637389 /usr/include/wx-3.2/wx/qt/stattext.h
 

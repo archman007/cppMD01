@@ -50,6 +50,7 @@ wxString wxbuildinfo(wxbuildinfoformat format)
 //(*IdInit(cppMD01Frame)
 const long cppMD01Frame::ID_PANEL1 = wxNewId();
 const long cppMD01Frame::ID_PANEL3 = wxNewId();
+const long cppMD01Frame::ID_STATICTEXT2 = wxNewId();
 const long cppMD01Frame::idMenuQuit = wxNewId();
 const long cppMD01Frame::idMenuAbout = wxNewId();
 const long cppMD01Frame::ID_STATUSBAR1 = wxNewId();
@@ -85,9 +86,11 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     Panel1 = new wxPanel(this, ID_PANEL1, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL1"));
     BoxSizer4->Add(Panel1, 1, wxALL|wxEXPAND, 5);
     BoxSizer3->Add(BoxSizer4, 1, wxALL|wxEXPAND, 5);
-    BoxSizer5 = new wxBoxSizer(wxHORIZONTAL);
+    BoxSizer5 = new wxBoxSizer(wxVERTICAL);
     Panel2 = new wxPanel(this, ID_PANEL3, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL3"));
     BoxSizer5->Add(Panel2, 0, wxALL|wxEXPAND, 5);
+    StaticText2 = new wxStaticText(this, ID_STATICTEXT2, _("Label"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE, _T("ID_STATICTEXT2"));
+    BoxSizer5->Add(StaticText2, 0, wxALL|wxEXPAND, 5);
     BoxSizer3->Add(BoxSizer5, 0, wxALL|wxEXPAND, 5);
     BoxSizer2->Add(BoxSizer3, 0, wxALL|wxEXPAND, 5);
     BoxSizer1->Add(BoxSizer2, 0, wxALL|wxEXPAND, 5);
@@ -114,6 +117,7 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     pumDetail.Append(MenuItem4);
     BoxSizer1->Fit(this);
     BoxSizer1->SetSizeHints(this);
+    Center();
 
     Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnQuit);
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnAbout);
@@ -233,7 +237,19 @@ void cppMD01Frame::OnCellClick(wxGridEvent& event)
         // Open the URL in the default web browser
         wxLaunchDefaultBrowser(cellValue);
     }
+    else if (cellValue.find(".pdf"))
+    {
+        cmd = "okular \"";
+        std::string tbuf;
+        tbuf = cellValue.ToStdString();
+        cmd = cmd + tbuf + "\"";
+        system(cmd.c_str());
 
+    }
+    else
+    {
+        system(cellValue);
+    }
     // Allow the event to continue to be processed
     event.Skip();
 }
@@ -322,6 +338,11 @@ void cppMD01Frame::OnMasterGridCellClick(wxGridEvent& event)
     wxString idlk1Str = masterGrid->GetCellValue(row, 0); // Retrieve the cell value from the first column
     long idlk1;
     idlk1Str.ToLong(&idlk1); // Convert the cell value to a long integer
+    StaticText2->SetLabel(masterGrid->GetCellValue(row, 1));
+    StaticText2->SetWindowStyle(wxALIGN_CENTER);
+    StaticText2->Refresh(true);
+
+//    StaticText2->Center(wxBOTH);
     LoadDetailData(idlk1); // Load detailed data based on the converted value
 }
 

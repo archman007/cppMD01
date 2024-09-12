@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wxsmith>
 	<object class="wxFrame" name="cppMD01Frame">
+		<centered>1</centered>
 		<style>wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER</style>
 		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
 			<object class="sizeritem">
@@ -22,8 +23,17 @@
 							</object>
 							<object class="sizeritem">
 								<object class="wxBoxSizer" variable="BoxSizer5" member="no">
+									<orient>wxVERTICAL</orient>
 									<object class="sizeritem">
 										<object class="wxPanel" name="ID_PANEL3" variable="Panel2" member="yes" />
+										<flag>wxALL|wxEXPAND</flag>
+										<border>5</border>
+									</object>
+									<object class="sizeritem">
+										<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+											<label>Label</label>
+											<style>wxALIGN_CENTRE</style>
+										</object>
 										<flag>wxALL|wxEXPAND</flag>
 										<border>5</border>
 									</object>
