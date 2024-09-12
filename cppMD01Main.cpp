@@ -237,18 +237,23 @@ void cppMD01Frame::OnCellClick(wxGridEvent& event)
         // Open the URL in the default web browser
         wxLaunchDefaultBrowser(cellValue);
     }
-    else if (cellValue.find(".pdf"))
+    else if (cellValue.find(".pdf") != wxNOT_FOUND)
     {
         cmd = "okular \"";
         std::string tbuf;
         tbuf = cellValue.ToStdString();
         cmd = cmd + tbuf + "\"";
         system(cmd.c_str());
-
+    }
+    else if (cellValue.find(".odt")  != wxNOT_FOUND)
+    {
+        std::string pbuf =  "\"" + cellValue.ToStdString() + "\" & ";
+        cmd = "openoffice4 -writer " + pbuf;
+        system(cmd.c_str());
     }
     else
     {
-        system(cellValue);
+        //system(cellValue);
     }
     // Allow the event to continue to be processed
     event.Skip();
