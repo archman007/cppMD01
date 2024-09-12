@@ -1,0 +1,2 @@
+In order to provide an environment where rapid access to links allows the developer to invoke required tools for software development.<br><br> We have employed a master detail scenario for the organization of links.<br><br>The master grid contains the overall categories while the details grid identifie the link components available for execution.<br><br>
+This application is a programmer's workbench of sorts.  In addition to managing URL (links), pdf's, odt as well as any executale on the existing system.  Menu Popups are enabled for both master and detail grids.
