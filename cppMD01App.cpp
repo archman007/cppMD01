@@ -8,6 +8,9 @@
  **************************************************************/
 
 #include "cppMD01App.h"
+#include "zDB01.h"
+#include "bcsGui.h"
+#include "zDB01.h"
 
 //(*AppHeaders
 #include "cppMD01Main.h"
@@ -31,4 +34,3 @@ bool cppMD01App::OnInit()
     return wxsOK;
 
 }
-

@@ -2,16 +2,23 @@
 <wxsmith>
 	<object class="wxFrame" name="cppMD01Frame">
 		<centered>1</centered>
-		<style>wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER</style>
+		<style>wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE</style>
 		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
 			<object class="sizeritem">
 				<object class="wxBoxSizer" variable="BoxSizer2" member="no">
 					<object class="sizeritem">
 						<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+							<orient>wxVERTICAL</orient>
 							<object class="sizeritem">
 								<object class="wxBoxSizer" variable="BoxSizer4" member="no">
+									<orient>wxVERTICAL</orient>
 									<object class="sizeritem">
-										<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes" />
+										<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+											<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+												<label>Label</label>
+												<pos>8,0</pos>
+											</object>
+										</object>
 										<flag>wxALL|wxEXPAND</flag>
 										<border>5</border>
 										<option>1</option>
@@ -41,6 +48,14 @@
 								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 							</object>
+							<object class="sizeritem">
+								<object class="wxScrolledWindow" name="ID_SCROLLEDWINDOW1" variable="ScrolledWindow1" member="yes">
+									<size>11,7</size>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
 						</object>
 						<flag>wxALL|wxEXPAND</flag>
 						<border>5</border>
@@ -53,6 +68,11 @@
 		<object class="wxMenuBar" variable="MenuBar1" member="no">
 			<object class="wxMenu" variable="Menu1" member="no">
 				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenucpp" variable="menSelectCpp" member="yes">
+					<label>Select c++ file to compile</label>
+					<help>Compile c++</help>
+					<handler function="OnmenSelectCppSelected" entry="EVT_MENU" />
+				</object>
 				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
 					<label>Quit</label>
 					<accel>Alt-F4</accel>
@@ -72,17 +92,47 @@
 		</object>
 		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
 			<fields>1</fields>
-			<widths>-1</widths>
+			<widths>-300</widths>
 			<styles>wxSB_NORMAL</styles>
+			<style>wxFULL_REPAINT_ON_RESIZE</style>
 		</object>
 		<object class="wxMenu" variable="pumMaster" member="yes">
 			<object class="wxMenuItem" name="ID_MENUITEM1" variable="MenuItem3" member="yes">
 				<label>Change Background Color</label>
 			</object>
+			<object class="wxMenuItem" name="idpumNewCat" variable="pumNewCat" member="yes">
+				<label>Enter New Category</label>
+				<help>Enter New Category</help>
+				<handler function="OnpumNewCatSelected" entry="EVT_MENU" />
+			</object>
+			<object class="wxMenuItem" name="ID_PumEdCat" variable="MenuItem5" member="yes">
+				<label>Edit Category</label>
+				<help>Edit This Category</help>
+			</object>
+			<object class="wxMenuItem" name="ID_NewBlog" variable="pumNewBlogPost" member="yes">
+				<label>Create New Blog Post</label>
+				<help>Create A New Blog Post</help>
+				<handler function="OnpumNewBlogPostSelected" entry="EVT_MENU" />
+			</object>
 		</object>
 		<object class="wxMenu" variable="pumDetail" member="yes">
 			<object class="wxMenuItem" name="ID_MENUITEM2" variable="MenuItem4" member="yes">
 				<label>Change Background Color</label>
+			</object>
+			<object class="wxMenuItem" name="ID_menAD" variable="pumAddDocs" member="yes">
+				<label>addDocs</label>
+				<help>Add  New Documents / Items</help>
+				<handler function="OnpumAddDocsSelected" entry="EVT_MENU" />
+			</object>
+			<object class="wxMenuItem" name="ID_menNB" variable="menNewPost" member="yes">
+				<label>Create New Blog Post</label>
+				<help>New Blog Post Now!</help>
+				<handler function="OnpumNewBlogPostSelected" entry="EVT_MENU" />
+			</object>
+			<object class="wxMenuItem" name="ID_pumDel" variable="pumDelLink" member="yes">
+				<label>Delete Link</label>
+				<help>Delete A Item</help>
+				<handler function="OnpumDelLinkSelected" entry="EVT_MENU" />
 			</object>
 		</object>
 	</object>

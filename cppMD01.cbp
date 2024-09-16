@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
@@ -33,6 +34,9 @@
 				<Option projectLinkerOptionsRelation="2" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="./" />
+					<Add directory="/usr/include/mysql++/" />
+					<Add directory="/usr/include/mysql/" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -51,20 +55,49 @@
 		<Linker>
 			<Add option="`wx-config --libs`" />
 		</Linker>
+		<Unit filename="bcsGui.cpp" />
+		<Unit filename="bcsGui.h" />
 		<Unit filename="cppMD01App.cpp" />
 		<Unit filename="cppMD01App.h" />
 		<Unit filename="cppMD01Main.cpp" />
 		<Unit filename="cppMD01Main.h" />
+		<Unit filename="curlStuff.cpp" />
+		<Unit filename="curlStuff.h" />
+		<Unit filename="dlgDe01.cpp" />
+		<Unit filename="dlgDe01.h" />
+		<Unit filename="dlgNb01.cpp" />
+		<Unit filename="dlgNb01.h" />
+		<Unit filename="dlgNewCat.cpp" />
+		<Unit filename="dlgNewCat.h" />
+		<Unit filename="dlgNewLink.cpp" />
+		<Unit filename="dlgNewLink.h" />
+		<Unit filename="dlgSelDB.cpp" />
+		<Unit filename="dlgSelDB.h" />
+		<Unit filename="dlgXqt2.cpp" />
+		<Unit filename="dlgXqt2.h" />
 		<Unit filename="wxsmith/cppMD01frame.wxs" />
+		<Unit filename="wxsmith/dlgDe01.wxs" />
+		<Unit filename="wxsmith/dlgNewCat.wxs" />
+		<Unit filename="wxsmith/dlgNewLink.wxs" />
+		<Unit filename="wxsmith/dlgSelDB.wxs" />
+		<Unit filename="wxsmith/dlgXqt.wxs" />
+		<Unit filename="wxsmith/dlgXqt2.wxs" />
+		<Unit filename="zDB01.cpp" />
+		<Unit filename="zDB01.h" />
 		<Extensions>
 			<wxsmith version="1">
 				<gui name="wxWidgets" src="cppMD01App.cpp" main="cppMD01Frame" init_handlers="necessary" language="CPP" />
 				<resources>
 					<wxFrame wxs="wxsmith/cppMD01frame.wxs" src="cppMD01Main.cpp" hdr="cppMD01Main.h" fwddecl="0" i18n="1" name="cppMD01Frame" language="CPP" />
+					<wxFrame wxs="wxsmith/dlgXqt.wxs" src="dlgXqt.cpp" hdr="dlgXqt.h" fwddecl="0" i18n="1" name="dlgXqt" language="CPP" />
+					<wxDialog wxs="wxsmith/dlgXqt2.wxs" src="dlgXqt2.cpp" hdr="dlgXqt2.h" fwddecl="0" i18n="1" name="dlgXqt2" language="CPP" />
+					<wxDialog wxs="wxsmith/dlgDe01.wxs" src="dlgDe01.cpp" hdr="dlgDe01.h" fwddecl="0" i18n="1" name="dlgDe01" language="CPP" />
+					<wxDialog wxs="wxsmith/dlgNewCat.wxs" src="dlgNewCat.cpp" hdr="dlgNewCat.h" fwddecl="0" i18n="1" name="dlgNewCat" language="CPP" />
+					<wxDialog wxs="wxsmith/dlgSelDB.wxs" src="dlgSelDB.cpp" hdr="dlgSelDB.h" fwddecl="0" i18n="1" name="dlgSelDB" language="CPP" />
+					<wxDialog wxs="wxsmith/dlgNewLink.wxs" src="dlgNewLink.cpp" hdr="dlgNewLink.h" fwddecl="0" i18n="1" name="dlgNewLink" language="CPP" />
+					<wxDialog wxs="wxsmith/dlgXqt2.wxs" src="dlgXqt2.cpp" hdr="dlgXqt2.h" fwddecl="0" i18n="1" name="dlgXqt2" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
-
-
