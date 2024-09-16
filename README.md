@@ -3,3 +3,4 @@ The master grid contains the overall categories while the details grid identifie
 This application is a programmer's workbench of sorts.  
 <br>The following file types accomodated include.
 <ul><li>URL Links</li></li><li>PDF's</li><li>ODT (word processor)</li><li>Any executable available on the host system.</li></ul><br>Menu Popups are enabled for both master and detail grids.
+![Sample Image](https://archman.us/images/Screenshot_20240916_085657.png)
