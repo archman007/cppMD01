@@ -82,7 +82,6 @@ const long cppMD01Frame::ID_MENUITEM2 = wxNewId();
 const long cppMD01Frame::ID_menAD = wxNewId();
 const long cppMD01Frame::ID_menNB = wxNewId();
 const long cppMD01Frame::ID_pumDel = wxNewId();
-const long cppMD01Frame::ID_pumEL = wxNewId();
 //*)
 
 BEGIN_EVENT_TABLE(cppMD01Frame,wxFrame)
@@ -105,7 +104,7 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     wxMenuItem* MenuItem1;
     wxMenuItem* MenuItem2;
 
-    Create(parent, id, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE, _T("id"));
+    Create(parent, id, _("Brooks Computing Systems, LLC  ** Programmer\'s Workbench **"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE, _T("id"));
     BoxSizer1 = new wxBoxSizer(wxHORIZONTAL);
     BoxSizer2 = new wxBoxSizer(wxHORIZONTAL);
     BoxSizer3 = new wxBoxSizer(wxVERTICAL);
@@ -147,8 +146,8 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     pumMaster.Append(MenuItem3);
     pumNewCat = new wxMenuItem((&pumMaster), idpumNewCat, _("Enter New Category"), _("Enter New Category"), wxITEM_NORMAL);
     pumMaster.Append(pumNewCat);
-    pumEdCat = new wxMenuItem((&pumMaster), ID_PumEdCat, _("Edit Category"), _("Edit This Category"), wxITEM_NORMAL);
-    pumMaster.Append(pumEdCat);
+    MenuItem5 = new wxMenuItem((&pumMaster), ID_PumEdCat, _("Edit Category"), _("Edit This Category"), wxITEM_NORMAL);
+    pumMaster.Append(MenuItem5);
     pumNewBlogPost = new wxMenuItem((&pumMaster), ID_NewBlog, _("Create New Blog Post"), _("Create A New Blog Post"), wxITEM_NORMAL);
     pumMaster.Append(pumNewBlogPost);
     MenuItem4 = new wxMenuItem((&pumDetail), ID_MENUITEM2, _("Change Background Color"), wxEmptyString, wxITEM_NORMAL);
@@ -159,8 +158,6 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     pumDetail.Append(menNewPost);
     pumDelLink = new wxMenuItem((&pumDetail), ID_pumDel, _("Delete Link"), _("Delete A Item"), wxITEM_NORMAL);
     pumDetail.Append(pumDelLink);
-    pumEditLinl = new wxMenuItem((&pumDetail), ID_pumEL, _("Edit Link"), _("Edit Link"), wxITEM_NORMAL);
-    pumDetail.Append(pumEditLinl);
     BoxSizer1->Fit(this);
     BoxSizer1->SetSizeHints(this);
     Center();
@@ -174,7 +171,6 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     Connect(ID_menAD,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumAddDocsSelected);
     Connect(ID_menNB,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);
     Connect(ID_pumDel,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumDelLinkSelected);
-    Connect(ID_pumEL,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumEditLinlSelected);
     //*)
 
     SetStatusText("Button Clicked!");
@@ -289,7 +285,7 @@ void cppMD01Frame::OnCellClick(wxGridEvent& event)
     wxGrid* grid = static_cast<wxGrid*>(event.GetEventObject());
 
     // Get the clicked cell's row and column
-    int row = event.GetRow();
+    row = event.GetRow();
     int col = event.GetCol();
 
     // Retrieve the cell value as a wxString
@@ -317,7 +313,7 @@ void cppMD01Frame::OnCellClick(wxGridEvent& event)
     }
     else
     {
-        //system(cellValue.c_str());
+        system(cellValue.c_str());
     }
     // Allow the event to continue to be processed
     event.Skip();
@@ -578,7 +574,6 @@ void cppMD01Frame::procPdf()
 
     }
     RefreshDetails();
-
 }
 
 void cppMD01Frame::procDoc()
@@ -627,9 +622,6 @@ void cppMD01Frame::RefreshDetails()
     //    lblStatus->Refresh();Blog
     */
 }
-
-
-
 
 void cppMD01Frame::OnpumNewCatSelected(wxCommandEvent& event)
 {
@@ -706,11 +698,11 @@ void cppMD01Frame::OnpumEdCatSelected(wxCommandEvent& event)
     PopulateMasterGrid();
 }
 
-void cppMD01Frame::OnpumEditLinlSelected(wxCommandEvent& event)
+void cppMD01Frame::OnpumEditLinkSelected(wxCommandEvent& event)
 {
 //        std::string detailtem = ListBox2->GetStringSelection().ToStdString();
 //    std::string recNo = detailtem.substr(0, detailtem.find(" "));
-        std::string recNo = detailGrid->GetCellValue(row, 0).ToStdString();
+    recNo = detailGrid->GetCellValue(row, 0).ToStdString();
 
     zrdb.insertMode = false;
 //    zrdb.getLink(std::stoi(detailtem.substr(0, detailtem.find(" "))));

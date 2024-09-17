@@ -53,6 +53,7 @@ private:
     std::string defBro = "/usr/bin/brave";
     int row;
     void OnDetailGridCellClick(wxGridEvent& event);
+    std::string recNo;
 
     //void LoadDetailData(int idlk1);
 
@@ -65,7 +66,7 @@ private:
     void OnpumNewBlogPostSelected(wxCommandEvent& event);
     void OnpumDelLinkSelected(wxCommandEvent& event);
     void OnpumEdCatSelected(wxCommandEvent& event);
-    void OnpumEditLinlSelected(wxCommandEvent& event);
+    void OnpumEditLinkSelected(wxCommandEvent& event);
     //*)
 
     //(*Identifiers(cppMD01Frame)
@@ -86,7 +87,6 @@ private:
     static const long ID_menAD;
     static const long ID_menNB;
     static const long ID_pumDel;
-    static const long ID_pumEL;
     //*)
 
     //(*Declarations(cppMD01Frame)
@@ -94,12 +94,11 @@ private:
     wxMenu pumMaster;
     wxMenuItem* MenuItem3;
     wxMenuItem* MenuItem4;
+    wxMenuItem* MenuItem5;
     wxMenuItem* menNewPost;
     wxMenuItem* menSelectCpp;
     wxMenuItem* pumAddDocs;
     wxMenuItem* pumDelLink;
-    wxMenuItem* pumEdCat;
-    wxMenuItem* pumEditLinl;
     wxMenuItem* pumNewBlogPost;
     wxMenuItem* pumNewCat;
     wxPanel* Panel1;

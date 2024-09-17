@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wxsmith>
 	<object class="wxFrame" name="cppMD01Frame">
+		<title>Brooks Computing Systems, LLC  ** Programmer&apos;s Workbench **</title>
 		<centered>1</centered>
 		<style>wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE</style>
 		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
@@ -108,6 +109,7 @@
 			<object class="wxMenuItem" name="ID_PumEdCat" variable="MenuItem5" member="yes">
 				<label>Edit Category</label>
 				<help>Edit This Category</help>
+				<handler function="OnpumEdCatSelected" entry="EVT_MENU" />
 			</object>
 			<object class="wxMenuItem" name="ID_NewBlog" variable="pumNewBlogPost" member="yes">
 				<label>Create New Blog Post</label>
