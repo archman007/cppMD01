@@ -413,6 +413,7 @@ void zDB01::editLink(std::string delId, std::string idkl2, std::string ilk, std:
 
 //    std::string qstr = "DELETE FROM `lk2` WHERE idlk2 = " + delId;
 //    std::string qstr = "UPDATE `lk2` SET `lkn` = \" " + lnk + "\"" + ", `ddes`= \"" +  ddes + "\"" + " WHERE idlk2 = " + delId ;
+//    std::string qstr = "UPDATE `lk2` SET `idlk1` =  \"" + delId + "\", " +  "`lkn` = \" " + lnk + "\"" + ", `ddes`= \"" +  ddes + "\"" + " WHERE idlk2 = " + delId ;
     std::string qstr = "UPDATE `lk2` SET `idlk1` =  \"" + idlk1 + "\", " +  "`lkn` = \" " + lnk + "\"" + ", `ddes`= \"" +  ddes + "\"" + " WHERE idlk2 = " + delId ;
     query1.exec(qstr);
 

@@ -22,7 +22,7 @@ dlgXqt2::dlgXqt2(wxWindow* parent,wxWindowID id,const wxPoint& pos,const wxSize&
 	wxBoxSizer* BoxSizer2;
 	wxBoxSizer* BoxSizer3;
 
-	Create(parent, id, _("Select Style"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER, _T("id"));
+	Create(parent, id, _("Select Document"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER, _T("id"));
 	SetClientSize(wxDefaultSize);
 	Move(wxDefaultPosition);
 	BoxSizer1 = new wxBoxSizer(wxHORIZONTAL);

@@ -67,6 +67,7 @@ private:
     void OnpumDelLinkSelected(wxCommandEvent& event);
     void OnpumEdCatSelected(wxCommandEvent& event);
     void OnpumEditLinkSelected(wxCommandEvent& event);
+    void OnpumEditDetailsSelected(wxCommandEvent& event);
     //*)
 
     //(*Identifiers(cppMD01Frame)
@@ -87,6 +88,7 @@ private:
     static const long ID_menAD;
     static const long ID_menNB;
     static const long ID_pumDel;
+    static const long ID_pumEditLink;
     //*)
 
     //(*Declarations(cppMD01Frame)
@@ -99,6 +101,7 @@ private:
     wxMenuItem* menSelectCpp;
     wxMenuItem* pumAddDocs;
     wxMenuItem* pumDelLink;
+    wxMenuItem* pumEditDetails;
     wxMenuItem* pumNewBlogPost;
     wxMenuItem* pumNewCat;
     wxPanel* Panel1;

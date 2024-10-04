@@ -74,6 +74,7 @@ dlgNewLink::dlgNewLink(wxWindow* parent,wxWindowID id,const wxPoint& pos,const w
     Connect(ID_BUTTON2,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&dlgNewLink::OnbtnCancelClick);
     //*)
 
+///   zrdb.initField(mkVal,dlg.edtPrim);
     db02.initField(db02.strIdlk1,edtPrim);
     //if db02.
     db02.initField(cs01.clipUrl(), edtLinkName);
@@ -90,7 +91,6 @@ dlgNewLink::~dlgNewLink()
 void dlgNewLink::OnbtnInsetClick(wxCommandEvent& event)
 {
     db02.insertLink(db02.fieldToString(edtPrim), db02.fieldToString(edtLinkName), db02.fieldToString(edtLink), db02.fieldToString(edtDetDes));
-
     EndModal(wxID_OK);
 }
 

@@ -136,6 +136,11 @@
 				<help>Delete A Item</help>
 				<handler function="OnpumDelLinkSelected" entry="EVT_MENU" />
 			</object>
+			<object class="wxMenuItem" name="ID_pumEditLink" variable="pumEditDetails" member="yes">
+				<label>Edit Link Details</label>
+				<help>Edit Link Details</help>
+				<handler function="OnpumEditLinkSelected" entry="EVT_MENU" />
+			</object>
 		</object>
 	</object>
 </wxsmith>

@@ -82,6 +82,7 @@ const long cppMD01Frame::ID_MENUITEM2 = wxNewId();
 const long cppMD01Frame::ID_menAD = wxNewId();
 const long cppMD01Frame::ID_menNB = wxNewId();
 const long cppMD01Frame::ID_pumDel = wxNewId();
+const long cppMD01Frame::ID_pumEditLink = wxNewId();
 //*)
 
 BEGIN_EVENT_TABLE(cppMD01Frame,wxFrame)
@@ -158,6 +159,8 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     pumDetail.Append(menNewPost);
     pumDelLink = new wxMenuItem((&pumDetail), ID_pumDel, _("Delete Link"), _("Delete A Item"), wxITEM_NORMAL);
     pumDetail.Append(pumDelLink);
+    pumEditDetails = new wxMenuItem((&pumDetail), ID_pumEditLink, _("Edit Link Details"), _("Edit Link Details"), wxITEM_NORMAL);
+    pumDetail.Append(pumEditDetails);
     BoxSizer1->Fit(this);
     BoxSizer1->SetSizeHints(this);
     Center();
@@ -171,6 +174,7 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     Connect(ID_menAD,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumAddDocsSelected);
     Connect(ID_menNB,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);
     Connect(ID_pumDel,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumDelLinkSelected);
+    Connect(ID_pumEditLink,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumEditLinkSelected);
     //*)
 
     SetStatusText("Button Clicked!");
@@ -396,7 +400,7 @@ void cppMD01Frame::LoadDetailData(long idlk1)
     {
         int id = 1;
         wxCommandEvent event(wxEVT_COMMAND_BUTTON_CLICKED, id);
-        //wxCommandEvent& event
+ //       wxCommandEvent& event
         OnpumAddDocsSelected(event);
 
     }
@@ -545,7 +549,6 @@ void cppMD01Frame::OnpumAddDocsSelected(wxCommandEvent& event)
             procExe();
             break;
         default:
-
             //   to be executed if expression doesn't match any constant
             break;
         }
@@ -595,9 +598,10 @@ void cppMD01Frame::procExe()
     zrdb.initField(mkVal,dlg.edtPrim);
     int flags = wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_DEFAULT_STYLE;
     zrdb.initField(gui01.openFileDialog(NULL, "Select A File", "/home/archman/workspace/cb/cpp", "", "", flags),dlg.edtLink);
+    zrdb.initField(mkVal,dlg.edtPrim);
     if (dlg.ShowModal() == wxID_OK)
     {
-
+       mkVal = mkVal;
     }
     RefreshDetails();
 }
@@ -702,6 +706,7 @@ void cppMD01Frame::OnpumEditLinkSelected(wxCommandEvent& event)
 {
 //        std::string detailtem = ListBox2->GetStringSelection().ToStdString();
 //    std::string recNo = detailtem.substr(0, detailtem.find(" "));
+//    recNo = detailGrid->GetCellValue(row, 0).ToStdString();
     recNo = detailGrid->GetCellValue(row, 0).ToStdString();
 
     zrdb.insertMode = false;
@@ -718,4 +723,8 @@ void cppMD01Frame::OnpumEditLinkSelected(wxCommandEvent& event)
         zrdb.editLink(recNo,zrdb.fieldToString(dlg.edtPrim), zrdb.fieldToString(dlg.edtLink), zrdb.fieldToString(dlg.edtLinkName), zrdb.fieldToString(dlg.edtDetDes), zrdb.strIdlk1);
         RefreshDetails();
     }
+}
+
+void cppMD01Frame::OnpumEditDetailsSelected(wxCommandEvent& event)
+{
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wxsmith>
-	<object class="wxDialog" name="dlgXqt">
-		<title>Select Style</title>
+	<object class="wxDialog" name="dlgXqt2">
+		<title>Select Document</title>
 		<pos_arg>1</pos_arg>
 		<size_arg>1</size_arg>
 		<style>wxDEFAULT_DIALOG_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER</style>
