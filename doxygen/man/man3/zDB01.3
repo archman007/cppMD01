@@ -1,0 +1,107 @@
+.TH "zDB01" 3 "cppMD01" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+zDB01
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBlistDatabases\fP ()"
+.br
+.ti -1c
+.RI "void \fBselDB\fP ()"
+.br
+.ti -1c
+.RI "void \fBde01\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitField\fP (std::string inputValue, wxTextCtrl *field)"
+.br
+.ti -1c
+.RI "std::string \fBfieldToString\fP (wxTextCtrl *field)"
+.br
+.ti -1c
+.RI "void \fBnb01\fP ()"
+.br
+.ti -1c
+.RI "void \fBlistCategories\fP (bool idPrim)"
+.br
+.ti -1c
+.RI "void \fBlistLinks\fP (int curCat, bool dRID)"
+.br
+.ti -1c
+.RI "void \fBgetLink\fP (int curCat)"
+.br
+.ti -1c
+.RI "void \fBlistLk1Lk2\fP ()"
+.br
+.ti -1c
+.RI "void \fBinsertCat\fP (std::string cat, std::string memo)"
+.br
+.ti -1c
+.RI "void \fBinsertLink\fP (std::string idlk1, std::string lkn, std::string lnk, std::string ddes)"
+.br
+.ti -1c
+.RI "void \fBDeleteLink\fP (std::string delId)"
+.br
+.ti -1c
+.RI "void \fBeditLink\fP (std::string delId, std::string idkl2, std::string ilk, std::string lnk, std::string ddes, std::string idlk1)"
+.br
+.ti -1c
+.RI "void \fBeditCat\fP (std::string idlk1, std::string cat, std::string memo)"
+.br
+.ti -1c
+.RI "void \fBgetCat\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "wxArrayString \fBdbn\fP"
+.br
+.ti -1c
+.RI "wxArrayString \fBlk1\fP"
+.br
+.ti -1c
+.RI "wxArrayString \fBlk2\fP"
+.br
+.ti -1c
+.RI "wxArrayString \fBlk3\fP"
+.br
+.ti -1c
+.RI "wxString \fBdb\fP"
+.br
+.ti -1c
+.RI "std::string \fBcurDB\fP"
+.br
+.ti -1c
+.RI "mysqlpp::StoreQueryResult \fBzres\fP"
+.br
+.ti -1c
+.RI "std::string \fBstrIdlk1\fP = '43'"
+.br
+.ti -1c
+.RI "bool \fBinsertMode\fP"
+.br
+.ti -1c
+.RI "std::string \fBdatabase\fP = 'bcswebtools'"
+.br
+.ti -1c
+.RI "std::string \fBserver\fP = 'localhost'"
+.br
+.ti -1c
+.RI "std::string \fBuser\fP = 'bcs'"
+.br
+.ti -1c
+.RI "std::string \fBpassword\fP = 'Peace007!amb'"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for cppMD01 from the source code\&.

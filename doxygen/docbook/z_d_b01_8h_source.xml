@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_z_d_b01_8h_source" xml:lang="en-US">
+<title>zDB01.h</title>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;ZDB01_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;ZDB01_H</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;mysql++.h&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;wx/arrstr.h&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;wx/textctrl.h&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;result.h&gt;</emphasis>
+7 
+8 
+9 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classz_d_b01">zDB01</link>
+10 {
+11 <emphasis role="keyword">public</emphasis>:
+12 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01">zDB01</link>();
+13 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classz_d_b01">~zDB01</link>();
+14 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;listDatabases();
+15 &#32;&#32;&#32;&#32;wxArrayString&#32;dbn,&#32;lk1,&#32;lk2,&#32;lk3;
+16 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;selDB();
+17 &#32;&#32;&#32;&#32;wxString&#32;db;
+18 &#32;&#32;&#32;&#32;std::string&#32;curDB;
+19 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;de01();
+20 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;initField(std::string&#32;inputValue,&#32;wxTextCtrl&#32;*&#32;field);
+21 &#32;&#32;&#32;&#32;std::string&#32;fieldToString(wxTextCtrl&#32;*&#32;field);
+22 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;nb01();
+23 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;listCategories(<emphasis role="keywordtype">bool</emphasis>&#32;idPrim);
+24 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;listLinks(<emphasis role="keywordtype">int</emphasis>&#32;curCat,&#32;<emphasis role="keywordtype">bool</emphasis>&#32;dRID);
+25 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;getLink(<emphasis role="keywordtype">int</emphasis>&#32;curCat);
+26 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;listLk1Lk2();
+27 &#32;&#32;&#32;&#32;mysqlpp::StoreQueryResult&#32;zres;
+28 <emphasis role="comment">//&#32;&#32;&#32;&#32;mysqlpp::StoreQueryResult&#32;ares;</emphasis>
+29 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;insertCat(std::string&#32;cat,&#32;std::string&#32;memo);
+30 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;insertLink(std::string&#32;idlk1,&#32;std::string&#32;lkn,&#32;std::string&#32;lnk,&#32;std::string&#32;ddes);
+31 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;DeleteLink(std::string&#32;delId);
+32 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;editLink(std::string&#32;delId,&#32;std::string&#32;idkl2,&#32;std::string&#32;ilk,&#32;std::string&#32;lnk,&#32;std::string&#32;ddes,&#32;std::string&#32;idlk1);
+33 &#32;&#32;&#32;&#32;std::string&#32;strIdlk1&#32;=&#32;<emphasis role="stringliteral">&quot;43&quot;</emphasis>;
+34 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;insertMode;
+35 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;editCat(std::string&#32;idlk1,&#32;std::string&#32;cat,&#32;std::string&#32;memo);
+36 &#32;&#32;&#32;&#32;std::string&#32;database&#32;=&#32;<emphasis role="stringliteral">&quot;bcswebtools&quot;</emphasis>;
+37 &#32;&#32;&#32;&#32;std::string&#32;server&#32;=&#32;<emphasis role="stringliteral">&quot;localhost&quot;</emphasis>;
+38 &#32;&#32;&#32;&#32;std::string&#32;user&#32;=&#32;<emphasis role="stringliteral">&quot;bcs&quot;</emphasis>;
+39 &#32;&#32;&#32;&#32;std::string&#32;password&#32;=&#32;<emphasis role="stringliteral">&quot;Peace007!amb&quot;</emphasis>;
+40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;getCat();
+41 
+42 <emphasis role="keyword">protected</emphasis>:
+43 
+44 <emphasis role="keyword">private</emphasis>:
+45 };
+46 
+47 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;ZDB01_H</emphasis>
+</programlisting></section>

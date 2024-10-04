@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdlg_new_link" xml:lang="en-US">
+<title>dlgNewLink Class Reference</title>
+<indexterm><primary>dlgNewLink</primary></indexterm>
+<para>
+Inherits wxDialog.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdlg_new_link_1aea36327039f6010e1e3aaf80d0e899ce">dlgNewLink</link> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a466cd52a3b7eb455cb5bf5f5f1a9976d"/>wxButton * <emphasis role="strong">btnCancel</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a8954bd9148106c2121655fa774f794ab"/>wxButton * <emphasis role="strong">btnInset</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1aa477f47427a5f935e8cbc955bf1241a6"/>wxStaticText * <emphasis role="strong">lblDet</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a86ada851b18cfd3d97fb406e9ba14209"/>wxStaticText * <emphasis role="strong">lblLink</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1af137dcaa7e04f1b8653ae436c422e2fe"/>wxStaticText * <emphasis role="strong">lblidlk1</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a03da7b966f78bc2b856e88f83951d119"/>wxStaticText * <emphasis role="strong">lnlLinkName</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a0ec15053e86f442b7aeee4e6f5fc32c9"/>wxTextCtrl * <emphasis role="strong">edtDetDes</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a700c1eb2452ae9c18b2da5c50919652b"/>wxTextCtrl * <emphasis role="strong">edtLink</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a6faebd04b803ac8e6e886846459df4f4"/>wxTextCtrl * <emphasis role="strong">edtLinkName</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a3b5f9612726afec26d697a0c147dd370"/>wxTextCtrl * <emphasis role="strong">edtPrim</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1aaadd9729742ef849956e876a427285f6"/>static const long <emphasis role="strong">ID_STATICTEXT1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a63ac1dfe6f16efa327171c4c37260053"/>static const long <emphasis role="strong">ID_TEXTCTRL1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1aa7866facce26a163d69264ca319bb868"/>static const long <emphasis role="strong">ID_STATICTEXT2</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1ac354dd402ebb892c746aa5d392feaa84"/>static const long <emphasis role="strong">ID_TEXTCTRL2</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a245eaf900701a7742c042c2583d167a1"/>static const long <emphasis role="strong">ID_STATICTEXT3</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1adfe1b9821eba1a652541c9ed91db7d6f"/>static const long <emphasis role="strong">ID_TEXTCTRL3</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a4f118cf7a4161234aa13be635876fde3"/>static const long <emphasis role="strong">ID_STATICTEXT4</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a3984c33b6d685c2f59d4bf0fad5ec12a"/>static const long <emphasis role="strong">ID_TEXTCTRL4</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1a57acdc0d1d68985d9f42706aa7e13aaa"/>static const long <emphasis role="strong">ID_BUTTON1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_link_1af4a7b4e0d1740c6ae7be7f4cb3592548"/>static const long <emphasis role="strong">ID_BUTTON2</emphasis> = wxNewId()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdlg_new_link_1aea36327039f6010e1e3aaf80d0e899ce"/><section>
+    <title>dlgNewLink()</title>
+<indexterm><primary>dlgNewLink</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>dlgNewLink</secondary></indexterm>
+<para><computeroutput>dlgNewLink::dlgNewLink (wxWindow * parent, wxWindowID id = <computeroutput>wxID_ANY</computeroutput>
+, const wxPoint &amp; pos = <computeroutput>wxDefaultPosition</computeroutput>
+, const wxSize &amp; size = <computeroutput>wxDefaultSize</computeroutput>
+)</computeroutput></para>
+<para>zrdb.initField(mkVal,dlg.edtPrim);</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+dlgNewLink.hdlgNewLink.cpp</section>
+</section>

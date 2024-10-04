@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbcs_gui" xml:lang="en-US">
+<title>bcsGui Class Reference</title>
+<indexterm><primary>bcsGui</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classbcs_gui_1ac8bd94493e962a832d2d47344d8afbd3"/>std::string <emphasis role="strong">SelDir</emphasis> (string initDir)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbcs_gui_1a9061e0d66ce7088bba30b98fa8061358"/>string <emphasis role="strong">GetText</emphasis> (bool memo, string initVal, string prompt, string caption)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbcs_gui_1a3fa5f9ce202e43b147ef9a166577fb31"/>int <emphasis role="strong">yornQues</emphasis> (string caption, string prompt)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classbcs_gui_1ade5890d2dccda707cb21357609d2600f"/>string <emphasis role="strong">openFileDialog</emphasis> (wxWindow *parent, const wxString &amp;message, const wxString &amp;defaultDir, const wxString &amp;defaultFile, const wxString &amp;wildcard, int flags)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+bcsGui.hbcsGui.cpp</section>

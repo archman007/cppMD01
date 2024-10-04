@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdlg_xqt2" xml:lang="en-US">
+<title>dlgXqt2 Class Reference</title>
+<indexterm><primary>dlgXqt2</primary></indexterm>
+<para>
+Inherits wxDialog.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a"/><emphasis role="strong">dlgXqt2</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e"/>int <emphasis role="strong">isel</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754"/>wxButton * <emphasis role="strong">butCancel</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc"/>wxRadioBox * <emphasis role="strong">rbtRadBut</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b"/>static const long <emphasis role="strong">ID_RADIOBOX1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6"/>static const long <emphasis role="strong">ID_BUTTON1</emphasis> = wxNewId()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+dlgXqt2.hdlgXqt2.cpp</section>

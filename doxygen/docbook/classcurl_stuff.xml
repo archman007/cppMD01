@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcurl_stuff" xml:lang="en-US">
+<title>curlStuff Class Reference</title>
+<indexterm><primary>curlStuff</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classcurl_stuff_1afc2fdfde6fa1450a1184f20ab9cf35f7"/>std::string <emphasis role="strong">getZTitle</emphasis> (std::string url)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcurl_stuff_1a95d3ef871d4c6eeb2c9097eaf2ab738f"/>std::string <emphasis role="strong">clipUrl</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcurl_stuff_1a766a52cfa30136e004f9ee76e2eced5f"/>std::string <emphasis role="strong">getURL</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0"/>std::string <emphasis role="strong">cbc</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+curlStuff.hcurlStuff.cpp</section>

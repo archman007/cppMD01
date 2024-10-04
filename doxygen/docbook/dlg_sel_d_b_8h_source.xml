@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_sel_d_b_8h_source" xml:lang="en-US">
+<title>dlgSelDB.h</title>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;DLGSELDB_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;DLGSELDB_H</emphasis>
+3 
+4 <emphasis role="comment">//(*Headers(dlgSelDB)</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;wx/dialog.h&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;wx/listbox.h&gt;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
+8 <emphasis role="comment">//*)</emphasis>
+9 
+10 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classdlg_sel_d_b">dlgSelDB</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxDialog
+11 {
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+13 
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdlg_sel_d_b">dlgSelDB</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>=wxID_ANY,<emphasis role="keyword">const</emphasis>&#32;wxPoint&amp;&#32;pos=wxDefaultPosition,<emphasis role="keyword">const</emphasis>&#32;wxSize&amp;&#32;size=wxDefaultSize);
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classdlg_sel_d_b">~dlgSelDB</link>();
+16 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxString&#32;db;</emphasis>
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;buf;
+18 
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(dlgSelDB)</emphasis>
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxListBox*&#32;lbxDbNames;
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+22 
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
+24 
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(dlgSelDB)</emphasis>
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_LISTBOX1;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+28 
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+30 
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(dlgSelDB)</emphasis>
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnlbxDbNamesDClick(wxCommandEvent&amp;&#32;event);
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+34 
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
+36 };
+37 
+38 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

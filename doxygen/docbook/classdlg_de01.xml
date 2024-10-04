@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdlg_de01" xml:lang="en-US">
+<title>dlgDe01 Class Reference</title>
+<indexterm><primary>dlgDe01</primary></indexterm>
+<para>
+Inherits wxDialog.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_de01_1a3e510af877eaa87b402243af703da297"/><emphasis role="strong">dlgDe01</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_de01_1abaa789e136c59f00a36616ceaf4c8623"/>wxStaticText * <emphasis role="strong">StaticText1</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_de01_1a26ef90226a5293ad736c3550067ec6d6"/>wxStaticText * <emphasis role="strong">StaticText2</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_de01_1a61aa353a0243a41bcfff6c3ddfa225e1"/>wxTextCtrl * <emphasis role="strong">TextCtrl1</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_de01_1a1aff62e9592c0bbcec21161228817010"/>wxTextCtrl * <emphasis role="strong">TextCtrl2</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_de01_1a3caad11ce54001b9ec04932bb505fe57"/>static const long <emphasis role="strong">ID_STATICTEXT1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_de01_1ac6ddea7e9abb3d618658bc631a7a268a"/>static const long <emphasis role="strong">ID_TEXTCTRL1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_de01_1ae896a2930ae8c3cf7f3516f368b4e325"/>static const long <emphasis role="strong">ID_STATICTEXT2</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_de01_1a03f60364aea276d36ed6bec75bef2bb4"/>static const long <emphasis role="strong">ID_TEXTCTRL2</emphasis> = wxNewId()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+dlgDe01.hdlgDe01.cpp</section>

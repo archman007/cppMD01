@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cpp_m_d01_main_8h_source" xml:lang="en-US">
+<title>cppMD01Main.h</title>
+<programlisting linenumbering="unnumbered">1 <emphasis role="comment">/***************************************************************</emphasis>
+2 <emphasis role="comment">&#32;*&#32;Name:&#32;&#32;&#32;&#32;&#32;&#32;cppMD01Main.h</emphasis>
+3 <emphasis role="comment">&#32;*&#32;Purpose:&#32;&#32;&#32;Defines&#32;Application&#32;Frame</emphasis>
+4 <emphasis role="comment">&#32;*&#32;Author:&#32;&#32;&#32;&#32;Mr.&#32;Arch&#32;Brooks&#32;(arch@archbrooks.com)</emphasis>
+5 <emphasis role="comment">&#32;*&#32;Created:&#32;&#32;&#32;Sunday,&#32;08&#32;September&#32;2024&#32;07:26:59</emphasis>
+6 <emphasis role="comment">&#32;*&#32;Copyright:&#32;Mr.&#32;Arch&#32;Brooks&#32;(https://archman.us)</emphasis>
+7 <emphasis role="comment">&#32;*&#32;License:</emphasis>
+8 <emphasis role="comment">&#32;**************************************************************/</emphasis>
+9 
+10 <emphasis role="preprocessor">#ifndef&#32;CPPMYSKEL1MAIN_H</emphasis>
+11 <emphasis role="preprocessor">#define&#32;CPPMYSKEL1MAIN_H</emphasis>
+12 <emphasis role="preprocessor">#include&#32;&lt;mysql++.h&gt;</emphasis>
+13 <emphasis role="preprocessor">#include&#32;&lt;wx/grid.h&gt;</emphasis>
+14 <emphasis role="preprocessor">#include&#32;&quot;dlgXqt2.h&quot;</emphasis>
+15 
+16 <emphasis role="comment">//(*Headers(cppMD01Frame)</emphasis>
+17 <emphasis role="preprocessor">#include&#32;&lt;wx/frame.h&gt;</emphasis>
+18 <emphasis role="preprocessor">#include&#32;&lt;wx/menu.h&gt;</emphasis>
+19 <emphasis role="preprocessor">#include&#32;&lt;wx/panel.h&gt;</emphasis>
+20 <emphasis role="preprocessor">#include&#32;&lt;wx/scrolwin.h&gt;</emphasis>
+21 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
+22 <emphasis role="preprocessor">#include&#32;&lt;wx/stattext.h&gt;</emphasis>
+23 <emphasis role="preprocessor">#include&#32;&lt;wx/statusbr.h&gt;</emphasis>
+24 <emphasis role="comment">//*)</emphasis>
+25 
+26 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classcpp_m_d01_frame">cppMD01Frame</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxFrame
+27 {
+28 <emphasis role="keyword">public</emphasis>:
+29 
+30 &#32;&#32;&#32;&#32;<link linkend="_classcpp_m_d01_frame">cppMD01Frame</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>&#32;=&#32;-1);
+31 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classcpp_m_d01_frame">~cppMD01Frame</link>();
+32 &#32;&#32;&#32;&#32;mysqlpp::Connection&#32;conn;
+33 &#32;&#32;&#32;&#32;wxGrid*&#32;masterGrid;
+34 &#32;&#32;&#32;&#32;wxGrid*&#32;detailGrid;
+35 &#32;&#32;&#32;&#32;std::string&#32;cmd;
+36 &#32;&#32;&#32;&#32;std::string&#32;mkVal;
+37 
+38 <emphasis role="keyword">private</emphasis>:
+39 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;PopulateMasterGrid();
+40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;LoadDetailData(<emphasis role="keywordtype">long</emphasis>&#32;idlk1);
+41 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnMasterGridCellClick(wxGridEvent&amp;&#32;event);
+42 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnCellClick(wxGridEvent&amp;&#32;event);
+43 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnMasterGridPopup(wxGridEvent&amp;&#32;event);
+44 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnDetailGridPopup(wxGridEvent&amp;&#32;event);
+45 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;ListFiles(<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;dir,&#32;<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;filespec);
+46 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procLink();
+47 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procPdf();
+48 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procDoc();
+49 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procExe();
+50 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;RefreshDetails();
+51 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;dRID&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+52 <emphasis role="comment">//&#32;&#32;&#32;&#32;void&#32;OnpumNewBlogPostSelected(wxCommandEvent&amp;&#32;event);</emphasis>
+53 &#32;&#32;&#32;&#32;std::string&#32;defBro&#32;=&#32;<emphasis role="stringliteral">&quot;/usr/bin/brave&quot;</emphasis>;
+54 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;row;
+55 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnDetailGridCellClick(wxGridEvent&amp;&#32;event);
+56 &#32;&#32;&#32;&#32;std::string&#32;recNo;
+57 
+58 &#32;&#32;&#32;&#32;<emphasis role="comment">//void&#32;LoadDetailData(int&#32;idlk1);</emphasis>
+59 
+60 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(cppMD01Frame)</emphasis>
+61 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnQuit(wxCommandEvent&amp;&#32;event);
+62 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnAbout(wxCommandEvent&amp;&#32;event);
+63 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnmenSelectCppSelected(wxCommandEvent&amp;&#32;event);
+64 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumAddDocsSelected(wxCommandEvent&amp;&#32;event);
+65 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumNewCatSelected(wxCommandEvent&amp;&#32;event);
+66 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumNewBlogPostSelected(wxCommandEvent&amp;&#32;event);
+67 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumDelLinkSelected(wxCommandEvent&amp;&#32;event);
+68 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEdCatSelected(wxCommandEvent&amp;&#32;event);
+69 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEditLinkSelected(wxCommandEvent&amp;&#32;event);
+70 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEditDetailsSelected(wxCommandEvent&amp;&#32;event);
+71 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+72 
+73 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(cppMD01Frame)</emphasis>
+74 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT1;
+75 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL1;
+76 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL3;
+77 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT2;
+78 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_SCROLLEDWINDOW1;
+79 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenucpp;
+80 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuQuit;
+81 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuAbout;
+82 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATUSBAR1;
+83 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM1;
+84 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idpumNewCat;
+85 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PumEdCat;
+86 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_NewBlog;
+87 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM2;
+88 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menAD;
+89 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menNB;
+90 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumDel;
+91 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumEditLink;
+92 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+93 
+94 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(cppMD01Frame)</emphasis>
+95 &#32;&#32;&#32;&#32;wxMenu&#32;pumDetail;
+96 &#32;&#32;&#32;&#32;wxMenu&#32;pumMaster;
+97 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem3;
+98 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem4;
+99 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem5;
+100 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menNewPost;
+101 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menSelectCpp;
+102 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumAddDocs;
+103 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumDelLink;
+104 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumEditDetails;
+105 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewBlogPost;
+106 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewCat;
+107 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel1;
+108 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel2;
+109 &#32;&#32;&#32;&#32;wxScrolledWindow*&#32;ScrolledWindow1;
+110 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText1;
+111 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText2;
+112 &#32;&#32;&#32;&#32;wxStatusBar*&#32;StatusBar1;
+113 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+114 
+115 &#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
+116 };
+117 
+118 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CPPMYSKEL1MAIN_H</emphasis>
+119 
+</programlisting></section>

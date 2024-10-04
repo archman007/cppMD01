@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_classbcs_gui">bcsGui</link><link linkend="_classcpp_m_d01_app">cppMD01App</link><link linkend="_classcpp_m_d01_frame">cppMD01Frame</link><link linkend="_classcurl_stuff">curlStuff</link><link linkend="_classdlg_de01">dlgDe01</link><link linkend="_classdlg_nb01">dlgNb01</link><link linkend="_classdlg_new_cat">dlgNewCat</link><link linkend="_classdlg_new_link">dlgNewLink</link><link linkend="_classdlg_sel_d_b">dlgSelDB</link><link linkend="_classdlg_xqt2">dlgXqt2</link><link linkend="_classz_d_b01">zDB01</link></section>

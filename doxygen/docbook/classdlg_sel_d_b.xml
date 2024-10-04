@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdlg_sel_d_b" xml:lang="en-US">
+<title>dlgSelDB Class Reference</title>
+<indexterm><primary>dlgSelDB</primary></indexterm>
+<para>
+Inherits wxDialog.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_sel_d_b_1a7043b46c8c53958b34a60049165e9193"/><emphasis role="strong">dlgSelDB</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_sel_d_b_1a3bcd06b1aae166af31738748ea3e01a6"/>std::string <emphasis role="strong">buf</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3"/>wxListBox * <emphasis role="strong">lbxDbNames</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_sel_d_b_1ae4011d221c694e4b117e036760d3919c"/>static const long <emphasis role="strong">ID_LISTBOX1</emphasis> = wxNewId()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+dlgSelDB.hdlgSelDB.cpp</section>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdlg_nb01" xml:lang="en-US">
+<title>dlgNb01 Class Reference</title>
+<indexterm><primary>dlgNb01</primary></indexterm>
+<para>
+Inherits wxDialog.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1a2e977dbfcc9d7fed5f06c9071d0d9e07"/><emphasis role="strong">dlgNb01</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1ab36c76e5726dae55ba0a83cdab1df6c3"/>int <emphasis role="strong">curCat</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1a76377ea7eb09dc99e70d06daa1e8c229"/>wxListBox * <emphasis role="strong">lbxCats</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3"/>wxListBox * <emphasis role="strong">lbxLinks</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1ae84963ba986c733626d3e40b540ec77d"/>wxNotebook * <emphasis role="strong">nbk01</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1aedc4048e1ad676e71c331327f8272e75"/>wxPanel * <emphasis role="strong">Panel1</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1af689c5f7c2b69e8601d50d105f3188d5"/>wxPanel * <emphasis role="strong">Panel2</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1a087639f2f189964da81412b3adb82b38"/>static const long <emphasis role="strong">ID_LISTBOX1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1ad27b25cedb8054749c1089ce5cac2e82"/>static const long <emphasis role="strong">ID_PANEL1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1af8539a8de173be5c3f8aac34d3cc3613"/>static const long <emphasis role="strong">ID_LISTBOX2</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1a1ff3066230a343f8b2e1da507d200581"/>static const long <emphasis role="strong">ID_PANEL2</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_nb01_1a2f89e54374be753ba3c7379d8122ce73"/>static const long <emphasis role="strong">ID_NOTEBOOK1</emphasis> = wxNewId()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+dlgNb01.hdlgNb01.cpp</section>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcpp_m_d01_app" xml:lang="en-US">
+<title>cppMD01App Class Reference</title>
+<indexterm><primary>cppMD01App</primary></indexterm>
+<para>
+Inherits wxApp.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e"/>virtual bool <emphasis role="strong">OnInit</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+cppMD01App.hcppMD01App.cpp</section>

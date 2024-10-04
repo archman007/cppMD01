@@ -7,7 +7,7 @@ var annotated_dup =
     [ "dlgDe01", "classdlg_de01.html", null ],
     [ "dlgNb01", "classdlg_nb01.html", null ],
     [ "dlgNewCat", "classdlg_new_cat.html", null ],
-    [ "dlgNewLink", "classdlg_new_link.html", null ],
+    [ "dlgNewLink", "classdlg_new_link.html", "classdlg_new_link" ],
     [ "dlgSelDB", "classdlg_sel_d_b.html", null ],
     [ "dlgXqt2", "classdlg_xqt2.html", null ],
     [ "zDB01", "classz_d_b01.html", null ]

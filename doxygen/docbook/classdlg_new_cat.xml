@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdlg_new_cat" xml:lang="en-US">
+<title>dlgNewCat Class Reference</title>
+<indexterm><primary>dlgNewCat</primary></indexterm>
+<para>
+Inherits wxDialog.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1aa8a5d5f7849999cf762a1b600e323023"/><emphasis role="strong">dlgNewCat</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1a5ea5e00067bdb27be22edc6b0a2e8b82"/>wxButton * <emphasis role="strong">btnCancel</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1a42a122335d4c950c54b7b4e986ad1ed1"/>wxButton * <emphasis role="strong">btnInsert</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1a7741b567a7ca622c4a134cefd247bf7f"/>wxStaticText * <emphasis role="strong">lblCat</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1a01cc0201cf630de20de80f1ea0c89cf1"/>wxStaticText * <emphasis role="strong">lblMemo</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1a72cdf033c6e09d036dae14dc92135751"/>wxTextCtrl * <emphasis role="strong">edtCat</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1a242de8d9dcd75d20a533b82f99b2335a"/>wxTextCtrl * <emphasis role="strong">edtMemo</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1ad2ea1532e4f6aeffa433cb227ced37ec"/>static const long <emphasis role="strong">ID_STATICTEXT1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1a2ff3acd7a996429b9fb450af680d9099"/>static const long <emphasis role="strong">ID_TEXTCTRL1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1af7e04eee4e6bf7cc73d2293580ee7e29"/>static const long <emphasis role="strong">ID_STATICTEXT2</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1a06638814dcd385731b976af931039dc1"/>static const long <emphasis role="strong">ID_TEXTCTRL2</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1ac88712ad76d3432970a6e2865292b513"/>static const long <emphasis role="strong">ID_BUTTON1</emphasis> = wxNewId()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classdlg_new_cat_1a1f95147a48f86fd9321e0d78cf2d0ed2"/>static const long <emphasis role="strong">ID_BUTTON2</emphasis> = wxNewId()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+dlgNewCat.hdlgNewCat.cpp</section>

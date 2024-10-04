@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcpp_m_d01_frame" xml:lang="en-US">
+<title>cppMD01Frame Class Reference</title>
+<indexterm><primary>cppMD01Frame</primary></indexterm>
+<para>
+Inherits wxFrame.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1adbda8203786121d97f23baad6ba72699"/><emphasis role="strong">cppMD01Frame</emphasis> (wxWindow *parent, wxWindowID id=-1)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1a6467fd15ab39abd4e479179bfcaaa9c0"/>mysqlpp::Connection <emphasis role="strong">conn</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1a3a314721182b2b05b90c4c81a0639f41"/>wxGrid * <emphasis role="strong">masterGrid</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1aa722fd68f431c3b4545b8819e4cea4c1"/>wxGrid * <emphasis role="strong">detailGrid</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1a1d417535ffbf1134fb4f3f4d054f494a"/>std::string <emphasis role="strong">cmd</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1ac5f4d62fd6a4e8a6448778b29a83f304"/>std::string <emphasis role="strong">mkVal</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following files:</para>
+cppMD01Main.hcppMD01Main.cpp</section>

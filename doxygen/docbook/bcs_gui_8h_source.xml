@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bcs_gui_8h_source" xml:lang="en-US">
+<title>bcsGui.h</title>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;wx/string.h&gt;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;wx/window.h&gt;</emphasis>
+4 
+5 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+6 
+7 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbcs_gui">bcsGui</link>
+8 {
+9 <emphasis role="keyword">public</emphasis>:
+10 &#32;&#32;&#32;&#32;<link linkend="_classbcs_gui">bcsGui</link>();
+11 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classbcs_gui">~bcsGui</link>();
+12 &#32;&#32;&#32;&#32;std::string&#32;SelDir(<emphasis role="keywordtype">string</emphasis>&#32;initDir);
+13 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;GetText(<emphasis role="keywordtype">bool</emphasis>&#32;memo,&#32;<emphasis role="keywordtype">string</emphasis>&#32;initVal,&#32;<emphasis role="keywordtype">string</emphasis>&#32;prompt,&#32;<emphasis role="keywordtype">string</emphasis>&#32;caption);
+14 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;yornQues(<emphasis role="keywordtype">string</emphasis>&#32;caption,&#32;<emphasis role="keywordtype">string</emphasis>&#32;prompt);
+15 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;openFileDialog(wxWindow*&#32;parent,&#32;<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;message,&#32;<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;defaultDir,&#32;<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;defaultFile,&#32;<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;wildcard,&#32;<emphasis role="keywordtype">int</emphasis>&#32;flags);
+16 
+17 <emphasis role="keyword">protected</emphasis>:
+18 
+19 <emphasis role="keyword">private</emphasis>:
+20 };
+</programlisting></section>
