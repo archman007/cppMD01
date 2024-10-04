@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_new_cat_8cpp" xml:lang="en-US">
+<title>dlgNewCat.cpp File Reference</title>
+<indexterm><primary>dlgNewCat.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;dlgNewCat.h&quot;<?linebreak?>#include &quot;zDB01.h&quot;<?linebreak?>#include &lt;wx/intl.h&gt;<?linebreak?>#include &lt;wx/string.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classz_d_b01">zDB01</link> <link linkend="_dlg_new_cat_8cpp_1a1b9b10a47cac2164b9455d84dd477d90">db01</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_dlg_new_cat_8cpp_1a1b9b10a47cac2164b9455d84dd477d90"/><section>
+    <title>db01</title>
+<indexterm><primary>db01</primary><secondary>dlgNewCat.cpp</secondary></indexterm>
+<indexterm><primary>dlgNewCat.cpp</primary><secondary>db01</secondary></indexterm>
+<para><computeroutput><link linkend="_classz_d_b01">zDB01</link> db01</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8cpp_source_1l00004">4</link> of file <link linkend="_dlg_new_cat_8cpp_source">dlgNewCat.cpp</link>.</para>
+</section>
+</section>
+</section>

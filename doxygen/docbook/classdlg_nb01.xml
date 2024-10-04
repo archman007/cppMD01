@@ -3,46 +3,162 @@
 <title>dlgNb01 Class Reference</title>
 <indexterm><primary>dlgNb01</primary></indexterm>
 <para>
-Inherits wxDialog.</para>
+<computeroutput>#include &lt;dlgNb01.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for dlgNb01:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_nb01.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1a2e977dbfcc9d7fed5f06c9071d0d9e07"/><emphasis role="strong">dlgNb01</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+            <listitem><para><link linkend="_classdlg_nb01_1a2e977dbfcc9d7fed5f06c9071d0d9e07">dlgNb01</link> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classdlg_nb01_1a903a9f01411d3f6a4b7128d033590ce9">~dlgNb01</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1ab36c76e5726dae55ba0a83cdab1df6c3"/>int <emphasis role="strong">curCat</emphasis></para>
+            <listitem><para>int <link linkend="_classdlg_nb01_1ab36c76e5726dae55ba0a83cdab1df6c3">curCat</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1a76377ea7eb09dc99e70d06daa1e8c229"/>wxListBox * <emphasis role="strong">lbxCats</emphasis></para>
+            <listitem><para>wxListBox * <link linkend="_classdlg_nb01_1a76377ea7eb09dc99e70d06daa1e8c229">lbxCats</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3"/>wxListBox * <emphasis role="strong">lbxLinks</emphasis></para>
+            <listitem><para>wxListBox * <link linkend="_classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3">lbxLinks</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1ae84963ba986c733626d3e40b540ec77d"/>wxNotebook * <emphasis role="strong">nbk01</emphasis></para>
+            <listitem><para>wxNotebook * <link linkend="_classdlg_nb01_1ae84963ba986c733626d3e40b540ec77d">nbk01</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1aedc4048e1ad676e71c331327f8272e75"/>wxPanel * <emphasis role="strong">Panel1</emphasis></para>
+            <listitem><para>wxPanel * <link linkend="_classdlg_nb01_1aedc4048e1ad676e71c331327f8272e75">Panel1</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1af689c5f7c2b69e8601d50d105f3188d5"/>wxPanel * <emphasis role="strong">Panel2</emphasis></para>
+            <listitem><para>wxPanel * <link linkend="_classdlg_nb01_1af689c5f7c2b69e8601d50d105f3188d5">Panel2</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Static Protected Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1a087639f2f189964da81412b3adb82b38"/>static const long <emphasis role="strong">ID_LISTBOX1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_nb01_1a087639f2f189964da81412b3adb82b38">ID_LISTBOX1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1ad27b25cedb8054749c1089ce5cac2e82"/>static const long <emphasis role="strong">ID_PANEL1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_nb01_1ad27b25cedb8054749c1089ce5cac2e82">ID_PANEL1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1af8539a8de173be5c3f8aac34d3cc3613"/>static const long <emphasis role="strong">ID_LISTBOX2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_nb01_1af8539a8de173be5c3f8aac34d3cc3613">ID_LISTBOX2</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1a1ff3066230a343f8b2e1da507d200581"/>static const long <emphasis role="strong">ID_PANEL2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_nb01_1a1ff3066230a343f8b2e1da507d200581">ID_PANEL2</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_nb01_1a2f89e54374be753ba3c7379d8122ce73"/>static const long <emphasis role="strong">ID_NOTEBOOK1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_nb01_1a2f89e54374be753ba3c7379d8122ce73">ID_NOTEBOOK1</link> = wxNewId()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00012">12</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdlg_nb01_1a2e977dbfcc9d7fed5f06c9071d0d9e07"/><section>
+    <title>dlgNb01()</title>
+<indexterm><primary>dlgNb01</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>dlgNb01</secondary></indexterm>
+<para><computeroutput>dlgNb01::dlgNb01 (wxWindow * parent, wxWindowID id = <computeroutput>wxID_ANY</computeroutput>
+, const wxPoint &amp; pos = <computeroutput>wxDefaultPosition</computeroutput>
+, const wxSize &amp; size = <computeroutput>wxDefaultSize</computeroutput>
+)</computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8cpp_source_1l00024">24</link> of file <link linkend="_dlg_nb01_8cpp_source">dlgNb01.cpp</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1a903a9f01411d3f6a4b7128d033590ce9"/><section>
+    <title>~dlgNb01()</title>
+<indexterm><primary>~dlgNb01</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>~dlgNb01</secondary></indexterm>
+<para><computeroutput>dlgNb01::~dlgNb01 ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8cpp_source_1l00069">69</link> of file <link linkend="_dlg_nb01_8cpp_source">dlgNb01.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdlg_nb01_1ab36c76e5726dae55ba0a83cdab1df6c3"/><section>
+    <title>curCat</title>
+<indexterm><primary>curCat</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>curCat</secondary></indexterm>
+<para><computeroutput>int dlgNb01::curCat</computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00018">18</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1a087639f2f189964da81412b3adb82b38"/><section>
+    <title>ID_LISTBOX1</title>
+<indexterm><primary>ID_LISTBOX1</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>ID_LISTBOX1</secondary></indexterm>
+<para><computeroutput>const long dlgNb01::ID_LISTBOX1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00031">31</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1af8539a8de173be5c3f8aac34d3cc3613"/><section>
+    <title>ID_LISTBOX2</title>
+<indexterm><primary>ID_LISTBOX2</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>ID_LISTBOX2</secondary></indexterm>
+<para><computeroutput>const long dlgNb01::ID_LISTBOX2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00033">33</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1a2f89e54374be753ba3c7379d8122ce73"/><section>
+    <title>ID_NOTEBOOK1</title>
+<indexterm><primary>ID_NOTEBOOK1</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>ID_NOTEBOOK1</secondary></indexterm>
+<para><computeroutput>const long dlgNb01::ID_NOTEBOOK1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00035">35</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1ad27b25cedb8054749c1089ce5cac2e82"/><section>
+    <title>ID_PANEL1</title>
+<indexterm><primary>ID_PANEL1</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>ID_PANEL1</secondary></indexterm>
+<para><computeroutput>const long dlgNb01::ID_PANEL1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00032">32</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1a1ff3066230a343f8b2e1da507d200581"/><section>
+    <title>ID_PANEL2</title>
+<indexterm><primary>ID_PANEL2</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>ID_PANEL2</secondary></indexterm>
+<para><computeroutput>const long dlgNb01::ID_PANEL2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00034">34</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1a76377ea7eb09dc99e70d06daa1e8c229"/><section>
+    <title>lbxCats</title>
+<indexterm><primary>lbxCats</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>lbxCats</secondary></indexterm>
+<para><computeroutput>wxListBox* dlgNb01::lbxCats</computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00021">21</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3"/><section>
+    <title>lbxLinks</title>
+<indexterm><primary>lbxLinks</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>lbxLinks</secondary></indexterm>
+<para><computeroutput>wxListBox* dlgNb01::lbxLinks</computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00022">22</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1ae84963ba986c733626d3e40b540ec77d"/><section>
+    <title>nbk01</title>
+<indexterm><primary>nbk01</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>nbk01</secondary></indexterm>
+<para><computeroutput>wxNotebook* dlgNb01::nbk01</computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00023">23</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1aedc4048e1ad676e71c331327f8272e75"/><section>
+    <title>Panel1</title>
+<indexterm><primary>Panel1</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>Panel1</secondary></indexterm>
+<para><computeroutput>wxPanel* dlgNb01::Panel1</computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00024">24</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_nb01_1af689c5f7c2b69e8601d50d105f3188d5"/><section>
+    <title>Panel2</title>
+<indexterm><primary>Panel2</primary><secondary>dlgNb01</secondary></indexterm>
+<indexterm><primary>dlgNb01</primary><secondary>Panel2</secondary></indexterm>
+<para><computeroutput>wxPanel* dlgNb01::Panel2</computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8h_source_1l00025">25</link> of file <link linkend="_dlg_nb01_8h_source">dlgNb01.h</link>.</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
-dlgNb01.hdlgNb01.cpp</section>
+<link linkend="_dlg_nb01_8h">dlgNb01.h</link><link linkend="_dlg_nb01_8cpp">dlgNb01.cpp</link></section>
+</section>

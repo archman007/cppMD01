@@ -3,34 +3,108 @@
 <title>dlgXqt2 Class Reference</title>
 <indexterm><primary>dlgXqt2</primary></indexterm>
 <para>
-Inherits wxDialog.</para>
+<computeroutput>#include &lt;dlgXqt2.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for dlgXqt2:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_xqt2.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a"/><emphasis role="strong">dlgXqt2</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+            <listitem><para><link linkend="_classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a">dlgXqt2</link> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771">~dlgXqt2</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e"/>int <emphasis role="strong">isel</emphasis></para>
+            <listitem><para>int <link linkend="_classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e">isel</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754"/>wxButton * <emphasis role="strong">butCancel</emphasis></para>
+            <listitem><para>wxButton * <link linkend="_classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754">butCancel</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc"/>wxRadioBox * <emphasis role="strong">rbtRadBut</emphasis></para>
+            <listitem><para>wxRadioBox * <link linkend="_classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc">rbtRadBut</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Static Protected Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b"/>static const long <emphasis role="strong">ID_RADIOBOX1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b">ID_RADIOBOX1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6"/>static const long <emphasis role="strong">ID_BUTTON1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6">ID_BUTTON1</link> = wxNewId()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_dlg_xqt2_8h_source_1l00011">11</link> of file <link linkend="_dlg_xqt2_8h_source">dlgXqt2.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a"/><section>
+    <title>dlgXqt2()</title>
+<indexterm><primary>dlgXqt2</primary><secondary>dlgXqt2</secondary></indexterm>
+<indexterm><primary>dlgXqt2</primary><secondary>dlgXqt2</secondary></indexterm>
+<para><computeroutput>dlgXqt2::dlgXqt2 (wxWindow * parent, wxWindowID id = <computeroutput>wxID_ANY</computeroutput>
+, const wxPoint &amp; pos = <computeroutput>wxDefaultPosition</computeroutput>
+, const wxSize &amp; size = <computeroutput>wxDefaultSize</computeroutput>
+)</computeroutput></para><para>
+Definition at line <link linkend="_dlg_xqt2_8cpp_source_1l00018">18</link> of file <link linkend="_dlg_xqt2_8cpp_source">dlgXqt2.cpp</link>.</para>
+</section>
+<anchor xml:id="_classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771"/><section>
+    <title>~dlgXqt2()</title>
+<indexterm><primary>~dlgXqt2</primary><secondary>dlgXqt2</secondary></indexterm>
+<indexterm><primary>dlgXqt2</primary><secondary>~dlgXqt2</secondary></indexterm>
+<para><computeroutput>dlgXqt2::~dlgXqt2 ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_xqt2_8cpp_source_1l00053">53</link> of file <link linkend="_dlg_xqt2_8cpp_source">dlgXqt2.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754"/><section>
+    <title>butCancel</title>
+<indexterm><primary>butCancel</primary><secondary>dlgXqt2</secondary></indexterm>
+<indexterm><primary>dlgXqt2</primary><secondary>butCancel</secondary></indexterm>
+<para><computeroutput>wxButton* dlgXqt2::butCancel</computeroutput></para><para>
+Definition at line <link linkend="_dlg_xqt2_8h_source_1l00021">21</link> of file <link linkend="_dlg_xqt2_8h_source">dlgXqt2.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6"/><section>
+    <title>ID_BUTTON1</title>
+<indexterm><primary>ID_BUTTON1</primary><secondary>dlgXqt2</secondary></indexterm>
+<indexterm><primary>dlgXqt2</primary><secondary>ID_BUTTON1</secondary></indexterm>
+<para><computeroutput>const long dlgXqt2::ID_BUTTON1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_xqt2_8h_source_1l00029">29</link> of file <link linkend="_dlg_xqt2_8h_source">dlgXqt2.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b"/><section>
+    <title>ID_RADIOBOX1</title>
+<indexterm><primary>ID_RADIOBOX1</primary><secondary>dlgXqt2</secondary></indexterm>
+<indexterm><primary>dlgXqt2</primary><secondary>ID_RADIOBOX1</secondary></indexterm>
+<para><computeroutput>const long dlgXqt2::ID_RADIOBOX1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_xqt2_8h_source_1l00028">28</link> of file <link linkend="_dlg_xqt2_8h_source">dlgXqt2.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e"/><section>
+    <title>isel</title>
+<indexterm><primary>isel</primary><secondary>dlgXqt2</secondary></indexterm>
+<indexterm><primary>dlgXqt2</primary><secondary>isel</secondary></indexterm>
+<para><computeroutput>int dlgXqt2::isel</computeroutput></para><para>
+Definition at line <link linkend="_dlg_xqt2_8h_source_1l00017">17</link> of file <link linkend="_dlg_xqt2_8h_source">dlgXqt2.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc"/><section>
+    <title>rbtRadBut</title>
+<indexterm><primary>rbtRadBut</primary><secondary>dlgXqt2</secondary></indexterm>
+<indexterm><primary>dlgXqt2</primary><secondary>rbtRadBut</secondary></indexterm>
+<para><computeroutput>wxRadioBox* dlgXqt2::rbtRadBut</computeroutput></para><para>
+Definition at line <link linkend="_dlg_xqt2_8h_source_1l00022">22</link> of file <link linkend="_dlg_xqt2_8h_source">dlgXqt2.h</link>.</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
-dlgXqt2.hdlgXqt2.cpp</section>
+<link linkend="_dlg_xqt2_8h">dlgXqt2.h</link><link linkend="_dlg_xqt2_8cpp">dlgXqt2.cpp</link></section>
+</section>

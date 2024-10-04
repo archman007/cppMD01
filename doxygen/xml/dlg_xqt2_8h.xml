@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dlg_xqt2_8h" kind="file" language="C++">
+    <compoundname>dlgXqt2.h</compoundname>
+    <includes local="no">wx/button.h</includes>
+    <includes local="no">wx/dialog.h</includes>
+    <includes local="no">wx/radiobox.h</includes>
+    <includes local="no">wx/sizer.h</includes>
+    <includedby refid="cpp_m_d01_main_8cpp" local="yes">cppMD01Main.cpp</includedby>
+    <includedby refid="cpp_m_d01_main_8h" local="yes">cppMD01Main.h</includedby>
+    <includedby refid="dlg_xqt2_8cpp" local="yes">dlgXqt2.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>dlgXqt2.h</label>
+        <link refid="dlg_xqt2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wx/button.h</label>
+      </node>
+      <node id="3">
+        <label>wx/dialog.h</label>
+      </node>
+      <node id="4">
+        <label>wx/radiobox.h</label>
+      </node>
+      <node id="5">
+        <label>wx/sizer.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>cppMD01App.cpp</label>
+        <link refid="cpp_m_d01_app_8cpp"/>
+      </node>
+      <node id="2">
+        <label>cppMD01Main.cpp</label>
+        <link refid="cpp_m_d01_main_8cpp"/>
+      </node>
+      <node id="3">
+        <label>cppMD01Main.h</label>
+        <link refid="cpp_m_d01_main_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dlgXqt2.cpp</label>
+        <link refid="dlg_xqt2_8cpp"/>
+      </node>
+      <node id="1">
+        <label>dlgXqt2.h</label>
+        <link refid="dlg_xqt2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdlg_xqt2" prot="public">dlgXqt2</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DLGXQT2_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DLGXQT2_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//(*Headers(dlgXqt2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/button.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/dialog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/radiobox.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/sizer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classdlg_xqt2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdlg_xqt2" kindref="compound">dlgXqt2</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>wxDialog</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a" kindref="member">dlgXqt2</ref>(wxWindow*<sp/>parent,wxWindowID<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">=wxID_ANY,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxPoint&amp;<sp/>pos=wxDefaultPosition,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxSize&amp;<sp/>size=wxDefaultSize);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771" kindref="member">~dlgXqt2</ref>();</highlight></codeline>
+<codeline lineno="17" refid="classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e" kindref="member">isel</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Declarations(dlgXqt2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>wxButton*<sp/><ref refid="classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754" kindref="member">butCancel</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>wxRadioBox*<sp/><ref refid="classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc" kindref="member">rbtRadBut</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Identifiers(dlgXqt2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b" kindref="member">ID_RADIOBOX1</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6" kindref="member">ID_BUTTON1</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Handlers(dlgXqt2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>DECLARE_EVENT_TABLE()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>OnbutCancelClick(wxCommandEvent&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnrbtRadButSelect(wxCommandEvent&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h"/>
+  </compounddef>
+</doxygen>

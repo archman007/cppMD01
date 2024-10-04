@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_curl_stuff_8cpp" xml:lang="en-US">
+<title>curlStuff.cpp File Reference</title>
+<indexterm><primary>curlStuff.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;curlStuff.h&quot;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;curl/curl.h&gt;<?linebreak?>#include &lt;fstream&gt;<?linebreak?>#include &lt;ios&gt;<?linebreak?>#include &lt;strstream&gt;<?linebreak?>#include &lt;sstream&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &lt;curl/easy.h&gt;<?linebreak?>#include &lt;boost/algorithm/string.hpp&gt;<?linebreak?>#include &lt;wx/clipbrd.h&gt;<?linebreak?>#include &lt;wx/msgdlg.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>CURLcode <link linkend="_curl_stuff_8cpp_1a1f65d4f0784c610d8608d3cadd578b89">curl_read</link> (const std::string &amp;url, std::ostream &amp;os, long timeout=30)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_curl_stuff_8cpp_1a1f65d4f0784c610d8608d3cadd578b89"/><section>
+    <title>curl_read()</title>
+<indexterm><primary>curl_read</primary><secondary>curlStuff.cpp</secondary></indexterm>
+<indexterm><primary>curlStuff.cpp</primary><secondary>curl_read</secondary></indexterm>
+<para><computeroutput>CURLcode curl_read (const std::string &amp; url, std::ostream &amp; os, long timeout = <computeroutput>30</computeroutput>
+)</computeroutput></para><para>
+Definition at line <link linkend="_curl_stuff_8cpp_source_1l00041">41</link> of file <link linkend="_curl_stuff_8cpp_source">curlStuff.cpp</link>.</para>
+</section>
+</section>
+</section>

@@ -3,48 +3,171 @@
 <title>dlgNewCat Class Reference</title>
 <indexterm><primary>dlgNewCat</primary></indexterm>
 <para>
-Inherits wxDialog.</para>
+<computeroutput>#include &lt;dlgNewCat.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for dlgNewCat:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_new_cat.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1aa8a5d5f7849999cf762a1b600e323023"/><emphasis role="strong">dlgNewCat</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+            <listitem><para><link linkend="_classdlg_new_cat_1aa8a5d5f7849999cf762a1b600e323023">dlgNewCat</link> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classdlg_new_cat_1ad8100c6bd2a7534dcf6846fb715f24f4">~dlgNewCat</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1a5ea5e00067bdb27be22edc6b0a2e8b82"/>wxButton * <emphasis role="strong">btnCancel</emphasis></para>
+            <listitem><para>wxButton * <link linkend="_classdlg_new_cat_1a5ea5e00067bdb27be22edc6b0a2e8b82">btnCancel</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1a42a122335d4c950c54b7b4e986ad1ed1"/>wxButton * <emphasis role="strong">btnInsert</emphasis></para>
+            <listitem><para>wxButton * <link linkend="_classdlg_new_cat_1a42a122335d4c950c54b7b4e986ad1ed1">btnInsert</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1a7741b567a7ca622c4a134cefd247bf7f"/>wxStaticText * <emphasis role="strong">lblCat</emphasis></para>
+            <listitem><para>wxStaticText * <link linkend="_classdlg_new_cat_1a7741b567a7ca622c4a134cefd247bf7f">lblCat</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1a01cc0201cf630de20de80f1ea0c89cf1"/>wxStaticText * <emphasis role="strong">lblMemo</emphasis></para>
+            <listitem><para>wxStaticText * <link linkend="_classdlg_new_cat_1a01cc0201cf630de20de80f1ea0c89cf1">lblMemo</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1a72cdf033c6e09d036dae14dc92135751"/>wxTextCtrl * <emphasis role="strong">edtCat</emphasis></para>
+            <listitem><para>wxTextCtrl * <link linkend="_classdlg_new_cat_1a72cdf033c6e09d036dae14dc92135751">edtCat</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1a242de8d9dcd75d20a533b82f99b2335a"/>wxTextCtrl * <emphasis role="strong">edtMemo</emphasis></para>
+            <listitem><para>wxTextCtrl * <link linkend="_classdlg_new_cat_1a242de8d9dcd75d20a533b82f99b2335a">edtMemo</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Static Protected Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1ad2ea1532e4f6aeffa433cb227ced37ec"/>static const long <emphasis role="strong">ID_STATICTEXT1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_cat_1ad2ea1532e4f6aeffa433cb227ced37ec">ID_STATICTEXT1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1a2ff3acd7a996429b9fb450af680d9099"/>static const long <emphasis role="strong">ID_TEXTCTRL1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_cat_1a2ff3acd7a996429b9fb450af680d9099">ID_TEXTCTRL1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1af7e04eee4e6bf7cc73d2293580ee7e29"/>static const long <emphasis role="strong">ID_STATICTEXT2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_cat_1af7e04eee4e6bf7cc73d2293580ee7e29">ID_STATICTEXT2</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1a06638814dcd385731b976af931039dc1"/>static const long <emphasis role="strong">ID_TEXTCTRL2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_cat_1a06638814dcd385731b976af931039dc1">ID_TEXTCTRL2</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1ac88712ad76d3432970a6e2865292b513"/>static const long <emphasis role="strong">ID_BUTTON1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_cat_1ac88712ad76d3432970a6e2865292b513">ID_BUTTON1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_cat_1a1f95147a48f86fd9321e0d78cf2d0ed2"/>static const long <emphasis role="strong">ID_BUTTON2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_cat_1a1f95147a48f86fd9321e0d78cf2d0ed2">ID_BUTTON2</link> = wxNewId()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00012">12</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdlg_new_cat_1aa8a5d5f7849999cf762a1b600e323023"/><section>
+    <title>dlgNewCat()</title>
+<indexterm><primary>dlgNewCat</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>dlgNewCat</secondary></indexterm>
+<para><computeroutput>dlgNewCat::dlgNewCat (wxWindow * parent, wxWindowID id = <computeroutput>wxID_ANY</computeroutput>
+, const wxPoint &amp; pos = <computeroutput>wxDefaultPosition</computeroutput>
+, const wxSize &amp; size = <computeroutput>wxDefaultSize</computeroutput>
+)</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8cpp_source_1l00025">25</link> of file <link linkend="_dlg_new_cat_8cpp_source">dlgNewCat.cpp</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1ad8100c6bd2a7534dcf6846fb715f24f4"/><section>
+    <title>~dlgNewCat()</title>
+<indexterm><primary>~dlgNewCat</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>~dlgNewCat</secondary></indexterm>
+<para><computeroutput>dlgNewCat::~dlgNewCat ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8cpp_source_1l00064">64</link> of file <link linkend="_dlg_new_cat_8cpp_source">dlgNewCat.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdlg_new_cat_1a5ea5e00067bdb27be22edc6b0a2e8b82"/><section>
+    <title>btnCancel</title>
+<indexterm><primary>btnCancel</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>btnCancel</secondary></indexterm>
+<para><computeroutput>wxButton* dlgNewCat::btnCancel</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00020">20</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1a42a122335d4c950c54b7b4e986ad1ed1"/><section>
+    <title>btnInsert</title>
+<indexterm><primary>btnInsert</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>btnInsert</secondary></indexterm>
+<para><computeroutput>wxButton* dlgNewCat::btnInsert</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00021">21</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1a72cdf033c6e09d036dae14dc92135751"/><section>
+    <title>edtCat</title>
+<indexterm><primary>edtCat</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>edtCat</secondary></indexterm>
+<para><computeroutput>wxTextCtrl* dlgNewCat::edtCat</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00024">24</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1a242de8d9dcd75d20a533b82f99b2335a"/><section>
+    <title>edtMemo</title>
+<indexterm><primary>edtMemo</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>edtMemo</secondary></indexterm>
+<para><computeroutput>wxTextCtrl* dlgNewCat::edtMemo</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00025">25</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1ac88712ad76d3432970a6e2865292b513"/><section>
+    <title>ID_BUTTON1</title>
+<indexterm><primary>ID_BUTTON1</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>ID_BUTTON1</secondary></indexterm>
+<para><computeroutput>const long dlgNewCat::ID_BUTTON1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00035">35</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1a1f95147a48f86fd9321e0d78cf2d0ed2"/><section>
+    <title>ID_BUTTON2</title>
+<indexterm><primary>ID_BUTTON2</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>ID_BUTTON2</secondary></indexterm>
+<para><computeroutput>const long dlgNewCat::ID_BUTTON2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00036">36</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1ad2ea1532e4f6aeffa433cb227ced37ec"/><section>
+    <title>ID_STATICTEXT1</title>
+<indexterm><primary>ID_STATICTEXT1</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>ID_STATICTEXT1</secondary></indexterm>
+<para><computeroutput>const long dlgNewCat::ID_STATICTEXT1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00031">31</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1af7e04eee4e6bf7cc73d2293580ee7e29"/><section>
+    <title>ID_STATICTEXT2</title>
+<indexterm><primary>ID_STATICTEXT2</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>ID_STATICTEXT2</secondary></indexterm>
+<para><computeroutput>const long dlgNewCat::ID_STATICTEXT2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00033">33</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1a2ff3acd7a996429b9fb450af680d9099"/><section>
+    <title>ID_TEXTCTRL1</title>
+<indexterm><primary>ID_TEXTCTRL1</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>ID_TEXTCTRL1</secondary></indexterm>
+<para><computeroutput>const long dlgNewCat::ID_TEXTCTRL1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00032">32</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1a06638814dcd385731b976af931039dc1"/><section>
+    <title>ID_TEXTCTRL2</title>
+<indexterm><primary>ID_TEXTCTRL2</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>ID_TEXTCTRL2</secondary></indexterm>
+<para><computeroutput>const long dlgNewCat::ID_TEXTCTRL2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00034">34</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1a7741b567a7ca622c4a134cefd247bf7f"/><section>
+    <title>lblCat</title>
+<indexterm><primary>lblCat</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>lblCat</secondary></indexterm>
+<para><computeroutput>wxStaticText* dlgNewCat::lblCat</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00022">22</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_cat_1a01cc0201cf630de20de80f1ea0c89cf1"/><section>
+    <title>lblMemo</title>
+<indexterm><primary>lblMemo</primary><secondary>dlgNewCat</secondary></indexterm>
+<indexterm><primary>dlgNewCat</primary><secondary>lblMemo</secondary></indexterm>
+<para><computeroutput>wxStaticText* dlgNewCat::lblMemo</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_cat_8h_source_1l00023">23</link> of file <link linkend="_dlg_new_cat_8h_source">dlgNewCat.h</link>.</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
-dlgNewCat.hdlgNewCat.cpp</section>
+<link linkend="_dlg_new_cat_8h">dlgNewCat.h</link><link linkend="_dlg_new_cat_8cpp">dlgNewCat.cpp</link></section>
+</section>

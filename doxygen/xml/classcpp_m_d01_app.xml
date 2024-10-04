@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcpp_m_d01_app" kind="class" language="C++" prot="public">
+    <compoundname>cppMD01App</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">wxApp</basecompoundref>
+    <includes refid="cpp_m_d01_app_8h" local="no">cppMD01App.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool cppMD01App::OnInit</definition>
+        <argsstring>()</argsstring>
+        <name>OnInit</name>
+        <qualifiedname>cppMD01App::OnInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01App.h" line="18" column="22" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01App.cpp" bodystart="22" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cppMD01App</label>
+        <link refid="classcpp_m_d01_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxApp</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cppMD01App</label>
+        <link refid="classcpp_m_d01_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxApp</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01App.h" line="15" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01App.h" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e" prot="public" virt="virtual"><scope>cppMD01App</scope><name>OnInit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

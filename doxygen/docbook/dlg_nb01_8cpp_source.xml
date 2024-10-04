@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_nb01_8cpp_source" xml:lang="en-US">
+<title>dlgNb01.cpp</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_dlg_nb01_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_dlg_nb01_8h">dlgNb01.h</link>&quot;</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_z_d_b01_8h">zDB01.h</link>&quot;</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00003"/>00003 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00004"/><link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">00004</link> <link linkend="_classz_d_b01">zDB01</link>&#32;<link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">rdb</link>;
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00005"/>00005 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00006"/>00006 <emphasis role="comment">//(*InternalHeaders(dlgNb01)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;wx/intl.h&gt;</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;wx/string.h&gt;</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00009"/>00009 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00010"/>00010 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00011"/>00011 <emphasis role="comment">//(*IdInit(dlgNb01)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00012"/>00012 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1a087639f2f189964da81412b3adb82b38">dlgNb01::ID_LISTBOX1</link>&#32;=&#32;wxNewId();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00013"/>00013 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1ad27b25cedb8054749c1089ce5cac2e82">dlgNb01::ID_PANEL1</link>&#32;=&#32;wxNewId();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00014"/>00014 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1af8539a8de173be5c3f8aac34d3cc3613">dlgNb01::ID_LISTBOX2</link>&#32;=&#32;wxNewId();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00015"/>00015 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1a1ff3066230a343f8b2e1da507d200581">dlgNb01::ID_PANEL2</link>&#32;=&#32;wxNewId();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00016"/>00016 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1a2f89e54374be753ba3c7379d8122ce73">dlgNb01::ID_NOTEBOOK1</link>&#32;=&#32;wxNewId();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00017"/>00017 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00018"/>00018 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00019"/>00019 BEGIN_EVENT_TABLE(<link linkend="_classdlg_nb01">dlgNb01</link>,wxDialog)
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*EventTable(dlgNb01)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00022"/>00022 END_EVENT_TABLE()
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00023"/>00023 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00024"/><link linkend="_classdlg_nb01_1a2e977dbfcc9d7fed5f06c9071d0d9e07">00024</link> <link linkend="_classdlg_nb01">dlgNb01</link>::<link linkend="_classdlg_nb01">dlgNb01</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>,const&#32;wxPoint&amp;&#32;pos,const&#32;wxSize&amp;&#32;size)
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00025"/>00025 {
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Initialize(dlgNb01)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;wxBoxSizer*&#32;BoxSizer1;
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;wxBoxSizer*&#32;BoxSizer2;
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;wxBoxSizer*&#32;BoxSizer3;
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;wxBoxSizer*&#32;BoxSizer4;
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;wxBoxSizer*&#32;BoxSizer5;
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00032"/>00032 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;Create(parent,&#32;<emphasis role="keywordtype">id</emphasis>,&#32;_(<emphasis role="stringliteral">&quot;Favorite&#32;Links&#32;App&quot;</emphasis>),&#32;wxDefaultPosition,&#32;wxDefaultSize,&#32;wxDEFAULT_DIALOG_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER,&#32;_T(<emphasis role="stringliteral">&quot;id&quot;</emphasis>));
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;SetClientSize(wxSize(365,250));
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;Move(wxDefaultPosition);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;BoxSizer1&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxBoxSizer(wxHORIZONTAL);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00037"/>00037 &#32;&#32;&#32;&#32;BoxSizer2&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxBoxSizer(wxHORIZONTAL);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;BoxSizer3&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxBoxSizer(wxHORIZONTAL);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;nbk01&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxNotebook(<emphasis role="keyword">this</emphasis>,&#32;ID_NOTEBOOK1,&#32;wxDefaultPosition,&#32;wxSize(232,142),&#32;wxNB_BOTTOM,&#32;_T(<emphasis role="stringliteral">&quot;ID_NOTEBOOK1&quot;</emphasis>));
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;Panel1&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxPanel(nbk01,&#32;ID_PANEL1,&#32;wxDefaultPosition,&#32;wxDefaultSize,&#32;wxTAB_TRAVERSAL,&#32;_T(<emphasis role="stringliteral">&quot;ID_PANEL1&quot;</emphasis>));
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;BoxSizer4&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxBoxSizer(wxVERTICAL);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;lbxCats&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxListBox(Panel1,&#32;ID_LISTBOX1,&#32;wxDefaultPosition,&#32;wxDefaultSize,&#32;0,&#32;0,&#32;0,&#32;wxDefaultValidator,&#32;_T(<emphasis role="stringliteral">&quot;ID_LISTBOX1&quot;</emphasis>));
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;BoxSizer4-&gt;Add(lbxCats,&#32;1,&#32;wxALL|wxEXPAND,&#32;5);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;Panel1-&gt;SetSizer(BoxSizer4);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;BoxSizer4-&gt;Fit(Panel1);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;BoxSizer4-&gt;SetSizeHints(Panel1);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;Panel2&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxPanel(nbk01,&#32;ID_PANEL2,&#32;wxDefaultPosition,&#32;wxDefaultSize,&#32;wxTAB_TRAVERSAL,&#32;_T(<emphasis role="stringliteral">&quot;ID_PANEL2&quot;</emphasis>));
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;BoxSizer5&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxBoxSizer(wxVERTICAL);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;lbxLinks&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxListBox(Panel2,&#32;ID_LISTBOX2,&#32;wxDefaultPosition,&#32;wxSize(340,180),&#32;0,&#32;0,&#32;0,&#32;wxDefaultValidator,&#32;_T(<emphasis role="stringliteral">&quot;ID_LISTBOX2&quot;</emphasis>));
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;BoxSizer5-&gt;Add(lbxLinks,&#32;1,&#32;wxALL|wxEXPAND,&#32;5);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;Panel2-&gt;SetSizer(BoxSizer5);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;BoxSizer5-&gt;Fit(Panel2);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;BoxSizer5-&gt;SetSizeHints(Panel2);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;nbk01-&gt;AddPage(Panel1,&#32;_(<emphasis role="stringliteral">&quot;Categories&quot;</emphasis>),&#32;<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;nbk01-&gt;AddPage(Panel2,&#32;_(<emphasis role="stringliteral">&quot;Links&quot;</emphasis>),&#32;<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;BoxSizer3-&gt;Add(nbk01,&#32;1,&#32;wxALL|wxEXPAND,&#32;5);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00057"/>00057 &#32;&#32;&#32;&#32;BoxSizer2-&gt;Add(BoxSizer3,&#32;1,&#32;wxALL|wxEXPAND,&#32;5);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;BoxSizer1-&gt;Add(BoxSizer2,&#32;1,&#32;wxALL|wxEXPAND,&#32;5);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;SetSizer(BoxSizer1);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;SetSizer(BoxSizer1);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;Layout();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00062"/>00062 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;Connect(ID_LISTBOX1,wxEVT_COMMAND_LISTBOX_SELECTED,(wxObjectEventFunction)&amp;dlgNb01::OnlbxCatsSelect);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;Connect(ID_LISTBOX1,wxEVT_COMMAND_LISTBOX_DOUBLECLICKED,(wxObjectEventFunction)&amp;dlgNb01::OnlbxCatsDClick);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;Connect(ID_LISTBOX2,wxEVT_COMMAND_LISTBOX_DOUBLECLICKED,(wxObjectEventFunction)&amp;dlgNb01::OnlbxLinksDClick);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00067"/>00067 }
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00068"/>00068 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00069"/><link linkend="_classdlg_nb01_1a903a9f01411d3f6a4b7128d033590ce9">00069</link> <link linkend="_classdlg_nb01_1a903a9f01411d3f6a4b7128d033590ce9">dlgNb01::~dlgNb01</link>()
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00070"/>00070 {
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Destroy(dlgNb01)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00072"/>00072 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00073"/>00073 }
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00074"/>00074 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00075"/>00075 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00076"/>00076 <emphasis role="keywordtype">void</emphasis>&#32;dlgNb01::OnlbxCatsSelect(wxCommandEvent&amp;&#32;event)
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00077"/>00077 {
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00078"/>00078 }
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00079"/>00079 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00080"/>00080 <emphasis role="keywordtype">void</emphasis>&#32;dlgNb01::OnlbxCatsDClick(wxCommandEvent&amp;&#32;event)
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00081"/>00081 {
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00082"/>00082 &#32;&#32;&#32;&#32;std::string&#32;zcat&#32;=&#32;<emphasis role="keyword">event</emphasis>.GetString().ToStdString();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00083"/>00083 &#32;&#32;&#32;&#32;<link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">rdb</link>.<link linkend="_classz_d_b01_1a7aa35b4aa20a0499f65e9639f200934b">listLinks</link>(std::stoi(zcat.substr(0,&#32;zcat.find(<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>))),&#32;<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00084"/>00084 &#32;&#32;&#32;&#32;<link linkend="_classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3">lbxLinks</link>-&gt;Clear();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;<link linkend="_classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3">lbxLinks</link>-&gt;InsertItems(<link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">rdb</link>.<link linkend="_classz_d_b01_1af6b00e90f013093795a9c047f785cf6b">lk2</link>,&#32;0);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00086"/>00086 &#32;&#32;&#32;&#32;<link linkend="_classdlg_nb01_1ae84963ba986c733626d3e40b540ec77d">nbk01</link>-&gt;SetSelection(1);
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00087"/>00087 }
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00088"/>00088 
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00089"/>00089 <emphasis role="keywordtype">void</emphasis>&#32;dlgNb01::OnlbxLinksDClick(wxCommandEvent&amp;&#32;event)
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00090"/>00090 {
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;std::string&#32;zcat&#32;=&#32;<emphasis role="keyword">event</emphasis>.GetString().ToStdString();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00092"/>00092 <emphasis role="comment">//&#32;&#32;&#32;&#32;rdb.listLinks(std::stoi(zcat.substr(0,&#32;zcat.find(&quot;&#32;&quot;))));</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00093"/>00093 std::string&#32;cmd&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00094"/>00094 &#32;&#32;&#32;&#32;<link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">rdb</link>.<link linkend="_classz_d_b01_1a72e76c77a68e9ba700b6629cb84a37eb">getLink</link>(std::stoi(zcat.substr(0,&#32;zcat.find(<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>))));
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00095"/>00095 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">rdb</link>.<link linkend="_classz_d_b01_1a6cc13eda72223694fa7d7487e2068c1c">lk3</link>[0].ToStdString().find(<emphasis role="stringliteral">&quot;http&quot;</emphasis>)&#32;&lt;&#32;<link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">rdb</link>.<link linkend="_classz_d_b01_1a6cc13eda72223694fa7d7487e2068c1c">lk3</link>[0].length())
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00096"/>00096 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cmd&#32;=&#32;<emphasis role="stringliteral">&quot;/usr/lib/ghostery/Ghostery&#32;&quot;</emphasis>&#32;+&#32;<link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">rdb</link>.<link linkend="_classz_d_b01_1a6cc13eda72223694fa7d7487e2068c1c">lk3</link>[0].ToStdString();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00098"/>00098 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00099"/>00099 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00100"/>00100 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cmd&#32;=&#32;<link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">rdb</link>.<link linkend="_classz_d_b01_1a6cc13eda72223694fa7d7487e2068c1c">lk3</link>[0].ToStdString();
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00102"/>00102 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00103"/>00103 &#32;&#32;&#32;&#32;system(cmd.c_str());
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00104"/>00104 &#32;&#32;&#32;&#32;cmd&#32;=&#32;cmd;
+<anchor xml:id="_dlg_nb01_8cpp_source_1l00105"/>00105 }
+</programlisting></section>

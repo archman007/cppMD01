@@ -1,0 +1,13 @@
+<map id="dlgNewLink::dlgNewLink" name="dlgNewLink::dlgNewLink">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,187,85"/>
+<area shape="rect" id="Node000002" href="$classcurl_stuff.html#a95d3ef871d4c6eeb2c9097eaf2ab738f" title=" " alt="" coords="235,31,360,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,57,219,52,219,57,187,62"/>
+<area shape="rect" id="Node000006" href="$classz_d_b01.html#a67de54d203950ceac22ab3a9d0f0c358" title=" " alt="" coords="236,83,359,110"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="187,80,221,84,220,89,186,85"/>
+<area shape="rect" id="Node000003" href="$classcurl_stuff.html#a766a52cfa30136e004f9ee76e2eced5f" title=" " alt="" coords="414,5,544,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="360,33,398,28,399,33,361,38"/>
+<area shape="rect" id="Node000004" href="$classcurl_stuff.html#afc2fdfde6fa1450a1184f20ab9cf35f7" title=" " alt="" coords="408,57,550,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="361,51,393,56,392,61,360,56"/>
+<area shape="rect" id="Node000005" href="$curl_stuff_8cpp.html#a1f65d4f0784c610d8608d3cadd578b89" title=" " alt="" coords="598,57,680,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="551,68,583,68,583,74,551,74"/>
+</map>

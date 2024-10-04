@@ -3,14 +3,38 @@
 <title>cppMD01App Class Reference</title>
 <indexterm><primary>cppMD01App</primary></indexterm>
 <para>
-Inherits wxApp.</para>
+<computeroutput>#include &lt;cppMD01App.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for cppMD01App:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcpp_m_d01_app.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e"/>virtual bool <emphasis role="strong">OnInit</emphasis> ()</para>
+            <listitem><para>virtual bool <link linkend="_classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e">OnInit</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_cpp_m_d01_app_8h_source_1l00015">15</link> of file <link linkend="_cpp_m_d01_app_8h_source">cppMD01App.h</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e"/><section>
+    <title>OnInit()</title>
+<indexterm><primary>OnInit</primary><secondary>cppMD01App</secondary></indexterm>
+<indexterm><primary>cppMD01App</primary><secondary>OnInit</secondary></indexterm>
+<para><computeroutput>bool cppMD01App::OnInit ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_app_8cpp_source_1l00022">22</link> of file <link linkend="_cpp_m_d01_app_8cpp_source">cppMD01App.cpp</link>.</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
-cppMD01App.hcppMD01App.cpp</section>
+<link linkend="_cpp_m_d01_app_8h">cppMD01App.h</link><link linkend="_cpp_m_d01_app_8cpp">cppMD01App.cpp</link></section>
+</section>

@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdlg_sel_d_b" kind="class" language="C++" prot="public">
+    <compoundname>dlgSelDB</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">wxDialog</basecompoundref>
+    <includes refid="dlg_sel_d_b_8h" local="no">dlgSelDB.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_sel_d_b_1a3bcd06b1aae166af31738748ea3e01a6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string dlgSelDB::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <qualifiedname>dlgSelDB::buf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" line="17" column="13" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3" prot="public" static="no" mutable="no">
+        <type>wxListBox *</type>
+        <definition>wxListBox* dlgSelDB::lbxDbNames</definition>
+        <argsstring></argsstring>
+        <name>lbxDbNames</name>
+        <qualifiedname>dlgSelDB::lbxDbNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" line="20" column="11" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classz_d_b01_1a8fc1dd0718bd56f24a5394ef542d88d1" compoundref="z_d_b01_8cpp" startline="255" endline="265">zDB01::selDB</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classdlg_sel_d_b_1ae4011d221c694e4b117e036760d3919c" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgSelDB::ID_LISTBOX1</definition>
+        <argsstring></argsstring>
+        <name>ID_LISTBOX1</name>
+        <qualifiedname>dlgSelDB::ID_LISTBOX1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" line="26" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_sel_d_b_1a7043b46c8c53958b34a60049165e9193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dlgSelDB::dlgSelDB</definition>
+        <argsstring>(wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</argsstring>
+        <name>dlgSelDB</name>
+        <qualifiedname>dlgSelDB::dlgSelDB</qualifiedname>
+        <param>
+          <type>wxWindow *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>wxWindowID</type>
+          <declname>id</declname>
+          <defval>wxID_ANY</defval>
+        </param>
+        <param>
+          <type>const wxPoint &amp;</type>
+          <declname>pos</declname>
+          <defval>wxDefaultPosition</defval>
+        </param>
+        <param>
+          <type>const wxSize &amp;</type>
+          <declname>size</declname>
+          <defval>wxDefaultSize</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" line="14" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.cpp" bodystart="19" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_sel_d_b_1ad0f5ed2099d095c0203d17262fcb3a8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>dlgSelDB::~dlgSelDB</definition>
+        <argsstring>()</argsstring>
+        <name>~dlgSelDB</name>
+        <qualifiedname>dlgSelDB::~dlgSelDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" line="15" column="9" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.cpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_sel_d_b_1a40cf8554d21bd8d9173c694a8c869125" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dlgSelDB::OnlbxDbNamesDClick</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnlbxDbNamesDClick</name>
+        <qualifiedname>dlgSelDB::OnlbxDbNamesDClick</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" line="32" column="6" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.cpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dlgSelDB</label>
+        <link refid="classdlg_sel_d_b"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dlgSelDB</label>
+        <link refid="classdlg_sel_d_b"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" line="10" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h" bodystart="11" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classdlg_sel_d_b_1a3bcd06b1aae166af31738748ea3e01a6" prot="public" virt="non-virtual"><scope>dlgSelDB</scope><name>buf</name></member>
+      <member refid="classdlg_sel_d_b_1a7043b46c8c53958b34a60049165e9193" prot="public" virt="non-virtual"><scope>dlgSelDB</scope><name>dlgSelDB</name></member>
+      <member refid="classdlg_sel_d_b_1ae4011d221c694e4b117e036760d3919c" prot="protected" virt="non-virtual"><scope>dlgSelDB</scope><name>ID_LISTBOX1</name></member>
+      <member refid="classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3" prot="public" virt="non-virtual"><scope>dlgSelDB</scope><name>lbxDbNames</name></member>
+      <member refid="classdlg_sel_d_b_1a40cf8554d21bd8d9173c694a8c869125" prot="private" virt="non-virtual"><scope>dlgSelDB</scope><name>OnlbxDbNamesDClick</name></member>
+      <member refid="classdlg_sel_d_b_1ad0f5ed2099d095c0203d17262fcb3a8d" prot="public" virt="virtual"><scope>dlgSelDB</scope><name>~dlgSelDB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

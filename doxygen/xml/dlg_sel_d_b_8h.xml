@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dlg_sel_d_b_8h" kind="file" language="C++">
+    <compoundname>dlgSelDB.h</compoundname>
+    <includes local="no">wx/dialog.h</includes>
+    <includes local="no">wx/listbox.h</includes>
+    <includes local="no">wx/sizer.h</includes>
+    <includedby refid="cpp_m_d01_main_8cpp" local="yes">cppMD01Main.cpp</includedby>
+    <includedby refid="dlg_sel_d_b_8cpp" local="yes">dlgSelDB.cpp</includedby>
+    <includedby refid="z_d_b01_8cpp" local="yes">zDB01.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>dlgSelDB.h</label>
+        <link refid="dlg_sel_d_b_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wx/dialog.h</label>
+      </node>
+      <node id="3">
+        <label>wx/listbox.h</label>
+      </node>
+      <node id="4">
+        <label>wx/sizer.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>cppMD01Main.cpp</label>
+        <link refid="cpp_m_d01_main_8cpp"/>
+      </node>
+      <node id="3">
+        <label>dlgSelDB.cpp</label>
+        <link refid="dlg_sel_d_b_8cpp"/>
+      </node>
+      <node id="1">
+        <label>dlgSelDB.h</label>
+        <link refid="dlg_sel_d_b_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>zDB01.cpp</label>
+        <link refid="z_d_b01_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdlg_sel_d_b" prot="public">dlgSelDB</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DLGSELDB_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DLGSELDB_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//(*Headers(dlgSelDB)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/dialog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/listbox.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/sizer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classdlg_sel_d_b" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdlg_sel_d_b" kindref="compound">dlgSelDB</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>wxDialog</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdlg_sel_d_b_1a7043b46c8c53958b34a60049165e9193" kindref="member">dlgSelDB</ref>(wxWindow*<sp/>parent,wxWindowID<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">=wxID_ANY,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxPoint&amp;<sp/>pos=wxDefaultPosition,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxSize&amp;<sp/>size=wxDefaultSize);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classdlg_sel_d_b_1ad0f5ed2099d095c0203d17262fcb3a8d" kindref="member">~dlgSelDB</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxString<sp/>db;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classdlg_sel_d_b_1a3bcd06b1aae166af31738748ea3e01a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classdlg_sel_d_b_1a3bcd06b1aae166af31738748ea3e01a6" kindref="member">buf</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Declarations(dlgSelDB)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxListBox*<sp/><ref refid="classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3" kindref="member">lbxDbNames</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Identifiers(dlgSelDB)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classdlg_sel_d_b_1ae4011d221c694e4b117e036760d3919c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_sel_d_b_1ae4011d221c694e4b117e036760d3919c" kindref="member">ID_LISTBOX1</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Handlers(dlgSelDB)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnlbxDbNamesDClick(wxCommandEvent&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DECLARE_EVENT_TABLE()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgSelDB.h"/>
+  </compounddef>
+</doxygen>

@@ -1,53 +1,53 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_new_cat_8h_source" xml:lang="en-US">
 <title>dlgNewCat.h</title>
-<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;DLGNEWCAT_H</emphasis>
-2 <emphasis role="preprocessor">#define&#32;DLGNEWCAT_H</emphasis>
-3 
-4 <emphasis role="comment">//(*Headers(dlgNewCat)</emphasis>
-5 <emphasis role="preprocessor">#include&#32;&lt;wx/button.h&gt;</emphasis>
-6 <emphasis role="preprocessor">#include&#32;&lt;wx/dialog.h&gt;</emphasis>
-7 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
-8 <emphasis role="preprocessor">#include&#32;&lt;wx/stattext.h&gt;</emphasis>
-9 <emphasis role="preprocessor">#include&#32;&lt;wx/textctrl.h&gt;</emphasis>
-10 <emphasis role="comment">//*)</emphasis>
-11 
-12 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classdlg_new_cat">dlgNewCat</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxDialog
-13 {
-14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
-15 
-16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdlg_new_cat">dlgNewCat</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>=wxID_ANY,<emphasis role="keyword">const</emphasis>&#32;wxPoint&amp;&#32;pos=wxDefaultPosition,<emphasis role="keyword">const</emphasis>&#32;wxSize&amp;&#32;size=wxDefaultSize);
-17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classdlg_new_cat">~dlgNewCat</link>();
-18 
-19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(dlgNewCat)</emphasis>
-20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxButton*&#32;btnCancel;
-21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxButton*&#32;btnInsert;
-22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxStaticText*&#32;lblCat;
-23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxStaticText*&#32;lblMemo;
-24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTextCtrl*&#32;edtCat;
-25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTextCtrl*&#32;edtMemo;
-26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-27 
-28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
-29 
-30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(dlgNewCat)</emphasis>
-31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT1;
-32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_TEXTCTRL1;
-33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT2;
-34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_TEXTCTRL2;
-35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_BUTTON1;
-36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_BUTTON2;
-37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-38 
-39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
-40 
-41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(dlgNewCat)</emphasis>
-42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnbtnInsertClick(wxCommandEvent&amp;&#32;event);
-43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnbtnCancelClick(wxCommandEvent&amp;&#32;event);
-44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-45 
-46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
-47 };
-48 
-49 <emphasis role="preprocessor">#endif</emphasis>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_dlg_new_cat_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;DLGNEWCAT_H</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;DLGNEWCAT_H</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00003"/>00003 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00004"/>00004 <emphasis role="comment">//(*Headers(dlgNewCat)</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;wx/button.h&gt;</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;wx/dialog.h&gt;</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;wx/stattext.h&gt;</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00009"/>00009 <emphasis role="preprocessor">#include&#32;&lt;wx/textctrl.h&gt;</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00010"/>00010 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00011"/>00011 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00012"/><link linkend="_classdlg_new_cat">00012</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classdlg_new_cat">dlgNewCat</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxDialog
+<anchor xml:id="_dlg_new_cat_8h_source_1l00013"/>00013 {
+<anchor xml:id="_dlg_new_cat_8h_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_dlg_new_cat_8h_source_1l00015"/>00015 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdlg_new_cat_1aa8a5d5f7849999cf762a1b600e323023">dlgNewCat</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>=wxID_ANY,<emphasis role="keyword">const</emphasis>&#32;wxPoint&amp;&#32;pos=wxDefaultPosition,<emphasis role="keyword">const</emphasis>&#32;wxSize&amp;&#32;size=wxDefaultSize);
+<anchor xml:id="_dlg_new_cat_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classdlg_new_cat_1ad8100c6bd2a7534dcf6846fb715f24f4">~dlgNewCat</link>();
+<anchor xml:id="_dlg_new_cat_8h_source_1l00018"/>00018 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(dlgNewCat)</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00020"/><link linkend="_classdlg_new_cat_1a5ea5e00067bdb27be22edc6b0a2e8b82">00020</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxButton*&#32;<link linkend="_classdlg_new_cat_1a5ea5e00067bdb27be22edc6b0a2e8b82">btnCancel</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00021"/><link linkend="_classdlg_new_cat_1a42a122335d4c950c54b7b4e986ad1ed1">00021</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxButton*&#32;<link linkend="_classdlg_new_cat_1a42a122335d4c950c54b7b4e986ad1ed1">btnInsert</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00022"/><link linkend="_classdlg_new_cat_1a7741b567a7ca622c4a134cefd247bf7f">00022</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxStaticText*&#32;<link linkend="_classdlg_new_cat_1a7741b567a7ca622c4a134cefd247bf7f">lblCat</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00023"/><link linkend="_classdlg_new_cat_1a01cc0201cf630de20de80f1ea0c89cf1">00023</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxStaticText*&#32;<link linkend="_classdlg_new_cat_1a01cc0201cf630de20de80f1ea0c89cf1">lblMemo</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00024"/><link linkend="_classdlg_new_cat_1a72cdf033c6e09d036dae14dc92135751">00024</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTextCtrl*&#32;<link linkend="_classdlg_new_cat_1a72cdf033c6e09d036dae14dc92135751">edtCat</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00025"/><link linkend="_classdlg_new_cat_1a242de8d9dcd75d20a533b82f99b2335a">00025</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTextCtrl*&#32;<link linkend="_classdlg_new_cat_1a242de8d9dcd75d20a533b82f99b2335a">edtMemo</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00027"/>00027 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="_dlg_new_cat_8h_source_1l00029"/>00029 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(dlgNewCat)</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00031"/><link linkend="_classdlg_new_cat_1ad2ea1532e4f6aeffa433cb227ced37ec">00031</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_new_cat_1ad2ea1532e4f6aeffa433cb227ced37ec">ID_STATICTEXT1</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00032"/><link linkend="_classdlg_new_cat_1a2ff3acd7a996429b9fb450af680d9099">00032</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_new_cat_1a2ff3acd7a996429b9fb450af680d9099">ID_TEXTCTRL1</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00033"/><link linkend="_classdlg_new_cat_1af7e04eee4e6bf7cc73d2293580ee7e29">00033</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_new_cat_1af7e04eee4e6bf7cc73d2293580ee7e29">ID_STATICTEXT2</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00034"/><link linkend="_classdlg_new_cat_1a06638814dcd385731b976af931039dc1">00034</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_new_cat_1a06638814dcd385731b976af931039dc1">ID_TEXTCTRL2</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00035"/><link linkend="_classdlg_new_cat_1ac88712ad76d3432970a6e2865292b513">00035</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_new_cat_1ac88712ad76d3432970a6e2865292b513">ID_BUTTON1</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00036"/><link linkend="_classdlg_new_cat_1a1f95147a48f86fd9321e0d78cf2d0ed2">00036</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_new_cat_1a1f95147a48f86fd9321e0d78cf2d0ed2">ID_BUTTON2</link>;
+<anchor xml:id="_dlg_new_cat_8h_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00038"/>00038 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_dlg_new_cat_8h_source_1l00040"/>00040 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(dlgNewCat)</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnbtnInsertClick(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_dlg_new_cat_8h_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnbtnCancelClick(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_dlg_new_cat_8h_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_new_cat_8h_source_1l00045"/>00045 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
+<anchor xml:id="_dlg_new_cat_8h_source_1l00047"/>00047 };
+<anchor xml:id="_dlg_new_cat_8h_source_1l00048"/>00048 
+<anchor xml:id="_dlg_new_cat_8h_source_1l00049"/>00049 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

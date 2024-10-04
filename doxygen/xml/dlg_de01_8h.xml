@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dlg_de01_8h" kind="file" language="C++">
+    <compoundname>dlgDe01.h</compoundname>
+    <includes local="no">wx/dialog.h</includes>
+    <includes local="no">wx/sizer.h</includes>
+    <includes local="no">wx/stattext.h</includes>
+    <includes local="no">wx/textctrl.h</includes>
+    <includedby refid="dlg_de01_8cpp" local="yes">dlgDe01.cpp</includedby>
+    <includedby refid="z_d_b01_8cpp" local="yes">zDB01.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>dlgDe01.h</label>
+        <link refid="dlg_de01_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wx/dialog.h</label>
+      </node>
+      <node id="3">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="4">
+        <label>wx/stattext.h</label>
+      </node>
+      <node id="5">
+        <label>wx/textctrl.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>dlgDe01.cpp</label>
+        <link refid="dlg_de01_8cpp"/>
+      </node>
+      <node id="1">
+        <label>dlgDe01.h</label>
+        <link refid="dlg_de01_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>zDB01.cpp</label>
+        <link refid="z_d_b01_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classdlg_de01" prot="public">dlgDe01</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DLGDE01_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DLGDE01_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//(*Headers(dlgDe01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/dialog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/sizer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/stattext.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/textctrl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classdlg_de01" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdlg_de01" kindref="compound">dlgDe01</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>wxDialog</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdlg_de01_1a3e510af877eaa87b402243af703da297" kindref="member">dlgDe01</ref>(wxWindow*<sp/>parent,wxWindowID<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">=wxID_ANY,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxPoint&amp;<sp/>pos=wxDefaultPosition,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxSize&amp;<sp/>size=wxDefaultSize);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classdlg_de01_1a7fc4b075d66c6525bef504ea04ad775e" kindref="member">~dlgDe01</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Declarations(dlgDe01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classdlg_de01_1abaa789e136c59f00a36616ceaf4c8623" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxStaticText*<sp/><ref refid="classdlg_de01_1abaa789e136c59f00a36616ceaf4c8623" kindref="member">StaticText1</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classdlg_de01_1a26ef90226a5293ad736c3550067ec6d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxStaticText*<sp/><ref refid="classdlg_de01_1a26ef90226a5293ad736c3550067ec6d6" kindref="member">StaticText2</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classdlg_de01_1a61aa353a0243a41bcfff6c3ddfa225e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxTextCtrl*<sp/><ref refid="classdlg_de01_1a61aa353a0243a41bcfff6c3ddfa225e1" kindref="member">TextCtrl1</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classdlg_de01_1a1aff62e9592c0bbcec21161228817010" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxTextCtrl*<sp/><ref refid="classdlg_de01_1a1aff62e9592c0bbcec21161228817010" kindref="member">TextCtrl2</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Identifiers(dlgDe01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classdlg_de01_1a3caad11ce54001b9ec04932bb505fe57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_de01_1a3caad11ce54001b9ec04932bb505fe57" kindref="member">ID_STATICTEXT1</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classdlg_de01_1ac6ddea7e9abb3d618658bc631a7a268a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_de01_1ac6ddea7e9abb3d618658bc631a7a268a" kindref="member">ID_TEXTCTRL1</ref>;</highlight></codeline>
+<codeline lineno="30" refid="classdlg_de01_1ae896a2930ae8c3cf7f3516f368b4e325" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_de01_1ae896a2930ae8c3cf7f3516f368b4e325" kindref="member">ID_STATICTEXT2</ref>;</highlight></codeline>
+<codeline lineno="31" refid="classdlg_de01_1a03f60364aea276d36ed6bec75bef2bb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_de01_1a03f60364aea276d36ed6bec75bef2bb4" kindref="member">ID_TEXTCTRL2</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Handlers(dlgDe01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DECLARE_EVENT_TABLE()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgDe01.h"/>
+  </compounddef>
+</doxygen>

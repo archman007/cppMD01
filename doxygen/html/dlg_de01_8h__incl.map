@@ -1,0 +1,11 @@
+<map id="dlgDe01.h" name="dlgDe01.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="186,5,273,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,102,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,36,100,77,98,72,197,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="126,81,213,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,35,192,70,188,67,217,32"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="237,81,344,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="243,32,272,67,268,71,238,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="368,81,472,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="265,31,373,73,371,78,263,36"/>
+</map>

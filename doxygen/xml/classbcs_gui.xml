@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classbcs_gui" kind="class" language="C++" prot="public">
+    <compoundname>bcsGui</compoundname>
+    <includes refid="bcs_gui_8h" local="no">bcsGui.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbcs_gui_1afe8d8c9532f096c161ae33c7496db69c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bcsGui::bcsGui</definition>
+        <argsstring>()</argsstring>
+        <name>bcsGui</name>
+        <qualifiedname>bcsGui::bcsGui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.h" line="10" column="5" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classbcs_gui_1ac2e5dfa2156a34ff492953c144047231" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>bcsGui::~bcsGui</definition>
+        <argsstring>()</argsstring>
+        <name>~bcsGui</name>
+        <qualifiedname>bcsGui::~bcsGui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.h" line="11" column="13" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classbcs_gui_1ac8bd94493e962a832d2d47344d8afbd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string bcsGui::SelDir</definition>
+        <argsstring>(string initDir)</argsstring>
+        <name>SelDir</name>
+        <qualifiedname>bcsGui::SelDir</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>initDir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.h" line="12" column="17" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.cpp" bodystart="21" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classbcs_gui_1a9061e0d66ce7088bba30b98fa8061358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string bcsGui::GetText</definition>
+        <argsstring>(bool memo, string initVal, string prompt, string caption)</argsstring>
+        <name>GetText</name>
+        <qualifiedname>bcsGui::GetText</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>memo</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>initVal</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>prompt</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>caption</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.h" line="13" column="12" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.cpp" bodystart="35" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classbcs_gui_1a3fa5f9ce202e43b147ef9a166577fb31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bcsGui::yornQues</definition>
+        <argsstring>(string caption, string prompt)</argsstring>
+        <name>yornQues</name>
+        <qualifiedname>bcsGui::yornQues</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>caption</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>prompt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.h" line="14" column="9" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.cpp" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classbcs_gui_1ade5890d2dccda707cb21357609d2600f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string bcsGui::openFileDialog</definition>
+        <argsstring>(wxWindow *parent, const wxString &amp;message, const wxString &amp;defaultDir, const wxString &amp;defaultFile, const wxString &amp;wildcard, int flags)</argsstring>
+        <name>openFileDialog</name>
+        <qualifiedname>bcsGui::openFileDialog</qualifiedname>
+        <param>
+          <type>wxWindow *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const wxString &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const wxString &amp;</type>
+          <declname>defaultDir</declname>
+        </param>
+        <param>
+          <type>const wxString &amp;</type>
+          <declname>defaultFile</declname>
+        </param>
+        <param>
+          <type>const wxString &amp;</type>
+          <declname>wildcard</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.h" line="15" column="12" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.cpp" bodystart="81" bodyend="90"/>
+        <references refid="classbcs_gui_1ade5890d2dccda707cb21357609d2600f" compoundref="bcs_gui_8cpp" startline="81" endline="90">openFileDialog</references>
+        <referencedby refid="classbcs_gui_1ade5890d2dccda707cb21357609d2600f" compoundref="bcs_gui_8cpp" startline="81" endline="90">openFileDialog</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.h" line="7" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.h" bodystart="8" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classbcs_gui_1afe8d8c9532f096c161ae33c7496db69c" prot="public" virt="non-virtual"><scope>bcsGui</scope><name>bcsGui</name></member>
+      <member refid="classbcs_gui_1a9061e0d66ce7088bba30b98fa8061358" prot="public" virt="non-virtual"><scope>bcsGui</scope><name>GetText</name></member>
+      <member refid="classbcs_gui_1ade5890d2dccda707cb21357609d2600f" prot="public" virt="non-virtual"><scope>bcsGui</scope><name>openFileDialog</name></member>
+      <member refid="classbcs_gui_1ac8bd94493e962a832d2d47344d8afbd3" prot="public" virt="non-virtual"><scope>bcsGui</scope><name>SelDir</name></member>
+      <member refid="classbcs_gui_1a3fa5f9ce202e43b147ef9a166577fb31" prot="public" virt="non-virtual"><scope>bcsGui</scope><name>yornQues</name></member>
+      <member refid="classbcs_gui_1ac2e5dfa2156a34ff492953c144047231" prot="public" virt="virtual"><scope>bcsGui</scope><name>~bcsGui</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

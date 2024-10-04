@@ -1,51 +1,51 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_z_d_b01_8h_source" xml:lang="en-US">
 <title>zDB01.h</title>
-<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;ZDB01_H</emphasis>
-2 <emphasis role="preprocessor">#define&#32;ZDB01_H</emphasis>
-3 <emphasis role="preprocessor">#include&#32;&lt;mysql++.h&gt;</emphasis>
-4 <emphasis role="preprocessor">#include&#32;&lt;wx/arrstr.h&gt;</emphasis>
-5 <emphasis role="preprocessor">#include&#32;&lt;wx/textctrl.h&gt;</emphasis>
-6 <emphasis role="preprocessor">#include&#32;&lt;result.h&gt;</emphasis>
-7 
-8 
-9 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classz_d_b01">zDB01</link>
-10 {
-11 <emphasis role="keyword">public</emphasis>:
-12 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01">zDB01</link>();
-13 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classz_d_b01">~zDB01</link>();
-14 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;listDatabases();
-15 &#32;&#32;&#32;&#32;wxArrayString&#32;dbn,&#32;lk1,&#32;lk2,&#32;lk3;
-16 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;selDB();
-17 &#32;&#32;&#32;&#32;wxString&#32;db;
-18 &#32;&#32;&#32;&#32;std::string&#32;curDB;
-19 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;de01();
-20 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;initField(std::string&#32;inputValue,&#32;wxTextCtrl&#32;*&#32;field);
-21 &#32;&#32;&#32;&#32;std::string&#32;fieldToString(wxTextCtrl&#32;*&#32;field);
-22 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;nb01();
-23 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;listCategories(<emphasis role="keywordtype">bool</emphasis>&#32;idPrim);
-24 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;listLinks(<emphasis role="keywordtype">int</emphasis>&#32;curCat,&#32;<emphasis role="keywordtype">bool</emphasis>&#32;dRID);
-25 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;getLink(<emphasis role="keywordtype">int</emphasis>&#32;curCat);
-26 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;listLk1Lk2();
-27 &#32;&#32;&#32;&#32;mysqlpp::StoreQueryResult&#32;zres;
-28 <emphasis role="comment">//&#32;&#32;&#32;&#32;mysqlpp::StoreQueryResult&#32;ares;</emphasis>
-29 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;insertCat(std::string&#32;cat,&#32;std::string&#32;memo);
-30 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;insertLink(std::string&#32;idlk1,&#32;std::string&#32;lkn,&#32;std::string&#32;lnk,&#32;std::string&#32;ddes);
-31 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;DeleteLink(std::string&#32;delId);
-32 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;editLink(std::string&#32;delId,&#32;std::string&#32;idkl2,&#32;std::string&#32;ilk,&#32;std::string&#32;lnk,&#32;std::string&#32;ddes,&#32;std::string&#32;idlk1);
-33 &#32;&#32;&#32;&#32;std::string&#32;strIdlk1&#32;=&#32;<emphasis role="stringliteral">&quot;43&quot;</emphasis>;
-34 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;insertMode;
-35 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;editCat(std::string&#32;idlk1,&#32;std::string&#32;cat,&#32;std::string&#32;memo);
-36 &#32;&#32;&#32;&#32;std::string&#32;database&#32;=&#32;<emphasis role="stringliteral">&quot;bcswebtools&quot;</emphasis>;
-37 &#32;&#32;&#32;&#32;std::string&#32;server&#32;=&#32;<emphasis role="stringliteral">&quot;localhost&quot;</emphasis>;
-38 &#32;&#32;&#32;&#32;std::string&#32;user&#32;=&#32;<emphasis role="stringliteral">&quot;bcs&quot;</emphasis>;
-39 &#32;&#32;&#32;&#32;std::string&#32;password&#32;=&#32;<emphasis role="stringliteral">&quot;Peace007!amb&quot;</emphasis>;
-40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;getCat();
-41 
-42 <emphasis role="keyword">protected</emphasis>:
-43 
-44 <emphasis role="keyword">private</emphasis>:
-45 };
-46 
-47 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;ZDB01_H</emphasis>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_z_d_b01_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;ZDB01_H</emphasis>
+<anchor xml:id="_z_d_b01_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;ZDB01_H</emphasis>
+<anchor xml:id="_z_d_b01_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;mysql++.h&gt;</emphasis>
+<anchor xml:id="_z_d_b01_8h_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;wx/arrstr.h&gt;</emphasis>
+<anchor xml:id="_z_d_b01_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;wx/textctrl.h&gt;</emphasis>
+<anchor xml:id="_z_d_b01_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;result.h&gt;</emphasis>
+<anchor xml:id="_z_d_b01_8h_source_1l00007"/>00007 
+<anchor xml:id="_z_d_b01_8h_source_1l00008"/>00008 
+<anchor xml:id="_z_d_b01_8h_source_1l00009"/><link linkend="_classz_d_b01">00009</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classz_d_b01">zDB01</link>
+<anchor xml:id="_z_d_b01_8h_source_1l00010"/>00010 {
+<anchor xml:id="_z_d_b01_8h_source_1l00011"/>00011 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_z_d_b01_8h_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a979564aa089f5653373cd13e7abca2f7">zDB01</link>();
+<anchor xml:id="_z_d_b01_8h_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classz_d_b01_1a729b2faf01194220a3e92eeaeac65f9b">~zDB01</link>();
+<anchor xml:id="_z_d_b01_8h_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a7ba8bcf9488c63047e3220ac15b6e9c5">listDatabases</link>();
+<anchor xml:id="_z_d_b01_8h_source_1l00015"/><link linkend="_classz_d_b01_1a37aff332b1f8c1ad70f65e042386ae2f">00015</link> &#32;&#32;&#32;&#32;wxArrayString&#32;<link linkend="_classz_d_b01_1a37aff332b1f8c1ad70f65e042386ae2f">dbn</link>,&#32;<link linkend="_classz_d_b01_1a44d1fbd04846956b58bcc9b7130b8b5c">lk1</link>,&#32;<link linkend="_classz_d_b01_1af6b00e90f013093795a9c047f785cf6b">lk2</link>,&#32;<link linkend="_classz_d_b01_1a6cc13eda72223694fa7d7487e2068c1c">lk3</link>;
+<anchor xml:id="_z_d_b01_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a8fc1dd0718bd56f24a5394ef542d88d1">selDB</link>();
+<anchor xml:id="_z_d_b01_8h_source_1l00017"/><link linkend="_classz_d_b01_1a1abeb1e6d97e9111fc025c9e2650c9c3">00017</link> &#32;&#32;&#32;&#32;wxString&#32;<link linkend="_classz_d_b01_1a1abeb1e6d97e9111fc025c9e2650c9c3">db</link>;
+<anchor xml:id="_z_d_b01_8h_source_1l00018"/><link linkend="_classz_d_b01_1adf2faa0f1516910eefb094dbc4ce6fa3">00018</link> &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classz_d_b01_1adf2faa0f1516910eefb094dbc4ce6fa3">curDB</link>;
+<anchor xml:id="_z_d_b01_8h_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a61232eda3f0c4975d4cd1776cf71681e">de01</link>();
+<anchor xml:id="_z_d_b01_8h_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a67de54d203950ceac22ab3a9d0f0c358">initField</link>(std::string&#32;inputValue,&#32;wxTextCtrl&#32;*&#32;field);
+<anchor xml:id="_z_d_b01_8h_source_1l00021"/>00021 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classz_d_b01_1ab00f736b2d02a0206d406ebeb8da8cdd">fieldToString</link>(wxTextCtrl&#32;*&#32;field);
+<anchor xml:id="_z_d_b01_8h_source_1l00022"/>00022 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1af0b7dd10b200b2dd1f7087a6cc24fc37">nb01</link>();
+<anchor xml:id="_z_d_b01_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1abd1643c0d12ef3fe03b61319580aca35">listCategories</link>(<emphasis role="keywordtype">bool</emphasis>&#32;idPrim);
+<anchor xml:id="_z_d_b01_8h_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a7aa35b4aa20a0499f65e9639f200934b">listLinks</link>(<emphasis role="keywordtype">int</emphasis>&#32;curCat,&#32;<emphasis role="keywordtype">bool</emphasis>&#32;dRID);
+<anchor xml:id="_z_d_b01_8h_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a72e76c77a68e9ba700b6629cb84a37eb">getLink</link>(<emphasis role="keywordtype">int</emphasis>&#32;curCat);
+<anchor xml:id="_z_d_b01_8h_source_1l00026"/>00026 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a506a06d4ad9fe5a178e81b890af3525d">listLk1Lk2</link>();
+<anchor xml:id="_z_d_b01_8h_source_1l00027"/><link linkend="_classz_d_b01_1a03216a3fb49d01bb75b87eaf92ea4fd8">00027</link> &#32;&#32;&#32;&#32;mysqlpp::StoreQueryResult&#32;<link linkend="_classz_d_b01_1a03216a3fb49d01bb75b87eaf92ea4fd8">zres</link>;
+<anchor xml:id="_z_d_b01_8h_source_1l00028"/>00028 <emphasis role="comment">//&#32;&#32;&#32;&#32;mysqlpp::StoreQueryResult&#32;ares;</emphasis>
+<anchor xml:id="_z_d_b01_8h_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1aa5e2cfae20cc8b12f25997b907ab6155">insertCat</link>(std::string&#32;cat,&#32;std::string&#32;memo);
+<anchor xml:id="_z_d_b01_8h_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1ac95812086e217ae3e6119d5691788624">insertLink</link>(std::string&#32;idlk1,&#32;std::string&#32;lkn,&#32;std::string&#32;lnk,&#32;std::string&#32;ddes);
+<anchor xml:id="_z_d_b01_8h_source_1l00031"/>00031 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a50dae92a7e6ed6c94859938ebc5f9815">DeleteLink</link>(std::string&#32;delId);
+<anchor xml:id="_z_d_b01_8h_source_1l00032"/>00032 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a9ee984bbe71d3aca40305543ea2af685">editLink</link>(std::string&#32;delId,&#32;std::string&#32;idkl2,&#32;std::string&#32;ilk,&#32;std::string&#32;lnk,&#32;std::string&#32;ddes,&#32;std::string&#32;idlk1);
+<anchor xml:id="_z_d_b01_8h_source_1l00033"/><link linkend="_classz_d_b01_1a4c8de6784836b3dfa6723c999fa05cfa">00033</link> &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classz_d_b01_1a4c8de6784836b3dfa6723c999fa05cfa">strIdlk1</link>&#32;=&#32;<emphasis role="stringliteral">&quot;43&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8h_source_1l00034"/><link linkend="_classz_d_b01_1aca34e798c8395bd94c6ba2b0b04cf8f7">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classz_d_b01_1aca34e798c8395bd94c6ba2b0b04cf8f7">insertMode</link>;
+<anchor xml:id="_z_d_b01_8h_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a8c27b7a67b04be8c7472f5ddb64e53cd">editCat</link>(std::string&#32;idlk1,&#32;std::string&#32;cat,&#32;std::string&#32;memo);
+<anchor xml:id="_z_d_b01_8h_source_1l00036"/><link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">00036</link> &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>&#32;=&#32;<emphasis role="stringliteral">&quot;bcswebtools&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8h_source_1l00037"/><link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">00037</link> &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>&#32;=&#32;<emphasis role="stringliteral">&quot;localhost&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8h_source_1l00038"/><link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">00038</link> &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>&#32;=&#32;<emphasis role="stringliteral">&quot;bcs&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8h_source_1l00039"/><link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">00039</link> &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>&#32;=&#32;<emphasis role="stringliteral">&quot;Peace007!amb&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8h_source_1l00040"/>00040 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1af76d2dc2f58681c2b534d023862f4e91">getCat</link>();
+<anchor xml:id="_z_d_b01_8h_source_1l00041"/>00041 
+<anchor xml:id="_z_d_b01_8h_source_1l00042"/>00042 <emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="_z_d_b01_8h_source_1l00043"/>00043 
+<anchor xml:id="_z_d_b01_8h_source_1l00044"/>00044 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_z_d_b01_8h_source_1l00045"/>00045 };
+<anchor xml:id="_z_d_b01_8h_source_1l00046"/>00046 
+<anchor xml:id="_z_d_b01_8h_source_1l00047"/>00047 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;ZDB01_H</emphasis>
 </programlisting></section>

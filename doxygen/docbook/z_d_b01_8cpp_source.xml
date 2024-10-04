@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_z_d_b01_8cpp_source" xml:lang="en-US">
+<title>zDB01.cpp</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_z_d_b01_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_z_d_b01_8h">zDB01.h</link>&quot;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;mysql++.h&gt;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;wx/msgdlg.h&gt;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_dlg_sel_d_b_8h">dlgSelDB.h</link>&quot;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_dlg_de01_8h">dlgDe01.h</link>&quot;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_dlg_nb01_8h">dlgNb01.h</link>&quot;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00007"/>00007 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00008"/>00008 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>mysqlpp;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00009"/>00009 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00010"/>00010 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00011"/><link linkend="_classz_d_b01_1a979564aa089f5653373cd13e7abca2f7">00011</link> <link linkend="_classz_d_b01_1a979564aa089f5653373cd13e7abca2f7">zDB01::zDB01</link>()
+<anchor xml:id="_z_d_b01_8cpp_source_1l00012"/>00012 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="comment">//ctor</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00014"/>00014 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00015"/>00015 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00016"/><link linkend="_classz_d_b01_1a729b2faf01194220a3e92eeaeac65f9b">00016</link> <link linkend="_classz_d_b01_1a729b2faf01194220a3e92eeaeac65f9b">zDB01::~zDB01</link>()
+<anchor xml:id="_z_d_b01_8cpp_source_1l00017"/>00017 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="comment">//dtor</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00019"/>00019 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00020"/>00020 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00021"/><link linkend="_classz_d_b01_1a7ba8bcf9488c63047e3220ac15b6e9c5">00021</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a7ba8bcf9488c63047e3220ac15b6e9c5">zDB01::listDatabases</link>()
+<anchor xml:id="_z_d_b01_8cpp_source_1l00022"/>00022 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00023"/>00023 <emphasis role="comment">//&#32;&#32;&#32;&#32;dlgSelDB&#32;dlb;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a37aff332b1f8c1ad70f65e042386ae2f">dbn</link>.Clear();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Query&#32;query&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00030"/>00030 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;&quot;SELECT&#32;*&#32;FROM&#32;lk1&#32;LIMIT&#32;10&quot;;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;show&#32;DATABASES&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StoreQueryResult&#32;ares&#32;=&#32;query.store();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;ares.num_rows();&#32;i++)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;buf&#32;=&#32;std::string(ares[i][<emphasis role="stringliteral">&quot;Database&quot;</emphasis>]);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00036"/>00036 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00037"/>00037 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00038"/>00038 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(buf);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxString&#32;tbuf&#32;=&#32;buf;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a37aff332b1f8c1ad70f65e042386ae2f">dbn</link>.Insert(tbuf,0,1);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00041"/>00041 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lbxDbName.InsertItems(ares[i][&quot;Database&quot;]);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00042"/>00042 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;&quot;Name:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;idlk1&quot;]&#32;&lt;&lt;&#32;&quot;&#32;-&#32;Address:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;cat&quot;]&#32;&lt;&lt;&#32;endl;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00043"/>00043 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00045"/>00045 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ares.num_rows()&#32;==&#32;0)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;No&#32;Data&#32;Detected!!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Zero&#32;Query&#32;Results&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(BadQuery&#32;er)&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;handle&#32;any&#32;connection&#32;or</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;query&#32;errors&#32;that&#32;may&#32;come&#32;up</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Connection&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Connection&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_ERROR&#32;|&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00057"/>00057 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;BadConversion&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Handle&#32;bad&#32;conversions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Conversion&#32;error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;\tretrieved&#32;data&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.retrieved&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;,&#32;actual&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.actual_size&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Conversino&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Conversin&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;Exception&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Catch-all&#32;for&#32;any&#32;other&#32;MySQL++&#32;exceptions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;buf&#32;=&#32;er.what();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Miscalleanous&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Other&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00072"/>00072 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00073"/>00073 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00074"/><link linkend="_classz_d_b01_1abd1643c0d12ef3fe03b61319580aca35">00074</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1abd1643c0d12ef3fe03b61319580aca35">zDB01::listCategories</link>(<emphasis role="keywordtype">bool</emphasis>&#32;idPrime)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00075"/>00075 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00076"/>00076 <emphasis role="comment">//&#32;&#32;&#32;&#32;dlgSelDB&#32;dlb;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00077"/>00077 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a44d1fbd04846956b58bcc9b7130b8b5c">lk1</link>.Clear();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00079"/>00079 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Query&#32;query&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(idPrime)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;select&#32;idlk1,&#32;cat&#32;from&#32;lk1&#32;order&#32;by&#32;idlk1&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;select&#32;idlk1,&#32;cat&#32;from&#32;lk1&#32;order&#32;by&#32;cat&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StoreQueryResult&#32;ares&#32;=&#32;query.store();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a03216a3fb49d01bb75b87eaf92ea4fd8">zres</link>&#32;=&#32;ares;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00093"/>00093 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;ares.num_rows();&#32;i++)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00096"/>00096 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;string&#32;sbuf&#32;=&#32;std::string(ares[i][&quot;idlk1&quot;])&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;std::string(ares[i][&quot;cat&quot;]);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a44d1fbd04846956b58bcc9b7130b8b5c">lk1</link>.Add(std::string(ares[i][<emphasis role="stringliteral">&quot;idlk1&quot;</emphasis>])&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;std::string(ares[i][<emphasis role="stringliteral">&quot;cat&quot;</emphasis>]));
+<anchor xml:id="_z_d_b01_8cpp_source_1l00098"/>00098 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00099"/>00099 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(std::string(ares[i][&quot;idlk1&quot;])&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;std::string(ares[i][&quot;cat&quot;]));</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00100"/>00100 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxString&#32;tbuf&#32;=&#32;buf;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00101"/>00101 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dbn.Insert(tbuf,0,1);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00102"/>00102 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lbxDbName.InsertItems(ares[i][&quot;Database&quot;]);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00103"/>00103 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;&quot;Name:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;idlk1&quot;]&#32;&lt;&lt;&#32;&quot;&#32;-&#32;Address:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;cat&quot;]&#32;&lt;&lt;&#32;endl;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00104"/>00104 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00106"/>00106 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ares.num_rows()&#32;==&#32;0)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00109"/>00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;No&#32;Data&#32;Detected!!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Zero&#32;Query&#32;Results&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00111"/>00111 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00112"/>00112 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(BadQuery&#32;er)&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;handle&#32;any&#32;connection&#32;or</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00113"/>00113 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;query&#32;errors&#32;that&#32;may&#32;come&#32;up</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Connection&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Connection&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_ERROR&#32;|&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00117"/>00117 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00118"/>00118 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;BadConversion&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00119"/>00119 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00120"/>00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Handle&#32;bad&#32;conversions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Conversion&#32;error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00122"/>00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;\tretrieved&#32;data&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.retrieved&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00123"/>00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;,&#32;actual&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.actual_size&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00124"/>00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Conversino&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Conversin&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00125"/>00125 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00126"/>00126 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;Exception&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00127"/>00127 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00128"/>00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Catch-all&#32;for&#32;any&#32;other&#32;MySQL++&#32;exceptions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00129"/>00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;buf&#32;=&#32;er.what();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00130"/>00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00131"/>00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Miscalleanous&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Other&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00132"/>00132 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00133"/>00133 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00134"/>00134 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00135"/><link linkend="_classz_d_b01_1a7aa35b4aa20a0499f65e9639f200934b">00135</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a7aa35b4aa20a0499f65e9639f200934b">zDB01::listLinks</link>(<emphasis role="keywordtype">int</emphasis>&#32;curCat,&#32;<emphasis role="keywordtype">bool</emphasis>&#32;dRID)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00136"/>00136 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00137"/>00137 <emphasis role="comment">//&#32;&#32;&#32;&#32;dlgSelDB&#32;dlb;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00138"/>00138 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1af6b00e90f013093795a9c047f785cf6b">lk2</link>.Clear();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00139"/>00139 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00140"/>00140 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00141"/>00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00142"/>00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00143"/>00143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Query&#32;query&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00144"/>00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//SELECT&#32;*&#32;FROM&#32;`lk2`&#32;WHERE&#32;idlk1&#32;=&#32;20&#32;order&#32;by&#32;lkn</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00145"/>00145 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;&quot;select&#32;*&#32;from&#32;lk2&#32;where&#32;idlk1&#32;=&#32;140&#32;order&#32;by&#32;lkn&quot;;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00146"/>00146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(dRID)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00147"/>00147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00148"/>00148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;select&#32;*&#32;from&#32;lk2&#32;where&#32;idlk1&#32;=&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;to_string(curCat)&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;order&#32;by&#32;idlk2&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00149"/>00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00150"/>00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00151"/>00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00152"/>00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;select&#32;*&#32;from&#32;lk2&#32;where&#32;idlk1&#32;=&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;to_string(curCat)&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;order&#32;by&#32;lkn&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00153"/>00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00154"/>00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StoreQueryResult&#32;ares&#32;=&#32;query.store();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00155"/>00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a03216a3fb49d01bb75b87eaf92ea4fd8">zres</link>&#32;=&#32;ares;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00156"/>00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;ares.num_rows();&#32;i++)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00157"/>00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00158"/>00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;sbuf&#32;=&#32;std::string(ares[i][<emphasis role="stringliteral">&quot;idlk2&quot;</emphasis>])&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;std::string(ares[i][<emphasis role="stringliteral">&quot;lkn&quot;</emphasis>]);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00159"/>00159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1af6b00e90f013093795a9c047f785cf6b">lk2</link>.Add(std::string(ares[i][<emphasis role="stringliteral">&quot;idlk2&quot;</emphasis>])&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;std::string(ares[i][<emphasis role="stringliteral">&quot;lkn&quot;</emphasis>]));
+<anchor xml:id="_z_d_b01_8cpp_source_1l00160"/>00160 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00161"/>00161 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(std::string(ares[i][&quot;idlk1&quot;])&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;std::string(ares[i][&quot;cat&quot;]));</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00162"/>00162 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(std::string(ares[i][&quot;idlk2&quot;])&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;std::string(ares[i][&quot;lkn&quot;]));</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00163"/>00163 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxString&#32;tbuf&#32;=&#32;buf;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00164"/>00164 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dbn.Insert(tbuf,0,1);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00165"/>00165 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lbxDbName.InsertItems(ares[i][&quot;Database&quot;]);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00166"/>00166 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;&quot;Name:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;idlk1&quot;]&#32;&lt;&lt;&#32;&quot;&#32;-&#32;Address:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;cat&quot;]&#32;&lt;&lt;&#32;endl;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00167"/>00167 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00168"/>00168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00169"/>00169 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00170"/>00170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ares.num_rows()&#32;==&#32;0)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00171"/>00171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00172"/>00172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;No&#32;Data&#32;Detected!!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Zero&#32;Query&#32;Results&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00173"/>00173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00174"/>00174 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00175"/>00175 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(BadQuery&#32;er)&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;handle&#32;any&#32;connection&#32;or</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00176"/>00176 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00177"/>00177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;query&#32;errors&#32;that&#32;may&#32;come&#32;up</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00178"/>00178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00179"/>00179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Connection&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Connection&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_ERROR&#32;|&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00180"/>00180 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00181"/>00181 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;BadConversion&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00182"/>00182 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00183"/>00183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Handle&#32;bad&#32;conversions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00184"/>00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Conversion&#32;error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00185"/>00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;\tretrieved&#32;data&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.retrieved&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00186"/>00186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;,&#32;actual&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.actual_size&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00187"/>00187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Conversino&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Conversin&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00188"/>00188 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00189"/>00189 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;Exception&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00190"/>00190 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00191"/>00191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Catch-all&#32;for&#32;any&#32;other&#32;MySQL++&#32;exceptions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00192"/>00192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;buf&#32;=&#32;er.what();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00193"/>00193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00194"/>00194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Miscalleanous&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Other&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00195"/>00195 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00196"/>00196 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00197"/>00197 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00198"/><link linkend="_classz_d_b01_1a72e76c77a68e9ba700b6629cb84a37eb">00198</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a72e76c77a68e9ba700b6629cb84a37eb">zDB01::getLink</link>(<emphasis role="keywordtype">int</emphasis>&#32;curCat)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00199"/>00199 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00200"/>00200 <emphasis role="comment">//&#32;&#32;&#32;&#32;dlgSelDB&#32;dlb;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00201"/>00201 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a6cc13eda72223694fa7d7487e2068c1c">lk3</link>.Clear();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00202"/>00202 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00203"/>00203 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00204"/>00204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00205"/>00205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00206"/>00206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Query&#32;query&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00207"/>00207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//SELECT&#32;*&#32;FROM&#32;`lk2`&#32;WHERE&#32;idlk1&#32;=&#32;20&#32;order&#32;by&#32;lkn</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00208"/>00208 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;&quot;select&#32;*&#32;from&#32;lk2&#32;where&#32;idlk1&#32;=&#32;140&#32;order&#32;by&#32;lkn&quot;;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00209"/>00209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;select&#32;*&#32;from&#32;lk2&#32;where&#32;idlk2&#32;=&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;to_string(curCat)&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;order&#32;by&#32;lkn&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00210"/>00210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;StoreQueryResult&#32;ares&#32;=&#32;query.store();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00211"/>00211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a03216a3fb49d01bb75b87eaf92ea4fd8">zres</link>&#32;=&#32;ares;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00212"/>00212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;ares.num_rows();&#32;i++)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00213"/>00213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00214"/>00214 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;sbuf&#32;=&#32;std::string(ares[i][<emphasis role="stringliteral">&quot;idlk2&quot;</emphasis>])&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;std::string(ares[i][<emphasis role="stringliteral">&quot;lkn&quot;</emphasis>]);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00215"/>00215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a6cc13eda72223694fa7d7487e2068c1c">lk3</link>.Add(std::string(ares[i][<emphasis role="stringliteral">&quot;lnk&quot;</emphasis>]));
+<anchor xml:id="_z_d_b01_8cpp_source_1l00216"/>00216 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00217"/>00217 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(std::string(ares[i][&quot;idlk1&quot;])&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;std::string(ares[i][&quot;cat&quot;]));</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00218"/>00218 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(std::string(ares[i][&quot;idlk2&quot;])&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;std::string(ares[i][&quot;lkn&quot;]));</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00219"/>00219 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxString&#32;tbuf&#32;=&#32;buf;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00220"/>00220 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dbn.Insert(tbuf,0,1);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00221"/>00221 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lbxDbName.InsertItems(ares[i][&quot;Database&quot;]);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00222"/>00222 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;&quot;Name:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;idlk1&quot;]&#32;&lt;&lt;&#32;&quot;&#32;-&#32;Address:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;cat&quot;]&#32;&lt;&lt;&#32;endl;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00223"/>00223 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00224"/>00224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00225"/>00225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;rcount&#32;=&#32;ares.num_rows();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00226"/>00226 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00227"/>00227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;((rcount&#32;==&#32;1)&#32;&#32;and&#32;(<link linkend="_classz_d_b01_1aca34e798c8395bd94c6ba2b0b04cf8f7">insertMode</link>&#32;==&#32;<emphasis role="keyword">true</emphasis>))
+<anchor xml:id="_z_d_b01_8cpp_source_1l00228"/>00228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00229"/>00229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;No&#32;Data&#32;Detected!!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Zero&#32;Query&#32;Results&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00230"/>00230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00231"/>00231 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00232"/>00232 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(BadQuery&#32;er)&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;handle&#32;any&#32;connection&#32;or</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00233"/>00233 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00234"/>00234 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;query&#32;errors&#32;that&#32;may&#32;come&#32;up</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00235"/>00235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00236"/>00236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Connection&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Connection&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_ERROR&#32;|&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00237"/>00237 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00238"/>00238 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;BadConversion&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00239"/>00239 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00240"/>00240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Handle&#32;bad&#32;conversions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00241"/>00241 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Conversion&#32;error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00242"/>00242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;\tretrieved&#32;data&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.retrieved&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00243"/>00243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;,&#32;actual&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.actual_size&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00244"/>00244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Conversino&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Conversin&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00245"/>00245 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00246"/>00246 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;Exception&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00247"/>00247 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00248"/>00248 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Catch-all&#32;for&#32;any&#32;other&#32;MySQL++&#32;exceptions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00249"/>00249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;buf&#32;=&#32;er.what();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00250"/>00250 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00251"/>00251 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Miscalleanous&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Other&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00252"/>00252 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00253"/>00253 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00254"/>00254 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00255"/><link linkend="_classz_d_b01_1a8fc1dd0718bd56f24a5394ef542d88d1">00255</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a8fc1dd0718bd56f24a5394ef542d88d1">zDB01::selDB</link>()
+<anchor xml:id="_z_d_b01_8cpp_source_1l00256"/>00256 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00257"/>00257 &#32;&#32;&#32;&#32;<link linkend="_classdlg_sel_d_b">dlgSelDB</link>&#32;dlg(NULL,wxID_ANY);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00258"/>00258 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a37aff332b1f8c1ad70f65e042386ae2f">dbn</link>.Sort();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00259"/>00259 &#32;&#32;&#32;&#32;dlg.<link linkend="_classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3">lbxDbNames</link>-&gt;InsertItems(<link linkend="_classz_d_b01_1a37aff332b1f8c1ad70f65e042386ae2f">dbn</link>,&#32;0);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00260"/>00260 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(dlg.ShowModal()&#32;==&#32;wxID_OK)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00261"/>00261 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00262"/>00262 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1adf2faa0f1516910eefb094dbc4ce6fa3">curDB</link>&#32;=&#32;dlg.<link linkend="_classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3">lbxDbNames</link>-&gt;GetString(dlg.<link linkend="_classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3">lbxDbNames</link>-&gt;GetSelection());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00263"/>00263 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00264"/>00264 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00265"/>00265 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00266"/>00266 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00267"/><link linkend="_classz_d_b01_1a67de54d203950ceac22ab3a9d0f0c358">00267</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a67de54d203950ceac22ab3a9d0f0c358">zDB01::initField</link>(<emphasis role="keywordtype">string</emphasis>&#32;inputValue,&#32;wxTextCtrl&#32;*&#32;field)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00268"/>00268 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00269"/>00269 &#32;&#32;&#32;&#32;wxString&#32;dv&#32;=&#32;inputValue;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00270"/>00270 &#32;&#32;&#32;&#32;field-&gt;Clear();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00271"/>00271 &#32;&#32;&#32;&#32;field-&gt;SetEditable(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00272"/>00272 &#32;&#32;&#32;&#32;field-&gt;ChangeValue(dv);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00273"/>00273 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00274"/>00274 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00275"/><link linkend="_classz_d_b01_1ab00f736b2d02a0206d406ebeb8da8cdd">00275</link> <emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_classz_d_b01_1ab00f736b2d02a0206d406ebeb8da8cdd">zDB01::fieldToString</link>(wxTextCtrl&#32;*&#32;field)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00276"/>00276 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00277"/>00277 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;rstr;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00278"/>00278 &#32;&#32;&#32;&#32;wxString&#32;s1&#32;=&#32;field-&gt;GetValue();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00279"/>00279 &#32;&#32;&#32;&#32;rstr&#32;=&#32;s1.ToStdString();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00280"/>00280 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;rstr;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00281"/>00281 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00282"/>00282 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00283"/><link linkend="_classz_d_b01_1a61232eda3f0c4975d4cd1776cf71681e">00283</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a61232eda3f0c4975d4cd1776cf71681e">zDB01::de01</link>()
+<anchor xml:id="_z_d_b01_8cpp_source_1l00284"/>00284 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00285"/>00285 &#32;&#32;&#32;&#32;<link linkend="_classdlg_de01">dlgDe01</link>&#32;dlg(NULL,&#32;wxID_ANY);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00286"/>00286 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(dlg.ShowModal()&#32;==&#32;wxID_OK)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00287"/>00287 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00288"/>00288 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00289"/>00289 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00290"/>00290 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00291"/>00291 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00292"/>00292 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00293"/><link linkend="_classz_d_b01_1af0b7dd10b200b2dd1f7087a6cc24fc37">00293</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1af0b7dd10b200b2dd1f7087a6cc24fc37">zDB01::nb01</link>()
+<anchor xml:id="_z_d_b01_8cpp_source_1l00294"/>00294 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00295"/>00295 &#32;&#32;&#32;&#32;<link linkend="_classdlg_nb01">dlgNb01</link>&#32;dlg(NULL,&#32;wxID_ANY);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00296"/>00296 &#32;&#32;&#32;&#32;dlg.<link linkend="_classdlg_nb01_1a76377ea7eb09dc99e70d06daa1e8c229">lbxCats</link>-&gt;InsertItems(<link linkend="_classz_d_b01_1a44d1fbd04846956b58bcc9b7130b8b5c">lk1</link>,&#32;0);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00297"/>00297 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(dlg.ShowModal()&#32;==&#32;wxID_OK)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00298"/>00298 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00299"/>00299 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00300"/>00300 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00301"/>00301 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00302"/>00302 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00303"/><link linkend="_classz_d_b01_1a506a06d4ad9fe5a178e81b890af3525d">00303</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a506a06d4ad9fe5a178e81b890af3525d">zDB01::listLk1Lk2</link>()
+<anchor xml:id="_z_d_b01_8cpp_source_1l00304"/>00304 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00305"/>00305 <emphasis role="comment">//&#32;&#32;&#32;&#32;dlgSelDB&#32;dlb;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00306"/>00306 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a44d1fbd04846956b58bcc9b7130b8b5c">lk1</link>.Clear();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00307"/>00307 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00308"/>00308 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00309"/>00309 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00310"/>00310 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00311"/>00311 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Query&#32;query&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00312"/>00312 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;query&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;select&#32;*&#32;from&#32;lk1,&#32;lk2&#32;where&#32;lk2.idlk1&#32;=&#32;lk1.idlk1&#32;order&#32;by&#32;lk1.cat,&#32;lk2.lkn&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00313"/>00313 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a03216a3fb49d01bb75b87eaf92ea4fd8">zres</link>&#32;=&#32;query.store();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00314"/>00314 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="_classz_d_b01_1a03216a3fb49d01bb75b87eaf92ea4fd8">zres</link>.num_rows();&#32;i++)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00315"/>00315 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00316"/>00316 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;string&#32;sbuf&#32;=&#32;std::string(ares[i][&quot;idlk1&quot;])&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;std::string(ares[i][&quot;cat&quot;]);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00317"/>00317 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lk1.Add(std::string(zres[i][&quot;idlk1&quot;])&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;std::string(zres[i][&quot;cat&quot;]));</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00318"/>00318 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00319"/>00319 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(std::string(ares[i][&quot;idlk1&quot;])&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;std::string(ares[i][&quot;cat&quot;]));</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00320"/>00320 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxString&#32;tbuf&#32;=&#32;buf;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00321"/>00321 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dbn.Insert(tbuf,0,1);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00322"/>00322 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lbxDbName.InsertItems(ares[i][&quot;Database&quot;]);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00323"/>00323 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;&quot;Name:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;idlk1&quot;]&#32;&lt;&lt;&#32;&quot;&#32;-&#32;Address:&#32;&quot;&#32;&lt;&lt;&#32;ares[i][&quot;cat&quot;]&#32;&lt;&lt;&#32;endl;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00324"/>00324 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00325"/>00325 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00326"/>00326 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00327"/>00327 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_classz_d_b01_1a03216a3fb49d01bb75b87eaf92ea4fd8">zres</link>.num_rows()&#32;==&#32;0)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00328"/>00328 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00329"/>00329 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;No&#32;Data&#32;Detected!!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Zero&#32;Query&#32;Results&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00330"/>00330 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00331"/>00331 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00332"/>00332 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(BadQuery&#32;er)&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;handle&#32;any&#32;connection&#32;or</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00333"/>00333 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00334"/>00334 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;query&#32;errors&#32;that&#32;may&#32;come&#32;up</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00335"/>00335 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00336"/>00336 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Connection&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Connection&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_ERROR&#32;|&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00337"/>00337 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00338"/>00338 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;BadConversion&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00339"/>00339 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00340"/>00340 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Handle&#32;bad&#32;conversions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00341"/>00341 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Conversion&#32;error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00342"/>00342 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;\tretrieved&#32;data&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.retrieved&#32;&lt;&lt;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00343"/>00343 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;,&#32;actual&#32;size:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.actual_size&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00344"/>00344 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Conversino&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Conversin&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00345"/>00345 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00346"/>00346 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;Exception&amp;&#32;er)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00347"/>00347 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_z_d_b01_8cpp_source_1l00348"/>00348 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Catch-all&#32;for&#32;any&#32;other&#32;MySQL++&#32;exceptions</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00349"/>00349 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;buf&#32;=&#32;er.what();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00350"/>00350 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cerr&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Error:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;er.what()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00351"/>00351 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;Miscalleanous&#32;Error!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Other&#32;Error&#32;Detected&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00352"/>00352 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_z_d_b01_8cpp_source_1l00353"/>00353 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00354"/>00354 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00355"/><link linkend="_classz_d_b01_1aa5e2cfae20cc8b12f25997b907ab6155">00355</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1aa5e2cfae20cc8b12f25997b907ab6155">zDB01::insertCat</link>(std::string&#32;cat,&#32;std::string&#32;memo)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00356"/>00356 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00357"/>00357 &#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00358"/>00358 &#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00359"/>00359 &#32;&#32;&#32;&#32;Query&#32;query1&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00360"/>00360 &#32;&#32;&#32;&#32;<emphasis role="comment">//INSERT&#32;INTO&#32;`lk1`(`idlk1`,&#32;`cat`,&#32;`ddes`)&#32;VALUES&#32;(&apos;[value-1]&apos;,&apos;[value-2]&apos;,&apos;[value-3]&apos;)</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00361"/>00361 &#32;&#32;&#32;&#32;std::string&#32;qstr&#32;=&#32;<emphasis role="stringliteral">&quot;INSERT&#32;INTO&#32;`lk1`(`idlk1`,&#32;`cat`,&#32;`ddes`)&#32;VALUES&#32;(&#32;&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00362"/>00362 &#32;&#32;&#32;&#32;qstr&#32;=&#32;qstr&#32;&#32;+&#32;&#32;<emphasis role="stringliteral">&quot;0&quot;</emphasis>&#32;+&#32;<emphasis role="stringliteral">&quot;,&quot;</emphasis>+&#32;<emphasis role="stringliteral">&quot;\&quot;&quot;</emphasis>&#32;+&#32;cat&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;,\&quot;&quot;</emphasis>&#32;+&#32;memo&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;)&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00363"/>00363 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;query1&#32;&lt;&lt;&#32;&quot;INSERT&#32;INTO&#32;`lk1`(`idlk1`,&#32;`cat`,&#32;`ddes`)&#32;VALUES&#32;(&#32;&quot;&#32;&lt;&lt;&#32;&#32;&quot;0&quot;&#32;&lt;&lt;&#32;&quot;,&quot;&#32;&lt;&lt;&#32;cat&#32;&lt;&lt;&#32;&quot;,&quot;&#32;&lt;&lt;&#32;memo&#32;&lt;&lt;&#32;&quot;)&quot;;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00364"/>00364 &#32;&#32;&#32;&#32;query1.exec(qstr);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00365"/>00365 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00366"/>00366 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00367"/><link linkend="_classz_d_b01_1a8c27b7a67b04be8c7472f5ddb64e53cd">00367</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a8c27b7a67b04be8c7472f5ddb64e53cd">zDB01::editCat</link>(std::string&#32;idlk1,&#32;std::string&#32;cat,&#32;std::string&#32;memo)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00368"/>00368 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00369"/>00369 &#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00370"/>00370 &#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00371"/>00371 &#32;&#32;&#32;&#32;Query&#32;query1&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00372"/>00372 &#32;&#32;&#32;&#32;<emphasis role="comment">//INSERT&#32;INTO&#32;`lk1`(`idlk1`,&#32;`cat`,&#32;`ddes`)&#32;VALUES&#32;(&apos;[value-1]&apos;,&apos;[value-2]&apos;,&apos;[value-3]&apos;)</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00373"/>00373 &#32;&#32;&#32;&#32;<emphasis role="comment">//UPDATE&#32;`lk1`&#32;SET&#32;`idlk1`=&apos;[value-1]&apos;,`cat`=&apos;[value-2]&apos;,`ddes`=&apos;[value-3]&apos;&#32;WHERE&#32;1</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00374"/>00374 &#32;&#32;&#32;&#32;std::string&#32;qstr&#32;=&#32;<emphasis role="stringliteral">&quot;UPDATE&#32;&#32;`lk1`&#32;set&#32;`cat`=&#32;\&quot;&quot;</emphasis>&#32;+&#32;cat&#32;+<emphasis role="stringliteral">&quot;\&quot;,&#32;`ddes`&#32;=&#32;&#32;\&quot;&quot;</emphasis>&#32;+&#32;memo&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;&quot;</emphasis>&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;where&#32;`idlk1`&#32;=&#32;&quot;</emphasis>&#32;+&#32;&#32;<link linkend="_classz_d_b01_1a4c8de6784836b3dfa6723c999fa05cfa">strIdlk1</link>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00375"/>00375 <emphasis role="comment">//&#32;&#32;&#32;&#32;qstr&#32;=&#32;qstr&#32;&#32;+&#32;&#32;&quot;0&quot;&#32;+&#32;&quot;,&quot;+&#32;&quot;\&quot;&quot;&#32;+&#32;cat&#32;+&#32;&quot;\&quot;,\&quot;&quot;&#32;+&#32;memo&#32;+&#32;&quot;\&quot;)&quot;;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00376"/>00376 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;query1&#32;&lt;&lt;&#32;&quot;INSERT&#32;INTO&#32;`lk1`(`idlk1`,&#32;`cat`,&#32;`ddes`)&#32;VALUES&#32;(&#32;&quot;&#32;&lt;&lt;&#32;&#32;&quot;0&quot;&#32;&lt;&lt;&#32;&quot;,&quot;&#32;&lt;&lt;&#32;cat&#32;&lt;&lt;&#32;&quot;,&quot;&#32;&lt;&lt;&#32;memo&#32;&lt;&lt;&#32;&quot;)&quot;;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00377"/>00377 &#32;&#32;&#32;&#32;query1.exec(qstr);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00378"/>00378 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00379"/>00379 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00380"/>00380 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00381"/><link linkend="_classz_d_b01_1ac95812086e217ae3e6119d5691788624">00381</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1ac95812086e217ae3e6119d5691788624">zDB01::insertLink</link>(std::string&#32;idlk1,&#32;std::string&#32;lkn,&#32;std::string&#32;lnk,&#32;std::string&#32;ddes)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00382"/>00382 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00383"/>00383 &#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00384"/>00384 &#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00385"/>00385 &#32;&#32;&#32;&#32;Query&#32;query1&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00386"/>00386 &#32;&#32;&#32;&#32;<emphasis role="comment">//INSERT&#32;INTO&#32;`lk2`(`idlk2`,&#32;`idlk1`,&#32;`lkn`,&#32;`lnk`,&#32;`ddes`)&#32;VALUES&#32;(&apos;[value-1]&apos;,&apos;[value-2]&apos;,&apos;[value-3]&apos;,&apos;[value-4]&apos;,&apos;[value-5]&apos;)</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00387"/>00387 &#32;&#32;&#32;&#32;std::string&#32;qstr&#32;=&#32;<emphasis role="stringliteral">&quot;INSERT&#32;INTO&#32;`lk2`(`idlk2`,&#32;`idlk1`,&#32;`lkn`,&#32;`lnk`,&#32;`ddes`)&#32;VALUES&#32;(&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00388"/>00388 &#32;&#32;&#32;&#32;qstr&#32;=&#32;qstr&#32;&#32;+&#32;&#32;<emphasis role="stringliteral">&quot;0&quot;</emphasis>&#32;+&#32;<emphasis role="stringliteral">&quot;,&quot;</emphasis>&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;&quot;</emphasis>&#32;+&#32;idlk1&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;,\&quot;&quot;</emphasis>&#32;+&#32;lkn&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;,\&quot;&quot;</emphasis>&#32;+&#32;lnk&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;,\&quot;&quot;</emphasis>&#32;+&#32;ddes&#32;+<emphasis role="stringliteral">&quot;\&quot;)&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00389"/>00389 &#32;&#32;&#32;&#32;query1.exec(qstr);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00390"/>00390 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00391"/>00391 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00392"/><link linkend="_classz_d_b01_1a50dae92a7e6ed6c94859938ebc5f9815">00392</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a50dae92a7e6ed6c94859938ebc5f9815">zDB01::DeleteLink</link>(std::string&#32;delId)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00393"/>00393 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00394"/>00394 &#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00395"/>00395 &#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00396"/>00396 &#32;&#32;&#32;&#32;Query&#32;query1&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00397"/>00397 <emphasis role="comment">//DELETE&#32;FROM&#32;`lk2`&#32;WHERE&#32;idlk2&#32;=&#32;712</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00398"/>00398 &#32;&#32;&#32;&#32;<emphasis role="comment">//INSERT&#32;INTO&#32;`lk2`(`idlk2`,&#32;`idlk1`,&#32;`lkn`,&#32;`lnk`,&#32;`ddes`)&#32;VALUES&#32;(&apos;[value-1]&apos;,&apos;[value-2]&apos;,&apos;[value-3]&apos;,&apos;[value-4]&apos;,&apos;[value-5]&apos;)</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00399"/>00399 &#32;&#32;&#32;&#32;std::string&#32;qstr&#32;=&#32;<emphasis role="stringliteral">&quot;DELETE&#32;FROM&#32;`lk2`&#32;WHERE&#32;idlk2&#32;=&#32;&quot;</emphasis>&#32;+&#32;delId;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00400"/>00400 &#32;&#32;&#32;&#32;query1.exec(qstr);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00401"/>00401 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00402"/>00402 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00403"/><link linkend="_classz_d_b01_1a9ee984bbe71d3aca40305543ea2af685">00403</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1a9ee984bbe71d3aca40305543ea2af685">zDB01::editLink</link>(std::string&#32;delId,&#32;std::string&#32;idkl2,&#32;std::string&#32;ilk,&#32;std::string&#32;lnk,&#32;std::string&#32;ddes,&#32;std::string&#32;idlk1)
+<anchor xml:id="_z_d_b01_8cpp_source_1l00404"/>00404 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00405"/>00405 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00406"/>00406 &#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00407"/>00407 &#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00408"/>00408 &#32;&#32;&#32;&#32;Query&#32;query1&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00409"/>00409 <emphasis role="comment">//DELETE&#32;FROM&#32;`lk2`&#32;WHERE&#32;idlk2&#32;=&#32;712</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00410"/>00410 &#32;&#32;&#32;&#32;<emphasis role="comment">//INSERT&#32;INTO&#32;`lk2`(`idlk2`,&#32;`idlk1`,&#32;`lkn`,&#32;`lnk`,&#32;`ddes`)&#32;VALUES&#32;(&apos;[value-1]&apos;,&apos;[value-2]&apos;,&apos;[value-3]&apos;,&apos;[value-4]&apos;,&apos;[value-5]&apos;)</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00411"/>00411 &#32;&#32;&#32;&#32;<emphasis role="comment">//UPDATE&#32;`lk2`&#32;SET&#32;`idlk2`=&apos;[value-1]&apos;,`idlk1`=&apos;[value-2]&apos;,`lkn`=&apos;[value-3]&apos;,`lnk`=&apos;[value-4]&apos;,`ddes`=&apos;[value-5]&apos;&#32;WHERE&#32;1</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00412"/>00412 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00413"/>00413 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00414"/>00414 <emphasis role="comment">//&#32;&#32;&#32;&#32;std::string&#32;qstr&#32;=&#32;&quot;DELETE&#32;FROM&#32;`lk2`&#32;WHERE&#32;idlk2&#32;=&#32;&quot;&#32;+&#32;delId;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00415"/>00415 <emphasis role="comment">//&#32;&#32;&#32;&#32;std::string&#32;qstr&#32;=&#32;&quot;UPDATE&#32;`lk2`&#32;SET&#32;`lkn`&#32;=&#32;\&quot;&#32;&quot;&#32;+&#32;lnk&#32;+&#32;&quot;\&quot;&quot;&#32;+&#32;&quot;,&#32;`ddes`=&#32;\&quot;&quot;&#32;+&#32;&#32;ddes&#32;+&#32;&quot;\&quot;&quot;&#32;+&#32;&quot;&#32;WHERE&#32;idlk2&#32;=&#32;&quot;&#32;+&#32;delId&#32;;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00416"/>00416 <emphasis role="comment">//&#32;&#32;&#32;&#32;std::string&#32;qstr&#32;=&#32;&quot;UPDATE&#32;`lk2`&#32;SET&#32;`idlk1`&#32;=&#32;&#32;\&quot;&quot;&#32;+&#32;delId&#32;+&#32;&quot;\&quot;,&#32;&quot;&#32;+&#32;&#32;&quot;`lkn`&#32;=&#32;\&quot;&#32;&quot;&#32;+&#32;lnk&#32;+&#32;&quot;\&quot;&quot;&#32;+&#32;&quot;,&#32;`ddes`=&#32;\&quot;&quot;&#32;+&#32;&#32;ddes&#32;+&#32;&quot;\&quot;&quot;&#32;+&#32;&quot;&#32;WHERE&#32;idlk2&#32;=&#32;&quot;&#32;+&#32;delId&#32;;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00417"/>00417 &#32;&#32;&#32;&#32;std::string&#32;qstr&#32;=&#32;<emphasis role="stringliteral">&quot;UPDATE&#32;`lk2`&#32;SET&#32;`idlk1`&#32;=&#32;&#32;\&quot;&quot;</emphasis>&#32;+&#32;idlk1&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;,&#32;&quot;</emphasis>&#32;+&#32;&#32;<emphasis role="stringliteral">&quot;`lkn`&#32;=&#32;\&quot;&#32;&quot;</emphasis>&#32;+&#32;lnk&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;&quot;</emphasis>&#32;+&#32;<emphasis role="stringliteral">&quot;,&#32;`ddes`=&#32;\&quot;&quot;</emphasis>&#32;+&#32;&#32;ddes&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;&quot;</emphasis>&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;WHERE&#32;idlk2&#32;=&#32;&quot;</emphasis>&#32;+&#32;delId&#32;;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00418"/>00418 &#32;&#32;&#32;&#32;query1.exec(qstr);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00419"/>00419 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00420"/>00420 }
+<anchor xml:id="_z_d_b01_8cpp_source_1l00421"/>00421 
+<anchor xml:id="_z_d_b01_8cpp_source_1l00422"/><link linkend="_classz_d_b01_1af76d2dc2f58681c2b534d023862f4e91">00422</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classz_d_b01_1af76d2dc2f58681c2b534d023862f4e91">zDB01::getCat</link>()
+<anchor xml:id="_z_d_b01_8cpp_source_1l00423"/>00423 {
+<anchor xml:id="_z_d_b01_8cpp_source_1l00424"/>00424 &#32;&#32;&#32;&#32;Connection&#32;conn(<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="_z_d_b01_8cpp_source_1l00425"/>00425 &#32;&#32;&#32;&#32;conn.connect(<link linkend="_classz_d_b01_1a2e831a0b4f933f55766223a89ed11e5d">database</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a2e081ce12629d5ee626e4190504b02e4">server</link>.c_str(),&#32;<link linkend="_classz_d_b01_1acfeead2c691b6d7fd4dfa0fdc1277e76">user</link>.c_str(),&#32;<link linkend="_classz_d_b01_1a416c0b842c678cdb3962895139261812">password</link>.c_str());
+<anchor xml:id="_z_d_b01_8cpp_source_1l00426"/>00426 &#32;&#32;&#32;&#32;Query&#32;query1&#32;=&#32;conn.query();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00427"/>00427 <emphasis role="comment">//&#32;&#32;&#32;&#32;std::string&#32;qstr&#32;=&#32;&quot;UPDATE&#32;`lk2`&#32;SET&#32;`lkn`&#32;=&#32;\&quot;&#32;&quot;&#32;+&#32;lnk&#32;+&#32;&quot;\&quot;&quot;&#32;+&#32;&quot;,&#32;`ddes`=&#32;\&quot;&quot;&#32;+&#32;&#32;ddes&#32;+&#32;&quot;\&quot;&quot;&#32;+&#32;&quot;&#32;WHERE&#32;idlk2&#32;=&#32;&quot;&#32;+&#32;delId&#32;;</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00428"/>00428 &#32;&#32;&#32;&#32;query1&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;select&#32;*&#32;from&#32;lk1&#32;where&#32;idlk1&#32;=&#32;&#32;\&quot;&quot;</emphasis>&#32;+&#32;<link linkend="_classz_d_b01_1a4c8de6784836b3dfa6723c999fa05cfa">strIdlk1</link>&#32;+&#32;<emphasis role="stringliteral">&quot;\&quot;&quot;</emphasis>;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00429"/>00429 &#32;&#32;&#32;&#32;StoreQueryResult&#32;ares&#32;=&#32;query1.store();
+<anchor xml:id="_z_d_b01_8cpp_source_1l00430"/>00430 &#32;&#32;&#32;&#32;<link linkend="_classz_d_b01_1a03216a3fb49d01bb75b87eaf92ea4fd8">zres</link>&#32;=&#32;ares;
+<anchor xml:id="_z_d_b01_8cpp_source_1l00431"/>00431 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;&#32;query1.exec(qstr);</emphasis>
+<anchor xml:id="_z_d_b01_8cpp_source_1l00432"/>00432 }
+</programlisting></section>

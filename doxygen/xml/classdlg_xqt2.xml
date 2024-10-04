@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdlg_xqt2" kind="class" language="C++" prot="public">
+    <compoundname>dlgXqt2</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">wxDialog</basecompoundref>
+    <includes refid="dlg_xqt2_8h" local="no">dlgXqt2.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dlgXqt2::isel</definition>
+        <argsstring></argsstring>
+        <name>isel</name>
+        <qualifiedname>dlgXqt2::isel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="17" column="9" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754" prot="public" static="no" mutable="no">
+        <type>wxButton *</type>
+        <definition>wxButton* dlgXqt2::butCancel</definition>
+        <argsstring></argsstring>
+        <name>butCancel</name>
+        <qualifiedname>dlgXqt2::butCancel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="21" column="14" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc" prot="public" static="no" mutable="no">
+        <type>wxRadioBox *</type>
+        <definition>wxRadioBox* dlgXqt2::rbtRadBut</definition>
+        <argsstring></argsstring>
+        <name>rbtRadBut</name>
+        <qualifiedname>dlgXqt2::rbtRadBut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="22" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgXqt2::ID_RADIOBOX1</definition>
+        <argsstring></argsstring>
+        <name>ID_RADIOBOX1</name>
+        <qualifiedname>dlgXqt2::ID_RADIOBOX1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="28" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgXqt2::ID_BUTTON1</definition>
+        <argsstring></argsstring>
+        <name>ID_BUTTON1</name>
+        <qualifiedname>dlgXqt2::ID_BUTTON1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="29" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dlgXqt2::dlgXqt2</definition>
+        <argsstring>(wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</argsstring>
+        <name>dlgXqt2</name>
+        <qualifiedname>dlgXqt2::dlgXqt2</qualifiedname>
+        <param>
+          <type>wxWindow *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>wxWindowID</type>
+          <declname>id</declname>
+          <defval>wxID_ANY</defval>
+        </param>
+        <param>
+          <type>const wxPoint &amp;</type>
+          <declname>pos</declname>
+          <defval>wxDefaultPosition</defval>
+        </param>
+        <param>
+          <type>const wxSize &amp;</type>
+          <declname>size</declname>
+          <defval>wxDefaultSize</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="15" column="5" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.cpp" bodystart="18" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>dlgXqt2::~dlgXqt2</definition>
+        <argsstring>()</argsstring>
+        <name>~dlgXqt2</name>
+        <qualifiedname>dlgXqt2::~dlgXqt2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="16" column="13" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.cpp" bodystart="53" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_xqt2_1a64eaaafc3107c5974dae2340c12645a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dlgXqt2::OnbutCancelClick</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnbutCancelClick</name>
+        <qualifiedname>dlgXqt2::OnbutCancelClick</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="38" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.cpp" bodystart="59" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_xqt2_1ae5cde13d99785e612b0818db3fb3aa6f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dlgXqt2::OnrbtRadButSelect</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnrbtRadButSelect</name>
+        <qualifiedname>dlgXqt2::OnrbtRadButSelect</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="39" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.cpp" bodystart="65" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dlgXqt2</label>
+        <link refid="classdlg_xqt2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dlgXqt2</label>
+        <link refid="classdlg_xqt2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" line="11" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.h" bodystart="12" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754" prot="public" virt="non-virtual"><scope>dlgXqt2</scope><name>butCancel</name></member>
+      <member refid="classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a" prot="public" virt="non-virtual"><scope>dlgXqt2</scope><name>dlgXqt2</name></member>
+      <member refid="classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6" prot="protected" virt="non-virtual"><scope>dlgXqt2</scope><name>ID_BUTTON1</name></member>
+      <member refid="classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b" prot="protected" virt="non-virtual"><scope>dlgXqt2</scope><name>ID_RADIOBOX1</name></member>
+      <member refid="classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e" prot="public" virt="non-virtual"><scope>dlgXqt2</scope><name>isel</name></member>
+      <member refid="classdlg_xqt2_1a64eaaafc3107c5974dae2340c12645a0" prot="private" virt="non-virtual"><scope>dlgXqt2</scope><name>OnbutCancelClick</name></member>
+      <member refid="classdlg_xqt2_1ae5cde13d99785e612b0818db3fb3aa6f" prot="private" virt="non-virtual"><scope>dlgXqt2</scope><name>OnrbtRadButSelect</name></member>
+      <member refid="classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc" prot="public" virt="non-virtual"><scope>dlgXqt2</scope><name>rbtRadBut</name></member>
+      <member refid="classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771" prot="public" virt="virtual"><scope>dlgXqt2</scope><name>~dlgXqt2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dlg_de01_8cpp" kind="file" language="C++">
+    <compoundname>dlgDe01.cpp</compoundname>
+    <includes refid="dlg_de01_8h" local="yes">dlgDe01.h</includes>
+    <includes local="no">wx/intl.h</includes>
+    <includes local="no">wx/string.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>dlgDe01.cpp</label>
+        <link refid="dlg_de01_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dlgDe01.h</label>
+        <link refid="dlg_de01_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>wx/dialog.h</label>
+      </node>
+      <node id="7">
+        <label>wx/intl.h</label>
+      </node>
+      <node id="4">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="5">
+        <label>wx/stattext.h</label>
+      </node>
+      <node id="8">
+        <label>wx/string.h</label>
+      </node>
+      <node id="6">
+        <label>wx/textctrl.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dlg_de01_8h" kindref="compound">dlgDe01.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//(*InternalHeaders(dlgDe01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/intl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//(*IdInit(dlgDe01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_de01_1a3caad11ce54001b9ec04932bb505fe57" kindref="member">dlgDe01::ID_STATICTEXT1</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_de01_1ac6ddea7e9abb3d618658bc631a7a268a" kindref="member">dlgDe01::ID_TEXTCTRL1</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_de01_1ae896a2930ae8c3cf7f3516f368b4e325" kindref="member">dlgDe01::ID_STATICTEXT2</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_de01_1a03f60364aea276d36ed6bec75bef2bb4" kindref="member">dlgDe01::ID_TEXTCTRL2</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">BEGIN_EVENT_TABLE(<ref refid="classdlg_de01" kindref="compound">dlgDe01</ref>,wxDialog)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*EventTable(dlgDe01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">END_EVENT_TABLE()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classdlg_de01_1a3e510af877eaa87b402243af703da297" refkind="member"><highlight class="normal"><ref refid="classdlg_de01" kindref="compound">dlgDe01</ref>::<ref refid="classdlg_de01" kindref="compound">dlgDe01</ref>(wxWindow*<sp/>parent,wxWindowID<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,const<sp/>wxPoint&amp;<sp/>pos,const<sp/>wxSize&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Initialize(dlgDe01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer1;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer2;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer3;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer4;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Create(parent,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>wxEmptyString,<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>wxDEFAULT_DIALOG_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER,<sp/>_T(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetClientSize(wxDefaultSize);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Move(wxDefaultPosition);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxHORIZONTAL);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxHORIZONTAL);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxHORIZONTAL);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer4<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxVERTICAL);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StaticText1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxStaticText(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_STATICTEXT1,<sp/>_(</highlight><highlight class="stringliteral">&quot;Label&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_STATICTEXT1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer4-&gt;Add(StaticText1,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextCtrl1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxTextCtrl(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_TEXTCTRL1,<sp/>_(</highlight><highlight class="stringliteral">&quot;Text&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_TEXTCTRL1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer4-&gt;Add(TextCtrl1,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StaticText2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxStaticText(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_STATICTEXT2,<sp/>_(</highlight><highlight class="stringliteral">&quot;Label&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_STATICTEXT2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer4-&gt;Add(StaticText2,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextCtrl2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxTextCtrl(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_TEXTCTRL2,<sp/>_(</highlight><highlight class="stringliteral">&quot;Text&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxSize(194,24),<sp/>0,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_TEXTCTRL2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer4-&gt;Add(TextCtrl2,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(BoxSizer4,<sp/>1,<sp/>wxALL|wxEXPAND,<sp/>5);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer2-&gt;Add(BoxSizer3,<sp/>1,<sp/>wxALL|wxEXPAND,<sp/>5);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer1-&gt;Add(BoxSizer2,<sp/>1,<sp/>wxALL|wxEXPAND,<sp/>5);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetSizer(BoxSizer1);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer1-&gt;Fit(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer1-&gt;SetSizeHints(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classdlg_de01_1a7fc4b075d66c6525bef504ea04ad775e" refkind="member"><highlight class="normal"><ref refid="classdlg_de01_1a7fc4b075d66c6525bef504ea04ad775e" kindref="member">dlgDe01::~dlgDe01</ref>()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Destroy(dlgDe01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgDe01.cpp"/>
+  </compounddef>
+</doxygen>

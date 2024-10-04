@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_new_link_8cpp" xml:lang="en-US">
+<title>dlgNewLink.cpp File Reference</title>
+<indexterm><primary>dlgNewLink.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;dlgNewLink.h&quot;<?linebreak?>#include &quot;zDB01.h&quot;<?linebreak?>#include &quot;curlStuff.h&quot;<?linebreak?>#include &lt;wx/intl.h&gt;<?linebreak?>#include &lt;wx/string.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classz_d_b01">zDB01</link> <link linkend="_dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440">db02</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcurl_stuff">curlStuff</link> <link linkend="_dlg_new_link_8cpp_1a2e509642c9ea8f0041e5afd6a68ea4ba">cs01</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_dlg_new_link_8cpp_1a2e509642c9ea8f0041e5afd6a68ea4ba"/><section>
+    <title>cs01</title>
+<indexterm><primary>cs01</primary><secondary>dlgNewLink.cpp</secondary></indexterm>
+<indexterm><primary>dlgNewLink.cpp</primary><secondary>cs01</secondary></indexterm>
+<para><computeroutput><link linkend="_classcurl_stuff">curlStuff</link> cs01</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8cpp_source_1l00006">6</link> of file <link linkend="_dlg_new_link_8cpp_source">dlgNewLink.cpp</link>.</para>
+</section>
+<anchor xml:id="_dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440"/><section>
+    <title>db02</title>
+<indexterm><primary>db02</primary><secondary>dlgNewLink.cpp</secondary></indexterm>
+<indexterm><primary>dlgNewLink.cpp</primary><secondary>db02</secondary></indexterm>
+<para><computeroutput><link linkend="_classz_d_b01">zDB01</link> db02</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8cpp_source_1l00005">5</link> of file <link linkend="_dlg_new_link_8cpp_source">dlgNewLink.cpp</link>.</para>
+</section>
+</section>
+</section>

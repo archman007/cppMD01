@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="bcs_gui_8h" kind="file" language="C++">
+    <compoundname>bcsGui.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">wx/string.h</includes>
+    <includes local="no">wx/window.h</includes>
+    <includedby refid="bcs_gui_8cpp" local="yes">bcsGui.cpp</includedby>
+    <includedby refid="cpp_m_d01_app_8cpp" local="yes">cppMD01App.cpp</includedby>
+    <includedby refid="cpp_m_d01_main_8cpp" local="yes">cppMD01Main.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>bcsGui.h</label>
+        <link refid="bcs_gui_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>wx/string.h</label>
+      </node>
+      <node id="4">
+        <label>wx/window.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>bcsGui.cpp</label>
+        <link refid="bcs_gui_8cpp"/>
+      </node>
+      <node id="1">
+        <label>bcsGui.h</label>
+        <link refid="bcs_gui_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cppMD01App.cpp</label>
+        <link refid="cpp_m_d01_app_8cpp"/>
+      </node>
+      <node id="4">
+        <label>cppMD01Main.cpp</label>
+        <link refid="cpp_m_d01_main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classbcs_gui" prot="public">bcsGui</innerclass>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/window.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classbcs_gui" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbcs_gui" kindref="compound">bcsGui</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classbcs_gui_1afe8d8c9532f096c161ae33c7496db69c" kindref="member">bcsGui</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classbcs_gui_1ac2e5dfa2156a34ff492953c144047231" kindref="member">~bcsGui</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classbcs_gui_1ac8bd94493e962a832d2d47344d8afbd3" kindref="member">SelDir</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>initDir);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classbcs_gui_1a9061e0d66ce7088bba30b98fa8061358" kindref="member">GetText</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>memo,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>initVal,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>prompt,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>caption);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classbcs_gui_1a3fa5f9ce202e43b147ef9a166577fb31" kindref="member">yornQues</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>caption,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>prompt);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classbcs_gui_1ade5890d2dccda707cb21357609d2600f" kindref="member">openFileDialog</ref>(wxWindow*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxString&amp;<sp/>message,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxString&amp;<sp/>defaultDir,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxString&amp;<sp/>defaultFile,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxString&amp;<sp/>wildcard,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/bcsGui.h"/>
+  </compounddef>
+</doxygen>

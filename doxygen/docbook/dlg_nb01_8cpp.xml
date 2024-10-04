@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_nb01_8cpp" xml:lang="en-US">
+<title>dlgNb01.cpp File Reference</title>
+<indexterm><primary>dlgNb01.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;dlgNb01.h&quot;<?linebreak?>#include &quot;zDB01.h&quot;<?linebreak?>#include &lt;wx/intl.h&gt;<?linebreak?>#include &lt;wx/string.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classz_d_b01">zDB01</link> <link linkend="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228">rdb</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_dlg_nb01_8cpp_1afffca60770aa0ec807a7e26302393228"/><section>
+    <title>rdb</title>
+<indexterm><primary>rdb</primary><secondary>dlgNb01.cpp</secondary></indexterm>
+<indexterm><primary>dlgNb01.cpp</primary><secondary>rdb</secondary></indexterm>
+<para><computeroutput><link linkend="_classz_d_b01">zDB01</link> rdb</computeroutput></para><para>
+Definition at line <link linkend="_dlg_nb01_8cpp_source_1l00004">4</link> of file <link linkend="_dlg_nb01_8cpp_source">dlgNb01.cpp</link>.</para>
+</section>
+</section>
+</section>

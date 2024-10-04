@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dlg_xqt2_8cpp" kind="file" language="C++">
+    <compoundname>dlgXqt2.cpp</compoundname>
+    <includes refid="dlg_xqt2_8h" local="yes">dlgXqt2.h</includes>
+    <includes local="no">wx/intl.h</includes>
+    <includes local="no">wx/string.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>dlgXqt2.cpp</label>
+        <link refid="dlg_xqt2_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dlgXqt2.h</label>
+        <link refid="dlg_xqt2_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>wx/button.h</label>
+      </node>
+      <node id="4">
+        <label>wx/dialog.h</label>
+      </node>
+      <node id="7">
+        <label>wx/intl.h</label>
+      </node>
+      <node id="5">
+        <label>wx/radiobox.h</label>
+      </node>
+      <node id="6">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="8">
+        <label>wx/string.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dlg_xqt2_8h" kindref="compound">dlgXqt2.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//(*InternalHeaders(dlgXqt2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/intl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//(*IdInit(dlgXqt2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b" kindref="member">dlgXqt2::ID_RADIOBOX1</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6" kindref="member">dlgXqt2::ID_BUTTON1</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">BEGIN_EVENT_TABLE(<ref refid="classdlg_xqt2" kindref="compound">dlgXqt2</ref>,wxDialog)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*EventTable(dlgXqt2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">END_EVENT_TABLE()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a" refkind="member"><highlight class="normal"><ref refid="classdlg_xqt2" kindref="compound">dlgXqt2</ref>::<ref refid="classdlg_xqt2" kindref="compound">dlgXqt2</ref>(wxWindow*<sp/>parent,wxWindowID<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,const<sp/>wxPoint&amp;<sp/>pos,const<sp/>wxSize&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Initialize(dlgXqt2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer2;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer3;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Create(parent,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>_(</highlight><highlight class="stringliteral">&quot;Select<sp/>Document&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>wxDEFAULT_DIALOG_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER,<sp/>_T(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetClientSize(wxDefaultSize);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Move(wxDefaultPosition);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxHORIZONTAL);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxHORIZONTAL);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxVERTICAL);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxString<sp/>__wxRadioBoxChoices_1[4]<sp/>=</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_(</highlight><highlight class="stringliteral">&quot;Web&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_(</highlight><highlight class="stringliteral">&quot;PDF&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_(</highlight><highlight class="stringliteral">&quot;Document&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_(</highlight><highlight class="stringliteral">&quot;Executable&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rbtRadBut<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxRadioBox(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_RADIOBOX1,<sp/>_(</highlight><highlight class="stringliteral">&quot;Process<sp/>To<sp/>Acomodate&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxSize(304,52),<sp/>4,<sp/>__wxRadioBoxChoices_1,<sp/>1,<sp/>0,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_RADIOBOX1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(rbtRadBut,<sp/>1,<sp/>wxALL|wxEXPAND,<sp/>5);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>butCancel<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxButton(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_BUTTON1,<sp/>_(</highlight><highlight class="stringliteral">&quot;Cancel&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_BUTTON1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(butCancel,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer2-&gt;Add(BoxSizer3,<sp/>1,<sp/>wxALL|wxEXPAND,<sp/>5);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer1-&gt;Add(BoxSizer2,<sp/>1,<sp/>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL,<sp/>5);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetSizer(BoxSizer1);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer1-&gt;Fit(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BoxSizer1-&gt;SetSizeHints(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Connect(ID_RADIOBOX1,wxEVT_COMMAND_RADIOBOX_SELECTED,(wxObjectEventFunction)&amp;dlgXqt2::OnrbtRadButSelect);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&amp;dlgXqt2::OnbutCancelClick);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771" refkind="member"><highlight class="normal"><ref refid="classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771" kindref="member">dlgXqt2::~dlgXqt2</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Destroy(dlgXqt2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dlgXqt2::OnbutCancelClick(wxCommandEvent&amp;<sp/>event)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e" kindref="member">isel</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>EndModal(wxID_CANCEL);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dlgXqt2::OnrbtRadButSelect(wxCommandEvent&amp;<sp/>event)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e" kindref="member">isel</ref><sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.GetSelection();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>EndModal(wxID_OK);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgXqt2.cpp"/>
+  </compounddef>
+</doxygen>

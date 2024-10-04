@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cpp_m_d01_app_8cpp_source" xml:lang="en-US">
+<title>cppMD01App.cpp</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00001"/>00001 <emphasis role="comment">/***************************************************************</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00002"/>00002 <emphasis role="comment">&#32;*&#32;Name:&#32;&#32;&#32;&#32;&#32;&#32;cppMD01App.cpp</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00003"/>00003 <emphasis role="comment">&#32;*&#32;Purpose:&#32;&#32;&#32;Code&#32;for&#32;Application&#32;Class</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00004"/>00004 <emphasis role="comment">&#32;*&#32;Author:&#32;&#32;&#32;&#32;Mr.&#32;Arch&#32;Brooks&#32;(arch@archbrooks.com)</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00005"/>00005 <emphasis role="comment">&#32;*&#32;Created:&#32;&#32;&#32;Sunday,&#32;08&#32;September&#32;2024&#32;07:26:59</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00006"/>00006 <emphasis role="comment">&#32;*&#32;Copyright:&#32;Mr.&#32;Arch&#32;Brooks&#32;(https://archman.us)</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00007"/>00007 <emphasis role="comment">&#32;*&#32;License:</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00008"/>00008 <emphasis role="comment">&#32;**************************************************************/</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00009"/>00009 
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00010"/>00010 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_cpp_m_d01_app_8h">cppMD01App.h</link>&quot;</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00011"/>00011 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_z_d_b01_8h">zDB01.h</link>&quot;</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00012"/>00012 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_bcs_gui_8h">bcsGui.h</link>&quot;</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00013"/>00013 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_z_d_b01_8h">zDB01.h</link>&quot;</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00014"/>00014 
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00015"/>00015 <emphasis role="comment">//(*AppHeaders</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00016"/>00016 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_cpp_m_d01_main_8h">cppMD01Main.h</link>&quot;</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00017"/>00017 <emphasis role="preprocessor">#include&#32;&lt;wx/image.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00018"/>00018 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00019"/>00019 
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00020"/><link linkend="_cpp_m_d01_app_8cpp_1a2bf18180d85b94b3e5561a9307e28bd1">00020</link> <link linkend="_cpp_m_d01_app_8cpp_1a2bf18180d85b94b3e5561a9307e28bd1">IMPLEMENT_APP</link>(<link linkend="_classcpp_m_d01_app">cppMD01App</link>);
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00021"/>00021 
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00022"/><link linkend="_classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e">00022</link> <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e">cppMD01App::OnInit</link>()
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00023"/>00023 {
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*AppInitialize</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;wxsOK&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;wxInitAllImageHandlers();
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(&#32;wxsOK&#32;)
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classcpp_m_d01_frame">cppMD01Frame</link>*&#32;Frame&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_classcpp_m_d01_frame">cppMD01Frame</link>(0);
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Frame-&gt;Show();
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetTopWindow(Frame);
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;wxsOK;
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00035"/>00035 
+<anchor xml:id="_cpp_m_d01_app_8cpp_source_1l00036"/>00036 }
+</programlisting></section>

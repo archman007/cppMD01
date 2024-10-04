@@ -3,30 +3,90 @@
 <title>dlgSelDB Class Reference</title>
 <indexterm><primary>dlgSelDB</primary></indexterm>
 <para>
-Inherits wxDialog.</para>
+<computeroutput>#include &lt;dlgSelDB.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for dlgSelDB:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_sel_d_b.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_sel_d_b_1a7043b46c8c53958b34a60049165e9193"/><emphasis role="strong">dlgSelDB</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+            <listitem><para><link linkend="_classdlg_sel_d_b_1a7043b46c8c53958b34a60049165e9193">dlgSelDB</link> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classdlg_sel_d_b_1ad0f5ed2099d095c0203d17262fcb3a8d">~dlgSelDB</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_sel_d_b_1a3bcd06b1aae166af31738748ea3e01a6"/>std::string <emphasis role="strong">buf</emphasis></para>
+            <listitem><para>std::string <link linkend="_classdlg_sel_d_b_1a3bcd06b1aae166af31738748ea3e01a6">buf</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3"/>wxListBox * <emphasis role="strong">lbxDbNames</emphasis></para>
+            <listitem><para>wxListBox * <link linkend="_classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3">lbxDbNames</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Static Protected Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_sel_d_b_1ae4011d221c694e4b117e036760d3919c"/>static const long <emphasis role="strong">ID_LISTBOX1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_sel_d_b_1ae4011d221c694e4b117e036760d3919c">ID_LISTBOX1</link> = wxNewId()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_dlg_sel_d_b_8h_source_1l00010">10</link> of file <link linkend="_dlg_sel_d_b_8h_source">dlgSelDB.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdlg_sel_d_b_1a7043b46c8c53958b34a60049165e9193"/><section>
+    <title>dlgSelDB()</title>
+<indexterm><primary>dlgSelDB</primary><secondary>dlgSelDB</secondary></indexterm>
+<indexterm><primary>dlgSelDB</primary><secondary>dlgSelDB</secondary></indexterm>
+<para><computeroutput>dlgSelDB::dlgSelDB (wxWindow * parent, wxWindowID id = <computeroutput>wxID_ANY</computeroutput>
+, const wxPoint &amp; pos = <computeroutput>wxDefaultPosition</computeroutput>
+, const wxSize &amp; size = <computeroutput>wxDefaultSize</computeroutput>
+)</computeroutput></para><para>
+Definition at line <link linkend="_dlg_sel_d_b_8cpp_source_1l00019">19</link> of file <link linkend="_dlg_sel_d_b_8cpp_source">dlgSelDB.cpp</link>.</para>
+</section>
+<anchor xml:id="_classdlg_sel_d_b_1ad0f5ed2099d095c0203d17262fcb3a8d"/><section>
+    <title>~dlgSelDB()</title>
+<indexterm><primary>~dlgSelDB</primary><secondary>dlgSelDB</secondary></indexterm>
+<indexterm><primary>dlgSelDB</primary><secondary>~dlgSelDB</secondary></indexterm>
+<para><computeroutput>dlgSelDB::~dlgSelDB ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_sel_d_b_8cpp_source_1l00045">45</link> of file <link linkend="_dlg_sel_d_b_8cpp_source">dlgSelDB.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdlg_sel_d_b_1a3bcd06b1aae166af31738748ea3e01a6"/><section>
+    <title>buf</title>
+<indexterm><primary>buf</primary><secondary>dlgSelDB</secondary></indexterm>
+<indexterm><primary>dlgSelDB</primary><secondary>buf</secondary></indexterm>
+<para><computeroutput>std::string dlgSelDB::buf</computeroutput></para><para>
+Definition at line <link linkend="_dlg_sel_d_b_8h_source_1l00017">17</link> of file <link linkend="_dlg_sel_d_b_8h_source">dlgSelDB.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_sel_d_b_1ae4011d221c694e4b117e036760d3919c"/><section>
+    <title>ID_LISTBOX1</title>
+<indexterm><primary>ID_LISTBOX1</primary><secondary>dlgSelDB</secondary></indexterm>
+<indexterm><primary>dlgSelDB</primary><secondary>ID_LISTBOX1</secondary></indexterm>
+<para><computeroutput>const long dlgSelDB::ID_LISTBOX1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_sel_d_b_8h_source_1l00026">26</link> of file <link linkend="_dlg_sel_d_b_8h_source">dlgSelDB.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_sel_d_b_1a7b8c86e7be6f33800caf3c19c45990a3"/><section>
+    <title>lbxDbNames</title>
+<indexterm><primary>lbxDbNames</primary><secondary>dlgSelDB</secondary></indexterm>
+<indexterm><primary>dlgSelDB</primary><secondary>lbxDbNames</secondary></indexterm>
+<para><computeroutput>wxListBox* dlgSelDB::lbxDbNames</computeroutput></para><para>
+Definition at line <link linkend="_dlg_sel_d_b_8h_source_1l00020">20</link> of file <link linkend="_dlg_sel_d_b_8h_source">dlgSelDB.h</link>.</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
-dlgSelDB.hdlgSelDB.cpp</section>
+<link linkend="_dlg_sel_d_b_8h">dlgSelDB.h</link><link linkend="_dlg_sel_d_b_8cpp">dlgSelDB.cpp</link></section>
+</section>

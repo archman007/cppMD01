@@ -3,29 +3,101 @@
 <title>cppMD01Frame Class Reference</title>
 <indexterm><primary>cppMD01Frame</primary></indexterm>
 <para>
-Inherits wxFrame.</para>
+<computeroutput>#include &lt;cppMD01Main.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for cppMD01Frame:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcpp_m_d01_frame.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1adbda8203786121d97f23baad6ba72699"/><emphasis role="strong">cppMD01Frame</emphasis> (wxWindow *parent, wxWindowID id=-1)</para>
+            <listitem><para><link linkend="_classcpp_m_d01_frame_1adbda8203786121d97f23baad6ba72699">cppMD01Frame</link> (wxWindow *parent, wxWindowID id=-1)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classcpp_m_d01_frame_1aaf9eb81fc2be576ea113eb65df95c7b2">~cppMD01Frame</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1a6467fd15ab39abd4e479179bfcaaa9c0"/>mysqlpp::Connection <emphasis role="strong">conn</emphasis></para>
+            <listitem><para>mysqlpp::Connection <link linkend="_classcpp_m_d01_frame_1a6467fd15ab39abd4e479179bfcaaa9c0">conn</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1a3a314721182b2b05b90c4c81a0639f41"/>wxGrid * <emphasis role="strong">masterGrid</emphasis></para>
+            <listitem><para>wxGrid * <link linkend="_classcpp_m_d01_frame_1a3a314721182b2b05b90c4c81a0639f41">masterGrid</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1aa722fd68f431c3b4545b8819e4cea4c1"/>wxGrid * <emphasis role="strong">detailGrid</emphasis></para>
+            <listitem><para>wxGrid * <link linkend="_classcpp_m_d01_frame_1aa722fd68f431c3b4545b8819e4cea4c1">detailGrid</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1a1d417535ffbf1134fb4f3f4d054f494a"/>std::string <emphasis role="strong">cmd</emphasis></para>
+            <listitem><para>std::string <link linkend="_classcpp_m_d01_frame_1a1d417535ffbf1134fb4f3f4d054f494a">cmd</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classcpp_m_d01_frame_1ac5f4d62fd6a4e8a6448778b29a83f304"/>std::string <emphasis role="strong">mkVal</emphasis></para>
+            <listitem><para>std::string <link linkend="_classcpp_m_d01_frame_1ac5f4d62fd6a4e8a6448778b29a83f304">mkVal</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_cpp_m_d01_main_8h_source_1l00026">26</link> of file <link linkend="_cpp_m_d01_main_8h_source">cppMD01Main.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcpp_m_d01_frame_1adbda8203786121d97f23baad6ba72699"/><section>
+    <title>cppMD01Frame()</title>
+<indexterm><primary>cppMD01Frame</primary><secondary>cppMD01Frame</secondary></indexterm>
+<indexterm><primary>cppMD01Frame</primary><secondary>cppMD01Frame</secondary></indexterm>
+<para><computeroutput>cppMD01Frame::cppMD01Frame (wxWindow * parent, wxWindowID id = <computeroutput>-1</computeroutput>
+)</computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00093">93</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
+</section>
+<anchor xml:id="_classcpp_m_d01_frame_1aaf9eb81fc2be576ea113eb65df95c7b2"/><section>
+    <title>~cppMD01Frame()</title>
+<indexterm><primary>~cppMD01Frame</primary><secondary>cppMD01Frame</secondary></indexterm>
+<indexterm><primary>cppMD01Frame</primary><secondary>~cppMD01Frame</secondary></indexterm>
+<para><computeroutput>cppMD01Frame::~cppMD01Frame ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00230">230</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcpp_m_d01_frame_1a1d417535ffbf1134fb4f3f4d054f494a"/><section>
+    <title>cmd</title>
+<indexterm><primary>cmd</primary><secondary>cppMD01Frame</secondary></indexterm>
+<indexterm><primary>cppMD01Frame</primary><secondary>cmd</secondary></indexterm>
+<para><computeroutput>std::string cppMD01Frame::cmd</computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8h_source_1l00035">35</link> of file <link linkend="_cpp_m_d01_main_8h_source">cppMD01Main.h</link>.</para>
+</section>
+<anchor xml:id="_classcpp_m_d01_frame_1a6467fd15ab39abd4e479179bfcaaa9c0"/><section>
+    <title>conn</title>
+<indexterm><primary>conn</primary><secondary>cppMD01Frame</secondary></indexterm>
+<indexterm><primary>cppMD01Frame</primary><secondary>conn</secondary></indexterm>
+<para><computeroutput>mysqlpp::Connection cppMD01Frame::conn</computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8h_source_1l00032">32</link> of file <link linkend="_cpp_m_d01_main_8h_source">cppMD01Main.h</link>.</para>
+</section>
+<anchor xml:id="_classcpp_m_d01_frame_1aa722fd68f431c3b4545b8819e4cea4c1"/><section>
+    <title>detailGrid</title>
+<indexterm><primary>detailGrid</primary><secondary>cppMD01Frame</secondary></indexterm>
+<indexterm><primary>cppMD01Frame</primary><secondary>detailGrid</secondary></indexterm>
+<para><computeroutput>wxGrid* cppMD01Frame::detailGrid</computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8h_source_1l00034">34</link> of file <link linkend="_cpp_m_d01_main_8h_source">cppMD01Main.h</link>.</para>
+</section>
+<anchor xml:id="_classcpp_m_d01_frame_1a3a314721182b2b05b90c4c81a0639f41"/><section>
+    <title>masterGrid</title>
+<indexterm><primary>masterGrid</primary><secondary>cppMD01Frame</secondary></indexterm>
+<indexterm><primary>cppMD01Frame</primary><secondary>masterGrid</secondary></indexterm>
+<para><computeroutput>wxGrid* cppMD01Frame::masterGrid</computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8h_source_1l00033">33</link> of file <link linkend="_cpp_m_d01_main_8h_source">cppMD01Main.h</link>.</para>
+</section>
+<anchor xml:id="_classcpp_m_d01_frame_1ac5f4d62fd6a4e8a6448778b29a83f304"/><section>
+    <title>mkVal</title>
+<indexterm><primary>mkVal</primary><secondary>cppMD01Frame</secondary></indexterm>
+<indexterm><primary>cppMD01Frame</primary><secondary>mkVal</secondary></indexterm>
+<para><computeroutput>std::string cppMD01Frame::mkVal</computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8h_source_1l00036">36</link> of file <link linkend="_cpp_m_d01_main_8h_source">cppMD01Main.h</link>.</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
-cppMD01Main.hcppMD01Main.cpp</section>
+<link linkend="_cpp_m_d01_main_8h">cppMD01Main.h</link><link linkend="_cpp_m_d01_main_8cpp">cppMD01Main.cpp</link></section>
+</section>

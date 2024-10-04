@@ -19,16 +19,49 @@
 </chapter>
 <chapter>
     <title>File Documentation</title>
+    <xi:include href="bcs_gui_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bcs_gui_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bcs_gui_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="bcs_gui_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cpp_m_d01_app_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cpp_m_d01_app_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cpp_m_d01_app_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="cpp_m_d01_app_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cpp_m_d01_main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cpp_m_d01_main_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cpp_m_d01_main_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="cpp_m_d01_main_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="curl_stuff_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="curl_stuff_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="curl_stuff_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="curl_stuff_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_de01_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_de01_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_de01_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="dlg_de01_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_nb01_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_nb01_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_nb01_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="dlg_nb01_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_new_cat_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_new_cat_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_new_cat_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="dlg_new_cat_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_new_link_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_new_link_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_new_link_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="dlg_new_link_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_sel_d_b_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_sel_d_b_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_sel_d_b_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="dlg_sel_d_b_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_xqt2_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_xqt2_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dlg_xqt2_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="dlg_xqt2_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="z_d_b01_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="z_d_b01_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="z_d_b01_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="z_d_b01_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <index/>

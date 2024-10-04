@@ -1,46 +1,46 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_de01_8h_source" xml:lang="en-US">
 <title>dlgDe01.h</title>
-<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;DLGDE01_H</emphasis>
-2 <emphasis role="preprocessor">#define&#32;DLGDE01_H</emphasis>
-3 
-4 <emphasis role="comment">//(*Headers(dlgDe01)</emphasis>
-5 <emphasis role="preprocessor">#include&#32;&lt;wx/dialog.h&gt;</emphasis>
-6 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
-7 <emphasis role="preprocessor">#include&#32;&lt;wx/stattext.h&gt;</emphasis>
-8 <emphasis role="preprocessor">#include&#32;&lt;wx/textctrl.h&gt;</emphasis>
-9 <emphasis role="comment">//*)</emphasis>
-10 
-11 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classdlg_de01">dlgDe01</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxDialog
-12 {
-13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
-14 
-15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdlg_de01">dlgDe01</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>=wxID_ANY,<emphasis role="keyword">const</emphasis>&#32;wxPoint&amp;&#32;pos=wxDefaultPosition,<emphasis role="keyword">const</emphasis>&#32;wxSize&amp;&#32;size=wxDefaultSize);
-16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classdlg_de01">~dlgDe01</link>();
-17 
-18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(dlgDe01)</emphasis>
-19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText1;
-20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText2;
-21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTextCtrl*&#32;TextCtrl1;
-22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTextCtrl*&#32;TextCtrl2;
-23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-24 
-25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
-26 
-27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(dlgDe01)</emphasis>
-28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT1;
-29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_TEXTCTRL1;
-30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT2;
-31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_TEXTCTRL2;
-32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-33 
-34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
-35 
-36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(dlgDe01)</emphasis>
-37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-38 
-39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
-40 };
-41 
-42 <emphasis role="preprocessor">#endif</emphasis>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_dlg_de01_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;DLGDE01_H</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;DLGDE01_H</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00003"/>00003 
+<anchor xml:id="_dlg_de01_8h_source_1l00004"/>00004 <emphasis role="comment">//(*Headers(dlgDe01)</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;wx/dialog.h&gt;</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;wx/stattext.h&gt;</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;wx/textctrl.h&gt;</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00009"/>00009 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00010"/>00010 
+<anchor xml:id="_dlg_de01_8h_source_1l00011"/><link linkend="_classdlg_de01">00011</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classdlg_de01">dlgDe01</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxDialog
+<anchor xml:id="_dlg_de01_8h_source_1l00012"/>00012 {
+<anchor xml:id="_dlg_de01_8h_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_dlg_de01_8h_source_1l00014"/>00014 
+<anchor xml:id="_dlg_de01_8h_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdlg_de01_1a3e510af877eaa87b402243af703da297">dlgDe01</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>=wxID_ANY,<emphasis role="keyword">const</emphasis>&#32;wxPoint&amp;&#32;pos=wxDefaultPosition,<emphasis role="keyword">const</emphasis>&#32;wxSize&amp;&#32;size=wxDefaultSize);
+<anchor xml:id="_dlg_de01_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classdlg_de01_1a7fc4b075d66c6525bef504ea04ad775e">~dlgDe01</link>();
+<anchor xml:id="_dlg_de01_8h_source_1l00017"/>00017 
+<anchor xml:id="_dlg_de01_8h_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(dlgDe01)</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00019"/><link linkend="_classdlg_de01_1abaa789e136c59f00a36616ceaf4c8623">00019</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxStaticText*&#32;<link linkend="_classdlg_de01_1abaa789e136c59f00a36616ceaf4c8623">StaticText1</link>;
+<anchor xml:id="_dlg_de01_8h_source_1l00020"/><link linkend="_classdlg_de01_1a26ef90226a5293ad736c3550067ec6d6">00020</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxStaticText*&#32;<link linkend="_classdlg_de01_1a26ef90226a5293ad736c3550067ec6d6">StaticText2</link>;
+<anchor xml:id="_dlg_de01_8h_source_1l00021"/><link linkend="_classdlg_de01_1a61aa353a0243a41bcfff6c3ddfa225e1">00021</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTextCtrl*&#32;<link linkend="_classdlg_de01_1a61aa353a0243a41bcfff6c3ddfa225e1">TextCtrl1</link>;
+<anchor xml:id="_dlg_de01_8h_source_1l00022"/><link linkend="_classdlg_de01_1a1aff62e9592c0bbcec21161228817010">00022</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTextCtrl*&#32;<link linkend="_classdlg_de01_1a1aff62e9592c0bbcec21161228817010">TextCtrl2</link>;
+<anchor xml:id="_dlg_de01_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00024"/>00024 
+<anchor xml:id="_dlg_de01_8h_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="_dlg_de01_8h_source_1l00026"/>00026 
+<anchor xml:id="_dlg_de01_8h_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(dlgDe01)</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00028"/><link linkend="_classdlg_de01_1a3caad11ce54001b9ec04932bb505fe57">00028</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_de01_1a3caad11ce54001b9ec04932bb505fe57">ID_STATICTEXT1</link>;
+<anchor xml:id="_dlg_de01_8h_source_1l00029"/><link linkend="_classdlg_de01_1ac6ddea7e9abb3d618658bc631a7a268a">00029</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_de01_1ac6ddea7e9abb3d618658bc631a7a268a">ID_TEXTCTRL1</link>;
+<anchor xml:id="_dlg_de01_8h_source_1l00030"/><link linkend="_classdlg_de01_1ae896a2930ae8c3cf7f3516f368b4e325">00030</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_de01_1ae896a2930ae8c3cf7f3516f368b4e325">ID_STATICTEXT2</link>;
+<anchor xml:id="_dlg_de01_8h_source_1l00031"/><link linkend="_classdlg_de01_1a03f60364aea276d36ed6bec75bef2bb4">00031</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_de01_1a03f60364aea276d36ed6bec75bef2bb4">ID_TEXTCTRL2</link>;
+<anchor xml:id="_dlg_de01_8h_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00033"/>00033 
+<anchor xml:id="_dlg_de01_8h_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_dlg_de01_8h_source_1l00035"/>00035 
+<anchor xml:id="_dlg_de01_8h_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(dlgDe01)</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_de01_8h_source_1l00038"/>00038 
+<anchor xml:id="_dlg_de01_8h_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
+<anchor xml:id="_dlg_de01_8h_source_1l00040"/>00040 };
+<anchor xml:id="_dlg_de01_8h_source_1l00041"/>00041 
+<anchor xml:id="_dlg_de01_8h_source_1l00042"/>00042 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

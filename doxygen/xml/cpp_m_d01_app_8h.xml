@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="cpp_m_d01_app_8h" kind="file" language="C++">
+    <compoundname>cppMD01App.h</compoundname>
+    <includes local="no">wx/app.h</includes>
+    <includedby refid="cpp_m_d01_app_8cpp" local="yes">cppMD01App.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>cppMD01App.h</label>
+        <link refid="cpp_m_d01_app_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wx/app.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>cppMD01App.cpp</label>
+        <link refid="cpp_m_d01_app_8cpp"/>
+      </node>
+      <node id="1">
+        <label>cppMD01App.h</label>
+        <link refid="cpp_m_d01_app_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcpp_m_d01_app" prot="public">cppMD01App</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Name:<sp/><sp/><sp/><sp/><sp/><sp/>cppMD01App.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Purpose:<sp/><sp/><sp/>Defines<sp/>Application<sp/>Class</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author:<sp/><sp/><sp/><sp/>Mr.<sp/>Arch<sp/>Brooks<sp/>(arch@archbrooks.com)</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Created:<sp/><sp/><sp/>Sunday,<sp/>08<sp/>September<sp/>2024<sp/>07:26:59</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Copyright:<sp/>Mr.<sp/>Arch<sp/>Brooks<sp/>(https://archman.us)</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>License:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>**************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CPPMYSKEL1APP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CPPMYSKEL1APP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/app.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classcpp_m_d01_app" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcpp_m_d01_app" kindref="compound">cppMD01App</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>wxApp</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e" kindref="member">OnInit</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CPPMYSKEL1APP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01App.h"/>
+  </compounddef>
+</doxygen>

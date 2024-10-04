@@ -1,0 +1,9 @@
+<map id="dlgSelDB.h" name="dlgSelDB.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="130,5,222,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,102,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,36,90,75,87,71,153,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="126,81,226,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,34,179,65,174,65,174,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="250,81,337,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,31,262,71,259,75,196,36"/>
+</map>

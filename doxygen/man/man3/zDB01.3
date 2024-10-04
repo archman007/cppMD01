@@ -6,9 +6,17 @@ zDB01
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fR#include <zDB01\&.h>\fP
 .SS "Public Member Functions"
 
 .in +1c
+.ti -1c
+.RI "\fBzDB01\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~zDB01\fP ()"
+.br
 .ti -1c
 .RI "void \fBlistDatabases\fP ()"
 .br
@@ -101,6 +109,139 @@ zDB01
 .RI "std::string \fBpassword\fP = 'Peace007!amb'"
 .br
 .in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB9\fP of file \fBzDB01\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "zDB01::zDB01 ()"
+
+.PP
+Definition at line \fB11\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "zDB01::~zDB01 ()\fR [virtual]\fP"
+
+.PP
+Definition at line \fB16\fP of file \fBzDB01\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void zDB01::de01 ()"
+
+.PP
+Definition at line \fB283\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::DeleteLink (std::string delId)"
+
+.PP
+Definition at line \fB392\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::editCat (std::string idlk1, std::string cat, std::string memo)"
+
+.PP
+Definition at line \fB367\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::editLink (std::string delId, std::string idkl2, std::string ilk, std::string lnk, std::string ddes, std::string idlk1)"
+
+.PP
+Definition at line \fB403\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "string zDB01::fieldToString (wxTextCtrl * field)"
+
+.PP
+Definition at line \fB275\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::getCat ()"
+
+.PP
+Definition at line \fB422\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::getLink (int curCat)"
+
+.PP
+Definition at line \fB198\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::initField (std::string inputValue, wxTextCtrl * field)"
+
+.PP
+Definition at line \fB267\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::insertCat (std::string cat, std::string memo)"
+
+.PP
+Definition at line \fB355\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::insertLink (std::string idlk1, std::string lkn, std::string lnk, std::string ddes)"
+
+.PP
+Definition at line \fB381\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::listCategories (bool idPrim)"
+
+.PP
+Definition at line \fB74\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::listDatabases ()"
+
+.PP
+Definition at line \fB21\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::listLinks (int curCat, bool dRID)"
+
+.PP
+Definition at line \fB135\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::listLk1Lk2 ()"
+
+.PP
+Definition at line \fB303\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::nb01 ()"
+
+.PP
+Definition at line \fB293\fP of file \fBzDB01\&.cpp\fP\&.
+.SS "void zDB01::selDB ()"
+
+.PP
+Definition at line \fB255\fP of file \fBzDB01\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string zDB01::curDB"
+
+.PP
+Definition at line \fB18\fP of file \fBzDB01\&.h\fP\&.
+.SS "std::string zDB01::database = 'bcswebtools'"
+
+.PP
+Definition at line \fB36\fP of file \fBzDB01\&.h\fP\&.
+.SS "wxString zDB01::db"
+
+.PP
+Definition at line \fB17\fP of file \fBzDB01\&.h\fP\&.
+.SS "wxArrayString zDB01::dbn"
+
+.PP
+Definition at line \fB15\fP of file \fBzDB01\&.h\fP\&.
+.SS "bool zDB01::insertMode"
+
+.PP
+Definition at line \fB34\fP of file \fBzDB01\&.h\fP\&.
+.SS "wxArrayString zDB01::lk1"
+
+.PP
+Definition at line \fB15\fP of file \fBzDB01\&.h\fP\&.
+.SS "wxArrayString zDB01::lk2"
+
+.PP
+Definition at line \fB15\fP of file \fBzDB01\&.h\fP\&.
+.SS "wxArrayString zDB01::lk3"
+
+.PP
+Definition at line \fB15\fP of file \fBzDB01\&.h\fP\&.
+.SS "std::string zDB01::password = 'Peace007!amb'"
+
+.PP
+Definition at line \fB39\fP of file \fBzDB01\&.h\fP\&.
+.SS "std::string zDB01::server = 'localhost'"
+
+.PP
+Definition at line \fB37\fP of file \fBzDB01\&.h\fP\&.
+.SS "std::string zDB01::strIdlk1 = '43'"
+
+.PP
+Definition at line \fB33\fP of file \fBzDB01\&.h\fP\&.
+.SS "std::string zDB01::user = 'bcs'"
+
+.PP
+Definition at line \fB38\fP of file \fBzDB01\&.h\fP\&.
+.SS "mysqlpp::StoreQueryResult zDB01::zres"
+
+.PP
+Definition at line \fB27\fP of file \fBzDB01\&.h\fP\&.
 
 .SH "Author"
 .PP 

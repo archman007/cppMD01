@@ -3,64 +3,80 @@
 <title>dlgNewLink Class Reference</title>
 <indexterm><primary>dlgNewLink</primary></indexterm>
 <para>
-Inherits wxDialog.</para>
+<computeroutput>#include &lt;dlgNewLink.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for dlgNewLink:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_new_link.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_classdlg_new_link_1aea36327039f6010e1e3aaf80d0e899ce">dlgNewLink</link> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classdlg_new_link_1a85a3ebb20da5d338542b7256fb302d0e">~dlgNewLink</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a466cd52a3b7eb455cb5bf5f5f1a9976d"/>wxButton * <emphasis role="strong">btnCancel</emphasis></para>
+            <listitem><para>wxButton * <link linkend="_classdlg_new_link_1a466cd52a3b7eb455cb5bf5f5f1a9976d">btnCancel</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a8954bd9148106c2121655fa774f794ab"/>wxButton * <emphasis role="strong">btnInset</emphasis></para>
+            <listitem><para>wxButton * <link linkend="_classdlg_new_link_1a8954bd9148106c2121655fa774f794ab">btnInset</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1aa477f47427a5f935e8cbc955bf1241a6"/>wxStaticText * <emphasis role="strong">lblDet</emphasis></para>
+            <listitem><para>wxStaticText * <link linkend="_classdlg_new_link_1aa477f47427a5f935e8cbc955bf1241a6">lblDet</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a86ada851b18cfd3d97fb406e9ba14209"/>wxStaticText * <emphasis role="strong">lblLink</emphasis></para>
+            <listitem><para>wxStaticText * <link linkend="_classdlg_new_link_1a86ada851b18cfd3d97fb406e9ba14209">lblLink</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1af137dcaa7e04f1b8653ae436c422e2fe"/>wxStaticText * <emphasis role="strong">lblidlk1</emphasis></para>
+            <listitem><para>wxStaticText * <link linkend="_classdlg_new_link_1af137dcaa7e04f1b8653ae436c422e2fe">lblidlk1</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a03da7b966f78bc2b856e88f83951d119"/>wxStaticText * <emphasis role="strong">lnlLinkName</emphasis></para>
+            <listitem><para>wxStaticText * <link linkend="_classdlg_new_link_1a03da7b966f78bc2b856e88f83951d119">lnlLinkName</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a0ec15053e86f442b7aeee4e6f5fc32c9"/>wxTextCtrl * <emphasis role="strong">edtDetDes</emphasis></para>
+            <listitem><para>wxTextCtrl * <link linkend="_classdlg_new_link_1a0ec15053e86f442b7aeee4e6f5fc32c9">edtDetDes</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a700c1eb2452ae9c18b2da5c50919652b"/>wxTextCtrl * <emphasis role="strong">edtLink</emphasis></para>
+            <listitem><para>wxTextCtrl * <link linkend="_classdlg_new_link_1a700c1eb2452ae9c18b2da5c50919652b">edtLink</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a6faebd04b803ac8e6e886846459df4f4"/>wxTextCtrl * <emphasis role="strong">edtLinkName</emphasis></para>
+            <listitem><para>wxTextCtrl * <link linkend="_classdlg_new_link_1a6faebd04b803ac8e6e886846459df4f4">edtLinkName</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a3b5f9612726afec26d697a0c147dd370"/>wxTextCtrl * <emphasis role="strong">edtPrim</emphasis></para>
+            <listitem><para>wxTextCtrl * <link linkend="_classdlg_new_link_1a3b5f9612726afec26d697a0c147dd370">edtPrim</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Static Protected Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1aaadd9729742ef849956e876a427285f6"/>static const long <emphasis role="strong">ID_STATICTEXT1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1aaadd9729742ef849956e876a427285f6">ID_STATICTEXT1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a63ac1dfe6f16efa327171c4c37260053"/>static const long <emphasis role="strong">ID_TEXTCTRL1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1a63ac1dfe6f16efa327171c4c37260053">ID_TEXTCTRL1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1aa7866facce26a163d69264ca319bb868"/>static const long <emphasis role="strong">ID_STATICTEXT2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1aa7866facce26a163d69264ca319bb868">ID_STATICTEXT2</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1ac354dd402ebb892c746aa5d392feaa84"/>static const long <emphasis role="strong">ID_TEXTCTRL2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1ac354dd402ebb892c746aa5d392feaa84">ID_TEXTCTRL2</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a245eaf900701a7742c042c2583d167a1"/>static const long <emphasis role="strong">ID_STATICTEXT3</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1a245eaf900701a7742c042c2583d167a1">ID_STATICTEXT3</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1adfe1b9821eba1a652541c9ed91db7d6f"/>static const long <emphasis role="strong">ID_TEXTCTRL3</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1adfe1b9821eba1a652541c9ed91db7d6f">ID_TEXTCTRL3</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a4f118cf7a4161234aa13be635876fde3"/>static const long <emphasis role="strong">ID_STATICTEXT4</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1a4f118cf7a4161234aa13be635876fde3">ID_STATICTEXT4</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a3984c33b6d685c2f59d4bf0fad5ec12a"/>static const long <emphasis role="strong">ID_TEXTCTRL4</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1a3984c33b6d685c2f59d4bf0fad5ec12a">ID_TEXTCTRL4</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1a57acdc0d1d68985d9f42706aa7e13aaa"/>static const long <emphasis role="strong">ID_BUTTON1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1a57acdc0d1d68985d9f42706aa7e13aaa">ID_BUTTON1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_new_link_1af4a7b4e0d1740c6ae7be7f4cb3592548"/>static const long <emphasis role="strong">ID_BUTTON2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_new_link_1af4a7b4e0d1740c6ae7be7f4cb3592548">ID_BUTTON2</link> = wxNewId()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00012">12</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
 <anchor xml:id="_classdlg_new_link_1aea36327039f6010e1e3aaf80d0e899ce"/><section>
@@ -72,8 +88,160 @@ Inherits wxDialog.</para>
 , const wxSize &amp; size = <computeroutput>wxDefaultSize</computeroutput>
 )</computeroutput></para>
 <para>zrdb.initField(mkVal,dlg.edtPrim);</para>
+<para>
+Definition at line <link linkend="_dlg_new_link_8cpp_source_1l00031">31</link> of file <link linkend="_dlg_new_link_8cpp_source">dlgNewLink.cpp</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a85a3ebb20da5d338542b7256fb302d0e"/><section>
+    <title>~dlgNewLink()</title>
+<indexterm><primary>~dlgNewLink</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>~dlgNewLink</secondary></indexterm>
+<para><computeroutput>dlgNewLink::~dlgNewLink ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8cpp_source_1l00084">84</link> of file <link linkend="_dlg_new_link_8cpp_source">dlgNewLink.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdlg_new_link_1a466cd52a3b7eb455cb5bf5f5f1a9976d"/><section>
+    <title>btnCancel</title>
+<indexterm><primary>btnCancel</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>btnCancel</secondary></indexterm>
+<para><computeroutput>wxButton* dlgNewLink::btnCancel</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00020">20</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a8954bd9148106c2121655fa774f794ab"/><section>
+    <title>btnInset</title>
+<indexterm><primary>btnInset</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>btnInset</secondary></indexterm>
+<para><computeroutput>wxButton* dlgNewLink::btnInset</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00021">21</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a0ec15053e86f442b7aeee4e6f5fc32c9"/><section>
+    <title>edtDetDes</title>
+<indexterm><primary>edtDetDes</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>edtDetDes</secondary></indexterm>
+<para><computeroutput>wxTextCtrl* dlgNewLink::edtDetDes</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00026">26</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a700c1eb2452ae9c18b2da5c50919652b"/><section>
+    <title>edtLink</title>
+<indexterm><primary>edtLink</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>edtLink</secondary></indexterm>
+<para><computeroutput>wxTextCtrl* dlgNewLink::edtLink</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00027">27</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a6faebd04b803ac8e6e886846459df4f4"/><section>
+    <title>edtLinkName</title>
+<indexterm><primary>edtLinkName</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>edtLinkName</secondary></indexterm>
+<para><computeroutput>wxTextCtrl* dlgNewLink::edtLinkName</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00028">28</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a3b5f9612726afec26d697a0c147dd370"/><section>
+    <title>edtPrim</title>
+<indexterm><primary>edtPrim</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>edtPrim</secondary></indexterm>
+<para><computeroutput>wxTextCtrl* dlgNewLink::edtPrim</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00029">29</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a57acdc0d1d68985d9f42706aa7e13aaa"/><section>
+    <title>ID_BUTTON1</title>
+<indexterm><primary>ID_BUTTON1</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_BUTTON1</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_BUTTON1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00043">43</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1af4a7b4e0d1740c6ae7be7f4cb3592548"/><section>
+    <title>ID_BUTTON2</title>
+<indexterm><primary>ID_BUTTON2</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_BUTTON2</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_BUTTON2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00044">44</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1aaadd9729742ef849956e876a427285f6"/><section>
+    <title>ID_STATICTEXT1</title>
+<indexterm><primary>ID_STATICTEXT1</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_STATICTEXT1</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_STATICTEXT1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00035">35</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1aa7866facce26a163d69264ca319bb868"/><section>
+    <title>ID_STATICTEXT2</title>
+<indexterm><primary>ID_STATICTEXT2</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_STATICTEXT2</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_STATICTEXT2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00037">37</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a245eaf900701a7742c042c2583d167a1"/><section>
+    <title>ID_STATICTEXT3</title>
+<indexterm><primary>ID_STATICTEXT3</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_STATICTEXT3</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_STATICTEXT3 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00039">39</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a4f118cf7a4161234aa13be635876fde3"/><section>
+    <title>ID_STATICTEXT4</title>
+<indexterm><primary>ID_STATICTEXT4</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_STATICTEXT4</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_STATICTEXT4 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00041">41</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a63ac1dfe6f16efa327171c4c37260053"/><section>
+    <title>ID_TEXTCTRL1</title>
+<indexterm><primary>ID_TEXTCTRL1</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_TEXTCTRL1</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_TEXTCTRL1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00036">36</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1ac354dd402ebb892c746aa5d392feaa84"/><section>
+    <title>ID_TEXTCTRL2</title>
+<indexterm><primary>ID_TEXTCTRL2</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_TEXTCTRL2</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_TEXTCTRL2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00038">38</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1adfe1b9821eba1a652541c9ed91db7d6f"/><section>
+    <title>ID_TEXTCTRL3</title>
+<indexterm><primary>ID_TEXTCTRL3</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_TEXTCTRL3</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_TEXTCTRL3 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00040">40</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a3984c33b6d685c2f59d4bf0fad5ec12a"/><section>
+    <title>ID_TEXTCTRL4</title>
+<indexterm><primary>ID_TEXTCTRL4</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>ID_TEXTCTRL4</secondary></indexterm>
+<para><computeroutput>const long dlgNewLink::ID_TEXTCTRL4 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00042">42</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1aa477f47427a5f935e8cbc955bf1241a6"/><section>
+    <title>lblDet</title>
+<indexterm><primary>lblDet</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>lblDet</secondary></indexterm>
+<para><computeroutput>wxStaticText* dlgNewLink::lblDet</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00022">22</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1af137dcaa7e04f1b8653ae436c422e2fe"/><section>
+    <title>lblidlk1</title>
+<indexterm><primary>lblidlk1</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>lblidlk1</secondary></indexterm>
+<para><computeroutput>wxStaticText* dlgNewLink::lblidlk1</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00024">24</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a86ada851b18cfd3d97fb406e9ba14209"/><section>
+    <title>lblLink</title>
+<indexterm><primary>lblLink</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>lblLink</secondary></indexterm>
+<para><computeroutput>wxStaticText* dlgNewLink::lblLink</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00023">23</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_new_link_1a03da7b966f78bc2b856e88f83951d119"/><section>
+    <title>lnlLinkName</title>
+<indexterm><primary>lnlLinkName</primary><secondary>dlgNewLink</secondary></indexterm>
+<indexterm><primary>dlgNewLink</primary><secondary>lnlLinkName</secondary></indexterm>
+<para><computeroutput>wxStaticText* dlgNewLink::lnlLinkName</computeroutput></para><para>
+Definition at line <link linkend="_dlg_new_link_8h_source_1l00025">25</link> of file <link linkend="_dlg_new_link_8h_source">dlgNewLink.h</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>
-dlgNewLink.hdlgNewLink.cpp</section>
+<link linkend="_dlg_new_link_8h">dlgNewLink.h</link><link linkend="_dlg_new_link_8cpp">dlgNewLink.cpp</link></section>
 </section>

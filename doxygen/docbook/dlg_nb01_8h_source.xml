@@ -1,53 +1,53 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_nb01_8h_source" xml:lang="en-US">
 <title>dlgNb01.h</title>
-<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;DLGNB01_H</emphasis>
-2 <emphasis role="preprocessor">#define&#32;DLGNB01_H</emphasis>
-3 
-4 <emphasis role="comment">//(*Headers(dlgNb01)</emphasis>
-5 <emphasis role="preprocessor">#include&#32;&lt;wx/dialog.h&gt;</emphasis>
-6 <emphasis role="preprocessor">#include&#32;&lt;wx/listbox.h&gt;</emphasis>
-7 <emphasis role="preprocessor">#include&#32;&lt;wx/notebook.h&gt;</emphasis>
-8 <emphasis role="preprocessor">#include&#32;&lt;wx/panel.h&gt;</emphasis>
-9 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
-10 <emphasis role="comment">//*)</emphasis>
-11 
-12 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classdlg_nb01">dlgNb01</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxDialog
-13 {
-14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
-15 
-16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdlg_nb01">dlgNb01</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>=wxID_ANY,<emphasis role="keyword">const</emphasis>&#32;wxPoint&amp;&#32;pos=wxDefaultPosition,<emphasis role="keyword">const</emphasis>&#32;wxSize&amp;&#32;size=wxDefaultSize);
-17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classdlg_nb01">~dlgNb01</link>();
-18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;curCat;
-19 
-20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(dlgNb01)</emphasis>
-21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxListBox*&#32;lbxCats;
-22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxListBox*&#32;lbxLinks;
-23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxNotebook*&#32;nbk01;
-24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxPanel*&#32;Panel1;
-25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxPanel*&#32;Panel2;
-26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-27 
-28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
-29 
-30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(dlgNb01)</emphasis>
-31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_LISTBOX1;
-32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL1;
-33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_LISTBOX2;
-34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL2;
-35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_NOTEBOOK1;
-36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-37 
-38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
-39 
-40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(dlgNb01)</emphasis>
-41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnlbxCatsSelect(wxCommandEvent&amp;&#32;event);
-42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnlbxCatsDClick(wxCommandEvent&amp;&#32;event);
-43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnlbxLinksDClick(wxCommandEvent&amp;&#32;event);
-44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-45 
-46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
-47 };
-48 
-49 <emphasis role="preprocessor">#endif</emphasis>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_dlg_nb01_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;DLGNB01_H</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;DLGNB01_H</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00003"/>00003 
+<anchor xml:id="_dlg_nb01_8h_source_1l00004"/>00004 <emphasis role="comment">//(*Headers(dlgNb01)</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;wx/dialog.h&gt;</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;wx/listbox.h&gt;</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;wx/notebook.h&gt;</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;wx/panel.h&gt;</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00009"/>00009 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00010"/>00010 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00011"/>00011 
+<anchor xml:id="_dlg_nb01_8h_source_1l00012"/><link linkend="_classdlg_nb01">00012</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classdlg_nb01">dlgNb01</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxDialog
+<anchor xml:id="_dlg_nb01_8h_source_1l00013"/>00013 {
+<anchor xml:id="_dlg_nb01_8h_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_dlg_nb01_8h_source_1l00015"/>00015 
+<anchor xml:id="_dlg_nb01_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdlg_nb01_1a2e977dbfcc9d7fed5f06c9071d0d9e07">dlgNb01</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>=wxID_ANY,<emphasis role="keyword">const</emphasis>&#32;wxPoint&amp;&#32;pos=wxDefaultPosition,<emphasis role="keyword">const</emphasis>&#32;wxSize&amp;&#32;size=wxDefaultSize);
+<anchor xml:id="_dlg_nb01_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classdlg_nb01_1a903a9f01411d3f6a4b7128d033590ce9">~dlgNb01</link>();
+<anchor xml:id="_dlg_nb01_8h_source_1l00018"/><link linkend="_classdlg_nb01_1ab36c76e5726dae55ba0a83cdab1df6c3">00018</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_classdlg_nb01_1ab36c76e5726dae55ba0a83cdab1df6c3">curCat</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00019"/>00019 
+<anchor xml:id="_dlg_nb01_8h_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(dlgNb01)</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00021"/><link linkend="_classdlg_nb01_1a76377ea7eb09dc99e70d06daa1e8c229">00021</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxListBox*&#32;<link linkend="_classdlg_nb01_1a76377ea7eb09dc99e70d06daa1e8c229">lbxCats</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00022"/><link linkend="_classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3">00022</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxListBox*&#32;<link linkend="_classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3">lbxLinks</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00023"/><link linkend="_classdlg_nb01_1ae84963ba986c733626d3e40b540ec77d">00023</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxNotebook*&#32;<link linkend="_classdlg_nb01_1ae84963ba986c733626d3e40b540ec77d">nbk01</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00024"/><link linkend="_classdlg_nb01_1aedc4048e1ad676e71c331327f8272e75">00024</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxPanel*&#32;<link linkend="_classdlg_nb01_1aedc4048e1ad676e71c331327f8272e75">Panel1</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00025"/><link linkend="_classdlg_nb01_1af689c5f7c2b69e8601d50d105f3188d5">00025</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxPanel*&#32;<link linkend="_classdlg_nb01_1af689c5f7c2b69e8601d50d105f3188d5">Panel2</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00027"/>00027 
+<anchor xml:id="_dlg_nb01_8h_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="_dlg_nb01_8h_source_1l00029"/>00029 
+<anchor xml:id="_dlg_nb01_8h_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(dlgNb01)</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00031"/><link linkend="_classdlg_nb01_1a087639f2f189964da81412b3adb82b38">00031</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1a087639f2f189964da81412b3adb82b38">ID_LISTBOX1</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00032"/><link linkend="_classdlg_nb01_1ad27b25cedb8054749c1089ce5cac2e82">00032</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1ad27b25cedb8054749c1089ce5cac2e82">ID_PANEL1</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00033"/><link linkend="_classdlg_nb01_1af8539a8de173be5c3f8aac34d3cc3613">00033</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1af8539a8de173be5c3f8aac34d3cc3613">ID_LISTBOX2</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00034"/><link linkend="_classdlg_nb01_1a1ff3066230a343f8b2e1da507d200581">00034</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1a1ff3066230a343f8b2e1da507d200581">ID_PANEL2</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00035"/><link linkend="_classdlg_nb01_1a2f89e54374be753ba3c7379d8122ce73">00035</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_nb01_1a2f89e54374be753ba3c7379d8122ce73">ID_NOTEBOOK1</link>;
+<anchor xml:id="_dlg_nb01_8h_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00037"/>00037 
+<anchor xml:id="_dlg_nb01_8h_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_dlg_nb01_8h_source_1l00039"/>00039 
+<anchor xml:id="_dlg_nb01_8h_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(dlgNb01)</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnlbxCatsSelect(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_dlg_nb01_8h_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnlbxCatsDClick(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_dlg_nb01_8h_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnlbxLinksDClick(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_dlg_nb01_8h_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_nb01_8h_source_1l00045"/>00045 
+<anchor xml:id="_dlg_nb01_8h_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
+<anchor xml:id="_dlg_nb01_8h_source_1l00047"/>00047 };
+<anchor xml:id="_dlg_nb01_8h_source_1l00048"/>00048 
+<anchor xml:id="_dlg_nb01_8h_source_1l00049"/>00049 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

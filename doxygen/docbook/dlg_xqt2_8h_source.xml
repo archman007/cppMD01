@@ -1,46 +1,46 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_xqt2_8h_source" xml:lang="en-US">
 <title>dlgXqt2.h</title>
-<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;DLGXQT2_H</emphasis>
-2 <emphasis role="preprocessor">#define&#32;DLGXQT2_H</emphasis>
-3 
-4 <emphasis role="comment">//(*Headers(dlgXqt2)</emphasis>
-5 <emphasis role="preprocessor">#include&#32;&lt;wx/button.h&gt;</emphasis>
-6 <emphasis role="preprocessor">#include&#32;&lt;wx/dialog.h&gt;</emphasis>
-7 <emphasis role="preprocessor">#include&#32;&lt;wx/radiobox.h&gt;</emphasis>
-8 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
-9 <emphasis role="comment">//*)</emphasis>
-10 
-11 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classdlg_xqt2">dlgXqt2</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxDialog
-12 {
-13 <emphasis role="keyword">public</emphasis>:
-14 
-15 &#32;&#32;&#32;&#32;<link linkend="_classdlg_xqt2">dlgXqt2</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>=wxID_ANY,<emphasis role="keyword">const</emphasis>&#32;wxPoint&amp;&#32;pos=wxDefaultPosition,<emphasis role="keyword">const</emphasis>&#32;wxSize&amp;&#32;size=wxDefaultSize);
-16 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classdlg_xqt2">~dlgXqt2</link>();
-17 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;isel;
-18 
-19 
-20 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(dlgXqt2)</emphasis>
-21 &#32;&#32;&#32;&#32;wxButton*&#32;butCancel;
-22 &#32;&#32;&#32;&#32;wxRadioBox*&#32;rbtRadBut;
-23 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-24 
-25 <emphasis role="keyword">protected</emphasis>:
-26 
-27 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(dlgXqt2)</emphasis>
-28 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_RADIOBOX1;
-29 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_BUTTON1;
-30 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-31 
-32 <emphasis role="keyword">private</emphasis>:
-33 
-34 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(dlgXqt2)</emphasis>
-35 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-36 
-37 &#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
-38 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnbutCancelClick(wxCommandEvent&amp;&#32;event);
-39 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnrbtRadButSelect(wxCommandEvent&amp;&#32;event);
-40 };
-41 
-42 <emphasis role="preprocessor">#endif</emphasis>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_dlg_xqt2_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;DLGXQT2_H</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;DLGXQT2_H</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00003"/>00003 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00004"/>00004 <emphasis role="comment">//(*Headers(dlgXqt2)</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;wx/button.h&gt;</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;wx/dialog.h&gt;</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;wx/radiobox.h&gt;</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00009"/>00009 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00010"/>00010 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00011"/><link linkend="_classdlg_xqt2">00011</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classdlg_xqt2">dlgXqt2</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxDialog
+<anchor xml:id="_dlg_xqt2_8h_source_1l00012"/>00012 {
+<anchor xml:id="_dlg_xqt2_8h_source_1l00013"/>00013 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_dlg_xqt2_8h_source_1l00014"/>00014 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<link linkend="_classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a">dlgXqt2</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>=wxID_ANY,<emphasis role="keyword">const</emphasis>&#32;wxPoint&amp;&#32;pos=wxDefaultPosition,<emphasis role="keyword">const</emphasis>&#32;wxSize&amp;&#32;size=wxDefaultSize);
+<anchor xml:id="_dlg_xqt2_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771">~dlgXqt2</link>();
+<anchor xml:id="_dlg_xqt2_8h_source_1l00017"/><link linkend="_classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e">00017</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e">isel</link>;
+<anchor xml:id="_dlg_xqt2_8h_source_1l00018"/>00018 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00019"/>00019 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(dlgXqt2)</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00021"/><link linkend="_classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754">00021</link> &#32;&#32;&#32;&#32;wxButton*&#32;<link linkend="_classdlg_xqt2_1a15d52a699f0a39e3003b062bfd407754">butCancel</link>;
+<anchor xml:id="_dlg_xqt2_8h_source_1l00022"/><link linkend="_classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc">00022</link> &#32;&#32;&#32;&#32;wxRadioBox*&#32;<link linkend="_classdlg_xqt2_1a1c240c7b85f6bb6ac1853c834179eefc">rbtRadBut</link>;
+<anchor xml:id="_dlg_xqt2_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00024"/>00024 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00025"/>00025 <emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="_dlg_xqt2_8h_source_1l00026"/>00026 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(dlgXqt2)</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00028"/><link linkend="_classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b">00028</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b">ID_RADIOBOX1</link>;
+<anchor xml:id="_dlg_xqt2_8h_source_1l00029"/><link linkend="_classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6">00029</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6">ID_BUTTON1</link>;
+<anchor xml:id="_dlg_xqt2_8h_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00031"/>00031 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00032"/>00032 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_dlg_xqt2_8h_source_1l00033"/>00033 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(dlgXqt2)</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_xqt2_8h_source_1l00036"/>00036 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00037"/>00037 &#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
+<anchor xml:id="_dlg_xqt2_8h_source_1l00038"/>00038 &#32;&#32;&#32;&#32;void&#32;OnbutCancelClick(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_dlg_xqt2_8h_source_1l00039"/>00039 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnrbtRadButSelect(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_dlg_xqt2_8h_source_1l00040"/>00040 };
+<anchor xml:id="_dlg_xqt2_8h_source_1l00041"/>00041 
+<anchor xml:id="_dlg_xqt2_8h_source_1l00042"/>00042 <emphasis role="preprocessor">#endif</emphasis>
 </programlisting></section>

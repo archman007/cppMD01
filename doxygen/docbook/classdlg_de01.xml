@@ -3,40 +3,135 @@
 <title>dlgDe01 Class Reference</title>
 <indexterm><primary>dlgDe01</primary></indexterm>
 <para>
-Inherits wxDialog.</para>
+<computeroutput>#include &lt;dlgDe01.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for dlgDe01:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_de01.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_de01_1a3e510af877eaa87b402243af703da297"/><emphasis role="strong">dlgDe01</emphasis> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+            <listitem><para><link linkend="_classdlg_de01_1a3e510af877eaa87b402243af703da297">dlgDe01</link> (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classdlg_de01_1a7fc4b075d66c6525bef504ea04ad775e">~dlgDe01</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Public Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_de01_1abaa789e136c59f00a36616ceaf4c8623"/>wxStaticText * <emphasis role="strong">StaticText1</emphasis></para>
+            <listitem><para>wxStaticText * <link linkend="_classdlg_de01_1abaa789e136c59f00a36616ceaf4c8623">StaticText1</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_de01_1a26ef90226a5293ad736c3550067ec6d6"/>wxStaticText * <emphasis role="strong">StaticText2</emphasis></para>
+            <listitem><para>wxStaticText * <link linkend="_classdlg_de01_1a26ef90226a5293ad736c3550067ec6d6">StaticText2</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_de01_1a61aa353a0243a41bcfff6c3ddfa225e1"/>wxTextCtrl * <emphasis role="strong">TextCtrl1</emphasis></para>
+            <listitem><para>wxTextCtrl * <link linkend="_classdlg_de01_1a61aa353a0243a41bcfff6c3ddfa225e1">TextCtrl1</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_de01_1a1aff62e9592c0bbcec21161228817010"/>wxTextCtrl * <emphasis role="strong">TextCtrl2</emphasis></para>
+            <listitem><para>wxTextCtrl * <link linkend="_classdlg_de01_1a1aff62e9592c0bbcec21161228817010">TextCtrl2</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Static Protected Attributes    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classdlg_de01_1a3caad11ce54001b9ec04932bb505fe57"/>static const long <emphasis role="strong">ID_STATICTEXT1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_de01_1a3caad11ce54001b9ec04932bb505fe57">ID_STATICTEXT1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_de01_1ac6ddea7e9abb3d618658bc631a7a268a"/>static const long <emphasis role="strong">ID_TEXTCTRL1</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_de01_1ac6ddea7e9abb3d618658bc631a7a268a">ID_TEXTCTRL1</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_de01_1ae896a2930ae8c3cf7f3516f368b4e325"/>static const long <emphasis role="strong">ID_STATICTEXT2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_de01_1ae896a2930ae8c3cf7f3516f368b4e325">ID_STATICTEXT2</link> = wxNewId()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classdlg_de01_1a03f60364aea276d36ed6bec75bef2bb4"/>static const long <emphasis role="strong">ID_TEXTCTRL2</emphasis> = wxNewId()</para>
+            <listitem><para>static const long <link linkend="_classdlg_de01_1a03f60364aea276d36ed6bec75bef2bb4">ID_TEXTCTRL2</link> = wxNewId()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_dlg_de01_8h_source_1l00011">11</link> of file <link linkend="_dlg_de01_8h_source">dlgDe01.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classdlg_de01_1a3e510af877eaa87b402243af703da297"/><section>
+    <title>dlgDe01()</title>
+<indexterm><primary>dlgDe01</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>dlgDe01</secondary></indexterm>
+<para><computeroutput>dlgDe01::dlgDe01 (wxWindow * parent, wxWindowID id = <computeroutput>wxID_ANY</computeroutput>
+, const wxPoint &amp; pos = <computeroutput>wxDefaultPosition</computeroutput>
+, const wxSize &amp; size = <computeroutput>wxDefaultSize</computeroutput>
+)</computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8cpp_source_1l00020">20</link> of file <link linkend="_dlg_de01_8cpp_source">dlgDe01.cpp</link>.</para>
+</section>
+<anchor xml:id="_classdlg_de01_1a7fc4b075d66c6525bef504ea04ad775e"/><section>
+    <title>~dlgDe01()</title>
+<indexterm><primary>~dlgDe01</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>~dlgDe01</secondary></indexterm>
+<para><computeroutput>dlgDe01::~dlgDe01 ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8cpp_source_1l00052">52</link> of file <link linkend="_dlg_de01_8cpp_source">dlgDe01.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdlg_de01_1a3caad11ce54001b9ec04932bb505fe57"/><section>
+    <title>ID_STATICTEXT1</title>
+<indexterm><primary>ID_STATICTEXT1</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>ID_STATICTEXT1</secondary></indexterm>
+<para><computeroutput>const long dlgDe01::ID_STATICTEXT1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8h_source_1l00028">28</link> of file <link linkend="_dlg_de01_8h_source">dlgDe01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_de01_1ae896a2930ae8c3cf7f3516f368b4e325"/><section>
+    <title>ID_STATICTEXT2</title>
+<indexterm><primary>ID_STATICTEXT2</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>ID_STATICTEXT2</secondary></indexterm>
+<para><computeroutput>const long dlgDe01::ID_STATICTEXT2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8h_source_1l00030">30</link> of file <link linkend="_dlg_de01_8h_source">dlgDe01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_de01_1ac6ddea7e9abb3d618658bc631a7a268a"/><section>
+    <title>ID_TEXTCTRL1</title>
+<indexterm><primary>ID_TEXTCTRL1</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>ID_TEXTCTRL1</secondary></indexterm>
+<para><computeroutput>const long dlgDe01::ID_TEXTCTRL1 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8h_source_1l00029">29</link> of file <link linkend="_dlg_de01_8h_source">dlgDe01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_de01_1a03f60364aea276d36ed6bec75bef2bb4"/><section>
+    <title>ID_TEXTCTRL2</title>
+<indexterm><primary>ID_TEXTCTRL2</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>ID_TEXTCTRL2</secondary></indexterm>
+<para><computeroutput>const long dlgDe01::ID_TEXTCTRL2 = wxNewId()<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8h_source_1l00031">31</link> of file <link linkend="_dlg_de01_8h_source">dlgDe01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_de01_1abaa789e136c59f00a36616ceaf4c8623"/><section>
+    <title>StaticText1</title>
+<indexterm><primary>StaticText1</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>StaticText1</secondary></indexterm>
+<para><computeroutput>wxStaticText* dlgDe01::StaticText1</computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8h_source_1l00019">19</link> of file <link linkend="_dlg_de01_8h_source">dlgDe01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_de01_1a26ef90226a5293ad736c3550067ec6d6"/><section>
+    <title>StaticText2</title>
+<indexterm><primary>StaticText2</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>StaticText2</secondary></indexterm>
+<para><computeroutput>wxStaticText* dlgDe01::StaticText2</computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8h_source_1l00020">20</link> of file <link linkend="_dlg_de01_8h_source">dlgDe01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_de01_1a61aa353a0243a41bcfff6c3ddfa225e1"/><section>
+    <title>TextCtrl1</title>
+<indexterm><primary>TextCtrl1</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>TextCtrl1</secondary></indexterm>
+<para><computeroutput>wxTextCtrl* dlgDe01::TextCtrl1</computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8h_source_1l00021">21</link> of file <link linkend="_dlg_de01_8h_source">dlgDe01.h</link>.</para>
+</section>
+<anchor xml:id="_classdlg_de01_1a1aff62e9592c0bbcec21161228817010"/><section>
+    <title>TextCtrl2</title>
+<indexterm><primary>TextCtrl2</primary><secondary>dlgDe01</secondary></indexterm>
+<indexterm><primary>dlgDe01</primary><secondary>TextCtrl2</secondary></indexterm>
+<para><computeroutput>wxTextCtrl* dlgDe01::TextCtrl2</computeroutput></para><para>
+Definition at line <link linkend="_dlg_de01_8h_source_1l00022">22</link> of file <link linkend="_dlg_de01_8h_source">dlgDe01.h</link>.</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
-dlgDe01.hdlgDe01.cpp</section>
+<link linkend="_dlg_de01_8h">dlgDe01.h</link><link linkend="_dlg_de01_8cpp">dlgDe01.cpp</link></section>
+</section>

@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_curl_stuff_8cpp_source" xml:lang="en-US">
+<title>curlStuff.cpp</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_curl_stuff_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_curl_stuff_8h">curlStuff.h</link>&quot;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;curl/curl.h&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;fstream&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;ios&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;strstream&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;sstream&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00009"/>00009 <emphasis role="preprocessor">#include&#32;&lt;curl/easy.h&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00010"/>00010 <emphasis role="preprocessor">#include&#32;&lt;boost/algorithm/string.hpp&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00011"/>00011 <emphasis role="preprocessor">#include&#32;&lt;wx/clipbrd.h&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00012"/>00012 <emphasis role="preprocessor">#include&#32;&lt;wx/msgdlg.h&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00013"/>00013 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00014"/>00014 <emphasis role="comment">//#include&#32;&lt;streambuf&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00015"/>00015 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00016"/>00016 <emphasis role="comment">//using&#32;namespace&#32;std;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00017"/>00017 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00018"/><link linkend="_classcurl_stuff_1af3d3c348dcb5819e830a1a96b67e80f9">00018</link> <link linkend="_classcurl_stuff_1af3d3c348dcb5819e830a1a96b67e80f9">curlStuff::curlStuff</link>()
+<anchor xml:id="_curl_stuff_8cpp_source_1l00019"/>00019 {
+<anchor xml:id="_curl_stuff_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="comment">//ctor</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00021"/>00021 }
+<anchor xml:id="_curl_stuff_8cpp_source_1l00022"/>00022 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00023"/><link linkend="_classcurl_stuff_1a4e424e19de760b527df5664f418a2675">00023</link> <link linkend="_classcurl_stuff_1a4e424e19de760b527df5664f418a2675">curlStuff::~curlStuff</link>()
+<anchor xml:id="_curl_stuff_8cpp_source_1l00024"/>00024 {
+<anchor xml:id="_curl_stuff_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="comment">//DlgTstFramedtor</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00026"/>00026 }
+<anchor xml:id="_curl_stuff_8cpp_source_1l00027"/>00027 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00028"/>00028 <emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;data_write(<emphasis role="keywordtype">void</emphasis>*&#32;buf,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;size,&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;nmemb,&#32;<emphasis role="keywordtype">void</emphasis>*&#32;userp)
+<anchor xml:id="_curl_stuff_8cpp_source_1l00029"/>00029 {
+<anchor xml:id="_curl_stuff_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(userp)
+<anchor xml:id="_curl_stuff_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::ostream&amp;&#32;os&#32;=&#32;*<emphasis role="keyword">static_cast&lt;</emphasis>std::ostream*<emphasis role="keyword">&gt;</emphasis>(userp);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::streamsize&#32;len&#32;=&#32;size&#32;*&#32;nmemb;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(os.write(<emphasis role="keyword">static_cast&lt;</emphasis><emphasis role="keywordtype">char</emphasis>*<emphasis role="keyword">&gt;</emphasis>(buf),&#32;len))
+<anchor xml:id="_curl_stuff_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;len;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00037"/>00037 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00039"/>00039 }
+<anchor xml:id="_curl_stuff_8cpp_source_1l00040"/>00040 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00041"/><link linkend="_curl_stuff_8cpp_1a1f65d4f0784c610d8608d3cadd578b89">00041</link> CURLcode&#32;<link linkend="_curl_stuff_8cpp_1a1f65d4f0784c610d8608d3cadd578b89">curl_read</link>(<emphasis role="keyword">const</emphasis>&#32;std::string&amp;&#32;url,&#32;std::ostream&amp;&#32;os,
+<anchor xml:id="_curl_stuff_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">long</emphasis>&#32;timeout&#32;=&#32;30)
+<anchor xml:id="_curl_stuff_8cpp_source_1l00043"/>00043 {
+<anchor xml:id="_curl_stuff_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;CURLcode&#32;code(CURLE_FAILED_INIT);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;CURL*&#32;curl&#32;=&#32;curl_easy_init();
+<anchor xml:id="_curl_stuff_8cpp_source_1l00046"/>00046 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(curl)
+<anchor xml:id="_curl_stuff_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(CURLE_OK
+<anchor xml:id="_curl_stuff_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;==&#32;(code&#32;=&#32;curl_easy_setopt(curl,&#32;CURLOPT_WRITEFUNCTION,
+<anchor xml:id="_curl_stuff_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;data_write))&#32;&amp;&amp;&#32;CURLE_OK
+<anchor xml:id="_curl_stuff_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;==&#32;(code&#32;=&#32;curl_easy_setopt(curl,&#32;CURLOPT_NOPROGRESS,
+<anchor xml:id="_curl_stuff_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;1L))&#32;&amp;&amp;&#32;CURLE_OK
+<anchor xml:id="_curl_stuff_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;==&#32;(code&#32;=&#32;curl_easy_setopt(curl,
+<anchor xml:id="_curl_stuff_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CURLOPT_SSL_VERIFYHOST,&#32;0L))
+<anchor xml:id="_curl_stuff_8cpp_source_1l00056"/>00056 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;&amp;&#32;CURLE_OK</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00057"/>00057 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;==&#32;(code&#32;=&#32;curl_easy_setopt(curl,curl_read</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00058"/>00058 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CURLOPT_FOLLOWLOCATION,&#32;1L))</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;&amp;&#32;CURLE_OK
+<anchor xml:id="_curl_stuff_8cpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;==&#32;(code&#32;=&#32;curl_easy_setopt(curl,&#32;CURLOPT_FILE,&#32;&amp;os))
+<anchor xml:id="_curl_stuff_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;&amp;&#32;CURLE_OK
+<anchor xml:id="_curl_stuff_8cpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;==&#32;(code&#32;=&#32;curl_easy_setopt(curl,&#32;CURLOPT_TIMEOUT,
+<anchor xml:id="_curl_stuff_8cpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;timeout))&#32;&amp;&amp;&#32;CURLE_OK&#32;==&#32;(code&#32;=
+<anchor xml:id="_curl_stuff_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;curl_easy_setopt(curl,&#32;CURLOPT_URL,&#32;url.c_str())))
+<anchor xml:id="_curl_stuff_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00066"/>00066 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;curl_easy_setopt(curl,&#32;CURLOPT_SSL_VERIFYHOST,&#32;false);</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00067"/>00067 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;code&#32;=&#32;curl_easy_perform(curl);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;curl_easy_cleanup(curl);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00072"/>00072 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;code;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00073"/>00073 }
+<anchor xml:id="_curl_stuff_8cpp_source_1l00074"/>00074 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00075"/>00075 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00076"/><link linkend="_classcurl_stuff_1afc2fdfde6fa1450a1184f20ab9cf35f7">00076</link> std::string&#32;<link linkend="_classcurl_stuff_1afc2fdfde6fa1450a1184f20ab9cf35f7">curlStuff::getZTitle</link>(std::string&#32;url)
+<anchor xml:id="_curl_stuff_8cpp_source_1l00077"/>00077 {
+<anchor xml:id="_curl_stuff_8cpp_source_1l00078"/>00078 &#32;&#32;&#32;&#32;std::string&#32;retVal;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00079"/>00079 &#32;&#32;&#32;&#32;std::string&#32;rbuf;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;curl_global_init&#32;(CURL_GLOBAL_ALL);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00081"/>00081 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ii;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00082"/>00082 &#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00083"/>00083 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;We&#32;use&#32;Curl&#32;to&#32;fetch&#32;the&#32;web&#32;page&#32;per&#32;the&#32;URL.</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00084"/>00084 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00085"/>00085 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;A&#32;string&#32;stream&#32;is&#32;used&#32;to&#32;hold&#32;the&#32;web&#32;page</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00086"/>00086 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00087"/>00087 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00088"/>00088 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00089"/>00089 &#32;&#32;&#32;&#32;std::ostringstream&#32;oss;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(CURLE_OK&#32;==&#32;<link linkend="_curl_stuff_8cpp_1a1f65d4f0784c610d8608d3cadd578b89">curl_read</link>(url,&#32;oss))
+<anchor xml:id="_curl_stuff_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Web&#32;page&#32;successfully&#32;written&#32;to&#32;string</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ista;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;isto;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;html;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;html&#32;=&#32;oss.str();
+<anchor xml:id="_curl_stuff_8cpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::ofstream&#32;file(<emphasis role="stringliteral">&quot;filename.txt&quot;</emphasis>);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;file&#32;&lt;&lt;&#32;oss.str();
+<anchor xml:id="_curl_stuff_8cpp_source_1l00099"/>00099 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;sb;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;se;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00102"/>00102 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ista&#32;=&#32;html.find(&quot;TITLE&quot;);</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00103"/>00103 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;((ista&#32;!=&#32;-1)&#32;and&#32;(ista&#32;&lt;&#32;html.length()))&#32;{</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00104"/>00104 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sb&#32;=&#32;&quot;&lt;TITLE&gt;&quot;;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00105"/>00105 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;se&#32;=&#32;&quot;&lt;/TITLE&gt;&quot;;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00106"/>00106 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;else&#32;{</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sb&#32;=&#32;<emphasis role="stringliteral">&quot;&lt;title&gt;&quot;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;se&#32;=&#32;<emphasis role="stringliteral">&quot;&lt;/title&gt;&quot;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00109"/>00109 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ista&#32;=&#32;html.find(sb);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;rest;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00112"/>00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rest&#32;=&#32;0;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00113"/>00113 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sb&#32;=&#32;&quot;&lt;title&quot;;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00114"/>00114 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;se&#32;=&#32;&quot;&lt;/title&gt;&quot;;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ista&#32;=&#32;html.find(sb);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00116"/>00116 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(ista&#32;&gt;&#32;-1)&#32;{</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00117"/>00117 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isto&#32;=&#32;html.find(&quot;&gt;&quot;);</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00118"/>00118 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rest&#32;=&#32;(isto&#32;-&#32;(ista&#32;+&#32;6));</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00119"/>00119 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00120"/>00120 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ista&#32;=&#32;ista&#32;+&#32;sb.length()&#32;+&#32;rest;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ista&#32;=&#32;ista&#32;+&#32;7;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00122"/>00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isto&#32;=&#32;html.find(se);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00123"/>00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ilen;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00124"/>00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ilen&#32;=&#32;isto&#32;-&#32;ista;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00125"/>00125 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;char&#32;buffer[5000]&#32;=&#32;{&#32;0&#32;};</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00126"/>00126 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;html.copy(html,&#32;ista,&#32;ilen);</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00127"/>00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rbuf&#32;=&#32;html.substr(ista,&#32;ilen);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00128"/>00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;frs&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00129"/>00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;tos&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00130"/>00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frs&#32;=&#32;<emphasis role="stringliteral">&quot;&amp;quot;&quot;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00131"/>00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tos&#32;=&#32;<emphasis role="charliteral">&apos;&quot;&apos;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00132"/>00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;boost::replace_all(rbuf,&#32;frs,&#32;tos);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00133"/>00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;frs&#32;=&#32;<emphasis role="stringliteral">&quot;&amp;#39;&quot;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tos&#32;=&#32;<emphasis role="stringliteral">&quot;&apos;&quot;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;boost::replace_all(rbuf,&#32;frs,&#32;tos);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00136"/>00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ilen&#32;&gt;&#32;500)
+<anchor xml:id="_curl_stuff_8cpp_source_1l00137"/>00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rbuf&#32;=&#32;<emphasis role="stringliteral">&quot;Dummy&#32;Title&quot;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00139"/>00139 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00140"/>00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00141"/>00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00142"/>00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00143"/>00143 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rbuf&#32;=&#32;html.substr(ista,&#32;ilen);</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00144"/>00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00145"/>00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ilen&#32;=&#32;ilen;&#32;<emphasis role="comment">//&#32;@suppress(&quot;Assignment&#32;to&#32;itself&quot;)</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00146"/>00146 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00147"/>00147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00148"/>00148 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;The&#32;Boost&#32;tokenizer&#32;is&#32;used&#32;to&#32;parse&#32;the&#32;string&#32;stream&#32;into&#32;lines&#32;of&#32;code</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00149"/>00149 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00150"/>00150 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ii&#32;=&#32;strToLine(html);</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00151"/>00151 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lcnt&#32;=&#32;ii;</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00152"/>00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00153"/>00153 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;This&#32;routine&#32;reads&#32;the&#32;lines&#32;of&#32;code&#32;until&#32;the&#32;&lt;Title&gt;&#32;tag&#32;is&#32;encountered.</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00154"/>00154 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00155"/>00155 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;The&#32;line&#32;containing&#32;the&#32;title&#32;tag&#32;is&#32;trimmed&#32;on&#32;both&#32;sides.</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00156"/>00156 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00157"/>00157 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;The&#32;HTML&#32;tags&#32;are&#32;discarded&#32;leaving&#32;us&#32;with&#32;the&#32;title&#32;for&#32;the&#32;web&#32;page.</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00158"/>00158 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00159"/>00159 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Retval&#32;contains&#32;the&#32;web&#32;pate&#32;title.</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00160"/>00160 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00161"/>00161 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00162"/>00162 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;retVal&#32;=&#32;getTitle(ii);</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00163"/>00163 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00164"/>00164 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00165"/>00165 &#32;&#32;&#32;&#32;curl_global_cleanup();
+<anchor xml:id="_curl_stuff_8cpp_source_1l00166"/>00166 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;rbuf;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00167"/>00167 }
+<anchor xml:id="_curl_stuff_8cpp_source_1l00168"/>00168 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00169"/><link linkend="_classcurl_stuff_1a766a52cfa30136e004f9ee76e2eced5f">00169</link> std::string&#32;<link linkend="_classcurl_stuff_1a766a52cfa30136e004f9ee76e2eced5f">curlStuff::getURL</link>()&#32;&#32;&#32;<emphasis role="comment">//&#32;@suppress(&quot;No&#32;return&quot;)</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00170"/>00170 {
+<anchor xml:id="_curl_stuff_8cpp_source_1l00171"/>00171 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00172"/>00172 &#32;&#32;&#32;&#32;std::string&#32;buf;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00173"/>00173 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(wxTheClipboard-&gt;Open())
+<anchor xml:id="_curl_stuff_8cpp_source_1l00174"/>00174 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00175"/>00175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(wxTheClipboard-&gt;IsSupported(wxDF_TEXT))
+<anchor xml:id="_curl_stuff_8cpp_source_1l00176"/>00176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00177"/>00177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTextDataObject&#32;data;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00178"/>00178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTheClipboard-&gt;GetData(data);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00179"/>00179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;buf&#32;=&#32;data.GetText();
+<anchor xml:id="_curl_stuff_8cpp_source_1l00180"/>00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(&#32;data.GetText()&#32;);</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00181"/>00181 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00182"/>00182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00183"/>00183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxTheClipboard-&gt;Close();
+<anchor xml:id="_curl_stuff_8cpp_source_1l00184"/>00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;buf;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00185"/>00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;type&#32;filter&#32;text</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00186"/>00186 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00187"/>00187 }
+<anchor xml:id="_curl_stuff_8cpp_source_1l00188"/>00188 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00189"/><link linkend="_classcurl_stuff_1a95d3ef871d4c6eeb2c9097eaf2ab738f">00189</link> std::string&#32;<link linkend="_classcurl_stuff_1a95d3ef871d4c6eeb2c9097eaf2ab738f">curlStuff::clipUrl</link>()
+<anchor xml:id="_curl_stuff_8cpp_source_1l00190"/>00190 {
+<anchor xml:id="_curl_stuff_8cpp_source_1l00191"/>00191 &#32;&#32;&#32;&#32;<link linkend="_classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0">cbc</link>&#32;=&#32;<link linkend="_classcurl_stuff_1a766a52cfa30136e004f9ee76e2eced5f">getURL</link>();
+<anchor xml:id="_curl_stuff_8cpp_source_1l00192"/>00192 &#32;&#32;&#32;&#32;<link linkend="_classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0">cbc</link>&#32;=&#32;<link linkend="_classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0">cbc</link>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00193"/>00193 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0">cbc</link>.find(<emphasis role="stringliteral">&quot;http&quot;</emphasis>)&#32;&lt;&#32;<link linkend="_classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0">cbc</link>.length())
+<anchor xml:id="_curl_stuff_8cpp_source_1l00194"/>00194 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00195"/>00195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classcurl_stuff_1afc2fdfde6fa1450a1184f20ab9cf35f7">getZTitle</link>(<link linkend="_classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0">cbc</link>);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00196"/>00196 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00197"/>00197 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_curl_stuff_8cpp_source_1l00198"/>00198 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_curl_stuff_8cpp_source_1l00199"/>00199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxMessageBox(<emphasis role="stringliteral">&quot;URL&#32;not&#32;Detected!&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;No&#32;URL&#32;in&#32;Clipboard&quot;</emphasis>,&#32;wxICON_HAND);
+<anchor xml:id="_curl_stuff_8cpp_source_1l00200"/>00200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="_curl_stuff_8cpp_source_1l00201"/>00201 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_curl_stuff_8cpp_source_1l00202"/>00202 
+<anchor xml:id="_curl_stuff_8cpp_source_1l00203"/>00203 }
+</programlisting></section>

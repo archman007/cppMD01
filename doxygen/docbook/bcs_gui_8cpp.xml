@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bcs_gui_8cpp" xml:lang="en-US">
+<title>bcsGui.cpp File Reference</title>
+<indexterm><primary>bcsGui.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;bcsGui.h&quot;<?linebreak?>#include &lt;wx/wx.h&gt;<?linebreak?>#include &lt;wx/dirdlg.h&gt;<?linebreak?>#include &lt;wx/textdlg.h&gt;<?linebreak?>#include &lt;wx/msgdlg.h&gt;<?linebreak?>#include &lt;wx/string.h&gt;<?linebreak?>#include &lt;wx/window.h&gt;<?linebreak?></programlisting></section>

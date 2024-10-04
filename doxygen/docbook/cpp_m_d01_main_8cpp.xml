@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cpp_m_d01_main_8cpp" xml:lang="en-US">
+<title>cppMD01Main.cpp File Reference</title>
+<indexterm><primary>cppMD01Main.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;cppMD01Main.h&quot;<?linebreak?>#include &lt;wx/msgdlg.h&gt;<?linebreak?>#include &lt;wx/grid.h&gt;<?linebreak?>#include &lt;mysql++.h&gt;<?linebreak?>#include &lt;mysql.h&gt;<?linebreak?>#include &lt;wx/hyperlink.h&gt;<?linebreak?>#include &lt;wx/filedlg.h&gt;<?linebreak?>#include &lt;wx/log.h&gt;<?linebreak?>#include &lt;boost/filesystem.hpp&gt;<?linebreak?>#include &lt;boost/algorithm/string.hpp&gt;<?linebreak?>#include &quot;dlgXqt2.h&quot;<?linebreak?>#include &quot;dlgNewLink.h&quot;<?linebreak?>#include &quot;zDB01.h&quot;<?linebreak?>#include &quot;bcsGui.h&quot;<?linebreak?>#include &quot;dlgSelDB.h&quot;<?linebreak?>#include &quot;dlgNewCat.h&quot;<?linebreak?>#include &quot;wx/clipbrd.h&quot;<?linebreak?>#include &quot;dlgSelCat.h&quot;<?linebreak?>#include &lt;wx/intl.h&gt;<?linebreak?>#include &lt;wx/string.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_cpp_m_d01_main_8cpp_1ad6438f1e9a52a97d8c47b461a64b837f">wxbuildinfoformat</link> { <link linkend="_cpp_m_d01_main_8cpp_1ad6438f1e9a52a97d8c47b461a64b837faf34cf4880b9e5e417182a04ea274043c">short_f</link>
+, <link linkend="_cpp_m_d01_main_8cpp_1ad6438f1e9a52a97d8c47b461a64b837fa7ed9aefb554be1a3e8b51f0d58c60c18">long_f</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>wxString <link linkend="_cpp_m_d01_main_8cpp_1afdd094b13f51c9d282a71d71dd0595ab">wxbuildinfo</link> (<link linkend="_cpp_m_d01_main_8cpp_1ad6438f1e9a52a97d8c47b461a64b837f">wxbuildinfoformat</link> format)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classz_d_b01">zDB01</link> <link linkend="_cpp_m_d01_main_8cpp_1a6f94484ba30b8c28f97220283c2a9d62">zrdb</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbcs_gui">bcsGui</link> <link linkend="_cpp_m_d01_main_8cpp_1a6b6a400738b21fc7e0d097944d39f73f">gui01</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_cpp_m_d01_main_8cpp_1ad6438f1e9a52a97d8c47b461a64b837f"/><section>
+    <title>wxbuildinfoformat</title>
+<indexterm><primary>wxbuildinfoformat</primary><secondary>cppMD01Main.cpp</secondary></indexterm>
+<indexterm><primary>cppMD01Main.cpp</primary><secondary>wxbuildinfoformat</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_cpp_m_d01_main_8cpp_1ad6438f1e9a52a97d8c47b461a64b837f">wxbuildinfoformat</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>short_f</primary><secondary>cppMD01Main.cpp</secondary></indexterm>
+<indexterm><primary>cppMD01Main.cpp</primary><secondary>short_f</secondary></indexterm>
+<anchor xml:id="_cpp_m_d01_main_8cpp_1ad6438f1e9a52a97d8c47b461a64b837faf34cf4880b9e5e417182a04ea274043c"/>short_f</entry><entry></entry></row><row><entry><indexterm><primary>long_f</primary><secondary>cppMD01Main.cpp</secondary></indexterm>
+<indexterm><primary>cppMD01Main.cpp</primary><secondary>long_f</secondary></indexterm>
+<anchor xml:id="_cpp_m_d01_main_8cpp_1ad6438f1e9a52a97d8c47b461a64b837fa7ed9aefb554be1a3e8b51f0d58c60c18"/>long_f</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00037">37</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_cpp_m_d01_main_8cpp_1afdd094b13f51c9d282a71d71dd0595ab"/><section>
+    <title>wxbuildinfo()</title>
+<indexterm><primary>wxbuildinfo</primary><secondary>cppMD01Main.cpp</secondary></indexterm>
+<indexterm><primary>cppMD01Main.cpp</primary><secondary>wxbuildinfo</secondary></indexterm>
+<para><computeroutput>wxString wxbuildinfo (<link linkend="_cpp_m_d01_main_8cpp_1ad6438f1e9a52a97d8c47b461a64b837f">wxbuildinfoformat</link> format)</computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00045">45</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_cpp_m_d01_main_8cpp_1a6b6a400738b21fc7e0d097944d39f73f"/><section>
+    <title>gui01</title>
+<indexterm><primary>gui01</primary><secondary>cppMD01Main.cpp</secondary></indexterm>
+<indexterm><primary>cppMD01Main.cpp</primary><secondary>gui01</secondary></indexterm>
+<para><computeroutput><link linkend="_classbcs_gui">bcsGui</link> gui01</computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00043">43</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
+</section>
+<anchor xml:id="_cpp_m_d01_main_8cpp_1a6f94484ba30b8c28f97220283c2a9d62"/><section>
+    <title>zrdb</title>
+<indexterm><primary>zrdb</primary><secondary>cppMD01Main.cpp</secondary></indexterm>
+<indexterm><primary>cppMD01Main.cpp</primary><secondary>zrdb</secondary></indexterm>
+<para><computeroutput><link linkend="_classz_d_b01">zDB01</link> zrdb</computeroutput></para><para>
+Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00042">42</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
+</section>
+</section>
+</section>

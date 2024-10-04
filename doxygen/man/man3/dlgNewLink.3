@@ -7,12 +7,17 @@ dlgNewLink
 .br
 .PP
 .PP
+\fR#include <dlgNewLink\&.h>\fP
+.PP
 Inherits wxDialog\&.
 .SS "Public Member Functions"
 
 .in +1c
 .ti -1c
 .RI "\fBdlgNewLink\fP (wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &pos=wxDefaultPosition, const wxSize &size=wxDefaultSize)"
+.br
+.ti -1c
+.RI "virtual \fB~dlgNewLink\fP ()"
 .br
 .in -1c
 .SS "Public Attributes"
@@ -83,10 +88,101 @@ Inherits wxDialog\&.
 .RI "static const long \fBID_BUTTON2\fP = wxNewId()"
 .br
 .in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB12\fP of file \fBdlgNewLink\&.h\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "dlgNewLink::dlgNewLink (wxWindow * parent, wxWindowID id = \fRwxID_ANY\fP, const wxPoint & pos = \fRwxDefaultPosition\fP, const wxSize & size = \fRwxDefaultSize\fP)"
 zrdb\&.initField(mkVal,dlg\&.edtPrim);
+.PP
+Definition at line \fB31\fP of file \fBdlgNewLink\&.cpp\fP\&.
+.SS "dlgNewLink::~dlgNewLink ()\fR [virtual]\fP"
+
+.PP
+Definition at line \fB84\fP of file \fBdlgNewLink\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "wxButton* dlgNewLink::btnCancel"
+
+.PP
+Definition at line \fB20\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "wxButton* dlgNewLink::btnInset"
+
+.PP
+Definition at line \fB21\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "wxTextCtrl* dlgNewLink::edtDetDes"
+
+.PP
+Definition at line \fB26\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "wxTextCtrl* dlgNewLink::edtLink"
+
+.PP
+Definition at line \fB27\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "wxTextCtrl* dlgNewLink::edtLinkName"
+
+.PP
+Definition at line \fB28\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "wxTextCtrl* dlgNewLink::edtPrim"
+
+.PP
+Definition at line \fB29\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_BUTTON1 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB43\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_BUTTON2 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB44\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_STATICTEXT1 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB35\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_STATICTEXT2 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB37\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_STATICTEXT3 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB39\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_STATICTEXT4 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB41\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_TEXTCTRL1 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB36\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_TEXTCTRL2 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB38\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_TEXTCTRL3 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB40\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "const long dlgNewLink::ID_TEXTCTRL4 = wxNewId()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB42\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "wxStaticText* dlgNewLink::lblDet"
+
+.PP
+Definition at line \fB22\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "wxStaticText* dlgNewLink::lblidlk1"
+
+.PP
+Definition at line \fB24\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "wxStaticText* dlgNewLink::lblLink"
+
+.PP
+Definition at line \fB23\fP of file \fBdlgNewLink\&.h\fP\&.
+.SS "wxStaticText* dlgNewLink::lnlLinkName"
+
+.PP
+Definition at line \fB25\fP of file \fBdlgNewLink\&.h\fP\&.
 
 .SH "Author"
 .PP 

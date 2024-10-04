@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_xqt2_8cpp_source" xml:lang="en-US">
+<title>dlgXqt2.cpp</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_dlg_xqt2_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_dlg_xqt2_8h">dlgXqt2.h</link>&quot;</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00002"/>00002 
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00003"/>00003 <emphasis role="comment">//(*InternalHeaders(dlgXqt2)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;wx/intl.h&gt;</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;wx/string.h&gt;</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00006"/>00006 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00007"/>00007 
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00008"/>00008 <emphasis role="comment">//(*IdInit(dlgXqt2)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00009"/>00009 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_xqt2_1a187d9f525e31ff023552700b648a6e0b">dlgXqt2::ID_RADIOBOX1</link>&#32;=&#32;wxNewId();
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00010"/>00010 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdlg_xqt2_1a977423df9137aa95dd07b9a8958169f6">dlgXqt2::ID_BUTTON1</link>&#32;=&#32;wxNewId();
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00011"/>00011 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00012"/>00012 
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00013"/>00013 BEGIN_EVENT_TABLE(<link linkend="_classdlg_xqt2">dlgXqt2</link>,wxDialog)
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*EventTable(dlgXqt2)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00016"/>00016 END_EVENT_TABLE()
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00017"/>00017 
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00018"/><link linkend="_classdlg_xqt2_1a7fd5c03f12e22eddf713457605a4143a">00018</link> <link linkend="_classdlg_xqt2">dlgXqt2</link>::<link linkend="_classdlg_xqt2">dlgXqt2</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>,const&#32;wxPoint&amp;&#32;pos,const&#32;wxSize&amp;&#32;size)
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00019"/>00019 {
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Initialize(dlgXqt2)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxBoxSizer*&#32;BoxSizer1;
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxBoxSizer*&#32;BoxSizer2;
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxBoxSizer*&#32;BoxSizer3;
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00024"/>00024 
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Create(parent,&#32;<emphasis role="keywordtype">id</emphasis>,&#32;_(<emphasis role="stringliteral">&quot;Select&#32;Document&quot;</emphasis>),&#32;wxDefaultPosition,&#32;wxDefaultSize,&#32;wxDEFAULT_DIALOG_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER,&#32;_T(<emphasis role="stringliteral">&quot;id&quot;</emphasis>));
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetClientSize(wxDefaultSize);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Move(wxDefaultPosition);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BoxSizer1&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxBoxSizer(wxHORIZONTAL);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BoxSizer2&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxBoxSizer(wxHORIZONTAL);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BoxSizer3&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxBoxSizer(wxVERTICAL);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wxString&#32;__wxRadioBoxChoices_1[4]&#32;=
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_(<emphasis role="stringliteral">&quot;Web&quot;</emphasis>),
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_(<emphasis role="stringliteral">&quot;PDF&quot;</emphasis>),
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_(<emphasis role="stringliteral">&quot;Document&quot;</emphasis>),
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_(<emphasis role="stringliteral">&quot;Executable&quot;</emphasis>)
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;};
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rbtRadBut&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxRadioBox(<emphasis role="keyword">this</emphasis>,&#32;ID_RADIOBOX1,&#32;_(<emphasis role="stringliteral">&quot;Process&#32;To&#32;Acomodate&quot;</emphasis>),&#32;wxDefaultPosition,&#32;wxSize(304,52),&#32;4,&#32;__wxRadioBoxChoices_1,&#32;1,&#32;0,&#32;wxDefaultValidator,&#32;_T(<emphasis role="stringliteral">&quot;ID_RADIOBOX1&quot;</emphasis>));
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BoxSizer3-&gt;Add(rbtRadBut,&#32;1,&#32;wxALL|wxEXPAND,&#32;5);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;butCancel&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;wxButton(<emphasis role="keyword">this</emphasis>,&#32;ID_BUTTON1,&#32;_(<emphasis role="stringliteral">&quot;Cancel&quot;</emphasis>),&#32;wxDefaultPosition,&#32;wxDefaultSize,&#32;0,&#32;wxDefaultValidator,&#32;_T(<emphasis role="stringliteral">&quot;ID_BUTTON1&quot;</emphasis>));
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BoxSizer3-&gt;Add(butCancel,&#32;0,&#32;wxALL|wxEXPAND,&#32;1);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BoxSizer2-&gt;Add(BoxSizer3,&#32;1,&#32;wxALL|wxEXPAND,&#32;5);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BoxSizer1-&gt;Add(BoxSizer2,&#32;1,&#32;wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL,&#32;5);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetSizer(BoxSizer1);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BoxSizer1-&gt;Fit(<emphasis role="keyword">this</emphasis>);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;BoxSizer1-&gt;SetSizeHints(<emphasis role="keyword">this</emphasis>);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00047"/>00047 
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Connect(ID_RADIOBOX1,wxEVT_COMMAND_RADIOBOX_SELECTED,(wxObjectEventFunction)&amp;dlgXqt2::OnrbtRadButSelect);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&amp;dlgXqt2::OnbutCancelClick);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00051"/>00051 }
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00052"/>00052 
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00053"/><link linkend="_classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771">00053</link> <link linkend="_classdlg_xqt2_1a1dcea12d3aa4d8ced83ee3dad9625771">dlgXqt2::~dlgXqt2</link>()
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00054"/>00054 {
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//(*Destroy(dlgXqt2)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00057"/>00057 }
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00058"/>00058 
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00059"/>00059 <emphasis role="keywordtype">void</emphasis>&#32;dlgXqt2::OnbutCancelClick(wxCommandEvent&amp;&#32;event)
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00060"/>00060 {
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<link linkend="_classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e">isel</link>&#32;=&#32;-1;
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;EndModal(wxID_CANCEL);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00063"/>00063 }
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00064"/>00064 
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00065"/>00065 <emphasis role="keywordtype">void</emphasis>&#32;dlgXqt2::OnrbtRadButSelect(wxCommandEvent&amp;&#32;event)
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00066"/>00066 {
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00067"/>00067 &#32;&#32;&#32;&#32;<link linkend="_classdlg_xqt2_1aadde19c94a567f057c2e9668d249c59e">isel</link>&#32;=&#32;<emphasis role="keyword">event</emphasis>.GetSelection();
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00068"/>00068 &#32;&#32;&#32;&#32;EndModal(wxID_OK);
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00069"/>00069 }
+<anchor xml:id="_dlg_xqt2_8cpp_source_1l00070"/>00070 
+</programlisting></section>

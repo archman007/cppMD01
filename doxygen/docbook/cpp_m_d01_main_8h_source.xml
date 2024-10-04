@@ -1,123 +1,123 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cpp_m_d01_main_8h_source" xml:lang="en-US">
 <title>cppMD01Main.h</title>
-<programlisting linenumbering="unnumbered">1 <emphasis role="comment">/***************************************************************</emphasis>
-2 <emphasis role="comment">&#32;*&#32;Name:&#32;&#32;&#32;&#32;&#32;&#32;cppMD01Main.h</emphasis>
-3 <emphasis role="comment">&#32;*&#32;Purpose:&#32;&#32;&#32;Defines&#32;Application&#32;Frame</emphasis>
-4 <emphasis role="comment">&#32;*&#32;Author:&#32;&#32;&#32;&#32;Mr.&#32;Arch&#32;Brooks&#32;(arch@archbrooks.com)</emphasis>
-5 <emphasis role="comment">&#32;*&#32;Created:&#32;&#32;&#32;Sunday,&#32;08&#32;September&#32;2024&#32;07:26:59</emphasis>
-6 <emphasis role="comment">&#32;*&#32;Copyright:&#32;Mr.&#32;Arch&#32;Brooks&#32;(https://archman.us)</emphasis>
-7 <emphasis role="comment">&#32;*&#32;License:</emphasis>
-8 <emphasis role="comment">&#32;**************************************************************/</emphasis>
-9 
-10 <emphasis role="preprocessor">#ifndef&#32;CPPMYSKEL1MAIN_H</emphasis>
-11 <emphasis role="preprocessor">#define&#32;CPPMYSKEL1MAIN_H</emphasis>
-12 <emphasis role="preprocessor">#include&#32;&lt;mysql++.h&gt;</emphasis>
-13 <emphasis role="preprocessor">#include&#32;&lt;wx/grid.h&gt;</emphasis>
-14 <emphasis role="preprocessor">#include&#32;&quot;dlgXqt2.h&quot;</emphasis>
-15 
-16 <emphasis role="comment">//(*Headers(cppMD01Frame)</emphasis>
-17 <emphasis role="preprocessor">#include&#32;&lt;wx/frame.h&gt;</emphasis>
-18 <emphasis role="preprocessor">#include&#32;&lt;wx/menu.h&gt;</emphasis>
-19 <emphasis role="preprocessor">#include&#32;&lt;wx/panel.h&gt;</emphasis>
-20 <emphasis role="preprocessor">#include&#32;&lt;wx/scrolwin.h&gt;</emphasis>
-21 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
-22 <emphasis role="preprocessor">#include&#32;&lt;wx/stattext.h&gt;</emphasis>
-23 <emphasis role="preprocessor">#include&#32;&lt;wx/statusbr.h&gt;</emphasis>
-24 <emphasis role="comment">//*)</emphasis>
-25 
-26 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classcpp_m_d01_frame">cppMD01Frame</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxFrame
-27 {
-28 <emphasis role="keyword">public</emphasis>:
-29 
-30 &#32;&#32;&#32;&#32;<link linkend="_classcpp_m_d01_frame">cppMD01Frame</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>&#32;=&#32;-1);
-31 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classcpp_m_d01_frame">~cppMD01Frame</link>();
-32 &#32;&#32;&#32;&#32;mysqlpp::Connection&#32;conn;
-33 &#32;&#32;&#32;&#32;wxGrid*&#32;masterGrid;
-34 &#32;&#32;&#32;&#32;wxGrid*&#32;detailGrid;
-35 &#32;&#32;&#32;&#32;std::string&#32;cmd;
-36 &#32;&#32;&#32;&#32;std::string&#32;mkVal;
-37 
-38 <emphasis role="keyword">private</emphasis>:
-39 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;PopulateMasterGrid();
-40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;LoadDetailData(<emphasis role="keywordtype">long</emphasis>&#32;idlk1);
-41 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnMasterGridCellClick(wxGridEvent&amp;&#32;event);
-42 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnCellClick(wxGridEvent&amp;&#32;event);
-43 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnMasterGridPopup(wxGridEvent&amp;&#32;event);
-44 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnDetailGridPopup(wxGridEvent&amp;&#32;event);
-45 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;ListFiles(<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;dir,&#32;<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;filespec);
-46 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procLink();
-47 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procPdf();
-48 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procDoc();
-49 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procExe();
-50 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;RefreshDetails();
-51 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;dRID&#32;=&#32;<emphasis role="keyword">false</emphasis>;
-52 <emphasis role="comment">//&#32;&#32;&#32;&#32;void&#32;OnpumNewBlogPostSelected(wxCommandEvent&amp;&#32;event);</emphasis>
-53 &#32;&#32;&#32;&#32;std::string&#32;defBro&#32;=&#32;<emphasis role="stringliteral">&quot;/usr/bin/brave&quot;</emphasis>;
-54 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;row;
-55 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnDetailGridCellClick(wxGridEvent&amp;&#32;event);
-56 &#32;&#32;&#32;&#32;std::string&#32;recNo;
-57 
-58 &#32;&#32;&#32;&#32;<emphasis role="comment">//void&#32;LoadDetailData(int&#32;idlk1);</emphasis>
-59 
-60 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(cppMD01Frame)</emphasis>
-61 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnQuit(wxCommandEvent&amp;&#32;event);
-62 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnAbout(wxCommandEvent&amp;&#32;event);
-63 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnmenSelectCppSelected(wxCommandEvent&amp;&#32;event);
-64 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumAddDocsSelected(wxCommandEvent&amp;&#32;event);
-65 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumNewCatSelected(wxCommandEvent&amp;&#32;event);
-66 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumNewBlogPostSelected(wxCommandEvent&amp;&#32;event);
-67 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumDelLinkSelected(wxCommandEvent&amp;&#32;event);
-68 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEdCatSelected(wxCommandEvent&amp;&#32;event);
-69 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEditLinkSelected(wxCommandEvent&amp;&#32;event);
-70 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEditDetailsSelected(wxCommandEvent&amp;&#32;event);
-71 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-72 
-73 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(cppMD01Frame)</emphasis>
-74 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT1;
-75 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL1;
-76 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL3;
-77 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT2;
-78 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_SCROLLEDWINDOW1;
-79 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenucpp;
-80 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuQuit;
-81 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuAbout;
-82 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATUSBAR1;
-83 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM1;
-84 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idpumNewCat;
-85 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PumEdCat;
-86 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_NewBlog;
-87 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM2;
-88 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menAD;
-89 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menNB;
-90 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumDel;
-91 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumEditLink;
-92 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-93 
-94 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(cppMD01Frame)</emphasis>
-95 &#32;&#32;&#32;&#32;wxMenu&#32;pumDetail;
-96 &#32;&#32;&#32;&#32;wxMenu&#32;pumMaster;
-97 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem3;
-98 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem4;
-99 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem5;
-100 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menNewPost;
-101 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menSelectCpp;
-102 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumAddDocs;
-103 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumDelLink;
-104 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumEditDetails;
-105 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewBlogPost;
-106 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewCat;
-107 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel1;
-108 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel2;
-109 &#32;&#32;&#32;&#32;wxScrolledWindow*&#32;ScrolledWindow1;
-110 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText1;
-111 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText2;
-112 &#32;&#32;&#32;&#32;wxStatusBar*&#32;StatusBar1;
-113 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-114 
-115 &#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
-116 };
-117 
-118 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CPPMYSKEL1MAIN_H</emphasis>
-119 
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_cpp_m_d01_main_8h_source_1l00001"/>00001 <emphasis role="comment">/***************************************************************</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00002"/>00002 <emphasis role="comment">&#32;*&#32;Name:&#32;&#32;&#32;&#32;&#32;&#32;cppMD01Main.h</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00003"/>00003 <emphasis role="comment">&#32;*&#32;Purpose:&#32;&#32;&#32;Defines&#32;Application&#32;Frame</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00004"/>00004 <emphasis role="comment">&#32;*&#32;Author:&#32;&#32;&#32;&#32;Mr.&#32;Arch&#32;Brooks&#32;(arch@archbrooks.com)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00005"/>00005 <emphasis role="comment">&#32;*&#32;Created:&#32;&#32;&#32;Sunday,&#32;08&#32;September&#32;2024&#32;07:26:59</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00006"/>00006 <emphasis role="comment">&#32;*&#32;Copyright:&#32;Mr.&#32;Arch&#32;Brooks&#32;(https://archman.us)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00007"/>00007 <emphasis role="comment">&#32;*&#32;License:</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00008"/>00008 <emphasis role="comment">&#32;**************************************************************/</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00009"/>00009 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00010"/>00010 <emphasis role="preprocessor">#ifndef&#32;CPPMYSKEL1MAIN_H</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00011"/>00011 <emphasis role="preprocessor">#define&#32;CPPMYSKEL1MAIN_H</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00012"/>00012 <emphasis role="preprocessor">#include&#32;&lt;mysql++.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00013"/>00013 <emphasis role="preprocessor">#include&#32;&lt;wx/grid.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00014"/>00014 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_dlg_xqt2_8h">dlgXqt2.h</link>&quot;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00015"/>00015 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00016"/>00016 <emphasis role="comment">//(*Headers(cppMD01Frame)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00017"/>00017 <emphasis role="preprocessor">#include&#32;&lt;wx/frame.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00018"/>00018 <emphasis role="preprocessor">#include&#32;&lt;wx/menu.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00019"/>00019 <emphasis role="preprocessor">#include&#32;&lt;wx/panel.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00020"/>00020 <emphasis role="preprocessor">#include&#32;&lt;wx/scrolwin.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00021"/>00021 <emphasis role="preprocessor">#include&#32;&lt;wx/sizer.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00022"/>00022 <emphasis role="preprocessor">#include&#32;&lt;wx/stattext.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00023"/>00023 <emphasis role="preprocessor">#include&#32;&lt;wx/statusbr.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00024"/>00024 <emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00025"/>00025 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00026"/><link linkend="_classcpp_m_d01_frame">00026</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classcpp_m_d01_frame">cppMD01Frame</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;wxFrame
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00027"/>00027 {
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00028"/>00028 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00029"/>00029 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<link linkend="_classcpp_m_d01_frame_1adbda8203786121d97f23baad6ba72699">cppMD01Frame</link>(wxWindow*&#32;parent,wxWindowID&#32;<emphasis role="keywordtype">id</emphasis>&#32;=&#32;-1);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00031"/>00031 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classcpp_m_d01_frame_1aaf9eb81fc2be576ea113eb65df95c7b2">~cppMD01Frame</link>();
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00032"/><link linkend="_classcpp_m_d01_frame_1a6467fd15ab39abd4e479179bfcaaa9c0">00032</link> &#32;&#32;&#32;&#32;mysqlpp::Connection&#32;<link linkend="_classcpp_m_d01_frame_1a6467fd15ab39abd4e479179bfcaaa9c0">conn</link>;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00033"/><link linkend="_classcpp_m_d01_frame_1a3a314721182b2b05b90c4c81a0639f41">00033</link> &#32;&#32;&#32;&#32;wxGrid*&#32;<link linkend="_classcpp_m_d01_frame_1a3a314721182b2b05b90c4c81a0639f41">masterGrid</link>;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00034"/><link linkend="_classcpp_m_d01_frame_1aa722fd68f431c3b4545b8819e4cea4c1">00034</link> &#32;&#32;&#32;&#32;wxGrid*&#32;<link linkend="_classcpp_m_d01_frame_1aa722fd68f431c3b4545b8819e4cea4c1">detailGrid</link>;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00035"/><link linkend="_classcpp_m_d01_frame_1a1d417535ffbf1134fb4f3f4d054f494a">00035</link> &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classcpp_m_d01_frame_1a1d417535ffbf1134fb4f3f4d054f494a">cmd</link>;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00036"/><link linkend="_classcpp_m_d01_frame_1ac5f4d62fd6a4e8a6448778b29a83f304">00036</link> &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classcpp_m_d01_frame_1ac5f4d62fd6a4e8a6448778b29a83f304">mkVal</link>;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00037"/>00037 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00038"/>00038 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00039"/>00039 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;PopulateMasterGrid();
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00040"/>00040 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;LoadDetailData(<emphasis role="keywordtype">long</emphasis>&#32;idlk1);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnMasterGridCellClick(wxGridEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00042"/>00042 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnCellClick(wxGridEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00043"/>00043 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnMasterGridPopup(wxGridEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00044"/>00044 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnDetailGridPopup(wxGridEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00045"/>00045 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;ListFiles(<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;dir,&#32;<emphasis role="keyword">const</emphasis>&#32;wxString&amp;&#32;filespec);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procLink();
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00047"/>00047 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procPdf();
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00048"/>00048 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procDoc();
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00049"/>00049 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;procExe();
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;RefreshDetails();
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00051"/>00051 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;dRID&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00052"/>00052 <emphasis role="comment">//&#32;&#32;&#32;&#32;void&#32;OnpumNewBlogPostSelected(wxCommandEvent&amp;&#32;event);</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00053"/>00053 &#32;&#32;&#32;&#32;std::string&#32;defBro&#32;=&#32;<emphasis role="stringliteral">&quot;/usr/bin/brave&quot;</emphasis>;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00054"/>00054 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;row;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnDetailGridCellClick(wxGridEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00056"/>00056 &#32;&#32;&#32;&#32;std::string&#32;recNo;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00057"/>00057 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00058"/>00058 &#32;&#32;&#32;&#32;<emphasis role="comment">//void&#32;LoadDetailData(int&#32;idlk1);</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00059"/>00059 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00060"/>00060 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Handlers(cppMD01Frame)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnQuit(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00062"/>00062 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnAbout(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00063"/>00063 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnmenSelectCppSelected(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumAddDocsSelected(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00065"/>00065 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumNewCatSelected(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00066"/>00066 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumNewBlogPostSelected(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00067"/>00067 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumDelLinkSelected(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00068"/>00068 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEdCatSelected(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00069"/>00069 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEditLinkSelected(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00070"/>00070 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEditDetailsSelected(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00071"/>00071 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00072"/>00072 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00073"/>00073 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(cppMD01Frame)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00075"/>00075 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL3;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00077"/>00077 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT2;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_SCROLLEDWINDOW1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00079"/>00079 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenucpp;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00080"/>00080 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuQuit;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00081"/>00081 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuAbout;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00082"/>00082 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATUSBAR1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00083"/>00083 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00084"/>00084 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idpumNewCat;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00085"/>00085 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PumEdCat;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00086"/>00086 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_NewBlog;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00087"/>00087 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM2;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00088"/>00088 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menAD;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00089"/>00089 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menNB;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00090"/>00090 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumDel;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00091"/>00091 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumEditLink;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00092"/>00092 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00093"/>00093 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00094"/>00094 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(cppMD01Frame)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00095"/>00095 &#32;&#32;&#32;&#32;wxMenu&#32;pumDetail;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00096"/>00096 &#32;&#32;&#32;&#32;wxMenu&#32;pumMaster;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00097"/>00097 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem3;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00098"/>00098 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem4;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00099"/>00099 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem5;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00100"/>00100 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menNewPost;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00101"/>00101 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menSelectCpp;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00102"/>00102 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumAddDocs;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00103"/>00103 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumDelLink;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00104"/>00104 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumEditDetails;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00105"/>00105 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewBlogPost;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00106"/>00106 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewCat;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00107"/>00107 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00108"/>00108 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel2;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00109"/>00109 &#32;&#32;&#32;&#32;wxScrolledWindow*&#32;ScrolledWindow1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00110"/>00110 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00111"/>00111 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText2;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00112"/>00112 &#32;&#32;&#32;&#32;wxStatusBar*&#32;StatusBar1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00113"/>00113 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00114"/>00114 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00115"/>00115 &#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00116"/>00116 };
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00117"/>00117 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00118"/>00118 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CPPMYSKEL1MAIN_H</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00119"/>00119 
 </programlisting></section>

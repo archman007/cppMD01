@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cpp_m_d01_main_8h" xml:lang="en-US">
+<title>cppMD01Main.h File Reference</title>
+<indexterm><primary>cppMD01Main.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;mysql++.h&gt;<?linebreak?>#include &lt;wx/grid.h&gt;<?linebreak?>#include &quot;dlgXqt2.h&quot;<?linebreak?>#include &lt;wx/frame.h&gt;<?linebreak?>#include &lt;wx/menu.h&gt;<?linebreak?>#include &lt;wx/panel.h&gt;<?linebreak?>#include &lt;wx/scrolwin.h&gt;<?linebreak?>#include &lt;wx/sizer.h&gt;<?linebreak?>#include &lt;wx/stattext.h&gt;<?linebreak?>#include &lt;wx/statusbr.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcpp_m_d01_frame">cppMD01Frame</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

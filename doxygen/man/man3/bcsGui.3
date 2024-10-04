@@ -6,9 +6,17 @@ bcsGui
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fR#include <bcsGui\&.h>\fP
 .SS "Public Member Functions"
 
 .in +1c
+.ti -1c
+.RI "\fBbcsGui\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~bcsGui\fP ()"
+.br
 .ti -1c
 .RI "std::string \fBSelDir\fP (string initDir)"
 .br
@@ -22,6 +30,37 @@ bcsGui
 .RI "string \fBopenFileDialog\fP (wxWindow *parent, const wxString &message, const wxString &defaultDir, const wxString &defaultFile, const wxString &wildcard, int flags)"
 .br
 .in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB7\fP of file \fBbcsGui\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "bcsGui::bcsGui ()"
+
+.PP
+Definition at line \fB11\fP of file \fBbcsGui\&.cpp\fP\&.
+.SS "bcsGui::~bcsGui ()\fR [virtual]\fP"
+
+.PP
+Definition at line \fB16\fP of file \fBbcsGui\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "string bcsGui::GetText (bool memo, string initVal, string prompt, string caption)"
+
+.PP
+Definition at line \fB35\fP of file \fBbcsGui\&.cpp\fP\&.
+.SS "string bcsGui::openFileDialog (wxWindow * parent, const wxString & message, const wxString & defaultDir, const wxString & defaultFile, const wxString & wildcard, int flags)"
+
+.PP
+Definition at line \fB81\fP of file \fBbcsGui\&.cpp\fP\&.
+.SS "std::string bcsGui::SelDir (string initDir)"
+
+.PP
+Definition at line \fB21\fP of file \fBbcsGui\&.cpp\fP\&.
+.SS "int bcsGui::yornQues (string caption, string prompt)"
+
+.PP
+Definition at line \fB75\fP of file \fBbcsGui\&.cpp\fP\&.
 
 .SH "Author"
 .PP 

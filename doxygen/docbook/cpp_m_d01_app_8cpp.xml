@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cpp_m_d01_app_8cpp" xml:lang="en-US">
+<title>cppMD01App.cpp File Reference</title>
+<indexterm><primary>cppMD01App.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;cppMD01App.h&quot;<?linebreak?>#include &quot;zDB01.h&quot;<?linebreak?>#include &quot;bcsGui.h&quot;<?linebreak?>#include &quot;cppMD01Main.h&quot;<?linebreak?>#include &lt;wx/image.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_cpp_m_d01_app_8cpp_1a2bf18180d85b94b3e5561a9307e28bd1">IMPLEMENT_APP</link> (<link linkend="_classcpp_m_d01_app">cppMD01App</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_cpp_m_d01_app_8cpp_1a2bf18180d85b94b3e5561a9307e28bd1"/><section>
+    <title>IMPLEMENT_APP()</title>
+<indexterm><primary>IMPLEMENT_APP</primary><secondary>cppMD01App.cpp</secondary></indexterm>
+<indexterm><primary>cppMD01App.cpp</primary><secondary>IMPLEMENT_APP</secondary></indexterm>
+<para><computeroutput>IMPLEMENT_APP (<link linkend="_classcpp_m_d01_app">cppMD01App</link> )</computeroutput></para></section>
+</section>
+</section>

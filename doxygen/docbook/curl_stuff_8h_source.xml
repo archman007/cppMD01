@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_curl_stuff_8h_source" xml:lang="en-US">
 <title>curlStuff.h</title>
-<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;CURLSTUFF_H</emphasis>
-2 <emphasis role="preprocessor">#define&#32;CURLSTUFF_H</emphasis>
-3 <emphasis role="preprocessor">#include&lt;string&gt;</emphasis>
-4 
-5 
-6 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classcurl_stuff">curlStuff</link>
-7 {
-8 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
-9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classcurl_stuff">curlStuff</link>();
-10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classcurl_stuff">~curlStuff</link>();
-11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;getZTitle(std::string&#32;url);
-12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;clipUrl();
-13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;getURL();
-14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;cbc;
-15 
-16 &#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
-17 
-18 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
-19 };
-20 
-21 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CURLSTUFF_H</emphasis>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_curl_stuff_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;CURLSTUFF_H</emphasis>
+<anchor xml:id="_curl_stuff_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;CURLSTUFF_H</emphasis>
+<anchor xml:id="_curl_stuff_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&lt;string&gt;</emphasis>
+<anchor xml:id="_curl_stuff_8h_source_1l00004"/>00004 
+<anchor xml:id="_curl_stuff_8h_source_1l00005"/>00005 
+<anchor xml:id="_curl_stuff_8h_source_1l00006"/><link linkend="_classcurl_stuff">00006</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classcurl_stuff">curlStuff</link>
+<anchor xml:id="_curl_stuff_8h_source_1l00007"/>00007 {
+<anchor xml:id="_curl_stuff_8h_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_curl_stuff_8h_source_1l00009"/>00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classcurl_stuff_1af3d3c348dcb5819e830a1a96b67e80f9">curlStuff</link>();
+<anchor xml:id="_curl_stuff_8h_source_1l00010"/>00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classcurl_stuff_1a4e424e19de760b527df5664f418a2675">~curlStuff</link>();
+<anchor xml:id="_curl_stuff_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classcurl_stuff_1afc2fdfde6fa1450a1184f20ab9cf35f7">getZTitle</link>(std::string&#32;url);
+<anchor xml:id="_curl_stuff_8h_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classcurl_stuff_1a95d3ef871d4c6eeb2c9097eaf2ab738f">clipUrl</link>();
+<anchor xml:id="_curl_stuff_8h_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classcurl_stuff_1a766a52cfa30136e004f9ee76e2eced5f">getURL</link>();
+<anchor xml:id="_curl_stuff_8h_source_1l00014"/><link linkend="_classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0">00014</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::string&#32;<link linkend="_classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0">cbc</link>;
+<anchor xml:id="_curl_stuff_8h_source_1l00015"/>00015 
+<anchor xml:id="_curl_stuff_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="_curl_stuff_8h_source_1l00017"/>00017 
+<anchor xml:id="_curl_stuff_8h_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_curl_stuff_8h_source_1l00019"/>00019 };
+<anchor xml:id="_curl_stuff_8h_source_1l00020"/>00020 
+<anchor xml:id="_curl_stuff_8h_source_1l00021"/>00021 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CURLSTUFF_H</emphasis>
 </programlisting></section>

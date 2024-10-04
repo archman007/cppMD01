@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dlg_new_link_8cpp" kind="file" language="C++">
+    <compoundname>dlgNewLink.cpp</compoundname>
+    <includes refid="dlg_new_link_8h" local="yes">dlgNewLink.h</includes>
+    <includes refid="z_d_b01_8h" local="yes">zDB01.h</includes>
+    <includes refid="curl_stuff_8h" local="yes">curlStuff.h</includes>
+    <includes local="no">wx/intl.h</includes>
+    <includes local="no">wx/string.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>curlStuff.h</label>
+        <link refid="curl_stuff_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dlgNewLink.cpp</label>
+        <link refid="dlg_new_link_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dlgNewLink.h</label>
+        <link refid="dlg_new_link_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>zDB01.h</label>
+        <link refid="z_d_b01_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mysql++.h</label>
+      </node>
+      <node id="11">
+        <label>result.h</label>
+      </node>
+      <node id="13">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>wx/arrstr.h</label>
+      </node>
+      <node id="3">
+        <label>wx/button.h</label>
+      </node>
+      <node id="4">
+        <label>wx/dialog.h</label>
+      </node>
+      <node id="14">
+        <label>wx/intl.h</label>
+      </node>
+      <node id="5">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="6">
+        <label>wx/stattext.h</label>
+      </node>
+      <node id="15">
+        <label>wx/string.h</label>
+      </node>
+      <node id="7">
+        <label>wx/textctrl.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" prot="public" static="no" mutable="no">
+        <type><ref refid="classz_d_b01" kindref="compound">zDB01</ref></type>
+        <definition>zDB01 db02</definition>
+        <argsstring></argsstring>
+        <name>db02</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewLink.cpp" line="5" column="7" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewLink.cpp" bodystart="5" bodyend="-1"/>
+        <referencedby refid="classdlg_new_link_1aea36327039f6010e1e3aaf80d0e899ce" compoundref="dlg_new_link_8cpp" startline="31" endline="82">dlgNewLink::dlgNewLink</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dlg_new_link_8cpp_1a2e509642c9ea8f0041e5afd6a68ea4ba" prot="public" static="no" mutable="no">
+        <type><ref refid="classcurl_stuff" kindref="compound">curlStuff</ref></type>
+        <definition>curlStuff cs01</definition>
+        <argsstring></argsstring>
+        <name>cs01</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewLink.cpp" line="6" column="11" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewLink.cpp" bodystart="6" bodyend="-1"/>
+        <referencedby refid="classdlg_new_link_1aea36327039f6010e1e3aaf80d0e899ce" compoundref="dlg_new_link_8cpp" startline="31" endline="82">dlgNewLink::dlgNewLink</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dlg_new_link_8h" kindref="compound">dlgNewLink.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="z_d_b01_8h" kindref="compound">zDB01.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="curl_stuff_8h" kindref="compound">curlStuff.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" refkind="member"><highlight class="normal"><ref refid="classz_d_b01" kindref="compound">zDB01</ref><sp/><ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>;</highlight></codeline>
+<codeline lineno="6" refid="dlg_new_link_8cpp_1a2e509642c9ea8f0041e5afd6a68ea4ba" refkind="member"><highlight class="normal"><ref refid="classcurl_stuff" kindref="compound">curlStuff</ref><sp/><ref refid="dlg_new_link_8cpp_1a2e509642c9ea8f0041e5afd6a68ea4ba" kindref="member">cs01</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//(*InternalHeaders(dlgNewLink)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/intl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//(*IdInit(dlgNewLink)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1aaadd9729742ef849956e876a427285f6" kindref="member">dlgNewLink::ID_STATICTEXT1</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1a63ac1dfe6f16efa327171c4c37260053" kindref="member">dlgNewLink::ID_TEXTCTRL1</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1aa7866facce26a163d69264ca319bb868" kindref="member">dlgNewLink::ID_STATICTEXT2</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1ac354dd402ebb892c746aa5d392feaa84" kindref="member">dlgNewLink::ID_TEXTCTRL2</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1a245eaf900701a7742c042c2583d167a1" kindref="member">dlgNewLink::ID_STATICTEXT3</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1adfe1b9821eba1a652541c9ed91db7d6f" kindref="member">dlgNewLink::ID_TEXTCTRL3</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1a4f118cf7a4161234aa13be635876fde3" kindref="member">dlgNewLink::ID_STATICTEXT4</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1a3984c33b6d685c2f59d4bf0fad5ec12a" kindref="member">dlgNewLink::ID_TEXTCTRL4</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1a57acdc0d1d68985d9f42706aa7e13aaa" kindref="member">dlgNewLink::ID_BUTTON1</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classdlg_new_link_1af4a7b4e0d1740c6ae7be7f4cb3592548" kindref="member">dlgNewLink::ID_BUTTON2</ref><sp/>=<sp/>wxNewId();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">BEGIN_EVENT_TABLE(<ref refid="classdlg_new_link" kindref="compound">dlgNewLink</ref>,wxDialog)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*EventTable(dlgNewLink)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">END_EVENT_TABLE()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classdlg_new_link_1aea36327039f6010e1e3aaf80d0e899ce" refkind="member"><highlight class="normal"><ref refid="classdlg_new_link" kindref="compound">dlgNewLink</ref>::<ref refid="classdlg_new_link" kindref="compound">dlgNewLink</ref>(wxWindow*<sp/>parent,wxWindowID<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,const<sp/>wxPoint&amp;<sp/>pos,const<sp/>wxSize&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Initialize(dlgNewLink)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer2;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer3;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>wxBoxSizer*<sp/>BoxSizer4;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>Create(parent,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>_(</highlight><highlight class="stringliteral">&quot;Insert<sp/>New<sp/>Link&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>wxDEFAULT_DIALOG_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER,<sp/>_T(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>SetClientSize(wxDefaultSize);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>Move(wxDefaultPosition);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxHORIZONTAL);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxVERTICAL);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxVERTICAL);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>lblidlk1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxStaticText(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_STATICTEXT1,<sp/>_(</highlight><highlight class="stringliteral">&quot;Master<sp/>Key&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_STATICTEXT1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(lblidlk1,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>edtPrim<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxTextCtrl(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_TEXTCTRL1,<sp/>wxEmptyString,<sp/>wxDefaultPosition,<sp/>wxSize(331,24),<sp/>wxTE_READONLY,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_TEXTCTRL1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(edtPrim,<sp/>0,<sp/>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL,<sp/>5);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>lnlLinkName<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxStaticText(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_STATICTEXT2,<sp/>_(</highlight><highlight class="stringliteral">&quot;Link<sp/>Name&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_STATICTEXT2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(lnlLinkName,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>edtLinkName<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxTextCtrl(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_TEXTCTRL2,<sp/>_(</highlight><highlight class="stringliteral">&quot;Text&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_TEXTCTRL2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(edtLinkName,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>lblLink<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxStaticText(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_STATICTEXT3,<sp/>_(</highlight><highlight class="stringliteral">&quot;Link&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_STATICTEXT3&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(lblLink,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>edtLink<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxTextCtrl(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_TEXTCTRL3,<sp/>_(</highlight><highlight class="stringliteral">&quot;Text&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_TEXTCTRL3&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(edtLink,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>lblDet<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxStaticText(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_STATICTEXT4,<sp/>_(</highlight><highlight class="stringliteral">&quot;Detailed<sp/>Description&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_STATICTEXT4&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(lblDet,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>edtDetDes<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxTextCtrl(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_TEXTCTRL4,<sp/>_(</highlight><highlight class="stringliteral">&quot;Note.&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxSize(339,112),<sp/>wxTE_MULTILINE,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_TEXTCTRL4&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(edtDetDes,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer4<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxBoxSizer(wxHORIZONTAL);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>btnInset<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxButton(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_BUTTON1,<sp/>_(</highlight><highlight class="stringliteral">&quot;Insert&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_BUTTON1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer4-&gt;Add(btnInset,<sp/>1,<sp/>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL,<sp/>5);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>btnCancel<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>wxButton(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ID_BUTTON2,<sp/>_(</highlight><highlight class="stringliteral">&quot;Cancel&quot;</highlight><highlight class="normal">),<sp/>wxDefaultPosition,<sp/>wxDefaultSize,<sp/>0,<sp/>wxDefaultValidator,<sp/>_T(</highlight><highlight class="stringliteral">&quot;ID_BUTTON2&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer4-&gt;Add(btnCancel,<sp/>1,<sp/>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL,<sp/>5);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer3-&gt;Add(BoxSizer4,<sp/>0,<sp/>wxALL|wxEXPAND,<sp/>1);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer2-&gt;Add(BoxSizer3,<sp/>1,<sp/>wxALL|wxEXPAND,<sp/>5);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer1-&gt;Add(BoxSizer2,<sp/>1,<sp/>wxALL|wxEXPAND,<sp/>5);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>SetSizer(BoxSizer1);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer1-&gt;Fit(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>BoxSizer1-&gt;SetSizeHints(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&amp;dlgNewLink::OnbtnInsetClick);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>Connect(ID_BUTTON2,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&amp;dlgNewLink::OnbtnCancelClick);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>.<ref refid="classz_d_b01_1a67de54d203950ceac22ab3a9d0f0c358" kindref="member">initField</ref>(<ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>.<ref refid="classz_d_b01_1a4c8de6784836b3dfa6723c999fa05cfa" kindref="member">strIdlk1</ref>,edtPrim);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>db02.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>.<ref refid="classz_d_b01_1a67de54d203950ceac22ab3a9d0f0c358" kindref="member">initField</ref>(<ref refid="dlg_new_link_8cpp_1a2e509642c9ea8f0041e5afd6a68ea4ba" kindref="member">cs01</ref>.<ref refid="classcurl_stuff_1a95d3ef871d4c6eeb2c9097eaf2ab738f" kindref="member">clipUrl</ref>(),<sp/>edtLinkName);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>.<ref refid="classz_d_b01_1a67de54d203950ceac22ab3a9d0f0c358" kindref="member">initField</ref>(<ref refid="dlg_new_link_8cpp_1a2e509642c9ea8f0041e5afd6a68ea4ba" kindref="member">cs01</ref>.<ref refid="classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0" kindref="member">cbc</ref>,<sp/>edtLink);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classdlg_new_link_1a85a3ebb20da5d338542b7256fb302d0e" refkind="member"><highlight class="normal"><ref refid="classdlg_new_link_1a85a3ebb20da5d338542b7256fb302d0e" kindref="member">dlgNewLink::~dlgNewLink</ref>()</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(*Destroy(dlgNewLink)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dlgNewLink::OnbtnInsetClick(wxCommandEvent&amp;<sp/>event)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>.<ref refid="classz_d_b01_1ac95812086e217ae3e6119d5691788624" kindref="member">insertLink</ref>(<ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>.<ref refid="classz_d_b01_1ab00f736b2d02a0206d406ebeb8da8cdd" kindref="member">fieldToString</ref>(<ref refid="classdlg_new_link_1a3b5f9612726afec26d697a0c147dd370" kindref="member">edtPrim</ref>),<sp/><ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>.<ref refid="classz_d_b01_1ab00f736b2d02a0206d406ebeb8da8cdd" kindref="member">fieldToString</ref>(<ref refid="classdlg_new_link_1a6faebd04b803ac8e6e886846459df4f4" kindref="member">edtLinkName</ref>),<sp/><ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>.<ref refid="classz_d_b01_1ab00f736b2d02a0206d406ebeb8da8cdd" kindref="member">fieldToString</ref>(<ref refid="classdlg_new_link_1a700c1eb2452ae9c18b2da5c50919652b" kindref="member">edtLink</ref>),<sp/><ref refid="dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440" kindref="member">db02</ref>.<ref refid="classz_d_b01_1ab00f736b2d02a0206d406ebeb8da8cdd" kindref="member">fieldToString</ref>(<ref refid="classdlg_new_link_1a0ec15053e86f442b7aeee4e6f5fc32c9" kindref="member">edtDetDes</ref>));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>EndModal(wxID_OK);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dlgNewLink::OnbtnCancelClick(wxCommandEvent&amp;<sp/>event)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>EndModal(wxID_CANCEL);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewLink.cpp"/>
+  </compounddef>
+</doxygen>

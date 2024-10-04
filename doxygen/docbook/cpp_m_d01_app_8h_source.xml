@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cpp_m_d01_app_8h_source" xml:lang="en-US">
 <title>cppMD01App.h</title>
-<programlisting linenumbering="unnumbered">1 <emphasis role="comment">/***************************************************************</emphasis>
-2 <emphasis role="comment">&#32;*&#32;Name:&#32;&#32;&#32;&#32;&#32;&#32;cppMD01App.h</emphasis>
-3 <emphasis role="comment">&#32;*&#32;Purpose:&#32;&#32;&#32;Defines&#32;Application&#32;Class</emphasis>
-4 <emphasis role="comment">&#32;*&#32;Author:&#32;&#32;&#32;&#32;Mr.&#32;Arch&#32;Brooks&#32;(arch@archbrooks.com)</emphasis>
-5 <emphasis role="comment">&#32;*&#32;Created:&#32;&#32;&#32;Sunday,&#32;08&#32;September&#32;2024&#32;07:26:59</emphasis>
-6 <emphasis role="comment">&#32;*&#32;Copyright:&#32;Mr.&#32;Arch&#32;Brooks&#32;(https://archman.us)</emphasis>
-7 <emphasis role="comment">&#32;*&#32;License:</emphasis>
-8 <emphasis role="comment">&#32;**************************************************************/</emphasis>
-9 
-10 <emphasis role="preprocessor">#ifndef&#32;CPPMYSKEL1APP_H</emphasis>
-11 <emphasis role="preprocessor">#define&#32;CPPMYSKEL1APP_H</emphasis>
-12 
-13 <emphasis role="preprocessor">#include&#32;&lt;wx/app.h&gt;</emphasis>
-14 
-15 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classcpp_m_d01_app">cppMD01App</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;wxApp
-16 {
-17 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
-18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;OnInit();
-19 };
-20 
-21 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CPPMYSKEL1APP_H</emphasis>
-22 
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_cpp_m_d01_app_8h_source_1l00001"/>00001 <emphasis role="comment">/***************************************************************</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00002"/>00002 <emphasis role="comment">&#32;*&#32;Name:&#32;&#32;&#32;&#32;&#32;&#32;cppMD01App.h</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00003"/>00003 <emphasis role="comment">&#32;*&#32;Purpose:&#32;&#32;&#32;Defines&#32;Application&#32;Class</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00004"/>00004 <emphasis role="comment">&#32;*&#32;Author:&#32;&#32;&#32;&#32;Mr.&#32;Arch&#32;Brooks&#32;(arch@archbrooks.com)</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00005"/>00005 <emphasis role="comment">&#32;*&#32;Created:&#32;&#32;&#32;Sunday,&#32;08&#32;September&#32;2024&#32;07:26:59</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00006"/>00006 <emphasis role="comment">&#32;*&#32;Copyright:&#32;Mr.&#32;Arch&#32;Brooks&#32;(https://archman.us)</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00007"/>00007 <emphasis role="comment">&#32;*&#32;License:</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00008"/>00008 <emphasis role="comment">&#32;**************************************************************/</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00009"/>00009 
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00010"/>00010 <emphasis role="preprocessor">#ifndef&#32;CPPMYSKEL1APP_H</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00011"/>00011 <emphasis role="preprocessor">#define&#32;CPPMYSKEL1APP_H</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00012"/>00012 
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00013"/>00013 <emphasis role="preprocessor">#include&#32;&lt;wx/app.h&gt;</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00014"/>00014 
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00015"/><link linkend="_classcpp_m_d01_app">00015</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classcpp_m_d01_app">cppMD01App</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;wxApp
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00016"/>00016 {
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classcpp_m_d01_app_1af1a25becc572bee227eb16c77757049e">OnInit</link>();
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00019"/>00019 };
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00020"/>00020 
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00021"/>00021 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CPPMYSKEL1APP_H</emphasis>
+<anchor xml:id="_cpp_m_d01_app_8h_source_1l00022"/>00022 
 </programlisting></section>

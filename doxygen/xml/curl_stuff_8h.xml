@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="curl_stuff_8h" kind="file" language="C++">
+    <compoundname>curlStuff.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="curl_stuff_8cpp" local="yes">curlStuff.cpp</includedby>
+    <includedby refid="dlg_new_link_8cpp" local="yes">dlgNewLink.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>curlStuff.h</label>
+        <link refid="curl_stuff_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>curlStuff.cpp</label>
+        <link refid="curl_stuff_8cpp"/>
+      </node>
+      <node id="1">
+        <label>curlStuff.h</label>
+        <link refid="curl_stuff_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dlgNewLink.cpp</label>
+        <link refid="dlg_new_link_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcurl_stuff" prot="public">curlStuff</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CURLSTUFF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CURLSTUFF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classcurl_stuff" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcurl_stuff" kindref="compound">curlStuff</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcurl_stuff_1af3d3c348dcb5819e830a1a96b67e80f9" kindref="member">curlStuff</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classcurl_stuff_1a4e424e19de760b527df5664f418a2675" kindref="member">~curlStuff</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcurl_stuff_1afc2fdfde6fa1450a1184f20ab9cf35f7" kindref="member">getZTitle</ref>(std::string<sp/>url);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcurl_stuff_1a95d3ef871d4c6eeb2c9097eaf2ab738f" kindref="member">clipUrl</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcurl_stuff_1a766a52cfa30136e004f9ee76e2eced5f" kindref="member">getURL</ref>();</highlight></codeline>
+<codeline lineno="14" refid="classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0" kindref="member">cbc</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CURLSTUFF_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/curlStuff.h"/>
+  </compounddef>
+</doxygen>

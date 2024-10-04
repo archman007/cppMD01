@@ -2,19 +2,79 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbcs_gui" xml:lang="en-US">
 <title>bcsGui Class Reference</title>
 <indexterm><primary>bcsGui</primary></indexterm>
+<para>
+<computeroutput>#include &lt;bcsGui.h&gt;</computeroutput>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_classbcs_gui_1ac8bd94493e962a832d2d47344d8afbd3"/>std::string <emphasis role="strong">SelDir</emphasis> (string initDir)</para>
+            <listitem><para><link linkend="_classbcs_gui_1afe8d8c9532f096c161ae33c7496db69c">bcsGui</link> ()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classbcs_gui_1a9061e0d66ce7088bba30b98fa8061358"/>string <emphasis role="strong">GetText</emphasis> (bool memo, string initVal, string prompt, string caption)</para>
+            <listitem><para>virtual <link linkend="_classbcs_gui_1ac2e5dfa2156a34ff492953c144047231">~bcsGui</link> ()</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classbcs_gui_1a3fa5f9ce202e43b147ef9a166577fb31"/>int <emphasis role="strong">yornQues</emphasis> (string caption, string prompt)</para>
+            <listitem><para>std::string <link linkend="_classbcs_gui_1ac8bd94493e962a832d2d47344d8afbd3">SelDir</link> (string initDir)</para>
 </listitem>
-            <listitem><para><anchor xml:id="_classbcs_gui_1ade5890d2dccda707cb21357609d2600f"/>string <emphasis role="strong">openFileDialog</emphasis> (wxWindow *parent, const wxString &amp;message, const wxString &amp;defaultDir, const wxString &amp;defaultFile, const wxString &amp;wildcard, int flags)</para>
+            <listitem><para>string <link linkend="_classbcs_gui_1a9061e0d66ce7088bba30b98fa8061358">GetText</link> (bool memo, string initVal, string prompt, string caption)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classbcs_gui_1a3fa5f9ce202e43b147ef9a166577fb31">yornQues</link> (string caption, string prompt)</para>
+</listitem>
+            <listitem><para>string <link linkend="_classbcs_gui_1ade5890d2dccda707cb21357609d2600f">openFileDialog</link> (wxWindow *parent, const wxString &amp;message, const wxString &amp;defaultDir, const wxString &amp;defaultFile, const wxString &amp;wildcard, int flags)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_bcs_gui_8h_source_1l00007">7</link> of file <link linkend="_bcs_gui_8h_source">bcsGui.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbcs_gui_1afe8d8c9532f096c161ae33c7496db69c"/><section>
+    <title>bcsGui()</title>
+<indexterm><primary>bcsGui</primary><secondary>bcsGui</secondary></indexterm>
+<indexterm><primary>bcsGui</primary><secondary>bcsGui</secondary></indexterm>
+<para><computeroutput>bcsGui::bcsGui ( )</computeroutput></para><para>
+Definition at line <link linkend="_bcs_gui_8cpp_source_1l00011">11</link> of file <link linkend="_bcs_gui_8cpp_source">bcsGui.cpp</link>.</para>
+</section>
+<anchor xml:id="_classbcs_gui_1ac2e5dfa2156a34ff492953c144047231"/><section>
+    <title>~bcsGui()</title>
+<indexterm><primary>~bcsGui</primary><secondary>bcsGui</secondary></indexterm>
+<indexterm><primary>bcsGui</primary><secondary>~bcsGui</secondary></indexterm>
+<para><computeroutput>bcsGui::~bcsGui ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_bcs_gui_8cpp_source_1l00016">16</link> of file <link linkend="_bcs_gui_8cpp_source">bcsGui.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbcs_gui_1a9061e0d66ce7088bba30b98fa8061358"/><section>
+    <title>GetText()</title>
+<indexterm><primary>GetText</primary><secondary>bcsGui</secondary></indexterm>
+<indexterm><primary>bcsGui</primary><secondary>GetText</secondary></indexterm>
+<para><computeroutput>string bcsGui::GetText (bool memo, string initVal, string prompt, string caption)</computeroutput></para><para>
+Definition at line <link linkend="_bcs_gui_8cpp_source_1l00035">35</link> of file <link linkend="_bcs_gui_8cpp_source">bcsGui.cpp</link>.</para>
+</section>
+<anchor xml:id="_classbcs_gui_1ade5890d2dccda707cb21357609d2600f"/><section>
+    <title>openFileDialog()</title>
+<indexterm><primary>openFileDialog</primary><secondary>bcsGui</secondary></indexterm>
+<indexterm><primary>bcsGui</primary><secondary>openFileDialog</secondary></indexterm>
+<para><computeroutput>string bcsGui::openFileDialog (wxWindow * parent, const wxString &amp; message, const wxString &amp; defaultDir, const wxString &amp; defaultFile, const wxString &amp; wildcard, int flags)</computeroutput></para><para>
+Definition at line <link linkend="_bcs_gui_8cpp_source_1l00081">81</link> of file <link linkend="_bcs_gui_8cpp_source">bcsGui.cpp</link>.</para>
+</section>
+<anchor xml:id="_classbcs_gui_1ac8bd94493e962a832d2d47344d8afbd3"/><section>
+    <title>SelDir()</title>
+<indexterm><primary>SelDir</primary><secondary>bcsGui</secondary></indexterm>
+<indexterm><primary>bcsGui</primary><secondary>SelDir</secondary></indexterm>
+<para><computeroutput>std::string bcsGui::SelDir (string initDir)</computeroutput></para><para>
+Definition at line <link linkend="_bcs_gui_8cpp_source_1l00021">21</link> of file <link linkend="_bcs_gui_8cpp_source">bcsGui.cpp</link>.</para>
+</section>
+<anchor xml:id="_classbcs_gui_1a3fa5f9ce202e43b147ef9a166577fb31"/><section>
+    <title>yornQues()</title>
+<indexterm><primary>yornQues</primary><secondary>bcsGui</secondary></indexterm>
+<indexterm><primary>bcsGui</primary><secondary>yornQues</secondary></indexterm>
+<para><computeroutput>int bcsGui::yornQues (string caption, string prompt)</computeroutput></para><para>
+Definition at line <link linkend="_bcs_gui_8cpp_source_1l00075">75</link> of file <link linkend="_bcs_gui_8cpp_source">bcsGui.cpp</link>.</para>
+</section>
 <para>
 The documentation for this class was generated from the following files:</para>
-bcsGui.hbcsGui.cpp</section>
+<link linkend="_bcs_gui_8h">bcsGui.h</link><link linkend="_bcs_gui_8cpp">bcsGui.cpp</link></section>
+</section>

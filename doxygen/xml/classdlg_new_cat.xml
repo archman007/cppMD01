@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdlg_new_cat" kind="class" language="C++" prot="public">
+    <compoundname>dlgNewCat</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">wxDialog</basecompoundref>
+    <includes refid="dlg_new_cat_8h" local="no">dlgNewCat.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_new_cat_1a5ea5e00067bdb27be22edc6b0a2e8b82" prot="public" static="no" mutable="no">
+        <type>wxButton *</type>
+        <definition>wxButton* dlgNewCat::btnCancel</definition>
+        <argsstring></argsstring>
+        <name>btnCancel</name>
+        <qualifiedname>dlgNewCat::btnCancel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="20" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1a42a122335d4c950c54b7b4e986ad1ed1" prot="public" static="no" mutable="no">
+        <type>wxButton *</type>
+        <definition>wxButton* dlgNewCat::btnInsert</definition>
+        <argsstring></argsstring>
+        <name>btnInsert</name>
+        <qualifiedname>dlgNewCat::btnInsert</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="21" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1a7741b567a7ca622c4a134cefd247bf7f" prot="public" static="no" mutable="no">
+        <type>wxStaticText *</type>
+        <definition>wxStaticText* dlgNewCat::lblCat</definition>
+        <argsstring></argsstring>
+        <name>lblCat</name>
+        <qualifiedname>dlgNewCat::lblCat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="22" column="14" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1a01cc0201cf630de20de80f1ea0c89cf1" prot="public" static="no" mutable="no">
+        <type>wxStaticText *</type>
+        <definition>wxStaticText* dlgNewCat::lblMemo</definition>
+        <argsstring></argsstring>
+        <name>lblMemo</name>
+        <qualifiedname>dlgNewCat::lblMemo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="23" column="14" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1a72cdf033c6e09d036dae14dc92135751" prot="public" static="no" mutable="no">
+        <type>wxTextCtrl *</type>
+        <definition>wxTextCtrl* dlgNewCat::edtCat</definition>
+        <argsstring></argsstring>
+        <name>edtCat</name>
+        <qualifiedname>dlgNewCat::edtCat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="24" column="12" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1a242de8d9dcd75d20a533b82f99b2335a" prot="public" static="no" mutable="no">
+        <type>wxTextCtrl *</type>
+        <definition>wxTextCtrl* dlgNewCat::edtMemo</definition>
+        <argsstring></argsstring>
+        <name>edtMemo</name>
+        <qualifiedname>dlgNewCat::edtMemo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="25" column="12" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classdlg_new_cat_1ad2ea1532e4f6aeffa433cb227ced37ec" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNewCat::ID_STATICTEXT1</definition>
+        <argsstring></argsstring>
+        <name>ID_STATICTEXT1</name>
+        <qualifiedname>dlgNewCat::ID_STATICTEXT1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="31" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1a2ff3acd7a996429b9fb450af680d9099" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNewCat::ID_TEXTCTRL1</definition>
+        <argsstring></argsstring>
+        <name>ID_TEXTCTRL1</name>
+        <qualifiedname>dlgNewCat::ID_TEXTCTRL1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="32" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1af7e04eee4e6bf7cc73d2293580ee7e29" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNewCat::ID_STATICTEXT2</definition>
+        <argsstring></argsstring>
+        <name>ID_STATICTEXT2</name>
+        <qualifiedname>dlgNewCat::ID_STATICTEXT2</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="33" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1a06638814dcd385731b976af931039dc1" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNewCat::ID_TEXTCTRL2</definition>
+        <argsstring></argsstring>
+        <name>ID_TEXTCTRL2</name>
+        <qualifiedname>dlgNewCat::ID_TEXTCTRL2</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="34" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1ac88712ad76d3432970a6e2865292b513" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNewCat::ID_BUTTON1</definition>
+        <argsstring></argsstring>
+        <name>ID_BUTTON1</name>
+        <qualifiedname>dlgNewCat::ID_BUTTON1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="35" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_new_cat_1a1f95147a48f86fd9321e0d78cf2d0ed2" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNewCat::ID_BUTTON2</definition>
+        <argsstring></argsstring>
+        <name>ID_BUTTON2</name>
+        <qualifiedname>dlgNewCat::ID_BUTTON2</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="36" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_new_cat_1aa8a5d5f7849999cf762a1b600e323023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dlgNewCat::dlgNewCat</definition>
+        <argsstring>(wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</argsstring>
+        <name>dlgNewCat</name>
+        <qualifiedname>dlgNewCat::dlgNewCat</qualifiedname>
+        <param>
+          <type>wxWindow *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>wxWindowID</type>
+          <declname>id</declname>
+          <defval>wxID_ANY</defval>
+        </param>
+        <param>
+          <type>const wxPoint &amp;</type>
+          <declname>pos</declname>
+          <defval>wxDefaultPosition</defval>
+        </param>
+        <param>
+          <type>const wxSize &amp;</type>
+          <declname>size</declname>
+          <defval>wxDefaultSize</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="16" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.cpp" bodystart="25" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_new_cat_1ad8100c6bd2a7534dcf6846fb715f24f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>dlgNewCat::~dlgNewCat</definition>
+        <argsstring>()</argsstring>
+        <name>~dlgNewCat</name>
+        <qualifiedname>dlgNewCat::~dlgNewCat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="17" column="9" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.cpp" bodystart="64" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_new_cat_1a0b3ad36e97d19c328426577ca0ca8464" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dlgNewCat::OnbtnInsertClick</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnbtnInsertClick</name>
+        <qualifiedname>dlgNewCat::OnbtnInsertClick</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="42" column="6" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.cpp" bodystart="71" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_new_cat_1a48f43deebf2c1135647662fcdcf8f542" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dlgNewCat::OnbtnCancelClick</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnbtnCancelClick</name>
+        <qualifiedname>dlgNewCat::OnbtnCancelClick</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="43" column="6" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dlgNewCat</label>
+        <link refid="classdlg_new_cat"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dlgNewCat</label>
+        <link refid="classdlg_new_cat"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" line="12" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNewCat.h" bodystart="13" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classdlg_new_cat_1a5ea5e00067bdb27be22edc6b0a2e8b82" prot="public" virt="non-virtual"><scope>dlgNewCat</scope><name>btnCancel</name></member>
+      <member refid="classdlg_new_cat_1a42a122335d4c950c54b7b4e986ad1ed1" prot="public" virt="non-virtual"><scope>dlgNewCat</scope><name>btnInsert</name></member>
+      <member refid="classdlg_new_cat_1aa8a5d5f7849999cf762a1b600e323023" prot="public" virt="non-virtual"><scope>dlgNewCat</scope><name>dlgNewCat</name></member>
+      <member refid="classdlg_new_cat_1a72cdf033c6e09d036dae14dc92135751" prot="public" virt="non-virtual"><scope>dlgNewCat</scope><name>edtCat</name></member>
+      <member refid="classdlg_new_cat_1a242de8d9dcd75d20a533b82f99b2335a" prot="public" virt="non-virtual"><scope>dlgNewCat</scope><name>edtMemo</name></member>
+      <member refid="classdlg_new_cat_1ac88712ad76d3432970a6e2865292b513" prot="protected" virt="non-virtual"><scope>dlgNewCat</scope><name>ID_BUTTON1</name></member>
+      <member refid="classdlg_new_cat_1a1f95147a48f86fd9321e0d78cf2d0ed2" prot="protected" virt="non-virtual"><scope>dlgNewCat</scope><name>ID_BUTTON2</name></member>
+      <member refid="classdlg_new_cat_1ad2ea1532e4f6aeffa433cb227ced37ec" prot="protected" virt="non-virtual"><scope>dlgNewCat</scope><name>ID_STATICTEXT1</name></member>
+      <member refid="classdlg_new_cat_1af7e04eee4e6bf7cc73d2293580ee7e29" prot="protected" virt="non-virtual"><scope>dlgNewCat</scope><name>ID_STATICTEXT2</name></member>
+      <member refid="classdlg_new_cat_1a2ff3acd7a996429b9fb450af680d9099" prot="protected" virt="non-virtual"><scope>dlgNewCat</scope><name>ID_TEXTCTRL1</name></member>
+      <member refid="classdlg_new_cat_1a06638814dcd385731b976af931039dc1" prot="protected" virt="non-virtual"><scope>dlgNewCat</scope><name>ID_TEXTCTRL2</name></member>
+      <member refid="classdlg_new_cat_1a7741b567a7ca622c4a134cefd247bf7f" prot="public" virt="non-virtual"><scope>dlgNewCat</scope><name>lblCat</name></member>
+      <member refid="classdlg_new_cat_1a01cc0201cf630de20de80f1ea0c89cf1" prot="public" virt="non-virtual"><scope>dlgNewCat</scope><name>lblMemo</name></member>
+      <member refid="classdlg_new_cat_1a48f43deebf2c1135647662fcdcf8f542" prot="private" virt="non-virtual"><scope>dlgNewCat</scope><name>OnbtnCancelClick</name></member>
+      <member refid="classdlg_new_cat_1a0b3ad36e97d19c328426577ca0ca8464" prot="private" virt="non-virtual"><scope>dlgNewCat</scope><name>OnbtnInsertClick</name></member>
+      <member refid="classdlg_new_cat_1ad8100c6bd2a7534dcf6846fb715f24f4" prot="public" virt="virtual"><scope>dlgNewCat</scope><name>~dlgNewCat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

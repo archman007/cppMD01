@@ -1,0 +1,1273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classcpp_m_d01_frame" kind="class" language="C++" prot="public">
+    <compoundname>cppMD01Frame</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">wxFrame</basecompoundref>
+    <includes refid="cpp_m_d01_main_8h" local="no">cppMD01Main.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a6467fd15ab39abd4e479179bfcaaa9c0" prot="public" static="no" mutable="no">
+        <type>mysqlpp::Connection</type>
+        <definition>mysqlpp::Connection cppMD01Frame::conn</definition>
+        <argsstring></argsstring>
+        <name>conn</name>
+        <qualifiedname>cppMD01Frame::conn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="32" column="25" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a3a314721182b2b05b90c4c81a0639f41" prot="public" static="no" mutable="no">
+        <type>wxGrid *</type>
+        <definition>wxGrid* cppMD01Frame::masterGrid</definition>
+        <argsstring></argsstring>
+        <name>masterGrid</name>
+        <qualifiedname>cppMD01Frame::masterGrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="33" column="12" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1aa722fd68f431c3b4545b8819e4cea4c1" prot="public" static="no" mutable="no">
+        <type>wxGrid *</type>
+        <definition>wxGrid* cppMD01Frame::detailGrid</definition>
+        <argsstring></argsstring>
+        <name>detailGrid</name>
+        <qualifiedname>cppMD01Frame::detailGrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="34" column="12" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a1d417535ffbf1134fb4f3f4d054f494a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cppMD01Frame::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <qualifiedname>cppMD01Frame::cmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="35" column="17" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1ac5f4d62fd6a4e8a6448778b29a83f304" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cppMD01Frame::mkVal</definition>
+        <argsstring></argsstring>
+        <name>mkVal</name>
+        <qualifiedname>cppMD01Frame::mkVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="36" column="17" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1aa17a3997085fb81bedbf2bdecdea4013" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cppMD01Frame::dRID</definition>
+        <argsstring></argsstring>
+        <name>dRID</name>
+        <qualifiedname>cppMD01Frame::dRID</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="51" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1adfc202d1cfb8eb4e87efe83da69c9a0c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cppMD01Frame::defBro</definition>
+        <argsstring></argsstring>
+        <name>defBro</name>
+        <qualifiedname>cppMD01Frame::defBro</qualifiedname>
+        <initializer>= &quot;/usr/bin/brave&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="53" column="17" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a4b2c1c706093fa6c90e9e6b45e08eeaf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cppMD01Frame::row</definition>
+        <argsstring></argsstring>
+        <name>row</name>
+        <qualifiedname>cppMD01Frame::row</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="54" column="9" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1af1a0859c639c812199ba85b44f78e711" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cppMD01Frame::recNo</definition>
+        <argsstring></argsstring>
+        <name>recNo</name>
+        <qualifiedname>cppMD01Frame::recNo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="56" column="17" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1afef2449f70e248db95b0ed28dba41b10" prot="private" static="no" mutable="no">
+        <type>wxMenu</type>
+        <definition>wxMenu cppMD01Frame::pumDetail</definition>
+        <argsstring></argsstring>
+        <name>pumDetail</name>
+        <qualifiedname>cppMD01Frame::pumDetail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="95" column="12" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a292bd9ed692281d360e57088005edd66" prot="private" static="no" mutable="no">
+        <type>wxMenu</type>
+        <definition>wxMenu cppMD01Frame::pumMaster</definition>
+        <argsstring></argsstring>
+        <name>pumMaster</name>
+        <qualifiedname>cppMD01Frame::pumMaster</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="96" column="12" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a86580aa61b8f9a9b03965fc7257dd055" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::MenuItem3</definition>
+        <argsstring></argsstring>
+        <name>MenuItem3</name>
+        <qualifiedname>cppMD01Frame::MenuItem3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="97" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a7a35dd1b99a2cbf2f7d4e4feb065f875" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::MenuItem4</definition>
+        <argsstring></argsstring>
+        <name>MenuItem4</name>
+        <qualifiedname>cppMD01Frame::MenuItem4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="98" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a1efdf9ed45280f03fb5fc029f98638fe" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::MenuItem5</definition>
+        <argsstring></argsstring>
+        <name>MenuItem5</name>
+        <qualifiedname>cppMD01Frame::MenuItem5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="99" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a368b0b90de5440253c7ed8a78d6e0b7e" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::menNewPost</definition>
+        <argsstring></argsstring>
+        <name>menNewPost</name>
+        <qualifiedname>cppMD01Frame::menNewPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="100" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a4bf103c8338f2197130e0336a42335a2" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::menSelectCpp</definition>
+        <argsstring></argsstring>
+        <name>menSelectCpp</name>
+        <qualifiedname>cppMD01Frame::menSelectCpp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="101" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1acd134f52e36615db84e7dcfc1440375f" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::pumAddDocs</definition>
+        <argsstring></argsstring>
+        <name>pumAddDocs</name>
+        <qualifiedname>cppMD01Frame::pumAddDocs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="102" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a7040e2606d0070dc3e5cdf505a506c3d" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::pumDelLink</definition>
+        <argsstring></argsstring>
+        <name>pumDelLink</name>
+        <qualifiedname>cppMD01Frame::pumDelLink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="103" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1ab19bf932d00e3010742e1544d1d68e4a" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::pumEditDetails</definition>
+        <argsstring></argsstring>
+        <name>pumEditDetails</name>
+        <qualifiedname>cppMD01Frame::pumEditDetails</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="104" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a1e99928d662b3894466f9c3986c1c46a" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::pumNewBlogPost</definition>
+        <argsstring></argsstring>
+        <name>pumNewBlogPost</name>
+        <qualifiedname>cppMD01Frame::pumNewBlogPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="105" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a802ce2605546bb22f8a2d24fac97ac96" prot="private" static="no" mutable="no">
+        <type>wxMenuItem *</type>
+        <definition>wxMenuItem* cppMD01Frame::pumNewCat</definition>
+        <argsstring></argsstring>
+        <name>pumNewCat</name>
+        <qualifiedname>cppMD01Frame::pumNewCat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="106" column="16" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a60a459f5b2e76f696760c8b372a7b094" prot="private" static="no" mutable="no">
+        <type>wxPanel *</type>
+        <definition>wxPanel* cppMD01Frame::Panel1</definition>
+        <argsstring></argsstring>
+        <name>Panel1</name>
+        <qualifiedname>cppMD01Frame::Panel1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="107" column="13" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a9c25a3dd7048c037cda1be12aa4efae0" prot="private" static="no" mutable="no">
+        <type>wxPanel *</type>
+        <definition>wxPanel* cppMD01Frame::Panel2</definition>
+        <argsstring></argsstring>
+        <name>Panel2</name>
+        <qualifiedname>cppMD01Frame::Panel2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="108" column="13" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1ad84f70cb50145cb8efb108b7ab3de0f4" prot="private" static="no" mutable="no">
+        <type>wxScrolledWindow *</type>
+        <definition>wxScrolledWindow* cppMD01Frame::ScrolledWindow1</definition>
+        <argsstring></argsstring>
+        <name>ScrolledWindow1</name>
+        <qualifiedname>cppMD01Frame::ScrolledWindow1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="109" column="22" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a1bb90566db46febdb2b1225bf01a5caa" prot="private" static="no" mutable="no">
+        <type>wxStaticText *</type>
+        <definition>wxStaticText* cppMD01Frame::StaticText1</definition>
+        <argsstring></argsstring>
+        <name>StaticText1</name>
+        <qualifiedname>cppMD01Frame::StaticText1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="110" column="18" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a8052cc94929538bfb73ac0c9e8316fd5" prot="private" static="no" mutable="no">
+        <type>wxStaticText *</type>
+        <definition>wxStaticText* cppMD01Frame::StaticText2</definition>
+        <argsstring></argsstring>
+        <name>StaticText2</name>
+        <qualifiedname>cppMD01Frame::StaticText2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="111" column="18" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a604f824fca205c90fe93a900abd35603" prot="private" static="no" mutable="no">
+        <type>wxStatusBar *</type>
+        <definition>wxStatusBar* cppMD01Frame::StatusBar1</definition>
+        <argsstring></argsstring>
+        <name>StatusBar1</name>
+        <qualifiedname>cppMD01Frame::StatusBar1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="112" column="17" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a41e9fd7772428f6fc285694af2dcdf1f" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_STATICTEXT1</definition>
+        <argsstring></argsstring>
+        <name>ID_STATICTEXT1</name>
+        <qualifiedname>cppMD01Frame::ID_STATICTEXT1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="74" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1aa2b7d45f800960cee5e016011ba17d40" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_PANEL1</definition>
+        <argsstring></argsstring>
+        <name>ID_PANEL1</name>
+        <qualifiedname>cppMD01Frame::ID_PANEL1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="75" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a141e3723b94c1a7a840a877f381e94b0" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_PANEL3</definition>
+        <argsstring></argsstring>
+        <name>ID_PANEL3</name>
+        <qualifiedname>cppMD01Frame::ID_PANEL3</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="76" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a386bb91452f9fcc51ad22c6a734c1077" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_STATICTEXT2</definition>
+        <argsstring></argsstring>
+        <name>ID_STATICTEXT2</name>
+        <qualifiedname>cppMD01Frame::ID_STATICTEXT2</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="77" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a12682034fcd7b4db8ec894d7dde75f66" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_SCROLLEDWINDOW1</definition>
+        <argsstring></argsstring>
+        <name>ID_SCROLLEDWINDOW1</name>
+        <qualifiedname>cppMD01Frame::ID_SCROLLEDWINDOW1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="78" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a1db6f7f3d8ec1fcf85098980776c8d93" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::idMenucpp</definition>
+        <argsstring></argsstring>
+        <name>idMenucpp</name>
+        <qualifiedname>cppMD01Frame::idMenucpp</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="79" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a770ba89743fe214eb08cefb7cce2d705" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::idMenuQuit</definition>
+        <argsstring></argsstring>
+        <name>idMenuQuit</name>
+        <qualifiedname>cppMD01Frame::idMenuQuit</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="80" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a11b19c0984c6b70bbbbdbf4f5cf01119" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::idMenuAbout</definition>
+        <argsstring></argsstring>
+        <name>idMenuAbout</name>
+        <qualifiedname>cppMD01Frame::idMenuAbout</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="81" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1ae2c04e8468f7d54c60eae7d655724bb8" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_STATUSBAR1</definition>
+        <argsstring></argsstring>
+        <name>ID_STATUSBAR1</name>
+        <qualifiedname>cppMD01Frame::ID_STATUSBAR1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="82" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a365fbcb23a0ae5f1ec4e566380199120" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_MENUITEM1</definition>
+        <argsstring></argsstring>
+        <name>ID_MENUITEM1</name>
+        <qualifiedname>cppMD01Frame::ID_MENUITEM1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="83" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1ae4ce57f747345addc71322c9ef44717a" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::idpumNewCat</definition>
+        <argsstring></argsstring>
+        <name>idpumNewCat</name>
+        <qualifiedname>cppMD01Frame::idpumNewCat</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="84" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a89000cefc92bdc5a3a8c16ef077afae9" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_PumEdCat</definition>
+        <argsstring></argsstring>
+        <name>ID_PumEdCat</name>
+        <qualifiedname>cppMD01Frame::ID_PumEdCat</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="85" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1abde6378c23d721da0195af75bacd66bb" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_NewBlog</definition>
+        <argsstring></argsstring>
+        <name>ID_NewBlog</name>
+        <qualifiedname>cppMD01Frame::ID_NewBlog</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="86" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1ac3c10a74dcea2ae766da2b94b648f550" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_MENUITEM2</definition>
+        <argsstring></argsstring>
+        <name>ID_MENUITEM2</name>
+        <qualifiedname>cppMD01Frame::ID_MENUITEM2</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="87" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1aec2908c0d3ab692c53fc269ba00bac46" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_menAD</definition>
+        <argsstring></argsstring>
+        <name>ID_menAD</name>
+        <qualifiedname>cppMD01Frame::ID_menAD</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="88" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a5902351cea0fad397f0fe87dc1e8512d" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_menNB</definition>
+        <argsstring></argsstring>
+        <name>ID_menNB</name>
+        <qualifiedname>cppMD01Frame::ID_menNB</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="89" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a436de3bd768a1651d9d2300cd22ebf9c" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_pumDel</definition>
+        <argsstring></argsstring>
+        <name>ID_pumDel</name>
+        <qualifiedname>cppMD01Frame::ID_pumDel</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="90" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcpp_m_d01_frame_1a29d3605852301b463a83fca54dd335a0" prot="private" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long cppMD01Frame::ID_pumEditLink</definition>
+        <argsstring></argsstring>
+        <name>ID_pumEditLink</name>
+        <qualifiedname>cppMD01Frame::ID_pumEditLink</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="91" column="23" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcpp_m_d01_frame_1adbda8203786121d97f23baad6ba72699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cppMD01Frame::cppMD01Frame</definition>
+        <argsstring>(wxWindow *parent, wxWindowID id=-1)</argsstring>
+        <name>cppMD01Frame</name>
+        <qualifiedname>cppMD01Frame::cppMD01Frame</qualifiedname>
+        <param>
+          <type>wxWindow *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>wxWindowID</type>
+          <declname>id</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="30" column="5" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="93" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1aaf9eb81fc2be576ea113eb65df95c7b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>cppMD01Frame::~cppMD01Frame</definition>
+        <argsstring>()</argsstring>
+        <name>~cppMD01Frame</name>
+        <qualifiedname>cppMD01Frame::~cppMD01Frame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="31" column="13" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="230" bodyend="234"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcpp_m_d01_frame_1ac8197e4745f90bef9db2b89ca1de111b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::PopulateMasterGrid</definition>
+        <argsstring>()</argsstring>
+        <name>PopulateMasterGrid</name>
+        <qualifiedname>cppMD01Frame::PopulateMasterGrid</qualifiedname>
+        <briefdescription>
+<para>Populates the master grid with data from the MySQL database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function establishes a connection to the MySQL database and retrieves all records from the &quot;lk1&quot; table, ordered by the &quot;cat&quot; column. It then clears the current contents of the master grid and appends rows to match the number of records fetched from the database. The grid cells are populated with the data retrieved from the database.</para>
+<para><simplesect kind="note"><para>This function assumes that the MySQL connection object <computeroutput>conn</computeroutput> and the master grid object <computeroutput>masterGrid</computeroutput> are properly initialized.</para>
+</simplesect>
+<simplesect kind="warning"><para>If the database connection fails, the function will return immediately and the grid will not be populated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="39" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="251" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1a39c50cd112d3ceef1fa02c58f28d9d67" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::LoadDetailData</definition>
+        <argsstring>(long idlk1)</argsstring>
+        <name>LoadDetailData</name>
+        <qualifiedname>cppMD01Frame::LoadDetailData</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>idlk1</declname>
+        </param>
+        <briefdescription>
+<para>Loads detailed data for a specific ID and populates a grid with the retrieved information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method queries the database to retrieve data from the <computeroutput>lk2</computeroutput> table where the <computeroutput>idlk1</computeroutput> matches the provided ID. The result set is then used to populate a grid, clearing any existing rows and adding new rows as necessary.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idlk1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID used to filter the <computeroutput>lk2</computeroutput> table in the query.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Steps:<itemizedlist>
+<listitem><para>Create a new query using the database connection.</para>
+</listitem><listitem><para>Execute the query to select <computeroutput>idlk2</computeroutput>, <computeroutput>lkn</computeroutput>, <computeroutput>lnk</computeroutput>, and <computeroutput>ddes</computeroutput> columns from the <computeroutput>lk2</computeroutput> table where <computeroutput>idlk1</computeroutput> matches the input.</para>
+</listitem><listitem><para>Clear the existing grid and delete any rows if present.</para>
+</listitem><listitem><para>Append rows to the grid equal to the number of results returned by the query.</para>
+</listitem><listitem><para>Populate the grid cells with the data from the query result set.</para>
+</listitem><listitem><para>Clear the result set after processing. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="40" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="370" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1a8112e9688182801f858aae0b7c825efb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnMasterGridCellClick</definition>
+        <argsstring>(wxGridEvent &amp;event)</argsstring>
+        <name>OnMasterGridCellClick</name>
+        <qualifiedname>cppMD01Frame::OnMasterGridCellClick</qualifiedname>
+        <param>
+          <type>wxGridEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handles the event when a cell in the master grid is clicked.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The wxGridEvent object that contains event information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Retrieves the row index of the clicked cell, extracts the value from the first column of that row, converts it to a long integer, and then loads the detailed data associated with the converted value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="41" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="422" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1aaa305f3cc93679b99e575684e1ddb64f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnCellClick</definition>
+        <argsstring>(wxGridEvent &amp;event)</argsstring>
+        <name>OnCellClick</name>
+        <qualifiedname>cppMD01Frame::OnCellClick</qualifiedname>
+        <param>
+          <type>wxGridEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Event handler for cell clicks in a wxGrid. OnMasterGridCellClick This function is triggered when a cell in the wxGrid is clicked. It retrieves the value of the clicked cell. If the value starts with &quot;http&quot;, it attempts to open the URL in the default browser. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the wxGridEvent triggered by the cell click. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="42" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="286" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1aa16f35bdf535968e8a8a911e84ea3fed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnMasterGridPopup</definition>
+        <argsstring>(wxGridEvent &amp;event)</argsstring>
+        <name>OnMasterGridPopup</name>
+        <qualifiedname>cppMD01Frame::OnMasterGridPopup</qualifiedname>
+        <param>
+          <type>wxGridEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="43" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="452" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1ad0ad3edfe316feedeba0241c79ea0933" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnDetailGridPopup</definition>
+        <argsstring>(wxGridEvent &amp;event)</argsstring>
+        <name>OnDetailGridPopup</name>
+        <qualifiedname>cppMD01Frame::OnDetailGridPopup</qualifiedname>
+        <param>
+          <type>wxGridEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="44" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="457" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1af415e5f0a044b0e92bf9a36cb0c6dc7d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::ListFiles</definition>
+        <argsstring>(const wxString &amp;dir, const wxString &amp;filespec)</argsstring>
+        <name>ListFiles</name>
+        <qualifiedname>cppMD01Frame::ListFiles</qualifiedname>
+        <param>
+          <type>const wxString &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>const wxString &amp;</type>
+          <declname>filespec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="45" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="506" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1ac3f0b9e1e9fb9f7077c98ab1c66b9e4d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::procLink</definition>
+        <argsstring>()</argsstring>
+        <name>procLink</name>
+        <qualifiedname>cppMD01Frame::procLink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="46" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="558" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1ab7151474fee71490039a17d4a4c3293d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::procPdf</definition>
+        <argsstring>()</argsstring>
+        <name>procPdf</name>
+        <qualifiedname>cppMD01Frame::procPdf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="47" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="569" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1a8fac5bcaf097c058e19036058f158a1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::procDoc</definition>
+        <argsstring>()</argsstring>
+        <name>procDoc</name>
+        <qualifiedname>cppMD01Frame::procDoc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="48" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="582" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1af01404939e04cf2c1891237031b651b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::procExe</definition>
+        <argsstring>()</argsstring>
+        <name>procExe</name>
+        <qualifiedname>cppMD01Frame::procExe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="49" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="595" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1a4bf7711d19fe829783d40892bb570045" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::RefreshDetails</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshDetails</name>
+        <qualifiedname>cppMD01Frame::RefreshDetails</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="50" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="609" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1a9bfb018571487ee6e3b3f5de3666ae95" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnDetailGridCellClick</definition>
+        <argsstring>(wxGridEvent &amp;event)</argsstring>
+        <name>OnDetailGridCellClick</name>
+        <qualifiedname>cppMD01Frame::OnDetailGridCellClick</qualifiedname>
+        <param>
+          <type>wxGridEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="55" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="437" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1aa09be6112259d0e8befd3b1234622e6b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnQuit</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnQuit</name>
+        <qualifiedname>cppMD01Frame::OnQuit</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Event handler for the &quot;Quit&quot; command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is triggered when the user selects the &quot;Quit&quot; option in the menu. It closes the application window.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The wxCommandEvent object containing event details. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="61" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="334" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1a8b15e1258d8e2b803a3585e3f552605d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnAbout</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnAbout</name>
+        <qualifiedname>cppMD01Frame::OnAbout</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Handles the &quot;About&quot; menu command event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called when the &quot;About&quot; menu item is selected. It retrieves the build information and displays it in a message box.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The command event associated with the &quot;About&quot; menu item. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Retrieves build information.</para>
+<para>&lt; Displays the build information in a message box.</para>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="62" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="347" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1a147f1e611d3231b97c656cc5bc28e711" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnmenSelectCppSelected</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnmenSelectCppSelected</name>
+        <qualifiedname>cppMD01Frame::OnmenSelectCppSelected</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="63" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="463" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1a0e672c6069eabe42f29332b98b926965" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnpumAddDocsSelected</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnpumAddDocsSelected</name>
+        <qualifiedname>cppMD01Frame::OnpumAddDocsSelected</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="64" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="532" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1aec17ffd78bde561fa8909d1b451ba12b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnpumNewCatSelected</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnpumNewCatSelected</name>
+        <qualifiedname>cppMD01Frame::OnpumNewCatSelected</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="65" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="630" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1ab7559a78888c8fe852ef096706aeb552" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnpumNewBlogPostSelected</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnpumNewBlogPostSelected</name>
+        <qualifiedname>cppMD01Frame::OnpumNewBlogPostSelected</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="66" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="643" bodyend="664"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1acf8b314c2c8838778d56c858adb769e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnpumDelLinkSelected</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnpumDelLinkSelected</name>
+        <qualifiedname>cppMD01Frame::OnpumDelLinkSelected</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="67" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="666" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1aff6751c6a93d79a3d511923da0383a50" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnpumEdCatSelected</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnpumEdCatSelected</name>
+        <qualifiedname>cppMD01Frame::OnpumEdCatSelected</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="68" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="683" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1acb4faa3fa5166e96e71b95188fba9e44" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnpumEditLinkSelected</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnpumEditLinkSelected</name>
+        <qualifiedname>cppMD01Frame::OnpumEditLinkSelected</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="69" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="705" bodyend="726"/>
+      </memberdef>
+      <memberdef kind="function" id="classcpp_m_d01_frame_1a82bedb79eca3ccadae814dc35ef541b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cppMD01Frame::OnpumEditDetailsSelected</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnpumEditDetailsSelected</name>
+        <qualifiedname>cppMD01Frame::OnpumEditDetailsSelected</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="70" column="10" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp" bodystart="728" bodyend="730"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cppMD01Frame</label>
+        <link refid="classcpp_m_d01_frame"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxFrame</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cppMD01Frame</label>
+        <link refid="classcpp_m_d01_frame"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxFrame</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" line="26" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h" bodystart="27" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classcpp_m_d01_frame_1a1d417535ffbf1134fb4f3f4d054f494a" prot="public" virt="non-virtual"><scope>cppMD01Frame</scope><name>cmd</name></member>
+      <member refid="classcpp_m_d01_frame_1a6467fd15ab39abd4e479179bfcaaa9c0" prot="public" virt="non-virtual"><scope>cppMD01Frame</scope><name>conn</name></member>
+      <member refid="classcpp_m_d01_frame_1adbda8203786121d97f23baad6ba72699" prot="public" virt="non-virtual"><scope>cppMD01Frame</scope><name>cppMD01Frame</name></member>
+      <member refid="classcpp_m_d01_frame_1adfc202d1cfb8eb4e87efe83da69c9a0c" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>defBro</name></member>
+      <member refid="classcpp_m_d01_frame_1aa722fd68f431c3b4545b8819e4cea4c1" prot="public" virt="non-virtual"><scope>cppMD01Frame</scope><name>detailGrid</name></member>
+      <member refid="classcpp_m_d01_frame_1aa17a3997085fb81bedbf2bdecdea4013" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>dRID</name></member>
+      <member refid="classcpp_m_d01_frame_1aec2908c0d3ab692c53fc269ba00bac46" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_menAD</name></member>
+      <member refid="classcpp_m_d01_frame_1a5902351cea0fad397f0fe87dc1e8512d" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_menNB</name></member>
+      <member refid="classcpp_m_d01_frame_1a365fbcb23a0ae5f1ec4e566380199120" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_MENUITEM1</name></member>
+      <member refid="classcpp_m_d01_frame_1ac3c10a74dcea2ae766da2b94b648f550" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_MENUITEM2</name></member>
+      <member refid="classcpp_m_d01_frame_1abde6378c23d721da0195af75bacd66bb" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_NewBlog</name></member>
+      <member refid="classcpp_m_d01_frame_1aa2b7d45f800960cee5e016011ba17d40" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_PANEL1</name></member>
+      <member refid="classcpp_m_d01_frame_1a141e3723b94c1a7a840a877f381e94b0" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_PANEL3</name></member>
+      <member refid="classcpp_m_d01_frame_1a436de3bd768a1651d9d2300cd22ebf9c" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_pumDel</name></member>
+      <member refid="classcpp_m_d01_frame_1a89000cefc92bdc5a3a8c16ef077afae9" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_PumEdCat</name></member>
+      <member refid="classcpp_m_d01_frame_1a29d3605852301b463a83fca54dd335a0" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_pumEditLink</name></member>
+      <member refid="classcpp_m_d01_frame_1a12682034fcd7b4db8ec894d7dde75f66" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_SCROLLEDWINDOW1</name></member>
+      <member refid="classcpp_m_d01_frame_1a41e9fd7772428f6fc285694af2dcdf1f" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_STATICTEXT1</name></member>
+      <member refid="classcpp_m_d01_frame_1a386bb91452f9fcc51ad22c6a734c1077" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_STATICTEXT2</name></member>
+      <member refid="classcpp_m_d01_frame_1ae2c04e8468f7d54c60eae7d655724bb8" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ID_STATUSBAR1</name></member>
+      <member refid="classcpp_m_d01_frame_1a11b19c0984c6b70bbbbdbf4f5cf01119" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>idMenuAbout</name></member>
+      <member refid="classcpp_m_d01_frame_1a1db6f7f3d8ec1fcf85098980776c8d93" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>idMenucpp</name></member>
+      <member refid="classcpp_m_d01_frame_1a770ba89743fe214eb08cefb7cce2d705" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>idMenuQuit</name></member>
+      <member refid="classcpp_m_d01_frame_1ae4ce57f747345addc71322c9ef44717a" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>idpumNewCat</name></member>
+      <member refid="classcpp_m_d01_frame_1af415e5f0a044b0e92bf9a36cb0c6dc7d" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ListFiles</name></member>
+      <member refid="classcpp_m_d01_frame_1a39c50cd112d3ceef1fa02c58f28d9d67" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>LoadDetailData</name></member>
+      <member refid="classcpp_m_d01_frame_1a3a314721182b2b05b90c4c81a0639f41" prot="public" virt="non-virtual"><scope>cppMD01Frame</scope><name>masterGrid</name></member>
+      <member refid="classcpp_m_d01_frame_1a368b0b90de5440253c7ed8a78d6e0b7e" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>menNewPost</name></member>
+      <member refid="classcpp_m_d01_frame_1a4bf103c8338f2197130e0336a42335a2" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>menSelectCpp</name></member>
+      <member refid="classcpp_m_d01_frame_1a86580aa61b8f9a9b03965fc7257dd055" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>MenuItem3</name></member>
+      <member refid="classcpp_m_d01_frame_1a7a35dd1b99a2cbf2f7d4e4feb065f875" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>MenuItem4</name></member>
+      <member refid="classcpp_m_d01_frame_1a1efdf9ed45280f03fb5fc029f98638fe" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>MenuItem5</name></member>
+      <member refid="classcpp_m_d01_frame_1ac5f4d62fd6a4e8a6448778b29a83f304" prot="public" virt="non-virtual"><scope>cppMD01Frame</scope><name>mkVal</name></member>
+      <member refid="classcpp_m_d01_frame_1a8b15e1258d8e2b803a3585e3f552605d" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnAbout</name></member>
+      <member refid="classcpp_m_d01_frame_1aaa305f3cc93679b99e575684e1ddb64f" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnCellClick</name></member>
+      <member refid="classcpp_m_d01_frame_1a9bfb018571487ee6e3b3f5de3666ae95" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnDetailGridCellClick</name></member>
+      <member refid="classcpp_m_d01_frame_1ad0ad3edfe316feedeba0241c79ea0933" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnDetailGridPopup</name></member>
+      <member refid="classcpp_m_d01_frame_1a8112e9688182801f858aae0b7c825efb" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnMasterGridCellClick</name></member>
+      <member refid="classcpp_m_d01_frame_1aa16f35bdf535968e8a8a911e84ea3fed" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnMasterGridPopup</name></member>
+      <member refid="classcpp_m_d01_frame_1a147f1e611d3231b97c656cc5bc28e711" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnmenSelectCppSelected</name></member>
+      <member refid="classcpp_m_d01_frame_1a0e672c6069eabe42f29332b98b926965" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnpumAddDocsSelected</name></member>
+      <member refid="classcpp_m_d01_frame_1acf8b314c2c8838778d56c858adb769e7" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnpumDelLinkSelected</name></member>
+      <member refid="classcpp_m_d01_frame_1aff6751c6a93d79a3d511923da0383a50" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnpumEdCatSelected</name></member>
+      <member refid="classcpp_m_d01_frame_1a82bedb79eca3ccadae814dc35ef541b0" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnpumEditDetailsSelected</name></member>
+      <member refid="classcpp_m_d01_frame_1acb4faa3fa5166e96e71b95188fba9e44" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnpumEditLinkSelected</name></member>
+      <member refid="classcpp_m_d01_frame_1ab7559a78888c8fe852ef096706aeb552" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnpumNewBlogPostSelected</name></member>
+      <member refid="classcpp_m_d01_frame_1aec17ffd78bde561fa8909d1b451ba12b" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnpumNewCatSelected</name></member>
+      <member refid="classcpp_m_d01_frame_1aa09be6112259d0e8befd3b1234622e6b" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>OnQuit</name></member>
+      <member refid="classcpp_m_d01_frame_1a60a459f5b2e76f696760c8b372a7b094" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>Panel1</name></member>
+      <member refid="classcpp_m_d01_frame_1a9c25a3dd7048c037cda1be12aa4efae0" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>Panel2</name></member>
+      <member refid="classcpp_m_d01_frame_1ac8197e4745f90bef9db2b89ca1de111b" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>PopulateMasterGrid</name></member>
+      <member refid="classcpp_m_d01_frame_1a8fac5bcaf097c058e19036058f158a1a" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>procDoc</name></member>
+      <member refid="classcpp_m_d01_frame_1af01404939e04cf2c1891237031b651b0" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>procExe</name></member>
+      <member refid="classcpp_m_d01_frame_1ac3f0b9e1e9fb9f7077c98ab1c66b9e4d" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>procLink</name></member>
+      <member refid="classcpp_m_d01_frame_1ab7151474fee71490039a17d4a4c3293d" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>procPdf</name></member>
+      <member refid="classcpp_m_d01_frame_1acd134f52e36615db84e7dcfc1440375f" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>pumAddDocs</name></member>
+      <member refid="classcpp_m_d01_frame_1a7040e2606d0070dc3e5cdf505a506c3d" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>pumDelLink</name></member>
+      <member refid="classcpp_m_d01_frame_1afef2449f70e248db95b0ed28dba41b10" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>pumDetail</name></member>
+      <member refid="classcpp_m_d01_frame_1ab19bf932d00e3010742e1544d1d68e4a" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>pumEditDetails</name></member>
+      <member refid="classcpp_m_d01_frame_1a292bd9ed692281d360e57088005edd66" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>pumMaster</name></member>
+      <member refid="classcpp_m_d01_frame_1a1e99928d662b3894466f9c3986c1c46a" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>pumNewBlogPost</name></member>
+      <member refid="classcpp_m_d01_frame_1a802ce2605546bb22f8a2d24fac97ac96" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>pumNewCat</name></member>
+      <member refid="classcpp_m_d01_frame_1af1a0859c639c812199ba85b44f78e711" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>recNo</name></member>
+      <member refid="classcpp_m_d01_frame_1a4bf7711d19fe829783d40892bb570045" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>RefreshDetails</name></member>
+      <member refid="classcpp_m_d01_frame_1a4b2c1c706093fa6c90e9e6b45e08eeaf" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>row</name></member>
+      <member refid="classcpp_m_d01_frame_1ad84f70cb50145cb8efb108b7ab3de0f4" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>ScrolledWindow1</name></member>
+      <member refid="classcpp_m_d01_frame_1a1bb90566db46febdb2b1225bf01a5caa" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>StaticText1</name></member>
+      <member refid="classcpp_m_d01_frame_1a8052cc94929538bfb73ac0c9e8316fd5" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>StaticText2</name></member>
+      <member refid="classcpp_m_d01_frame_1a604f824fca205c90fe93a900abd35603" prot="private" virt="non-virtual"><scope>cppMD01Frame</scope><name>StatusBar1</name></member>
+      <member refid="classcpp_m_d01_frame_1aaf9eb81fc2be576ea113eb65df95c7b2" prot="public" virt="virtual"><scope>cppMD01Frame</scope><name>~cppMD01Frame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="classdlg_nb01" kind="class" language="C++" prot="public">
+    <compoundname>dlgNb01</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">wxDialog</basecompoundref>
+    <includes refid="dlg_nb01_8h" local="no">dlgNb01.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_nb01_1ab36c76e5726dae55ba0a83cdab1df6c3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dlgNb01::curCat</definition>
+        <argsstring></argsstring>
+        <name>curCat</name>
+        <qualifiedname>dlgNb01::curCat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="18" column="5" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_nb01_1a76377ea7eb09dc99e70d06daa1e8c229" prot="public" static="no" mutable="no">
+        <type>wxListBox *</type>
+        <definition>wxListBox* dlgNb01::lbxCats</definition>
+        <argsstring></argsstring>
+        <name>lbxCats</name>
+        <qualifiedname>dlgNb01::lbxCats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="21" column="11" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classz_d_b01_1af0b7dd10b200b2dd1f7087a6cc24fc37" compoundref="z_d_b01_8cpp" startline="293" endline="302">zDB01::nb01</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3" prot="public" static="no" mutable="no">
+        <type>wxListBox *</type>
+        <definition>wxListBox* dlgNb01::lbxLinks</definition>
+        <argsstring></argsstring>
+        <name>lbxLinks</name>
+        <qualifiedname>dlgNb01::lbxLinks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="22" column="11" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_nb01_1ae84963ba986c733626d3e40b540ec77d" prot="public" static="no" mutable="no">
+        <type>wxNotebook *</type>
+        <definition>wxNotebook* dlgNb01::nbk01</definition>
+        <argsstring></argsstring>
+        <name>nbk01</name>
+        <qualifiedname>dlgNb01::nbk01</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="23" column="12" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_nb01_1aedc4048e1ad676e71c331327f8272e75" prot="public" static="no" mutable="no">
+        <type>wxPanel *</type>
+        <definition>wxPanel* dlgNb01::Panel1</definition>
+        <argsstring></argsstring>
+        <name>Panel1</name>
+        <qualifiedname>dlgNb01::Panel1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="24" column="9" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_nb01_1af689c5f7c2b69e8601d50d105f3188d5" prot="public" static="no" mutable="no">
+        <type>wxPanel *</type>
+        <definition>wxPanel* dlgNb01::Panel2</definition>
+        <argsstring></argsstring>
+        <name>Panel2</name>
+        <qualifiedname>dlgNb01::Panel2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="25" column="9" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classdlg_nb01_1a087639f2f189964da81412b3adb82b38" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNb01::ID_LISTBOX1</definition>
+        <argsstring></argsstring>
+        <name>ID_LISTBOX1</name>
+        <qualifiedname>dlgNb01::ID_LISTBOX1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="31" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_nb01_1ad27b25cedb8054749c1089ce5cac2e82" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNb01::ID_PANEL1</definition>
+        <argsstring></argsstring>
+        <name>ID_PANEL1</name>
+        <qualifiedname>dlgNb01::ID_PANEL1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="32" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_nb01_1af8539a8de173be5c3f8aac34d3cc3613" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNb01::ID_LISTBOX2</definition>
+        <argsstring></argsstring>
+        <name>ID_LISTBOX2</name>
+        <qualifiedname>dlgNb01::ID_LISTBOX2</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="33" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_nb01_1a1ff3066230a343f8b2e1da507d200581" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNb01::ID_PANEL2</definition>
+        <argsstring></argsstring>
+        <name>ID_PANEL2</name>
+        <qualifiedname>dlgNb01::ID_PANEL2</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="34" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_nb01_1a2f89e54374be753ba3c7379d8122ce73" prot="protected" static="yes" mutable="no">
+        <type>const long</type>
+        <definition>const long dlgNb01::ID_NOTEBOOK1</definition>
+        <argsstring></argsstring>
+        <name>ID_NOTEBOOK1</name>
+        <qualifiedname>dlgNb01::ID_NOTEBOOK1</qualifiedname>
+        <initializer>= wxNewId()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="35" column="19" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_nb01_1a2e977dbfcc9d7fed5f06c9071d0d9e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dlgNb01::dlgNb01</definition>
+        <argsstring>(wxWindow *parent, wxWindowID id=wxID_ANY, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize)</argsstring>
+        <name>dlgNb01</name>
+        <qualifiedname>dlgNb01::dlgNb01</qualifiedname>
+        <param>
+          <type>wxWindow *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>wxWindowID</type>
+          <declname>id</declname>
+          <defval>wxID_ANY</defval>
+        </param>
+        <param>
+          <type>const wxPoint &amp;</type>
+          <declname>pos</declname>
+          <defval>wxDefaultPosition</defval>
+        </param>
+        <param>
+          <type>const wxSize &amp;</type>
+          <declname>size</declname>
+          <defval>wxDefaultSize</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="16" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.cpp" bodystart="24" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_nb01_1a903a9f01411d3f6a4b7128d033590ce9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>dlgNb01::~dlgNb01</definition>
+        <argsstring>()</argsstring>
+        <name>~dlgNb01</name>
+        <qualifiedname>dlgNb01::~dlgNb01</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="17" column="9" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.cpp" bodystart="69" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_nb01_1a0f640627ebdd60bf237b8b503b32aad9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dlgNb01::OnlbxCatsSelect</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnlbxCatsSelect</name>
+        <qualifiedname>dlgNb01::OnlbxCatsSelect</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="41" column="6" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.cpp" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_nb01_1af320825e2e6ddd2eb8580bfc54e909ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dlgNb01::OnlbxCatsDClick</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnlbxCatsDClick</name>
+        <qualifiedname>dlgNb01::OnlbxCatsDClick</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="42" column="6" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.cpp" bodystart="80" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_nb01_1ac44b2b78afbe36b9ba177e78311aae22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dlgNb01::OnlbxLinksDClick</definition>
+        <argsstring>(wxCommandEvent &amp;event)</argsstring>
+        <name>OnlbxLinksDClick</name>
+        <qualifiedname>dlgNb01::OnlbxLinksDClick</qualifiedname>
+        <param>
+          <type>wxCommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="43" column="6" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.cpp" bodystart="89" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dlgNb01</label>
+        <link refid="classdlg_nb01"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dlgNb01</label>
+        <link refid="classdlg_nb01"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wxDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" line="12" column="1" bodyfile="/home/archman/workspace/cb/cpp/cppMD01/dlgNb01.h" bodystart="13" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classdlg_nb01_1ab36c76e5726dae55ba0a83cdab1df6c3" prot="public" virt="non-virtual"><scope>dlgNb01</scope><name>curCat</name></member>
+      <member refid="classdlg_nb01_1a2e977dbfcc9d7fed5f06c9071d0d9e07" prot="public" virt="non-virtual"><scope>dlgNb01</scope><name>dlgNb01</name></member>
+      <member refid="classdlg_nb01_1a087639f2f189964da81412b3adb82b38" prot="protected" virt="non-virtual"><scope>dlgNb01</scope><name>ID_LISTBOX1</name></member>
+      <member refid="classdlg_nb01_1af8539a8de173be5c3f8aac34d3cc3613" prot="protected" virt="non-virtual"><scope>dlgNb01</scope><name>ID_LISTBOX2</name></member>
+      <member refid="classdlg_nb01_1a2f89e54374be753ba3c7379d8122ce73" prot="protected" virt="non-virtual"><scope>dlgNb01</scope><name>ID_NOTEBOOK1</name></member>
+      <member refid="classdlg_nb01_1ad27b25cedb8054749c1089ce5cac2e82" prot="protected" virt="non-virtual"><scope>dlgNb01</scope><name>ID_PANEL1</name></member>
+      <member refid="classdlg_nb01_1a1ff3066230a343f8b2e1da507d200581" prot="protected" virt="non-virtual"><scope>dlgNb01</scope><name>ID_PANEL2</name></member>
+      <member refid="classdlg_nb01_1a76377ea7eb09dc99e70d06daa1e8c229" prot="public" virt="non-virtual"><scope>dlgNb01</scope><name>lbxCats</name></member>
+      <member refid="classdlg_nb01_1a1dc4fd653a9b1958274d91c176a02bc3" prot="public" virt="non-virtual"><scope>dlgNb01</scope><name>lbxLinks</name></member>
+      <member refid="classdlg_nb01_1ae84963ba986c733626d3e40b540ec77d" prot="public" virt="non-virtual"><scope>dlgNb01</scope><name>nbk01</name></member>
+      <member refid="classdlg_nb01_1af320825e2e6ddd2eb8580bfc54e909ab" prot="private" virt="non-virtual"><scope>dlgNb01</scope><name>OnlbxCatsDClick</name></member>
+      <member refid="classdlg_nb01_1a0f640627ebdd60bf237b8b503b32aad9" prot="private" virt="non-virtual"><scope>dlgNb01</scope><name>OnlbxCatsSelect</name></member>
+      <member refid="classdlg_nb01_1ac44b2b78afbe36b9ba177e78311aae22" prot="private" virt="non-virtual"><scope>dlgNb01</scope><name>OnlbxLinksDClick</name></member>
+      <member refid="classdlg_nb01_1aedc4048e1ad676e71c331327f8272e75" prot="public" virt="non-virtual"><scope>dlgNb01</scope><name>Panel1</name></member>
+      <member refid="classdlg_nb01_1af689c5f7c2b69e8601d50d105f3188d5" prot="public" virt="non-virtual"><scope>dlgNb01</scope><name>Panel2</name></member>
+      <member refid="classdlg_nb01_1a903a9f01411d3f6a4b7128d033590ce9" prot="public" virt="virtual"><scope>dlgNb01</scope><name>~dlgNb01</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
