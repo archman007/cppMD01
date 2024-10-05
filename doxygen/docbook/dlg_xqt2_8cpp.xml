@@ -2,4 +2,13 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_xqt2_8cpp" xml:lang="en-US">
 <title>dlgXqt2.cpp File Reference</title>
 <indexterm><primary>dlgXqt2.cpp</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;dlgXqt2.h&quot;<?linebreak?>#include &lt;wx/intl.h&gt;<?linebreak?>#include &lt;wx/string.h&gt;<?linebreak?></programlisting></section>
+<programlisting linenumbering="unnumbered">#include &quot;dlgXqt2.h&quot;<?linebreak?>#include &lt;wx/intl.h&gt;<?linebreak?>#include &lt;wx/string.h&gt;<?linebreak?></programlisting>Include dependency graph for dlgXqt2.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dlg_xqt2_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>

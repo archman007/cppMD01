@@ -5,10 +5,20 @@
 <para>
 <computeroutput>#include &lt;dlgNewLink.h&gt;</computeroutput>
 </para>
-<para>Inheritance diagram for dlgNewLink:    <informalfigure>
+Inheritance diagram for dlgNewLink:<para>
+    <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_new_link.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_new_link__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for dlgNewLink:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_new_link__coll__graph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>
@@ -90,6 +100,15 @@ Definition at line <link linkend="_dlg_new_link_8h_source_1l00012">12</link> of 
 <para>zrdb.initField(mkVal,dlg.edtPrim);</para>
 <para>
 Definition at line <link linkend="_dlg_new_link_8cpp_source_1l00031">31</link> of file <link linkend="_dlg_new_link_8cpp_source">dlgNewLink.cpp</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_new_link_aea36327039f6010e1e3aaf80d0e899ce_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 </section>
 <anchor xml:id="_classdlg_new_link_1a85a3ebb20da5d338542b7256fb302d0e"/><section>
     <title>~dlgNewLink()</title>

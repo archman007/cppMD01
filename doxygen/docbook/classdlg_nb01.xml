@@ -5,10 +5,20 @@
 <para>
 <computeroutput>#include &lt;dlgNb01.h&gt;</computeroutput>
 </para>
-<para>Inheritance diagram for dlgNb01:    <informalfigure>
+Inheritance diagram for dlgNb01:<para>
+    <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_nb01.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_nb01__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for dlgNb01:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_nb01__coll__graph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>

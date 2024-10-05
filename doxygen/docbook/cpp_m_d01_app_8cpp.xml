@@ -2,7 +2,16 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cpp_m_d01_app_8cpp" xml:lang="en-US">
 <title>cppMD01App.cpp File Reference</title>
 <indexterm><primary>cppMD01App.cpp</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;cppMD01App.h&quot;<?linebreak?>#include &quot;zDB01.h&quot;<?linebreak?>#include &quot;bcsGui.h&quot;<?linebreak?>#include &quot;cppMD01Main.h&quot;<?linebreak?>#include &lt;wx/image.h&gt;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &quot;cppMD01App.h&quot;<?linebreak?>#include &quot;zDB01.h&quot;<?linebreak?>#include &quot;bcsGui.h&quot;<?linebreak?>#include &quot;cppMD01Main.h&quot;<?linebreak?>#include &lt;wx/image.h&gt;<?linebreak?></programlisting>Include dependency graph for cppMD01App.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="cpp_m_d01_app_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
     <title>Functions    </title>
         <itemizedlist>
             <listitem><para><link linkend="_cpp_m_d01_app_8cpp_1a2bf18180d85b94b3e5561a9307e28bd1">IMPLEMENT_APP</link> (<link linkend="_classcpp_m_d01_app">cppMD01App</link>)</para>

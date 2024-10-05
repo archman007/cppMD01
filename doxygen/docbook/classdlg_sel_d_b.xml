@@ -5,10 +5,20 @@
 <para>
 <computeroutput>#include &lt;dlgSelDB.h&gt;</computeroutput>
 </para>
-<para>Inheritance diagram for dlgSelDB:    <informalfigure>
+Inheritance diagram for dlgSelDB:<para>
+    <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_sel_d_b.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_sel_d_b__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for dlgSelDB:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_sel_d_b__coll__graph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>

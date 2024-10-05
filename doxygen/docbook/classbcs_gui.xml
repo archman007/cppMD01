@@ -59,6 +59,24 @@ Definition at line <link linkend="_bcs_gui_8cpp_source_1l00035">35</link> of fil
 <indexterm><primary>bcsGui</primary><secondary>openFileDialog</secondary></indexterm>
 <para><computeroutput>string bcsGui::openFileDialog (wxWindow * parent, const wxString &amp; message, const wxString &amp; defaultDir, const wxString &amp; defaultFile, const wxString &amp; wildcard, int flags)</computeroutput></para><para>
 Definition at line <link linkend="_bcs_gui_8cpp_source_1l00081">81</link> of file <link linkend="_bcs_gui_8cpp_source">bcsGui.cpp</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbcs_gui_ade5890d2dccda707cb21357609d2600f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbcs_gui_ade5890d2dccda707cb21357609d2600f_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 </section>
 <anchor xml:id="_classbcs_gui_1ac8bd94493e962a832d2d47344d8afbd3"/><section>
     <title>SelDir()</title>

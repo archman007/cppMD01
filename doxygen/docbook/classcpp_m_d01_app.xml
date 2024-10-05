@@ -5,10 +5,20 @@
 <para>
 <computeroutput>#include &lt;cppMD01App.h&gt;</computeroutput>
 </para>
-<para>Inheritance diagram for cppMD01App:    <informalfigure>
+Inheritance diagram for cppMD01App:<para>
+    <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcpp_m_d01_app.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcpp_m_d01_app__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cppMD01App:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcpp_m_d01_app__coll__graph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>

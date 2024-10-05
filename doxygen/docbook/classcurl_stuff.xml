@@ -57,6 +57,24 @@ Definition at line <link linkend="_curl_stuff_8cpp_source_1l00023">23</link> of 
 <indexterm><primary>curlStuff</primary><secondary>clipUrl</secondary></indexterm>
 <para><computeroutput>std::string curlStuff::clipUrl ( )</computeroutput></para><para>
 Definition at line <link linkend="_curl_stuff_8cpp_source_1l00189">189</link> of file <link linkend="_curl_stuff_8cpp_source">curlStuff.cpp</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcurl_stuff_a95d3ef871d4c6eeb2c9097eaf2ab738f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcurl_stuff_a95d3ef871d4c6eeb2c9097eaf2ab738f_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 </section>
 <anchor xml:id="_classcurl_stuff_1a766a52cfa30136e004f9ee76e2eced5f"/><section>
     <title>getURL()</title>
@@ -64,6 +82,15 @@ Definition at line <link linkend="_curl_stuff_8cpp_source_1l00189">189</link> of
 <indexterm><primary>curlStuff</primary><secondary>getURL</secondary></indexterm>
 <para><computeroutput>std::string curlStuff::getURL ( )</computeroutput></para><para>
 Definition at line <link linkend="_curl_stuff_8cpp_source_1l00169">169</link> of file <link linkend="_curl_stuff_8cpp_source">curlStuff.cpp</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcurl_stuff_a766a52cfa30136e004f9ee76e2eced5f_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 </section>
 <anchor xml:id="_classcurl_stuff_1afc2fdfde6fa1450a1184f20ab9cf35f7"/><section>
     <title>getZTitle()</title>
@@ -71,6 +98,24 @@ Definition at line <link linkend="_curl_stuff_8cpp_source_1l00169">169</link> of
 <indexterm><primary>curlStuff</primary><secondary>getZTitle</secondary></indexterm>
 <para><computeroutput>std::string curlStuff::getZTitle (std::string url)</computeroutput></para><para>
 Definition at line <link linkend="_curl_stuff_8cpp_source_1l00076">76</link> of file <link linkend="_curl_stuff_8cpp_source">curlStuff.cpp</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcurl_stuff_afc2fdfde6fa1450a1184f20ab9cf35f7_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcurl_stuff_afc2fdfde6fa1450a1184f20ab9cf35f7_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 </section>
 </section>
 <section>

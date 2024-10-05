@@ -2,7 +2,16 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_new_link_8cpp" xml:lang="en-US">
 <title>dlgNewLink.cpp File Reference</title>
 <indexterm><primary>dlgNewLink.cpp</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;dlgNewLink.h&quot;<?linebreak?>#include &quot;zDB01.h&quot;<?linebreak?>#include &quot;curlStuff.h&quot;<?linebreak?>#include &lt;wx/intl.h&gt;<?linebreak?>#include &lt;wx/string.h&gt;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &quot;dlgNewLink.h&quot;<?linebreak?>#include &quot;zDB01.h&quot;<?linebreak?>#include &quot;curlStuff.h&quot;<?linebreak?>#include &lt;wx/intl.h&gt;<?linebreak?>#include &lt;wx/string.h&gt;<?linebreak?></programlisting>Include dependency graph for dlgNewLink.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dlg_new_link_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
     <title>Variables    </title>
         <itemizedlist>
             <listitem><para><link linkend="_classz_d_b01">zDB01</link> <link linkend="_dlg_new_link_8cpp_1a0c209daf02b59108b51309573b884440">db02</link></para>

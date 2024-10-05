@@ -5,10 +5,20 @@
 <para>
 <computeroutput>#include &lt;dlgNewCat.h&gt;</computeroutput>
 </para>
-<para>Inheritance diagram for dlgNewCat:    <informalfigure>
+Inheritance diagram for dlgNewCat:<para>
+    <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_new_cat.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_new_cat__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for dlgNewCat:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdlg_new_cat__coll__graph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>

@@ -2,7 +2,25 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dlg_sel_d_b_8h" xml:lang="en-US">
 <title>dlgSelDB.h File Reference</title>
 <indexterm><primary>dlgSelDB.h</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &lt;wx/dialog.h&gt;<?linebreak?>#include &lt;wx/listbox.h&gt;<?linebreak?>#include &lt;wx/sizer.h&gt;<?linebreak?></programlisting><simplesect>
+<programlisting linenumbering="unnumbered">#include &lt;wx/dialog.h&gt;<?linebreak?>#include &lt;wx/listbox.h&gt;<?linebreak?>#include &lt;wx/sizer.h&gt;<?linebreak?></programlisting>Include dependency graph for dlgSelDB.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dlg_sel_d_b_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dlg_sel_d_b_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_classdlg_sel_d_b">dlgSelDB</link></para>

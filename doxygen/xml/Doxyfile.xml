@@ -201,7 +201,7 @@
     <value><![CDATA[*.qsf]]></value>
     <value><![CDATA[*.ice]]></value>
   </option>
-  <option  id='RECURSIVE' default='yes' type='bool'><value>NO</value></option>
+  <option  id='RECURSIVE' default='no' type='bool'><value>YES</value></option>
   <option  id='EXCLUDE' default='yes' type='stringlist'>
   </option>
   <option  id='EXCLUDE_SYMLINKS' default='yes' type='bool'><value>NO</value></option>
@@ -253,9 +253,9 @@
   <option  id='HTML_EXTRA_FILES' default='yes' type='stringlist'>
   </option>
   <option  id='HTML_COLORSTYLE' default='yes' type='string'><value>AUTO_LIGHT</value></option>
-  <option  id='HTML_COLORSTYLE_HUE' default='no' type='int'><value>305</value></option>
+  <option  id='HTML_COLORSTYLE_HUE' default='no' type='int'><value>151</value></option>
   <option  id='HTML_COLORSTYLE_SAT' default='no' type='int'><value>32</value></option>
-  <option  id='HTML_COLORSTYLE_GAMMA' default='no' type='int'><value>49</value></option>
+  <option  id='HTML_COLORSTYLE_GAMMA' default='no' type='int'><value>231</value></option>
   <option  id='HTML_DYNAMIC_MENUS' default='yes' type='bool'><value>YES</value></option>
   <option  id='HTML_DYNAMIC_SECTIONS' default='yes' type='bool'><value>NO</value></option>
   <option  id='HTML_CODE_FOLDING' default='yes' type='bool'><value>YES</value></option>
@@ -380,7 +380,7 @@
   <option  id='EXTERNAL_GROUPS' default='yes' type='bool'><value>YES</value></option>
   <option  id='EXTERNAL_PAGES' default='yes' type='bool'><value>YES</value></option>
   <option  id='HIDE_UNDOC_RELATIONS' default='yes' type='bool'><value>YES</value></option>
-  <option  id='HAVE_DOT' default='yes' type='bool'><value>NO</value></option>
+  <option  id='HAVE_DOT' default='no' type='bool'><value>YES</value></option>
   <option  id='DOT_NUM_THREADS' default='yes' type='int'><value>0</value></option>
   <option  id='DOT_COMMON_ATTR' default='yes' type='string'><value><![CDATA["fontname=Helvetica,fontsize=10"]]></value></option>
   <option  id='DOT_EDGE_ATTR' default='yes' type='string'><value><![CDATA["labelfontname=Helvetica,labelfontsize=10"]]></value></option>
