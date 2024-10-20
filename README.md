@@ -1,4 +1,4 @@
-In order to provide an environment where rapid access to links allows the developer to invoke required tools for software development.<br><br> We have employed a master detail scenario for the organization of links.<br><br>
+<br>In order to provide an environment where rapid access to links allows the developer to invoke required tools for software development.<br><br> We have employed a master detail scenario for the organization of links.<br><br>
 The master grid contains the overall categories while the details grid identifies the link components details available for execution.<br><br>
 This application is a programmer's workbench of sorts.  
 <br>The following file types accomodated include.
