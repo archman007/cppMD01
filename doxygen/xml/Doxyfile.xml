@@ -223,7 +223,7 @@
   <option  id='FILTER_SOURCE_FILES' default='yes' type='bool'><value>NO</value></option>
   <option  id='FILTER_SOURCE_PATTERNS' default='yes' type='stringlist'>
   </option>
-  <option  id='USE_MDFILE_AS_MAINPAGE' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='USE_MDFILE_AS_MAINPAGE' default='no' type='string'><value><![CDATA[README.md]]></value></option>
   <option  id='FORTRAN_COMMENT_AFTER' default='yes' type='int'><value>72</value></option>
   <option  id='SOURCE_BROWSER' default='no' type='bool'><value>YES</value></option>
   <option  id='INLINE_SOURCES' default='yes' type='bool'><value>NO</value></option>
@@ -253,9 +253,9 @@
   <option  id='HTML_EXTRA_FILES' default='yes' type='stringlist'>
   </option>
   <option  id='HTML_COLORSTYLE' default='yes' type='string'><value>AUTO_LIGHT</value></option>
-  <option  id='HTML_COLORSTYLE_HUE' default='no' type='int'><value>151</value></option>
+  <option  id='HTML_COLORSTYLE_HUE' default='no' type='int'><value>305</value></option>
   <option  id='HTML_COLORSTYLE_SAT' default='no' type='int'><value>32</value></option>
-  <option  id='HTML_COLORSTYLE_GAMMA' default='no' type='int'><value>231</value></option>
+  <option  id='HTML_COLORSTYLE_GAMMA' default='no' type='int'><value>49</value></option>
   <option  id='HTML_DYNAMIC_MENUS' default='yes' type='bool'><value>YES</value></option>
   <option  id='HTML_DYNAMIC_SECTIONS' default='yes' type='bool'><value>NO</value></option>
   <option  id='HTML_CODE_FOLDING' default='yes' type='bool'><value>YES</value></option>

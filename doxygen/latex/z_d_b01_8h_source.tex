@@ -1,0 +1,52 @@
+\doxysection{z\+DB01.\+h}
+\hypertarget{z_d_b01_8h_source}{}\label{z_d_b01_8h_source}\mbox{\hyperlink{z_d_b01_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ZDB01\_H}}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ZDB01\_H}}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <mysql++.h>}}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <wx/arrstr.h>}}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <wx/textctrl.h>}}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <result.h>}}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00009}\mbox{\hyperlink{classz_d_b01}{00009}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classz_d_b01}{zDB01}}}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00010}00010\ \{}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00011}00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00012}00012\ \ \ \ \ \mbox{\hyperlink{classz_d_b01_a979564aa089f5653373cd13e7abca2f7}{zDB01}}();}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00013}00013\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classz_d_b01_a729b2faf01194220a3e92eeaeac65f9b}{\string~zDB01}}();}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00014}00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a7ba8bcf9488c63047e3220ac15b6e9c5}{listDatabases}}();}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00015}\mbox{\hyperlink{classz_d_b01_a37aff332b1f8c1ad70f65e042386ae2f}{00015}}\ \ \ \ \ wxArrayString\ \mbox{\hyperlink{classz_d_b01_a37aff332b1f8c1ad70f65e042386ae2f}{dbn}},\ \mbox{\hyperlink{classz_d_b01_a44d1fbd04846956b58bcc9b7130b8b5c}{lk1}},\ \mbox{\hyperlink{classz_d_b01_af6b00e90f013093795a9c047f785cf6b}{lk2}},\ \mbox{\hyperlink{classz_d_b01_a6cc13eda72223694fa7d7487e2068c1c}{lk3}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00016}00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a8fc1dd0718bd56f24a5394ef542d88d1}{selDB}}();}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00017}\mbox{\hyperlink{classz_d_b01_a1abeb1e6d97e9111fc025c9e2650c9c3}{00017}}\ \ \ \ \ wxString\ \mbox{\hyperlink{classz_d_b01_a1abeb1e6d97e9111fc025c9e2650c9c3}{db}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00018}\mbox{\hyperlink{classz_d_b01_adf2faa0f1516910eefb094dbc4ce6fa3}{00018}}\ \ \ \ \ std::string\ \mbox{\hyperlink{classz_d_b01_adf2faa0f1516910eefb094dbc4ce6fa3}{curDB}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a61232eda3f0c4975d4cd1776cf71681e}{de01}}();}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00020}00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a67de54d203950ceac22ab3a9d0f0c358}{initField}}(std::string\ inputValue,\ wxTextCtrl\ *\ field);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00021}00021\ \ \ \ \ std::string\ \mbox{\hyperlink{classz_d_b01_ab00f736b2d02a0206d406ebeb8da8cdd}{fieldToString}}(wxTextCtrl\ *\ field);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_af0b7dd10b200b2dd1f7087a6cc24fc37}{nb01}}();}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_abd1643c0d12ef3fe03b61319580aca35}{listCategories}}(\textcolor{keywordtype}{bool}\ idPrim);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00024}00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a7aa35b4aa20a0499f65e9639f200934b}{listLinks}}(\textcolor{keywordtype}{int}\ curCat,\ \textcolor{keywordtype}{bool}\ dRID);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00025}00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a72e76c77a68e9ba700b6629cb84a37eb}{getLink}}(\textcolor{keywordtype}{int}\ curCat);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a506a06d4ad9fe5a178e81b890af3525d}{listLk1Lk2}}();}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00027}\mbox{\hyperlink{classz_d_b01_a03216a3fb49d01bb75b87eaf92ea4fd8}{00027}}\ \ \ \ \ mysqlpp::StoreQueryResult\ \mbox{\hyperlink{classz_d_b01_a03216a3fb49d01bb75b87eaf92ea4fd8}{zres}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00028}00028\ \textcolor{comment}{//\ \ \ \ mysqlpp::StoreQueryResult\ ares;}}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_aa5e2cfae20cc8b12f25997b907ab6155}{insertCat}}(std::string\ cat,\ std::string\ memo);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00030}00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_ac95812086e217ae3e6119d5691788624}{insertLink}}(std::string\ idlk1,\ std::string\ lkn,\ std::string\ lnk,\ std::string\ ddes);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a50dae92a7e6ed6c94859938ebc5f9815}{DeleteLink}}(std::string\ delId);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00032}00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a9ee984bbe71d3aca40305543ea2af685}{editLink}}(std::string\ delId,\ std::string\ idkl2,\ std::string\ ilk,\ std::string\ lnk,\ std::string\ ddes,\ std::string\ idlk1);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00033}\mbox{\hyperlink{classz_d_b01_a4c8de6784836b3dfa6723c999fa05cfa}{00033}}\ \ \ \ \ std::string\ \mbox{\hyperlink{classz_d_b01_a4c8de6784836b3dfa6723c999fa05cfa}{strIdlk1}}\ =\ \textcolor{stringliteral}{"{}43"{}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00034}\mbox{\hyperlink{classz_d_b01_aca34e798c8395bd94c6ba2b0b04cf8f7}{00034}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classz_d_b01_aca34e798c8395bd94c6ba2b0b04cf8f7}{insertMode}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00035}00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_a8c27b7a67b04be8c7472f5ddb64e53cd}{editCat}}(std::string\ idlk1,\ std::string\ cat,\ std::string\ memo);}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00036}\mbox{\hyperlink{classz_d_b01_a2e831a0b4f933f55766223a89ed11e5d}{00036}}\ \ \ \ \ std::string\ \mbox{\hyperlink{classz_d_b01_a2e831a0b4f933f55766223a89ed11e5d}{database}}\ =\ \textcolor{stringliteral}{"{}bcswebtools"{}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00037}\mbox{\hyperlink{classz_d_b01_a2e081ce12629d5ee626e4190504b02e4}{00037}}\ \ \ \ \ std::string\ \mbox{\hyperlink{classz_d_b01_a2e081ce12629d5ee626e4190504b02e4}{server}}\ =\ \textcolor{stringliteral}{"{}localhost"{}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00038}\mbox{\hyperlink{classz_d_b01_acfeead2c691b6d7fd4dfa0fdc1277e76}{00038}}\ \ \ \ \ std::string\ \mbox{\hyperlink{classz_d_b01_acfeead2c691b6d7fd4dfa0fdc1277e76}{user}}\ =\ \textcolor{stringliteral}{"{}bcs"{}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00039}\mbox{\hyperlink{classz_d_b01_a416c0b842c678cdb3962895139261812}{00039}}\ \ \ \ \ std::string\ \mbox{\hyperlink{classz_d_b01_a416c0b842c678cdb3962895139261812}{password}}\ =\ \textcolor{stringliteral}{"{}Peace007!amb"{}};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00040}00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classz_d_b01_af76d2dc2f58681c2b534d023862f4e91}{getCat}}();}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00042}00042\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00044}00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00045}00045\ \};}
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{z_d_b01_8h_source_l00047}00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ZDB01\_H}}
+
+\end{DoxyCode}

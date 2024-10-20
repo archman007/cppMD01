@@ -26,7 +26,7 @@ namespace fs = boost::filesystem;
 #include "dlgNewCat.h"
 #include "wx/clipbrd.h"
 #include "dlgSelCat.h"
-//#include "dlg"
+#include <wx/wx.h>
 
 //(*InternalHeaders(cppMD01Frame)
 #include <wx/intl.h>
@@ -78,6 +78,7 @@ const long cppMD01Frame::ID_MENUITEM1 = wxNewId();
 const long cppMD01Frame::idpumNewCat = wxNewId();
 const long cppMD01Frame::ID_PumEdCat = wxNewId();
 const long cppMD01Frame::ID_NewBlog = wxNewId();
+const long cppMD01Frame::ID_CodeLauncher = wxNewId();
 const long cppMD01Frame::ID_MENUITEM2 = wxNewId();
 const long cppMD01Frame::ID_menAD = wxNewId();
 const long cppMD01Frame::ID_menNB = wxNewId();
@@ -151,6 +152,8 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     pumMaster.Append(MenuItem5);
     pumNewBlogPost = new wxMenuItem((&pumMaster), ID_NewBlog, _("Create New Blog Post"), _("Create A New Blog Post"), wxITEM_NORMAL);
     pumMaster.Append(pumNewBlogPost);
+    pumCodeXqt = new wxMenuItem((&pumMaster), ID_CodeLauncher, _("VS Code\tLoad VS Code Now"), wxEmptyString, wxITEM_NORMAL);
+    pumMaster.Append(pumCodeXqt);
     MenuItem4 = new wxMenuItem((&pumDetail), ID_MENUITEM2, _("Change Background Color"), wxEmptyString, wxITEM_NORMAL);
     pumDetail.Append(MenuItem4);
     pumAddDocs = new wxMenuItem((&pumDetail), ID_menAD, _("addDocs"), _("Add  New Documents / Items"), wxITEM_NORMAL);
@@ -171,6 +174,7 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     Connect(idpumNewCat,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewCatSelected);
     Connect(ID_PumEdCat,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumEdCatSelected);
     Connect(ID_NewBlog,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);
+    Connect(ID_CodeLauncher,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumCodeXqtSelected);
     Connect(ID_menAD,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumAddDocsSelected);
     Connect(ID_menNB,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);
     Connect(ID_pumDel,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumDelLinkSelected);
@@ -400,7 +404,7 @@ void cppMD01Frame::LoadDetailData(long idlk1)
     {
         int id = 1;
         wxCommandEvent event(wxEVT_COMMAND_BUTTON_CLICKED, id);
- //       wxCommandEvent& event
+//       wxCommandEvent& event
         OnpumAddDocsSelected(event);
 
     }
@@ -601,7 +605,7 @@ void cppMD01Frame::procExe()
     zrdb.initField(mkVal,dlg.edtPrim);
     if (dlg.ShowModal() == wxID_OK)
     {
-       mkVal = mkVal;
+        mkVal = mkVal;
     }
     RefreshDetails();
 }
@@ -727,4 +731,22 @@ void cppMD01Frame::OnpumEditLinkSelected(wxCommandEvent& event)
 
 void cppMD01Frame::OnpumEditDetailsSelected(wxCommandEvent& event)
 {
+}
+
+void cppMD01Frame::OnpumCodeXqtSelected(wxCommandEvent& event)
+{
+    wxDirDialog dlg = new wxDirDialog();
+    if (dlg.ShowModal() == wxID_OK)
+    {
+        wxString selected_dir = dlg.GetPath();
+//           dir_label.SetLabel(f"Selected Directory: {selected_dir}")
+    }
+
+    std::string cmd = "";
+    cmd = "code ";
+    cmd = cmd + dlg.GetPath().ToStdString() + "  ";
+
+    dlg.Destroy();
+    system(cmd.c_str());
+
 }

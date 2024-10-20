@@ -71,53 +71,56 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 <anchor xml:id="_cpp_m_d01_main_8h_source_1l00068"/>00068 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEdCatSelected(wxCommandEvent&amp;&#32;event);
 <anchor xml:id="_cpp_m_d01_main_8h_source_1l00069"/>00069 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEditLinkSelected(wxCommandEvent&amp;&#32;event);
 <anchor xml:id="_cpp_m_d01_main_8h_source_1l00070"/>00070 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumEditDetailsSelected(wxCommandEvent&amp;&#32;event);
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00071"/>00071 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00072"/>00072 
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00073"/>00073 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(cppMD01Frame)</emphasis>
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT1;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00075"/>00075 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL1;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL3;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00077"/>00077 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT2;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_SCROLLEDWINDOW1;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00079"/>00079 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenucpp;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00080"/>00080 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuQuit;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00081"/>00081 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuAbout;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00082"/>00082 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATUSBAR1;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00083"/>00083 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM1;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00084"/>00084 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idpumNewCat;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00085"/>00085 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PumEdCat;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00086"/>00086 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_NewBlog;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00087"/>00087 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM2;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00088"/>00088 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menAD;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00089"/>00089 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menNB;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00090"/>00090 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumDel;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00091"/>00091 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumEditLink;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00092"/>00092 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00093"/>00093 
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00094"/>00094 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(cppMD01Frame)</emphasis>
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00095"/>00095 &#32;&#32;&#32;&#32;wxMenu&#32;pumDetail;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00096"/>00096 &#32;&#32;&#32;&#32;wxMenu&#32;pumMaster;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00097"/>00097 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem3;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00098"/>00098 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem4;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00099"/>00099 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem5;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00100"/>00100 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menNewPost;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00101"/>00101 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menSelectCpp;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00102"/>00102 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumAddDocs;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00103"/>00103 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumDelLink;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00104"/>00104 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumEditDetails;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00105"/>00105 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewBlogPost;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00106"/>00106 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewCat;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00107"/>00107 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel1;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00108"/>00108 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel2;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00109"/>00109 &#32;&#32;&#32;&#32;wxScrolledWindow*&#32;ScrolledWindow1;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00110"/>00110 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText1;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00111"/>00111 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText2;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00112"/>00112 &#32;&#32;&#32;&#32;wxStatusBar*&#32;StatusBar1;
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00113"/>00113 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00114"/>00114 
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00115"/>00115 &#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00116"/>00116 };
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00071"/>00071 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;OnpumCodeXqtSelected(wxCommandEvent&amp;&#32;event);
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00072"/>00072 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00073"/>00073 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Identifiers(cppMD01Frame)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00075"/>00075 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00077"/>00077 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PANEL3;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATICTEXT2;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00079"/>00079 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_SCROLLEDWINDOW1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00080"/>00080 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenucpp;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00081"/>00081 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuQuit;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00082"/>00082 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idMenuAbout;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00083"/>00083 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_STATUSBAR1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00084"/>00084 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00085"/>00085 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;idpumNewCat;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00086"/>00086 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_PumEdCat;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00087"/>00087 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_NewBlog;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00088"/>00088 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_CodeLauncher;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00089"/>00089 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_MENUITEM2;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00090"/>00090 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menAD;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00091"/>00091 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_menNB;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00092"/>00092 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumDel;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00093"/>00093 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;ID_pumEditLink;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00094"/>00094 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00095"/>00095 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00096"/>00096 &#32;&#32;&#32;&#32;<emphasis role="comment">//(*Declarations(cppMD01Frame)</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00097"/>00097 &#32;&#32;&#32;&#32;wxMenu&#32;pumDetail;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00098"/>00098 &#32;&#32;&#32;&#32;wxMenu&#32;pumMaster;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00099"/>00099 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem3;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00100"/>00100 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem4;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00101"/>00101 &#32;&#32;&#32;&#32;wxMenuItem*&#32;MenuItem5;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00102"/>00102 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menNewPost;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00103"/>00103 &#32;&#32;&#32;&#32;wxMenuItem*&#32;menSelectCpp;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00104"/>00104 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumAddDocs;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00105"/>00105 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumCodeXqt;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00106"/>00106 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumDelLink;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00107"/>00107 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumEditDetails;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00108"/>00108 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewBlogPost;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00109"/>00109 &#32;&#32;&#32;&#32;wxMenuItem*&#32;pumNewCat;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00110"/>00110 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00111"/>00111 &#32;&#32;&#32;&#32;wxPanel*&#32;Panel2;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00112"/>00112 &#32;&#32;&#32;&#32;wxScrolledWindow*&#32;ScrolledWindow1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00113"/>00113 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00114"/>00114 &#32;&#32;&#32;&#32;wxStaticText*&#32;StaticText2;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00115"/>00115 &#32;&#32;&#32;&#32;wxStatusBar*&#32;StatusBar1;
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00116"/>00116 &#32;&#32;&#32;&#32;<emphasis role="comment">//*)</emphasis>
 <anchor xml:id="_cpp_m_d01_main_8h_source_1l00117"/>00117 
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00118"/>00118 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CPPMYSKEL1MAIN_H</emphasis>
-<anchor xml:id="_cpp_m_d01_main_8h_source_1l00119"/>00119 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00118"/>00118 &#32;&#32;&#32;&#32;DECLARE_EVENT_TABLE()
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00119"/>00119 };
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00120"/>00120 
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00121"/>00121 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;CPPMYSKEL1MAIN_H</emphasis>
+<anchor xml:id="_cpp_m_d01_main_8h_source_1l00122"/>00122 
 </programlisting></section>

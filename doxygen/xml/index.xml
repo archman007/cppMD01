@@ -29,6 +29,7 @@
     <member refid="classcpp_m_d01_frame_1a368b0b90de5440253c7ed8a78d6e0b7e" kind="variable"><name>menNewPost</name></member>
     <member refid="classcpp_m_d01_frame_1a4bf103c8338f2197130e0336a42335a2" kind="variable"><name>menSelectCpp</name></member>
     <member refid="classcpp_m_d01_frame_1acd134f52e36615db84e7dcfc1440375f" kind="variable"><name>pumAddDocs</name></member>
+    <member refid="classcpp_m_d01_frame_1abf9e6b720d4531276985d73b313c3da1" kind="variable"><name>pumCodeXqt</name></member>
     <member refid="classcpp_m_d01_frame_1a7040e2606d0070dc3e5cdf505a506c3d" kind="variable"><name>pumDelLink</name></member>
     <member refid="classcpp_m_d01_frame_1ab19bf932d00e3010742e1544d1d68e4a" kind="variable"><name>pumEditDetails</name></member>
     <member refid="classcpp_m_d01_frame_1a1e99928d662b3894466f9c3986c1c46a" kind="variable"><name>pumNewBlogPost</name></member>
@@ -52,6 +53,7 @@
     <member refid="classcpp_m_d01_frame_1ae4ce57f747345addc71322c9ef44717a" kind="variable"><name>idpumNewCat</name></member>
     <member refid="classcpp_m_d01_frame_1a89000cefc92bdc5a3a8c16ef077afae9" kind="variable"><name>ID_PumEdCat</name></member>
     <member refid="classcpp_m_d01_frame_1abde6378c23d721da0195af75bacd66bb" kind="variable"><name>ID_NewBlog</name></member>
+    <member refid="classcpp_m_d01_frame_1a2d563171c7d9e1bfd3e9ee7cf8131175" kind="variable"><name>ID_CodeLauncher</name></member>
     <member refid="classcpp_m_d01_frame_1ac3c10a74dcea2ae766da2b94b648f550" kind="variable"><name>ID_MENUITEM2</name></member>
     <member refid="classcpp_m_d01_frame_1aec2908c0d3ab692c53fc269ba00bac46" kind="variable"><name>ID_menAD</name></member>
     <member refid="classcpp_m_d01_frame_1a5902351cea0fad397f0fe87dc1e8512d" kind="variable"><name>ID_menNB</name></member>
@@ -82,6 +84,7 @@
     <member refid="classcpp_m_d01_frame_1aff6751c6a93d79a3d511923da0383a50" kind="function"><name>OnpumEdCatSelected</name></member>
     <member refid="classcpp_m_d01_frame_1acb4faa3fa5166e96e71b95188fba9e44" kind="function"><name>OnpumEditLinkSelected</name></member>
     <member refid="classcpp_m_d01_frame_1a82bedb79eca3ccadae814dc35ef541b0" kind="function"><name>OnpumEditDetailsSelected</name></member>
+    <member refid="classcpp_m_d01_frame_1ad1aa9976114af1cfbf4884be411490a0" kind="function"><name>OnpumCodeXqtSelected</name></member>
   </compound>
   <compound refid="classcurl_stuff" kind="class"><name>curlStuff</name>
     <member refid="classcurl_stuff_1a916a584da108c1a1bd63cc221cb31ff0" kind="variable"><name>cbc</name></member>

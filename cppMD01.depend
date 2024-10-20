@@ -1514,7 +1514,7 @@
 1715637389 /usr/include/wx-3.2/wx/univ/theme.h
 	"wx/string.h"
 
-1726910744 /home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h
+1728202346 /home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h
 	<mysql++.h>
 	<wx/grid.h>
 	"dlgXqt2.h"
@@ -1609,7 +1609,7 @@
 	"wx/defs.h"
 	"wx/window.h"
 
-1727948883 source:/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp
+1728202819 source:/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp
 	"cppMD01Main.h"
 	<wx/msgdlg.h>
 	<wx/grid.h>
@@ -1628,6 +1628,7 @@
 	"dlgNewCat.h"
 	"wx/clipbrd.h"
 	"dlgSelCat.h"
+	<wx/wx.h>
 	<wx/intl.h>
 	<wx/string.h>
 

@@ -116,6 +116,11 @@
 				<help>Create A New Blog Post</help>
 				<handler function="OnpumNewBlogPostSelected" entry="EVT_MENU" />
 			</object>
+			<object class="wxMenuItem" name="ID_CodeLauncher" variable="pumCodeXqt" member="yes">
+				<label>VS Code</label>
+				<accel>Load VS Code Now</accel>
+				<handler function="OnpumCodeXqtSelected" entry="EVT_MENU" />
+			</object>
 		</object>
 		<object class="wxMenu" variable="pumDetail" member="yes">
 			<object class="wxMenuItem" name="ID_MENUITEM2" variable="MenuItem4" member="yes">

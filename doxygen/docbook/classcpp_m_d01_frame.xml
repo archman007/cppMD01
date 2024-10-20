@@ -60,14 +60,14 @@ Definition at line <link linkend="_cpp_m_d01_main_8h_source_1l00026">26</link> o
 <indexterm><primary>cppMD01Frame</primary><secondary>cppMD01Frame</secondary></indexterm>
 <para><computeroutput>cppMD01Frame::cppMD01Frame (wxWindow * parent, wxWindowID id = <computeroutput>-1</computeroutput>
 )</computeroutput></para><para>
-Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00093">93</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
+Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00094">94</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
 </section>
 <anchor xml:id="_classcpp_m_d01_frame_1aaf9eb81fc2be576ea113eb65df95c7b2"/><section>
     <title>~cppMD01Frame()</title>
 <indexterm><primary>~cppMD01Frame</primary><secondary>cppMD01Frame</secondary></indexterm>
 <indexterm><primary>cppMD01Frame</primary><secondary>~cppMD01Frame</secondary></indexterm>
 <para><computeroutput>cppMD01Frame::~cppMD01Frame ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
-Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00230">230</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
+Definition at line <link linkend="_cpp_m_d01_main_8cpp_source_1l00234">234</link> of file <link linkend="_cpp_m_d01_main_8cpp_source">cppMD01Main.cpp</link>.</para>
 </section>
 </section>
 <section>

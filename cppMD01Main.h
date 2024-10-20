@@ -68,6 +68,7 @@ private:
     void OnpumEdCatSelected(wxCommandEvent& event);
     void OnpumEditLinkSelected(wxCommandEvent& event);
     void OnpumEditDetailsSelected(wxCommandEvent& event);
+    void OnpumCodeXqtSelected(wxCommandEvent& event);
     //*)
 
     //(*Identifiers(cppMD01Frame)
@@ -84,6 +85,7 @@ private:
     static const long idpumNewCat;
     static const long ID_PumEdCat;
     static const long ID_NewBlog;
+    static const long ID_CodeLauncher;
     static const long ID_MENUITEM2;
     static const long ID_menAD;
     static const long ID_menNB;
@@ -100,6 +102,7 @@ private:
     wxMenuItem* menNewPost;
     wxMenuItem* menSelectCpp;
     wxMenuItem* pumAddDocs;
+    wxMenuItem* pumCodeXqt;
     wxMenuItem* pumDelLink;
     wxMenuItem* pumEditDetails;
     wxMenuItem* pumNewBlogPost;

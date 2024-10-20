@@ -1,0 +1,101 @@
+\doxysection{bcs\+Gui.\+cpp}
+\hypertarget{bcs_gui_8cpp_source}{}\label{bcs_gui_8cpp_source}\mbox{\hyperlink{bcs_gui_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bcs_gui_8h}{bcsGui.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <wx/dirdlg.h>}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <wx/textdlg.h>}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <wx/msgdlg.h>}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <wx/string.h>}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <wx/window.h>}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00009}00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00011}\mbox{\hyperlink{classbcs_gui_afe8d8c9532f096c161ae33c7496db69c}{00011}}\ \mbox{\hyperlink{classbcs_gui_afe8d8c9532f096c161ae33c7496db69c}{bcsGui::bcsGui}}()}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00013}00013\ \ \ \ \ \textcolor{comment}{//ctor}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00014}00014\ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00016}\mbox{\hyperlink{classbcs_gui_ac2e5dfa2156a34ff492953c144047231}{00016}}\ \mbox{\hyperlink{classbcs_gui_ac2e5dfa2156a34ff492953c144047231}{bcsGui::\string~bcsGui}}()}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00017}00017\ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{comment}{//dtor}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00019}00019\ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00021}\mbox{\hyperlink{classbcs_gui_ac8bd94493e962a832d2d47344d8afbd3}{00021}}\ std::string\ \mbox{\hyperlink{classbcs_gui_ac8bd94493e962a832d2d47344d8afbd3}{bcsGui::SelDir}}(\textcolor{keywordtype}{string}\ initDir)}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{string}\ selDir;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00024}00024\ \ \ \ \ wxDirDialog\ dlg(NULL,\ \textcolor{stringliteral}{"{}Choose\ input\ directory"{}},\ initDir,\ wxDD\_DEFAULT\_STYLE\ |\ wxDD\_DIR\_MUST\_EXIST);}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{if}\ (dlg.ShowModal()\ ==\ wxID\_OK)}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00026}00026\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ selDir\ =\ dlg.GetPath().ToStdString();}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ selDir;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00030}00030\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00031}00031\ \ \ \ \ dlg.Destroy();}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00035}\mbox{\hyperlink{classbcs_gui_a9061e0d66ce7088bba30b98fa8061358}{00035}}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classbcs_gui_a9061e0d66ce7088bba30b98fa8061358}{bcsGui::GetText}}(\textcolor{keywordtype}{bool}\ memo,\ \textcolor{keywordtype}{string}\ initVal,\ \textcolor{keywordtype}{string}\ prompt,\ \textcolor{keywordtype}{string}\ caption)}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00036}00036\ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00037}00037\ \ \ \ \ wxString\ wxInit;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00038}00038\ \ \ \ \ wxInit\ =\ initVal;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordtype}{string}\ rval;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{if}\ (memo)}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00041}00041\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ wxTextEntryDialog\ dlg(NULL,\ prompt,\ caption,\ wxInit,\ (wxCANCEL\ |\ wxOK\ |\ wxTE\_MULTILINE),\ wxPoint(50,\ 50));}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dlg.ShowModal()\ ==\ wxID\_OK)}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ We\ can\ be\ certain\ that\ this\ string\ contains\ letters\ only.}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ wxString\ value\ =\ dlg.GetValue();}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ rval\ =\ value;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ rval\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00055}00055\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00057}00057\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ wxTextEntryDialog\ dlg(NULL,\ prompt,\ caption,\ wxInit,\ (wxCANCEL\ |\ wxOK),\ wxPoint(50,\ 50));}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dlg.ShowModal()\ ==\ wxID\_OK)}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ We\ can\ be\ certain\ that\ this\ string\ contains\ letters\ only.}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ wxString\ value\ =\ dlg.GetValue();}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ rval\ =\ value;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ rval\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00072}00072\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00075}\mbox{\hyperlink{classbcs_gui_a3fa5f9ce202e43b147ef9a166577fb31}{00075}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classbcs_gui_a3fa5f9ce202e43b147ef9a166577fb31}{bcsGui::yornQues}}(\textcolor{keywordtype}{string}\ caption,\ \textcolor{keywordtype}{string}\ prompt)}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00076}00076\ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{keywordtype}{int}\ answer;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00078}00078\ \ \ \ \ answer\ =\ wxMessageBox(caption,\ prompt,\ wxYES\_NO\ |\ wxCANCEL,\ NULL\ );}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keywordflow}{return}\ answer;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00080}00080\ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00081}\mbox{\hyperlink{classbcs_gui_ade5890d2dccda707cb21357609d2600f}{00081}}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classbcs_gui_ade5890d2dccda707cb21357609d2600f}{bcsGui::openFileDialog}}(wxWindow*\ parent,\ \textcolor{keyword}{const}\ wxString\&\ message,\ \textcolor{keyword}{const}\ wxString\&\ defaultDir,\ \textcolor{keyword}{const}\ wxString\&\ defaultFile,\ \textcolor{keyword}{const}\ wxString\&\ wildcard,\ \textcolor{keywordtype}{int}\ flags)}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00082}00082\ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{keywordtype}{string}\ path;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00084}00084\ \ \ \ \ wxFileDialog\ \mbox{\hyperlink{classbcs_gui_ade5890d2dccda707cb21357609d2600f}{openFileDialog}}(parent,\ message,\ defaultDir,\ defaultFile,\ wildcard,\ flags);}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00085}00085\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classbcs_gui_ade5890d2dccda707cb21357609d2600f}{openFileDialog}}.ShowModal()\ ==\ wxID\_OK)}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00086}00086\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ path\ =\ \mbox{\hyperlink{classbcs_gui_ade5890d2dccda707cb21357609d2600f}{openFileDialog}}.GetPath().ToStdString();}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00088}00088\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{keywordflow}{return}\ path;}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00090}00090\ \}}
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{bcs_gui_8cpp_source_l00096}00096\ }
+
+\end{DoxyCode}

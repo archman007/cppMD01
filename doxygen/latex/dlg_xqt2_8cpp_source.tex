@@ -1,0 +1,75 @@
+\doxysection{dlg\+Xqt2.\+cpp}
+\hypertarget{dlg_xqt2_8cpp_source}{}\label{dlg_xqt2_8cpp_source}\mbox{\hyperlink{dlg_xqt2_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dlg_xqt2_8h}{dlgXqt2.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00003}00003\ \textcolor{comment}{//(*InternalHeaders(dlgXqt2)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <wx/intl.h>}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <wx/string.h>}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00006}00006\ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00008}00008\ \textcolor{comment}{//(*IdInit(dlgXqt2)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00009}00009\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_xqt2_a187d9f525e31ff023552700b648a6e0b}{dlgXqt2::ID\_RADIOBOX1}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00010}00010\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_xqt2_a977423df9137aa95dd07b9a8958169f6}{dlgXqt2::ID\_BUTTON1}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00011}00011\ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00013}00013\ BEGIN\_EVENT\_TABLE(\mbox{\hyperlink{classdlg_xqt2}{dlgXqt2}},wxDialog)}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{comment}{//(*EventTable(dlgXqt2)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00016}00016\ END\_EVENT\_TABLE()}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00018}\mbox{\hyperlink{classdlg_xqt2_a7fd5c03f12e22eddf713457605a4143a}{00018}}\ \mbox{\hyperlink{classdlg_xqt2}{dlgXqt2}}::\mbox{\hyperlink{classdlg_xqt2}{dlgXqt2}}(wxWindow*\ parent,wxWindowID\ \textcolor{keywordtype}{id},const\ wxPoint\&\ pos,const\ wxSize\&\ size)}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00019}00019\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//(*Initialize(dlgXqt2)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ wxBoxSizer*\ BoxSizer1;}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ wxBoxSizer*\ BoxSizer2;}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ wxBoxSizer*\ BoxSizer3;}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ Create(parent,\ \textcolor{keywordtype}{id},\ \_(\textcolor{stringliteral}{"{}Select\ Document"{}}),\ wxDefaultPosition,\ wxDefaultSize,\ wxDEFAULT\_DIALOG\_STYLE|wxSYSTEM\_MENU|wxRESIZE\_BORDER,\ \_T(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ SetClientSize(wxDefaultSize);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ Move(wxDefaultPosition);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ BoxSizer1\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxHORIZONTAL);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ BoxSizer2\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxHORIZONTAL);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ BoxSizer3\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxVERTICAL);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ wxString\ \_\_wxRadioBoxChoices\_1[4]\ =}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_(\textcolor{stringliteral}{"{}Web"{}}),}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_(\textcolor{stringliteral}{"{}PDF"{}}),}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_(\textcolor{stringliteral}{"{}Document"{}}),}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_(\textcolor{stringliteral}{"{}Executable"{}})}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ rbtRadBut\ =\ \textcolor{keyword}{new}\ wxRadioBox(\textcolor{keyword}{this},\ ID\_RADIOBOX1,\ \_(\textcolor{stringliteral}{"{}Process\ To\ Acomodate"{}}),\ wxDefaultPosition,\ wxSize(304,52),\ 4,\ \_\_wxRadioBoxChoices\_1,\ 1,\ 0,\ wxDefaultValidator,\ \_T(\textcolor{stringliteral}{"{}ID\_RADIOBOX1"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ BoxSizer3-\/>Add(rbtRadBut,\ 1,\ wxALL|wxEXPAND,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ butCancel\ =\ \textcolor{keyword}{new}\ wxButton(\textcolor{keyword}{this},\ ID\_BUTTON1,\ \_(\textcolor{stringliteral}{"{}Cancel"{}}),\ wxDefaultPosition,\ wxDefaultSize,\ 0,\ wxDefaultValidator,\ \_T(\textcolor{stringliteral}{"{}ID\_BUTTON1"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ BoxSizer3-\/>Add(butCancel,\ 0,\ wxALL|wxEXPAND,\ 1);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ BoxSizer2-\/>Add(BoxSizer3,\ 1,\ wxALL|wxEXPAND,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ BoxSizer1-\/>Add(BoxSizer2,\ 1,\ wxALL|wxALIGN\_CENTER\_HORIZONTAL|wxALIGN\_CENTER\_VERTICAL,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ SetSizer(BoxSizer1);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ BoxSizer1-\/>Fit(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ BoxSizer1-\/>SetSizeHints(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ Connect(ID\_RADIOBOX1,wxEVT\_COMMAND\_RADIOBOX\_SELECTED,(wxObjectEventFunction)\&dlgXqt2::OnrbtRadButSelect);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ Connect(ID\_BUTTON1,wxEVT\_COMMAND\_BUTTON\_CLICKED,(wxObjectEventFunction)\&dlgXqt2::OnbutCancelClick);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00051}00051\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00053}\mbox{\hyperlink{classdlg_xqt2_a1dcea12d3aa4d8ced83ee3dad9625771}{00053}}\ \mbox{\hyperlink{classdlg_xqt2_a1dcea12d3aa4d8ced83ee3dad9625771}{dlgXqt2::\string~dlgXqt2}}()}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00054}00054\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{comment}{//(*Destroy(dlgXqt2)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00057}00057\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00059}00059\ \textcolor{keywordtype}{void}\ dlgXqt2::OnbutCancelClick(wxCommandEvent\&\ event)}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00060}00060\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00061}00061\ \ \ \ \ \mbox{\hyperlink{classdlg_xqt2_aadde19c94a567f057c2e9668d249c59e}{isel}}\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00062}00062\ \ \ \ \ EndModal(wxID\_CANCEL);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00063}00063\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00065}00065\ \textcolor{keywordtype}{void}\ dlgXqt2::OnrbtRadButSelect(wxCommandEvent\&\ event)}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00066}00066\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00067}00067\ \ \ \ \ \mbox{\hyperlink{classdlg_xqt2_aadde19c94a567f057c2e9668d249c59e}{isel}}\ =\ \textcolor{keyword}{event}.GetSelection();}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00068}00068\ \ \ \ \ EndModal(wxID\_OK);}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00069}00069\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_xqt2_8cpp_source_l00070}00070\ }
+
+\end{DoxyCode}

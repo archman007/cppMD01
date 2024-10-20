@@ -1,0 +1,110 @@
+\doxysection{dlg\+Nb01.\+cpp}
+\hypertarget{dlg_nb01_8cpp_source}{}\label{dlg_nb01_8cpp_source}\mbox{\hyperlink{dlg_nb01_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dlg_nb01_8h}{dlgNb01.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{z_d_b01_8h}{zDB01.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00004}\mbox{\hyperlink{dlg_nb01_8cpp_afffca60770aa0ec807a7e26302393228}{00004}}\ \mbox{\hyperlink{classz_d_b01}{zDB01}}\ \mbox{\hyperlink{dlg_nb01_8cpp_afffca60770aa0ec807a7e26302393228}{rdb}};}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00006}00006\ \textcolor{comment}{//(*InternalHeaders(dlgNb01)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <wx/intl.h>}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <wx/string.h>}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00009}00009\ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00011}00011\ \textcolor{comment}{//(*IdInit(dlgNb01)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00012}00012\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_nb01_a087639f2f189964da81412b3adb82b38}{dlgNb01::ID\_LISTBOX1}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00013}00013\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_nb01_ad27b25cedb8054749c1089ce5cac2e82}{dlgNb01::ID\_PANEL1}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00014}00014\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_nb01_af8539a8de173be5c3f8aac34d3cc3613}{dlgNb01::ID\_LISTBOX2}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00015}00015\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_nb01_a1ff3066230a343f8b2e1da507d200581}{dlgNb01::ID\_PANEL2}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00016}00016\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_nb01_a2f89e54374be753ba3c7379d8122ce73}{dlgNb01::ID\_NOTEBOOK1}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00017}00017\ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00019}00019\ BEGIN\_EVENT\_TABLE(\mbox{\hyperlink{classdlg_nb01}{dlgNb01}},wxDialog)}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00020}00020\ \ \ \ \ \textcolor{comment}{//(*EventTable(dlgNb01)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00022}00022\ END\_EVENT\_TABLE()}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00024}\mbox{\hyperlink{classdlg_nb01_a2e977dbfcc9d7fed5f06c9071d0d9e07}{00024}}\ \mbox{\hyperlink{classdlg_nb01}{dlgNb01}}::\mbox{\hyperlink{classdlg_nb01}{dlgNb01}}(wxWindow*\ parent,wxWindowID\ \textcolor{keywordtype}{id},const\ wxPoint\&\ pos,const\ wxSize\&\ size)}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{comment}{//(*Initialize(dlgNb01)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00027}00027\ \ \ \ \ wxBoxSizer*\ BoxSizer1;}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00028}00028\ \ \ \ \ wxBoxSizer*\ BoxSizer2;}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00029}00029\ \ \ \ \ wxBoxSizer*\ BoxSizer3;}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00030}00030\ \ \ \ \ wxBoxSizer*\ BoxSizer4;}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00031}00031\ \ \ \ \ wxBoxSizer*\ BoxSizer5;}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00033}00033\ \ \ \ \ Create(parent,\ \textcolor{keywordtype}{id},\ \_(\textcolor{stringliteral}{"{}Favorite\ Links\ App"{}}),\ wxDefaultPosition,\ wxDefaultSize,\ wxDEFAULT\_DIALOG\_STYLE|wxSYSTEM\_MENU|wxRESIZE\_BORDER,\ \_T(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00034}00034\ \ \ \ \ SetClientSize(wxSize(365,250));}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00035}00035\ \ \ \ \ Move(wxDefaultPosition);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00036}00036\ \ \ \ \ BoxSizer1\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxHORIZONTAL);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00037}00037\ \ \ \ \ BoxSizer2\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxHORIZONTAL);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00038}00038\ \ \ \ \ BoxSizer3\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxHORIZONTAL);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00039}00039\ \ \ \ \ nbk01\ =\ \textcolor{keyword}{new}\ wxNotebook(\textcolor{keyword}{this},\ ID\_NOTEBOOK1,\ wxDefaultPosition,\ wxSize(232,142),\ wxNB\_BOTTOM,\ \_T(\textcolor{stringliteral}{"{}ID\_NOTEBOOK1"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00040}00040\ \ \ \ \ Panel1\ =\ \textcolor{keyword}{new}\ wxPanel(nbk01,\ ID\_PANEL1,\ wxDefaultPosition,\ wxDefaultSize,\ wxTAB\_TRAVERSAL,\ \_T(\textcolor{stringliteral}{"{}ID\_PANEL1"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00041}00041\ \ \ \ \ BoxSizer4\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxVERTICAL);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00042}00042\ \ \ \ \ lbxCats\ =\ \textcolor{keyword}{new}\ wxListBox(Panel1,\ ID\_LISTBOX1,\ wxDefaultPosition,\ wxDefaultSize,\ 0,\ 0,\ 0,\ wxDefaultValidator,\ \_T(\textcolor{stringliteral}{"{}ID\_LISTBOX1"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00043}00043\ \ \ \ \ BoxSizer4-\/>Add(lbxCats,\ 1,\ wxALL|wxEXPAND,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00044}00044\ \ \ \ \ Panel1-\/>SetSizer(BoxSizer4);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00045}00045\ \ \ \ \ BoxSizer4-\/>Fit(Panel1);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00046}00046\ \ \ \ \ BoxSizer4-\/>SetSizeHints(Panel1);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00047}00047\ \ \ \ \ Panel2\ =\ \textcolor{keyword}{new}\ wxPanel(nbk01,\ ID\_PANEL2,\ wxDefaultPosition,\ wxDefaultSize,\ wxTAB\_TRAVERSAL,\ \_T(\textcolor{stringliteral}{"{}ID\_PANEL2"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00048}00048\ \ \ \ \ BoxSizer5\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxVERTICAL);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00049}00049\ \ \ \ \ lbxLinks\ =\ \textcolor{keyword}{new}\ wxListBox(Panel2,\ ID\_LISTBOX2,\ wxDefaultPosition,\ wxSize(340,180),\ 0,\ 0,\ 0,\ wxDefaultValidator,\ \_T(\textcolor{stringliteral}{"{}ID\_LISTBOX2"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00050}00050\ \ \ \ \ BoxSizer5-\/>Add(lbxLinks,\ 1,\ wxALL|wxEXPAND,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00051}00051\ \ \ \ \ Panel2-\/>SetSizer(BoxSizer5);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00052}00052\ \ \ \ \ BoxSizer5-\/>Fit(Panel2);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00053}00053\ \ \ \ \ BoxSizer5-\/>SetSizeHints(Panel2);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00054}00054\ \ \ \ \ nbk01-\/>AddPage(Panel1,\ \_(\textcolor{stringliteral}{"{}Categories"{}}),\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00055}00055\ \ \ \ \ nbk01-\/>AddPage(Panel2,\ \_(\textcolor{stringliteral}{"{}Links"{}}),\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00056}00056\ \ \ \ \ BoxSizer3-\/>Add(nbk01,\ 1,\ wxALL|wxEXPAND,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00057}00057\ \ \ \ \ BoxSizer2-\/>Add(BoxSizer3,\ 1,\ wxALL|wxEXPAND,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00058}00058\ \ \ \ \ BoxSizer1-\/>Add(BoxSizer2,\ 1,\ wxALL|wxEXPAND,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00059}00059\ \ \ \ \ SetSizer(BoxSizer1);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00060}00060\ \ \ \ \ SetSizer(BoxSizer1);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00061}00061\ \ \ \ \ Layout();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00063}00063\ \ \ \ \ Connect(ID\_LISTBOX1,wxEVT\_COMMAND\_LISTBOX\_SELECTED,(wxObjectEventFunction)\&dlgNb01::OnlbxCatsSelect);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00064}00064\ \ \ \ \ Connect(ID\_LISTBOX1,wxEVT\_COMMAND\_LISTBOX\_DOUBLECLICKED,(wxObjectEventFunction)\&dlgNb01::OnlbxCatsDClick);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00065}00065\ \ \ \ \ Connect(ID\_LISTBOX2,wxEVT\_COMMAND\_LISTBOX\_DOUBLECLICKED,(wxObjectEventFunction)\&dlgNb01::OnlbxLinksDClick);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00066}00066\ \ \ \ \ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00067}00067\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00069}\mbox{\hyperlink{classdlg_nb01_a903a9f01411d3f6a4b7128d033590ce9}{00069}}\ \mbox{\hyperlink{classdlg_nb01_a903a9f01411d3f6a4b7128d033590ce9}{dlgNb01::\string~dlgNb01}}()}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00070}00070\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00071}00071\ \ \ \ \ \textcolor{comment}{//(*Destroy(dlgNb01)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00076}00076\ \textcolor{keywordtype}{void}\ dlgNb01::OnlbxCatsSelect(wxCommandEvent\&\ event)}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00077}00077\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00078}00078\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00080}00080\ \textcolor{keywordtype}{void}\ dlgNb01::OnlbxCatsDClick(wxCommandEvent\&\ event)}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00081}00081\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00082}00082\ \ \ \ \ std::string\ zcat\ =\ \textcolor{keyword}{event}.GetString().ToStdString();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00083}00083\ \ \ \ \ \mbox{\hyperlink{dlg_nb01_8cpp_afffca60770aa0ec807a7e26302393228}{rdb}}.\mbox{\hyperlink{classz_d_b01_a7aa35b4aa20a0499f65e9639f200934b}{listLinks}}(std::stoi(zcat.substr(0,\ zcat.find(\textcolor{stringliteral}{"{}\ "{}}))),\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00084}00084\ \ \ \ \ \mbox{\hyperlink{classdlg_nb01_a1dc4fd653a9b1958274d91c176a02bc3}{lbxLinks}}-\/>Clear();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00085}00085\ \ \ \ \ \mbox{\hyperlink{classdlg_nb01_a1dc4fd653a9b1958274d91c176a02bc3}{lbxLinks}}-\/>InsertItems(\mbox{\hyperlink{dlg_nb01_8cpp_afffca60770aa0ec807a7e26302393228}{rdb}}.\mbox{\hyperlink{classz_d_b01_af6b00e90f013093795a9c047f785cf6b}{lk2}},\ 0);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00086}00086\ \ \ \ \ \mbox{\hyperlink{classdlg_nb01_ae84963ba986c733626d3e40b540ec77d}{nbk01}}-\/>SetSelection(1);}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00087}00087\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00089}00089\ \textcolor{keywordtype}{void}\ dlgNb01::OnlbxLinksDClick(wxCommandEvent\&\ event)}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00090}00090\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00091}00091\ \ \ \ \ std::string\ zcat\ =\ \textcolor{keyword}{event}.GetString().ToStdString();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00092}00092\ \textcolor{comment}{//\ \ \ \ rdb.listLinks(std::stoi(zcat.substr(0,\ zcat.find("{}\ "{}))));}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00093}00093\ std::string\ cmd\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00094}00094\ \ \ \ \ \mbox{\hyperlink{dlg_nb01_8cpp_afffca60770aa0ec807a7e26302393228}{rdb}}.\mbox{\hyperlink{classz_d_b01_a72e76c77a68e9ba700b6629cb84a37eb}{getLink}}(std::stoi(zcat.substr(0,\ zcat.find(\textcolor{stringliteral}{"{}\ "{}}))));}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00095}00095\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{dlg_nb01_8cpp_afffca60770aa0ec807a7e26302393228}{rdb}}.\mbox{\hyperlink{classz_d_b01_a6cc13eda72223694fa7d7487e2068c1c}{lk3}}[0].ToStdString().find(\textcolor{stringliteral}{"{}http"{}})\ <\ \mbox{\hyperlink{dlg_nb01_8cpp_afffca60770aa0ec807a7e26302393228}{rdb}}.\mbox{\hyperlink{classz_d_b01_a6cc13eda72223694fa7d7487e2068c1c}{lk3}}[0].length())}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00096}00096\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ cmd\ =\ \textcolor{stringliteral}{"{}/usr/lib/ghostery/Ghostery\ "{}}\ +\ \mbox{\hyperlink{dlg_nb01_8cpp_afffca60770aa0ec807a7e26302393228}{rdb}}.\mbox{\hyperlink{classz_d_b01_a6cc13eda72223694fa7d7487e2068c1c}{lk3}}[0].ToStdString();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00098}00098\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00099}00099\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00100}00100\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00101}00101\ \ \ \ \ \ \ \ \ cmd\ =\ \mbox{\hyperlink{dlg_nb01_8cpp_afffca60770aa0ec807a7e26302393228}{rdb}}.\mbox{\hyperlink{classz_d_b01_a6cc13eda72223694fa7d7487e2068c1c}{lk3}}[0].ToStdString();}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00102}00102\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00103}00103\ \ \ \ \ system(cmd.c\_str());}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00104}00104\ \ \ \ \ cmd\ =\ cmd;}
+\DoxyCodeLine{\Hypertarget{dlg_nb01_8cpp_source_l00105}00105\ \}}
+
+\end{DoxyCode}

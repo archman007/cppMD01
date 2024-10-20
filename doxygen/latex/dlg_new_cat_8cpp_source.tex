@@ -1,0 +1,103 @@
+\doxysection{dlg\+New\+Cat.\+cpp}
+\hypertarget{dlg_new_cat_8cpp_source}{}\label{dlg_new_cat_8cpp_source}\mbox{\hyperlink{dlg_new_cat_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dlg_new_cat_8h}{dlgNewCat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{z_d_b01_8h}{zDB01.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00004}\mbox{\hyperlink{dlg_new_cat_8cpp_a1b9b10a47cac2164b9455d84dd477d90}{00004}}\ \mbox{\hyperlink{classz_d_b01}{zDB01}}\ \mbox{\hyperlink{dlg_new_cat_8cpp_a1b9b10a47cac2164b9455d84dd477d90}{db01}};}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00006}00006\ \textcolor{comment}{//(*InternalHeaders(dlgNewCat)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <wx/intl.h>}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <wx/string.h>}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00009}00009\ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00011}00011\ \textcolor{comment}{//(*IdInit(dlgNewCat)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00012}00012\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_new_cat_ad2ea1532e4f6aeffa433cb227ced37ec}{dlgNewCat::ID\_STATICTEXT1}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00013}00013\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_new_cat_a2ff3acd7a996429b9fb450af680d9099}{dlgNewCat::ID\_TEXTCTRL1}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00014}00014\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_new_cat_af7e04eee4e6bf7cc73d2293580ee7e29}{dlgNewCat::ID\_STATICTEXT2}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00015}00015\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_new_cat_a06638814dcd385731b976af931039dc1}{dlgNewCat::ID\_TEXTCTRL2}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00016}00016\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_new_cat_ac88712ad76d3432970a6e2865292b513}{dlgNewCat::ID\_BUTTON1}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00017}00017\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classdlg_new_cat_a1f95147a48f86fd9321e0d78cf2d0ed2}{dlgNewCat::ID\_BUTTON2}}\ =\ wxNewId();}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00018}00018\ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00020}00020\ BEGIN\_EVENT\_TABLE(\mbox{\hyperlink{classdlg_new_cat}{dlgNewCat}},wxDialog)}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{comment}{//(*EventTable(dlgNewCat)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00023}00023\ END\_EVENT\_TABLE()}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00025}\mbox{\hyperlink{classdlg_new_cat_aa8a5d5f7849999cf762a1b600e323023}{00025}}\ \mbox{\hyperlink{classdlg_new_cat}{dlgNewCat}}::\mbox{\hyperlink{classdlg_new_cat}{dlgNewCat}}(wxWindow*\ parent,wxWindowID\ \textcolor{keywordtype}{id},const\ wxPoint\&\ pos,const\ wxSize\&\ size)}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{comment}{//(*Initialize(dlgNewCat)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00028}00028\ \ \ \ \ wxBoxSizer*\ BoxSizer1;}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00029}00029\ \ \ \ \ wxBoxSizer*\ BoxSizer2;}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00030}00030\ \ \ \ \ wxBoxSizer*\ BoxSizer3;}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00031}00031\ \ \ \ \ wxBoxSizer*\ BoxSizer4;}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00033}00033\ \ \ \ \ Create(parent,\ \textcolor{keywordtype}{id},\ \_(\textcolor{stringliteral}{"{}Enter\ New\ Category"{}}),\ wxDefaultPosition,\ wxDefaultSize,\ wxDEFAULT\_DIALOG\_STYLE|wxSYSTEM\_MENU|wxRESIZE\_BORDER,\ \_T(\textcolor{stringliteral}{"{}id"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00034}00034\ \ \ \ \ SetClientSize(wxDefaultSize);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00035}00035\ \ \ \ \ Move(wxDefaultPosition);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00036}00036\ \ \ \ \ BoxSizer1\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxHORIZONTAL);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00037}00037\ \ \ \ \ BoxSizer2\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxVERTICAL);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00038}00038\ \ \ \ \ BoxSizer3\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxVERTICAL);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00039}00039\ \ \ \ \ lblCat\ =\ \textcolor{keyword}{new}\ wxStaticText(\textcolor{keyword}{this},\ ID\_STATICTEXT1,\ \_(\textcolor{stringliteral}{"{}Category"{}}),\ wxDefaultPosition,\ wxDefaultSize,\ 0,\ \_T(\textcolor{stringliteral}{"{}ID\_STATICTEXT1"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00040}00040\ \ \ \ \ BoxSizer3-\/>Add(lblCat,\ 0,\ wxALL|wxEXPAND,\ 1);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00041}00041\ \ \ \ \ edtCat\ =\ \textcolor{keyword}{new}\ wxTextCtrl(\textcolor{keyword}{this},\ ID\_TEXTCTRL1,\ \_(\textcolor{stringliteral}{"{}Text"{}}),\ wxDefaultPosition,\ wxSize(371,24),\ 0,\ wxDefaultValidator,\ \_T(\textcolor{stringliteral}{"{}ID\_TEXTCTRL1"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00042}00042\ \ \ \ \ BoxSizer3-\/>Add(edtCat,\ 0,\ wxALL|wxEXPAND,\ 1);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00043}00043\ \ \ \ \ lblMemo\ =\ \textcolor{keyword}{new}\ wxStaticText(\textcolor{keyword}{this},\ ID\_STATICTEXT2,\ \_(\textcolor{stringliteral}{"{}Memo"{}}),\ wxDefaultPosition,\ wxDefaultSize,\ 0,\ \_T(\textcolor{stringliteral}{"{}ID\_STATICTEXT2"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00044}00044\ \ \ \ \ BoxSizer3-\/>Add(lblMemo,\ 0,\ wxALL|wxEXPAND,\ 1);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00045}00045\ \ \ \ \ edtMemo\ =\ \textcolor{keyword}{new}\ wxTextCtrl(\textcolor{keyword}{this},\ ID\_TEXTCTRL2,\ \_(\textcolor{stringliteral}{"{}Text"{}}),\ wxDefaultPosition,\ wxSize(371,87),\ wxTE\_MULTILINE,\ wxDefaultValidator,\ \_T(\textcolor{stringliteral}{"{}ID\_TEXTCTRL2"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00046}00046\ \ \ \ \ BoxSizer3-\/>Add(edtMemo,\ 0,\ wxALL|wxEXPAND,\ 1);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00047}00047\ \ \ \ \ BoxSizer4\ =\ \textcolor{keyword}{new}\ wxBoxSizer(wxHORIZONTAL);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00048}00048\ \ \ \ \ btnInsert\ =\ \textcolor{keyword}{new}\ wxButton(\textcolor{keyword}{this},\ ID\_BUTTON1,\ \_(\textcolor{stringliteral}{"{}Insert"{}}),\ wxDefaultPosition,\ wxSize(217,33),\ 0,\ wxDefaultValidator,\ \_T(\textcolor{stringliteral}{"{}ID\_BUTTON1"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00049}00049\ \ \ \ \ BoxSizer4-\/>Add(btnInsert,\ 1,\ wxALL|wxALIGN\_CENTER\_HORIZONTAL|wxALIGN\_CENTER\_VERTICAL,\ 1);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00050}00050\ \ \ \ \ btnCancel\ =\ \textcolor{keyword}{new}\ wxButton(\textcolor{keyword}{this},\ ID\_BUTTON2,\ \_(\textcolor{stringliteral}{"{}Cancel"{}}),\ wxDefaultPosition,\ wxDefaultSize,\ 0,\ wxDefaultValidator,\ \_T(\textcolor{stringliteral}{"{}ID\_BUTTON2"{}}));}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00051}00051\ \ \ \ \ BoxSizer4-\/>Add(btnCancel,\ 1,\ wxALL|wxALIGN\_CENTER\_HORIZONTAL|wxALIGN\_CENTER\_VERTICAL,\ 1);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00052}00052\ \ \ \ \ BoxSizer3-\/>Add(BoxSizer4,\ 0,\ wxALL|wxEXPAND,\ 1);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00053}00053\ \ \ \ \ BoxSizer2-\/>Add(BoxSizer3,\ 1,\ wxALL|wxEXPAND,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00054}00054\ \ \ \ \ BoxSizer1-\/>Add(BoxSizer2,\ 1,\ wxALL|wxEXPAND,\ 5);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00055}00055\ \ \ \ \ SetSizer(BoxSizer1);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00056}00056\ \ \ \ \ BoxSizer1-\/>Fit(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00057}00057\ \ \ \ \ BoxSizer1-\/>SetSizeHints(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00059}00059\ \ \ \ \ Connect(ID\_BUTTON1,wxEVT\_COMMAND\_BUTTON\_CLICKED,(wxObjectEventFunction)\&dlgNewCat::OnbtnInsertClick);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00060}00060\ \ \ \ \ Connect(ID\_BUTTON2,wxEVT\_COMMAND\_BUTTON\_CLICKED,(wxObjectEventFunction)\&dlgNewCat::OnbtnCancelClick);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00062}00062\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00064}\mbox{\hyperlink{classdlg_new_cat_ad8100c6bd2a7534dcf6846fb715f24f4}{00064}}\ \mbox{\hyperlink{classdlg_new_cat_ad8100c6bd2a7534dcf6846fb715f24f4}{dlgNewCat::\string~dlgNewCat}}()}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00065}00065\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00066}00066\ \ \ \ \ \textcolor{comment}{//(*Destroy(dlgNewCat)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{comment}{//*)}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00068}00068\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00071}00071\ \textcolor{keywordtype}{void}\ dlgNewCat::OnbtnInsertClick(wxCommandEvent\&\ event)}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00072}00072\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00073}00073\ \ \ \ \ std::string\ butText\ =\ \mbox{\hyperlink{classdlg_new_cat_a42a122335d4c950c54b7b4e986ad1ed1}{btnInsert}}-\/>GetLabel().ToStdString();}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00074}00074\ \ \ \ \ butText\ =\ butText;}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordflow}{if}\ (butText\ ==\ \textcolor{stringliteral}{"{}Insert"{}})}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00076}00076\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ std::string\ cat\ =\ \mbox{\hyperlink{dlg_new_cat_8cpp_a1b9b10a47cac2164b9455d84dd477d90}{db01}}.\mbox{\hyperlink{classz_d_b01_ab00f736b2d02a0206d406ebeb8da8cdd}{fieldToString}}(\mbox{\hyperlink{classdlg_new_cat_a72cdf033c6e09d036dae14dc92135751}{edtCat}});}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ std::string\ memo\ =\ \mbox{\hyperlink{dlg_new_cat_8cpp_a1b9b10a47cac2164b9455d84dd477d90}{db01}}.\mbox{\hyperlink{classz_d_b01_ab00f736b2d02a0206d406ebeb8da8cdd}{fieldToString}}(\mbox{\hyperlink{classdlg_new_cat_a242de8d9dcd75d20a533b82f99b2335a}{edtMemo}});}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{dlg_new_cat_8cpp_a1b9b10a47cac2164b9455d84dd477d90}{db01}}.\mbox{\hyperlink{classz_d_b01_aa5e2cfae20cc8b12f25997b907ab6155}{insertCat}}(cat,\ memo);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \ \ db02.insertLink(db02.fieldToString(edtPrim),\ db02.fieldToString(edtLinkName),\ db02.fieldToString(edtLink),\ db02.fieldToString(edtDetDes));}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00082}00082\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00084}00084\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{dlg_new_cat_8cpp_a1b9b10a47cac2164b9455d84dd477d90}{db01}}.\mbox{\hyperlink{classz_d_b01_a8c27b7a67b04be8c7472f5ddb64e53cd}{editCat}}(\textcolor{stringliteral}{"{}"{}},\mbox{\hyperlink{dlg_new_cat_8cpp_a1b9b10a47cac2164b9455d84dd477d90}{db01}}.\mbox{\hyperlink{classz_d_b01_ab00f736b2d02a0206d406ebeb8da8cdd}{fieldToString}}(\mbox{\hyperlink{classdlg_new_cat_a72cdf033c6e09d036dae14dc92135751}{edtCat}}),\ \mbox{\hyperlink{dlg_new_cat_8cpp_a1b9b10a47cac2164b9455d84dd477d90}{db01}}.\mbox{\hyperlink{classz_d_b01_ab00f736b2d02a0206d406ebeb8da8cdd}{fieldToString}}(\mbox{\hyperlink{classdlg_new_cat_a242de8d9dcd75d20a533b82f99b2335a}{edtMemo}}));}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{dlg_new_cat_8cpp_a1b9b10a47cac2164b9455d84dd477d90}{db01}}.\mbox{\hyperlink{classz_d_b01_abd1643c0d12ef3fe03b61319580aca35}{listCategories}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00088}00088\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00090}00090\ \textcolor{comment}{//INSERT\ INTO\ \`{}lk1`(`idlk1`,\ \`{}cat`,\ \`{}ddes`)\ VALUES\ ('[value-\/1]','[value-\/2]','[value-\/3]')}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00091}00091\ \ \ \ \ EndModal(wxID\_OK);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00093}00093\ \}}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00095}00095\ \textcolor{keywordtype}{void}\ dlgNewCat::OnbtnCancelClick(wxCommandEvent\&\ event)}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00096}00096\ \{}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00097}00097\ \ \ \ \ EndModal(wxID\_CANCEL);}
+\DoxyCodeLine{\Hypertarget{dlg_new_cat_8cpp_source_l00098}00098\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,208 @@
+\doxysection{curl\+Stuff.\+cpp}
+\hypertarget{curl_stuff_8cpp_source}{}\label{curl_stuff_8cpp_source}\mbox{\hyperlink{curl_stuff_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{curl_stuff_8h}{curlStuff.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <curl/curl.h>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <ios>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <strstream>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <curl/easy.h>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <boost/algorithm/string.hpp>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <wx/clipbrd.h>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <wx/msgdlg.h>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00014}00014\ \textcolor{comment}{//\#include\ <streambuf>}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00016}00016\ \textcolor{comment}{//using\ namespace\ std;}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00018}\mbox{\hyperlink{classcurl_stuff_af3d3c348dcb5819e830a1a96b67e80f9}{00018}}\ \mbox{\hyperlink{classcurl_stuff_af3d3c348dcb5819e830a1a96b67e80f9}{curlStuff::curlStuff}}()}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00019}00019\ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00020}00020\ \ \ \ \ \textcolor{comment}{//ctor}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00023}\mbox{\hyperlink{classcurl_stuff_a4e424e19de760b527df5664f418a2675}{00023}}\ \mbox{\hyperlink{classcurl_stuff_a4e424e19de760b527df5664f418a2675}{curlStuff::\string~curlStuff}}()}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00024}00024\ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{comment}{//DlgTstFramedtor}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00026}00026\ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00028}00028\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{size\_t}\ data\_write(\textcolor{keywordtype}{void}*\ buf,\ \textcolor{keywordtype}{size\_t}\ size,\ \textcolor{keywordtype}{size\_t}\ nmemb,\ \textcolor{keywordtype}{void}*\ userp)}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00029}00029\ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{if}\ (userp)}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00031}00031\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ std::ostream\&\ os\ =\ *\textcolor{keyword}{static\_cast<}std::ostream*\textcolor{keyword}{>}(userp);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ std::streamsize\ len\ =\ size\ *\ nmemb;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (os.write(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}*\textcolor{keyword}{>}(buf),\ len))}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ len;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00036}00036\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00039}00039\ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00041}\mbox{\hyperlink{curl_stuff_8cpp_a1f65d4f0784c610d8608d3cadd578b89}{00041}}\ CURLcode\ \mbox{\hyperlink{curl_stuff_8cpp_a1f65d4f0784c610d8608d3cadd578b89}{curl\_read}}(\textcolor{keyword}{const}\ std::string\&\ url,\ std::ostream\&\ os,}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{long}\ timeout\ =\ 30)}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00043}00043\ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00044}00044\ \ \ \ \ CURLcode\ code(CURLE\_FAILED\_INIT);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00045}00045\ \ \ \ \ CURL*\ curl\ =\ curl\_easy\_init();}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{keywordflow}{if}\ (curl)}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00048}00048\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (CURLE\_OK}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ==\ (code\ =\ curl\_easy\_setopt(curl,\ CURLOPT\_WRITEFUNCTION,}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&data\_write))\ \&\&\ CURLE\_OK}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ==\ (code\ =\ curl\_easy\_setopt(curl,\ CURLOPT\_NOPROGRESS,}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1L))\ \&\&\ CURLE\_OK}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ==\ (code\ =\ curl\_easy\_setopt(curl,}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CURLOPT\_SSL\_VERIFYHOST,\ 0L))}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00056}00056\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ CURLE\_OK}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00057}00057\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ==\ (code\ =\ curl\_easy\_setopt(curl,curl\_read}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00058}00058\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CURLOPT\_FOLLOWLOCATION,\ 1L))}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ CURLE\_OK}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ==\ (code\ =\ curl\_easy\_setopt(curl,\ CURLOPT\_FILE,\ \&os))}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ CURLE\_OK}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ==\ (code\ =\ curl\_easy\_setopt(curl,\ CURLOPT\_TIMEOUT,}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ timeout))\ \&\&\ CURLE\_OK\ ==\ (code\ =}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ curl\_easy\_setopt(curl,\ CURLOPT\_URL,\ url.c\_str())))}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00066}00066\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ curl\_easy\_setopt(curl,\ CURLOPT\_SSL\_VERIFYHOST,\ false);}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ code\ =\ curl\_easy\_perform(curl);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ curl\_easy\_cleanup(curl);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00071}00071\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{keywordflow}{return}\ code;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00076}\mbox{\hyperlink{classcurl_stuff_afc2fdfde6fa1450a1184f20ab9cf35f7}{00076}}\ std::string\ \mbox{\hyperlink{classcurl_stuff_afc2fdfde6fa1450a1184f20ab9cf35f7}{curlStuff::getZTitle}}(std::string\ url)}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00077}00077\ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00078}00078\ \ \ \ \ std::string\ retVal;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00079}00079\ \ \ \ \ std::string\ rbuf;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00080}00080\ \ \ \ \ curl\_global\_init\ (CURL\_GLOBAL\_ALL);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordtype}{int}\ ii;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00083}00083\ \textcolor{comment}{\ \ \ \ \ *\ We\ use\ Curl\ to\ fetch\ the\ web\ page\ per\ the\ URL.}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00084}00084\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00085}00085\ \textcolor{comment}{\ \ \ \ \ *\ A\ string\ stream\ is\ used\ to\ hold\ the\ web\ page}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00086}00086\ \textcolor{comment}{\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00087}00087\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00089}00089\ \ \ \ \ std::ostringstream\ oss;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keywordflow}{if}\ (CURLE\_OK\ ==\ \mbox{\hyperlink{curl_stuff_8cpp_a1f65d4f0784c610d8608d3cadd578b89}{curl\_read}}(url,\ oss))}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00091}00091\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Web\ page\ successfully\ written\ to\ string}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ista;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ isto;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ std::string\ html;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ html\ =\ oss.str();}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ std::ofstream\ file(\textcolor{stringliteral}{"{}filename.txt"{}});}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ file\ <<\ oss.str();}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00100}00100\ \ \ \ \ \ \ \ \ std::string\ sb;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00101}00101\ \ \ \ \ \ \ \ \ std::string\ se;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00102}00102\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ ista\ =\ html.find("{}TITLE"{});}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00103}00103\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ ((ista\ !=\ -\/1)\ and\ (ista\ <\ html.length()))\ \{}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00104}00104\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sb\ =\ "{}<TITLE>"{};}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00105}00105\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ se\ =\ "{}</TITLE>"{};}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00106}00106\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ else\ \{}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00107}00107\ \ \ \ \ \ \ \ \ sb\ =\ \textcolor{stringliteral}{"{}<title>"{}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00108}00108\ \ \ \ \ \ \ \ \ se\ =\ \textcolor{stringliteral}{"{}</title>"{}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00109}00109\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00110}00110\ \ \ \ \ \ \ \ \ ista\ =\ html.find(sb);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00111}00111\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ rest;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00112}00112\ \ \ \ \ \ \ \ \ rest\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00113}00113\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ sb\ =\ "{}<title"{};}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00114}00114\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ se\ =\ "{}</title>"{};}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00115}00115\ \ \ \ \ \ \ \ \ ista\ =\ html.find(sb);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00116}00116\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ (ista\ >\ -\/1)\ \{}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00117}00117\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ isto\ =\ html.find("{}>"{});}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00118}00118\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rest\ =\ (isto\ -\/\ (ista\ +\ 6));}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00119}00119\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00120}00120\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ ista\ =\ ista\ +\ sb.length()\ +\ rest;}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00121}00121\ \ \ \ \ \ \ \ \ ista\ =\ ista\ +\ 7;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00122}00122\ \ \ \ \ \ \ \ \ isto\ =\ html.find(se);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00123}00123\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ilen;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ ilen\ =\ isto\ -\/\ ista;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00125}00125\ \textcolor{comment}{//\ \ \ \ \ \ \ \ char\ buffer[5000]\ =\ \{\ 0\ \};}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00126}00126\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ html.copy(html,\ ista,\ ilen);}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00127}00127\ \ \ \ \ \ \ \ \ rbuf\ =\ html.substr(ista,\ ilen);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00128}00128\ \ \ \ \ \ \ \ \ std::string\ frs\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00129}00129\ \ \ \ \ \ \ \ \ std::string\ tos\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00130}00130\ \ \ \ \ \ \ \ \ frs\ =\ \textcolor{stringliteral}{"{}\&quot;"{}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00131}00131\ \ \ \ \ \ \ \ \ tos\ =\ \textcolor{charliteral}{'"{}'};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00132}00132\ \ \ \ \ \ \ \ \ boost::replace\_all(rbuf,\ frs,\ tos);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00133}00133\ \ \ \ \ \ \ \ \ frs\ =\ \textcolor{stringliteral}{"{}\&\#39;"{}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00134}00134\ \ \ \ \ \ \ \ \ tos\ =\ \textcolor{stringliteral}{"{}'"{}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00135}00135\ \ \ \ \ \ \ \ \ boost::replace\_all(rbuf,\ frs,\ tos);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00136}00136\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ilen\ >\ 500)}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00137}00137\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ rbuf\ =\ \textcolor{stringliteral}{"{}Dummy\ Title"{}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00140}00140\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00141}00141\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00142}00142\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00143}00143\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rbuf\ =\ html.substr(ista,\ ilen);}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00144}00144\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00145}00145\ \ \ \ \ \ \ \ \ ilen\ =\ ilen;\ \textcolor{comment}{//\ @suppress("{}Assignment\ to\ itself"{})}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00147}00147\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00148}00148\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ The\ Boost\ tokenizer\ is\ used\ to\ parse\ the\ string\ stream\ into\ lines\ of\ code}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00149}00149\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00150}00150\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ ii\ =\ strToLine(html);}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00151}00151\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ lcnt\ =\ ii;}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00152}00152\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00153}00153\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ This\ routine\ reads\ the\ lines\ of\ code\ until\ the\ <Title>\ tag\ is\ encountered.}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00154}00154\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00155}00155\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ The\ line\ containing\ the\ title\ tag\ is\ trimmed\ on\ both\ sides.}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00156}00156\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00157}00157\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ The\ HTML\ tags\ are\ discarded\ leaving\ us\ with\ the\ title\ for\ the\ web\ page.}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00158}00158\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00159}00159\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ Retval\ contains\ the\ web\ pate\ title.}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00160}00160\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00161}00161\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00162}00162\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ retVal\ =\ getTitle(ii);}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00164}00164\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00165}00165\ \ \ \ \ curl\_global\_cleanup();}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00166}00166\ \ \ \ \ \textcolor{keywordflow}{return}\ rbuf;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00167}00167\ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00168}00168\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00169}\mbox{\hyperlink{classcurl_stuff_a766a52cfa30136e004f9ee76e2eced5f}{00169}}\ std::string\ \mbox{\hyperlink{classcurl_stuff_a766a52cfa30136e004f9ee76e2eced5f}{curlStuff::getURL}}()\ \ \ \textcolor{comment}{//\ @suppress("{}No\ return"{})}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00170}00170\ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00172}00172\ \ \ \ \ std::string\ buf;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00173}00173\ \ \ \ \ \textcolor{keywordflow}{if}\ (wxTheClipboard-\/>Open())}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00174}00174\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00175}00175\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (wxTheClipboard-\/>IsSupported(wxDF\_TEXT))}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00176}00176\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00177}00177\ \ \ \ \ \ \ \ \ \ \ \ \ wxTextDataObject\ data;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00178}00178\ \ \ \ \ \ \ \ \ \ \ \ \ wxTheClipboard-\/>GetData(data);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00179}00179\ \ \ \ \ \ \ \ \ \ \ \ \ buf\ =\ data.GetText();}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00180}00180\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ wxMessageBox(\ data.GetText()\ );}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00182}00182\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00183}00183\ \ \ \ \ \ \ \ \ wxTheClipboard-\/>Close();}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00184}00184\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ buf;}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00185}00185\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ type\ filter\ text}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00186}00186\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00187}00187\ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00189}\mbox{\hyperlink{classcurl_stuff_a95d3ef871d4c6eeb2c9097eaf2ab738f}{00189}}\ std::string\ \mbox{\hyperlink{classcurl_stuff_a95d3ef871d4c6eeb2c9097eaf2ab738f}{curlStuff::clipUrl}}()}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00190}00190\ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00191}00191\ \ \ \ \ \mbox{\hyperlink{classcurl_stuff_a916a584da108c1a1bd63cc221cb31ff0}{cbc}}\ =\ \mbox{\hyperlink{classcurl_stuff_a766a52cfa30136e004f9ee76e2eced5f}{getURL}}();}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00192}00192\ \ \ \ \ \mbox{\hyperlink{classcurl_stuff_a916a584da108c1a1bd63cc221cb31ff0}{cbc}}\ =\ \mbox{\hyperlink{classcurl_stuff_a916a584da108c1a1bd63cc221cb31ff0}{cbc}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00193}00193\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classcurl_stuff_a916a584da108c1a1bd63cc221cb31ff0}{cbc}}.find(\textcolor{stringliteral}{"{}http"{}})\ <\ \mbox{\hyperlink{classcurl_stuff_a916a584da108c1a1bd63cc221cb31ff0}{cbc}}.length())}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00194}00194\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00195}00195\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classcurl_stuff_afc2fdfde6fa1450a1184f20ab9cf35f7}{getZTitle}}(\mbox{\hyperlink{classcurl_stuff_a916a584da108c1a1bd63cc221cb31ff0}{cbc}});}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00196}00196\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00197}00197\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00198}00198\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00199}00199\ \ \ \ \ \ \ \ \ wxMessageBox(\textcolor{stringliteral}{"{}URL\ not\ Detected!"{}},\ \textcolor{stringliteral}{"{}No\ URL\ in\ Clipboard"{}},\ wxICON\_HAND);}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00200}00200\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00201}00201\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00202}00202\ }
+\DoxyCodeLine{\Hypertarget{curl_stuff_8cpp_source_l00203}00203\ \}}
+
+\end{DoxyCode}

@@ -586,7 +586,7 @@ cppMD01Frame::cppMD01Frame (wxWindow * parent, wxWindowID id = {\f2 -1})}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definition at line {\b 93} of file {\b cppMD01Main.cpp}.}\par
+Definition at line {\b 94} of file {\b cppMD01Main.cpp}.}\par
 }
 {\xe \v ~cppMD01Frame\:cppMD01Frame}
 {\xe \v cppMD01Frame\:~cppMD01Frame}
@@ -600,7 +600,7 @@ cppMD01Frame::~cppMD01Frame (){\f2 [virtual]}}}
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
 {
-Definition at line {\b 230} of file {\b cppMD01Main.cpp}.}\par
+Definition at line {\b 234} of file {\b cppMD01Main.cpp}.}\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -3298,6 +3298,7 @@ cppMD01Main.cpp File Reference\par \pard\plain
 {\f2 #include "dlgNewCat.h"}\par
 {\f2 #include "wx/clipbrd.h"}\par
 {\f2 #include "dlgSelCat.h"}\par
+{\f2 #include <wx/wx.h>}\par
 {\f2 #include <wx/intl.h>}\par
 {\f2 #include <wx/string.h>}\par
 }
@@ -3461,7 +3462,7 @@ Go to the documentation of this file.\par
 00026 {\cf21 #include "dlgNewCat.h"}\par
 00027 {\cf21 #include "wx/clipbrd.h"}\par
 00028 {\cf21 #include "dlgSelCat.h"}\par
-00029 {\cf20 //#include "dlg"}\par
+00029 {\cf21 #include <wx/wx.h>}\par
 00030 \par
 00031 {\cf20 //(*InternalHeaders(cppMD01Frame)}\par
 00032 {\cf21 #include <wx/intl.h>}\par
@@ -3513,591 +3514,613 @@ Go to the documentation of this file.\par
 00078 {\cf17 const} {\cf18 long} cppMD01Frame::idpumNewCat = wxNewId();\par
 00079 {\cf17 const} {\cf18 long} cppMD01Frame::ID_PumEdCat = wxNewId();\par
 00080 {\cf17 const} {\cf18 long} cppMD01Frame::ID_NewBlog = wxNewId();\par
-00081 {\cf17 const} {\cf18 long} cppMD01Frame::ID_MENUITEM2 = wxNewId();\par
-00082 {\cf17 const} {\cf18 long} cppMD01Frame::ID_menAD = wxNewId();\par
-00083 {\cf17 const} {\cf18 long} cppMD01Frame::ID_menNB = wxNewId();\par
-00084 {\cf17 const} {\cf18 long} cppMD01Frame::ID_pumDel = wxNewId();\par
-00085 {\cf17 const} {\cf18 long} cppMD01Frame::ID_pumEditLink = wxNewId();\par
-00086 {\cf20 //*)}\par
-00087 \par
-00088 BEGIN_EVENT_TABLE(cppMD01Frame,wxFrame)\par
-00089     {\cf20 //(*EventTable(cppMD01Frame)}\par
-00090     {\cf20 //*)}\par
-00091 END_EVENT_TABLE()\par
-00092 \par
-00093 cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID {\cf18 id})\par
-00094 \{\par
-00095     mysqlpp::Connection conn;\par
-00096     {\cf20 //(*Initialize(cppMD01Frame)}\par
-00097     wxBoxSizer* BoxSizer1;\par
-00098     wxBoxSizer* BoxSizer2;\par
-00099     wxBoxSizer* BoxSizer3;\par
-00100     wxBoxSizer* BoxSizer4;\par
-00101     wxBoxSizer* BoxSizer5;\par
-00102     wxMenu* Menu1;\par
-00103     wxMenu* Menu2;\par
-00104     wxMenuBar* MenuBar1;\par
-00105     wxMenuItem* MenuItem1;\par
-00106     wxMenuItem* MenuItem2;\par
-00107 \par
-00108     Create(parent, {\cf18 id}, _({\cf22 "Brooks Computing Systems, LLC  ** Programmer\\'s Workbench **"}), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE, _T({\cf22 "id"}));\par
-00109     BoxSizer1 = {\cf17 new} wxBoxSizer(wxHORIZONTAL);\par
-00110     BoxSizer2 = {\cf17 new} wxBoxSizer(wxHORIZONTAL);\par
-00111     BoxSizer3 = {\cf17 new} wxBoxSizer(wxVERTICAL);\par
-00112     BoxSizer4 = {\cf17 new} wxBoxSizer(wxVERTICAL);\par
-00113     Panel1 = {\cf17 new} wxPanel({\cf17 this}, ID_PANEL1, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T({\cf22 "ID_PANEL1"}));\par
-00114     StaticText1 = {\cf17 new} wxStaticText(Panel1, ID_STATICTEXT1, _({\cf22 "Label"}), wxPoint(8,0), wxDefaultSize, 0, _T({\cf22 "ID_STATICTEXT1"}));\par
-00115     BoxSizer4->Add(Panel1, 1, wxALL|wxEXPAND, 5);\par
-00116     BoxSizer3->Add(BoxSizer4, 1, wxALL|wxEXPAND, 5);\par
-00117     BoxSizer5 = {\cf17 new} wxBoxSizer(wxVERTICAL);\par
-00118     Panel2 = {\cf17 new} wxPanel({\cf17 this}, ID_PANEL3, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T({\cf22 "ID_PANEL3"}));\par
-00119     BoxSizer5->Add(Panel2, 0, wxALL|wxEXPAND, 5);\par
-00120     StaticText2 = {\cf17 new} wxStaticText({\cf17 this}, ID_STATICTEXT2, _({\cf22 "Label"}), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE, _T({\cf22 "ID_STATICTEXT2"}));\par
-00121     BoxSizer5->Add(StaticText2, 0, wxALL|wxEXPAND, 5);\par
-00122     BoxSizer3->Add(BoxSizer5, 0, wxALL|wxEXPAND, 5);\par
-00123     ScrolledWindow1 = {\cf17 new} wxScrolledWindow({\cf17 this}, ID_SCROLLEDWINDOW1, wxDefaultPosition, wxSize(11,7), wxVSCROLL|wxHSCROLL, _T({\cf22 "ID_SCROLLEDWINDOW1"}));\par
-00124     BoxSizer3->Add(ScrolledWindow1, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);\par
-00125     BoxSizer2->Add(BoxSizer3, 0, wxALL|wxEXPAND, 5);\par
-00126     BoxSizer1->Add(BoxSizer2, 0, wxALL|wxEXPAND, 5);\par
-00127     SetSizer(BoxSizer1);\par
-00128     MenuBar1 = {\cf17 new} wxMenuBar();\par
-00129     Menu1 = {\cf17 new} wxMenu();\par
-00130     menSelectCpp = {\cf17 new} wxMenuItem(Menu1, idMenucpp, _({\cf22 "Select c++ file to compile"}), _({\cf22 "Compile c++"}), wxITEM_NORMAL);\par
-00131     Menu1->Append(menSelectCpp);\par
-00132     MenuItem1 = {\cf17 new} wxMenuItem(Menu1, idMenuQuit, _({\cf22 "Quit\\tAlt-F4"}), _({\cf22 "Quit the application"}), wxITEM_NORMAL);\par
-00133     Menu1->Append(MenuItem1);\par
-00134     MenuBar1->Append(Menu1, _({\cf22 "&File"}));\par
-00135     Menu2 = {\cf17 new} wxMenu();\par
-00136     MenuItem2 = {\cf17 new} wxMenuItem(Menu2, idMenuAbout, _({\cf22 "About\\tF1"}), _({\cf22 "Show info about this application"}), wxITEM_NORMAL);\par
-00137     Menu2->Append(MenuItem2);\par
-00138     MenuBar1->Append(Menu2, _({\cf22 "Help"}));\par
-00139     SetMenuBar(MenuBar1);\par
-00140     StatusBar1 = {\cf17 new} wxStatusBar({\cf17 this}, ID_STATUSBAR1, wxFULL_REPAINT_ON_RESIZE, _T({\cf22 "ID_STATUSBAR1"}));\par
-00141     {\cf18 int} __wxStatusBarWidths_1[1] = \{ -300 \};\par
-00142     {\cf18 int} __wxStatusBarStyles_1[1] = \{ wxSB_NORMAL \};\par
-00143     StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);\par
-00144     StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);\par
-00145     SetStatusBar(StatusBar1);\par
-00146     MenuItem3 = {\cf17 new} wxMenuItem((&pumMaster), ID_MENUITEM1, _({\cf22 "Change Background Color"}), wxEmptyString, wxITEM_NORMAL);\par
-00147     pumMaster.Append(MenuItem3);\par
-00148     pumNewCat = {\cf17 new} wxMenuItem((&pumMaster), idpumNewCat, _({\cf22 "Enter New Category"}), _({\cf22 "Enter New Category"}), wxITEM_NORMAL);\par
-00149     pumMaster.Append(pumNewCat);\par
-00150     MenuItem5 = {\cf17 new} wxMenuItem((&pumMaster), ID_PumEdCat, _({\cf22 "Edit Category"}), _({\cf22 "Edit This Category"}), wxITEM_NORMAL);\par
-00151     pumMaster.Append(MenuItem5);\par
-00152     pumNewBlogPost = {\cf17 new} wxMenuItem((&pumMaster), ID_NewBlog, _({\cf22 "Create New Blog Post"}), _({\cf22 "Create A New Blog Post"}), wxITEM_NORMAL);\par
-00153     pumMaster.Append(pumNewBlogPost);\par
-00154     MenuItem4 = {\cf17 new} wxMenuItem((&pumDetail), ID_MENUITEM2, _({\cf22 "Change Background Color"}), wxEmptyString, wxITEM_NORMAL);\par
-00155     pumDetail.Append(MenuItem4);\par
-00156     pumAddDocs = {\cf17 new} wxMenuItem((&pumDetail), ID_menAD, _({\cf22 "addDocs"}), _({\cf22 "Add  New Documents / Items"}), wxITEM_NORMAL);\par
-00157     pumDetail.Append(pumAddDocs);\par
-00158     menNewPost = {\cf17 new} wxMenuItem((&pumDetail), ID_menNB, _({\cf22 "Create New Blog Post"}), _({\cf22 "New Blog Post Now!"}), wxITEM_NORMAL);\par
-00159     pumDetail.Append(menNewPost);\par
-00160     pumDelLink = {\cf17 new} wxMenuItem((&pumDetail), ID_pumDel, _({\cf22 "Delete Link"}), _({\cf22 "Delete A Item"}), wxITEM_NORMAL);\par
-00161     pumDetail.Append(pumDelLink);\par
-00162     pumEditDetails = {\cf17 new} wxMenuItem((&pumDetail), ID_pumEditLink, _({\cf22 "Edit Link Details"}), _({\cf22 "Edit Link Details"}), wxITEM_NORMAL);\par
-00163     pumDetail.Append(pumEditDetails);\par
-00164     BoxSizer1->Fit({\cf17 this});\par
-00165     BoxSizer1->SetSizeHints({\cf17 this});\par
-00166     Center();\par
-00167 \par
-00168     Connect(idMenucpp,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnmenSelectCppSelected);\par
-00169     Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnQuit);\par
-00170     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnAbout);\par
-00171     Connect(idpumNewCat,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewCatSelected);\par
-00172     Connect(ID_PumEdCat,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumEdCatSelected);\par
-00173     Connect(ID_NewBlog,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);\par
-00174     Connect(ID_menAD,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumAddDocsSelected);\par
-00175     Connect(ID_menNB,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);\par
-00176     Connect(ID_pumDel,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumDelLinkSelected);\par
-00177     Connect(ID_pumEditLink,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumEditLinkSelected);\par
-00178     {\cf20 //*)}\par
-00179 \par
-00180     SetStatusText({\cf22 "Button Clicked!"});\par
-00181 \par
-00182 \par
-00183     masterGrid = {\cf17 new} wxGrid({\cf17 this}, wxID_ANY, wxDefaultPosition, wxSize(1200, 300));\par
-00184     masterGrid->CreateGrid(0, 3);\par
-00185     masterGrid->SetColLabelValue(0, {\cf22 "Category ID"});\par
-00186     masterGrid->SetColLabelValue(1, {\cf22 "Category Name"});\par
-00187     masterGrid->SetColLabelValue(2, {\cf22 "Detailed Description"});\par
-00188     masterGrid->SetColSize(1, 500);\par
-00189     masterGrid->SetColSize(2, 575);\par
-00190 \par
-00191     detailGrid = {\cf17 new} wxGrid({\cf17 this}, wxID_ANY, wxPoint(400, 0), wxSize(1200, 500));\par
-00192     detailGrid->CreateGrid(0, 4);\par
-00193     detailGrid->SetColLabelValue(0, {\cf22 "Link ID"});\par
-00194     detailGrid->SetColLabelValue(1, {\cf22 "Link Name"});\par
-00195     detailGrid->SetColLabelValue(2, {\cf22 "Link"});\par
-00196     detailGrid->SetColLabelValue(3, {\cf22 "Description"});\par
-00197     detailGrid->SetColSize(1, 500);\par
-00198     detailGrid->SetColSize(2, 300);\par
-00199     detailGrid->SetColSize(3, 325);\par
-00200     {\cf20 //BoxSizer4->Add(Panel1, 1, wxALL|wxEXPAND, 5);}\par
-00201     {\cf20 //Panel1->SetSizer(BoxSizer4);}\par
-00202     {\cf20 //BoxSizer5->Add(Panel2, 1, wxALL|wxEXPAND, 5);}\par
-00203     {\cf20 //Panel2->SetSizer(BoxSizer5);}\par
-00204     detailGrid->SetMaxSize(wxSize(-1, 150));  {\cf20 // Set the maximum height to 150}\par
-00205     BoxSizer4->Add(masterGrid, 0, wxEXPAND, 2);\par
-00206     BoxSizer5->Add(detailGrid, 0, wxEXPAND, 2);\par
-00207     {\cf20 //Panel1->Add(masterGrid, 1, wxALL|wxEXPAND, 5);}\par
-00208     {\cf20 //Panel2->Add(detailGrid, 1, wxALL|wxEXPAND, 5);}\par
-00209     Layout();\par
-00210 \par
-00211     PopulateMasterGrid();\par
-00212     detailGrid->Bind(wxEVT_GRID_CELL_LEFT_CLICK, &cppMD01Frame::OnCellClick, {\cf17 this});\par
-00213     masterGrid->Bind(wxEVT_GRID_CELL_LEFT_CLICK, &cppMD01Frame::OnMasterGridCellClick, {\cf17 this});\par
-00214     {\cf20 //masterGrid->Bind(wxEVT_GRID_CELL_LEFT_CLICK, &cppMD01Frame::OnDetailGridCellClick, this);}\par
-00215     masterGrid->Bind(wxEVT_GRID_CELL_RIGHT_CLICK, &cppMD01Frame::OnMasterGridPopup, {\cf17 this});\par
-00216     detailGrid->Bind(wxEVT_GRID_CELL_RIGHT_CLICK, &cppMD01Frame::OnDetailGridPopup, {\cf17 this});\par
-00217     detailGrid->EnableEditing({\cf17 true});\par
-00218 \par
-00219     {\cf20 //SetSizer(BoxSizer5);}\par
-00220     {\cf20 //SetSizer(BoxSizer4);}\par
-00221     {\cf20 //SetSizer(BoxSizer3);}\par
-00222     {\cf20 //SetSizer(BoxSizer2);}\par
-00223     {\cf20 //SetSizer(BoxSizer1);}\par
-00224     SetSizerAndFit(BoxSizer1);\par
-00225     {\cf20 //BoxSizer1->Fit(this);}\par
-00226     LoadDetailData(0);\par
-00227 \par
-00228 \}\par
-00229 \par
-00230 cppMD01Frame::~cppMD01Frame()\par
-00231 \{\par
-00232     {\cf20 //(*Destroy(cppMD01Frame)}\par
-00233     {\cf20 //*)}\par
-00234 \}\par
-00235 \par
-00251 {\cf18 void} cppMD01Frame::PopulateMasterGrid()\par
-00252 \{\par
-00253     {\cf20 // Attempt to connect to the MySQL database}\par
-00254     {\cf19 if} (!conn.connect({\cf22 "bcswebtools"}, {\cf22 "localhost"}, {\cf22 "bcs"}, {\cf22 "Peace007!amb"}))\par
-00255     \{\par
-00256         {\cf20 // Database connection failed, exit the function}\par
-00257         {\cf20 // wxWrite("Database connection failed.");}\par
-00258         {\cf19 return};\par
-00259     \}\par
-00260 \par
-00261     {\cf20 // Execute the SQL query to fetch all records from the 'lk1' table, ordered by 'cat'}\par
-00262     mysqlpp::Query query = conn.query({\cf22 "SELECT * FROM lk1 ORDER BY cat"});\par
-00263     mysqlpp::StoreQueryResult res = query.store();\par
+00081 {\cf17 const} {\cf18 long} cppMD01Frame::ID_CodeLauncher = wxNewId();\par
+00082 {\cf17 const} {\cf18 long} cppMD01Frame::ID_MENUITEM2 = wxNewId();\par
+00083 {\cf17 const} {\cf18 long} cppMD01Frame::ID_menAD = wxNewId();\par
+00084 {\cf17 const} {\cf18 long} cppMD01Frame::ID_menNB = wxNewId();\par
+00085 {\cf17 const} {\cf18 long} cppMD01Frame::ID_pumDel = wxNewId();\par
+00086 {\cf17 const} {\cf18 long} cppMD01Frame::ID_pumEditLink = wxNewId();\par
+00087 {\cf20 //*)}\par
+00088 \par
+00089 BEGIN_EVENT_TABLE(cppMD01Frame,wxFrame)\par
+00090     {\cf20 //(*EventTable(cppMD01Frame)}\par
+00091     {\cf20 //*)}\par
+00092 END_EVENT_TABLE()\par
+00093 \par
+00094 cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID {\cf18 id})\par
+00095 \{\par
+00096     mysqlpp::Connection conn;\par
+00097     {\cf20 //(*Initialize(cppMD01Frame)}\par
+00098     wxBoxSizer* BoxSizer1;\par
+00099     wxBoxSizer* BoxSizer2;\par
+00100     wxBoxSizer* BoxSizer3;\par
+00101     wxBoxSizer* BoxSizer4;\par
+00102     wxBoxSizer* BoxSizer5;\par
+00103     wxMenu* Menu1;\par
+00104     wxMenu* Menu2;\par
+00105     wxMenuBar* MenuBar1;\par
+00106     wxMenuItem* MenuItem1;\par
+00107     wxMenuItem* MenuItem2;\par
+00108 \par
+00109     Create(parent, {\cf18 id}, _({\cf22 "Brooks Computing Systems, LLC  ** Programmer\\'s Workbench **"}), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE, _T({\cf22 "id"}));\par
+00110     BoxSizer1 = {\cf17 new} wxBoxSizer(wxHORIZONTAL);\par
+00111     BoxSizer2 = {\cf17 new} wxBoxSizer(wxHORIZONTAL);\par
+00112     BoxSizer3 = {\cf17 new} wxBoxSizer(wxVERTICAL);\par
+00113     BoxSizer4 = {\cf17 new} wxBoxSizer(wxVERTICAL);\par
+00114     Panel1 = {\cf17 new} wxPanel({\cf17 this}, ID_PANEL1, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T({\cf22 "ID_PANEL1"}));\par
+00115     StaticText1 = {\cf17 new} wxStaticText(Panel1, ID_STATICTEXT1, _({\cf22 "Label"}), wxPoint(8,0), wxDefaultSize, 0, _T({\cf22 "ID_STATICTEXT1"}));\par
+00116     BoxSizer4->Add(Panel1, 1, wxALL|wxEXPAND, 5);\par
+00117     BoxSizer3->Add(BoxSizer4, 1, wxALL|wxEXPAND, 5);\par
+00118     BoxSizer5 = {\cf17 new} wxBoxSizer(wxVERTICAL);\par
+00119     Panel2 = {\cf17 new} wxPanel({\cf17 this}, ID_PANEL3, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T({\cf22 "ID_PANEL3"}));\par
+00120     BoxSizer5->Add(Panel2, 0, wxALL|wxEXPAND, 5);\par
+00121     StaticText2 = {\cf17 new} wxStaticText({\cf17 this}, ID_STATICTEXT2, _({\cf22 "Label"}), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE, _T({\cf22 "ID_STATICTEXT2"}));\par
+00122     BoxSizer5->Add(StaticText2, 0, wxALL|wxEXPAND, 5);\par
+00123     BoxSizer3->Add(BoxSizer5, 0, wxALL|wxEXPAND, 5);\par
+00124     ScrolledWindow1 = {\cf17 new} wxScrolledWindow({\cf17 this}, ID_SCROLLEDWINDOW1, wxDefaultPosition, wxSize(11,7), wxVSCROLL|wxHSCROLL, _T({\cf22 "ID_SCROLLEDWINDOW1"}));\par
+00125     BoxSizer3->Add(ScrolledWindow1, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);\par
+00126     BoxSizer2->Add(BoxSizer3, 0, wxALL|wxEXPAND, 5);\par
+00127     BoxSizer1->Add(BoxSizer2, 0, wxALL|wxEXPAND, 5);\par
+00128     SetSizer(BoxSizer1);\par
+00129     MenuBar1 = {\cf17 new} wxMenuBar();\par
+00130     Menu1 = {\cf17 new} wxMenu();\par
+00131     menSelectCpp = {\cf17 new} wxMenuItem(Menu1, idMenucpp, _({\cf22 "Select c++ file to compile"}), _({\cf22 "Compile c++"}), wxITEM_NORMAL);\par
+00132     Menu1->Append(menSelectCpp);\par
+00133     MenuItem1 = {\cf17 new} wxMenuItem(Menu1, idMenuQuit, _({\cf22 "Quit\\tAlt-F4"}), _({\cf22 "Quit the application"}), wxITEM_NORMAL);\par
+00134     Menu1->Append(MenuItem1);\par
+00135     MenuBar1->Append(Menu1, _({\cf22 "&File"}));\par
+00136     Menu2 = {\cf17 new} wxMenu();\par
+00137     MenuItem2 = {\cf17 new} wxMenuItem(Menu2, idMenuAbout, _({\cf22 "About\\tF1"}), _({\cf22 "Show info about this application"}), wxITEM_NORMAL);\par
+00138     Menu2->Append(MenuItem2);\par
+00139     MenuBar1->Append(Menu2, _({\cf22 "Help"}));\par
+00140     SetMenuBar(MenuBar1);\par
+00141     StatusBar1 = {\cf17 new} wxStatusBar({\cf17 this}, ID_STATUSBAR1, wxFULL_REPAINT_ON_RESIZE, _T({\cf22 "ID_STATUSBAR1"}));\par
+00142     {\cf18 int} __wxStatusBarWidths_1[1] = \{ -300 \};\par
+00143     {\cf18 int} __wxStatusBarStyles_1[1] = \{ wxSB_NORMAL \};\par
+00144     StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);\par
+00145     StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);\par
+00146     SetStatusBar(StatusBar1);\par
+00147     MenuItem3 = {\cf17 new} wxMenuItem((&pumMaster), ID_MENUITEM1, _({\cf22 "Change Background Color"}), wxEmptyString, wxITEM_NORMAL);\par
+00148     pumMaster.Append(MenuItem3);\par
+00149     pumNewCat = {\cf17 new} wxMenuItem((&pumMaster), idpumNewCat, _({\cf22 "Enter New Category"}), _({\cf22 "Enter New Category"}), wxITEM_NORMAL);\par
+00150     pumMaster.Append(pumNewCat);\par
+00151     MenuItem5 = {\cf17 new} wxMenuItem((&pumMaster), ID_PumEdCat, _({\cf22 "Edit Category"}), _({\cf22 "Edit This Category"}), wxITEM_NORMAL);\par
+00152     pumMaster.Append(MenuItem5);\par
+00153     pumNewBlogPost = {\cf17 new} wxMenuItem((&pumMaster), ID_NewBlog, _({\cf22 "Create New Blog Post"}), _({\cf22 "Create A New Blog Post"}), wxITEM_NORMAL);\par
+00154     pumMaster.Append(pumNewBlogPost);\par
+00155     pumCodeXqt = {\cf17 new} wxMenuItem((&pumMaster), ID_CodeLauncher, _({\cf22 "VS Code\\tLoad VS Code Now"}), wxEmptyString, wxITEM_NORMAL);\par
+00156     pumMaster.Append(pumCodeXqt);\par
+00157     MenuItem4 = {\cf17 new} wxMenuItem((&pumDetail), ID_MENUITEM2, _({\cf22 "Change Background Color"}), wxEmptyString, wxITEM_NORMAL);\par
+00158     pumDetail.Append(MenuItem4);\par
+00159     pumAddDocs = {\cf17 new} wxMenuItem((&pumDetail), ID_menAD, _({\cf22 "addDocs"}), _({\cf22 "Add  New Documents / Items"}), wxITEM_NORMAL);\par
+00160     pumDetail.Append(pumAddDocs);\par
+00161     menNewPost = {\cf17 new} wxMenuItem((&pumDetail), ID_menNB, _({\cf22 "Create New Blog Post"}), _({\cf22 "New Blog Post Now!"}), wxITEM_NORMAL);\par
+00162     pumDetail.Append(menNewPost);\par
+00163     pumDelLink = {\cf17 new} wxMenuItem((&pumDetail), ID_pumDel, _({\cf22 "Delete Link"}), _({\cf22 "Delete A Item"}), wxITEM_NORMAL);\par
+00164     pumDetail.Append(pumDelLink);\par
+00165     pumEditDetails = {\cf17 new} wxMenuItem((&pumDetail), ID_pumEditLink, _({\cf22 "Edit Link Details"}), _({\cf22 "Edit Link Details"}), wxITEM_NORMAL);\par
+00166     pumDetail.Append(pumEditDetails);\par
+00167     BoxSizer1->Fit({\cf17 this});\par
+00168     BoxSizer1->SetSizeHints({\cf17 this});\par
+00169     Center();\par
+00170 \par
+00171     Connect(idMenucpp,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnmenSelectCppSelected);\par
+00172     Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnQuit);\par
+00173     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnAbout);\par
+00174     Connect(idpumNewCat,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewCatSelected);\par
+00175     Connect(ID_PumEdCat,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumEdCatSelected);\par
+00176     Connect(ID_NewBlog,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);\par
+00177     Connect(ID_CodeLauncher,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumCodeXqtSelected);\par
+00178     Connect(ID_menAD,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumAddDocsSelected);\par
+00179     Connect(ID_menNB,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);\par
+00180     Connect(ID_pumDel,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumDelLinkSelected);\par
+00181     Connect(ID_pumEditLink,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumEditLinkSelected);\par
+00182     {\cf20 //*)}\par
+00183 \par
+00184     SetStatusText({\cf22 "Button Clicked!"});\par
+00185 \par
+00186 \par
+00187     masterGrid = {\cf17 new} wxGrid({\cf17 this}, wxID_ANY, wxDefaultPosition, wxSize(1200, 300));\par
+00188     masterGrid->CreateGrid(0, 3);\par
+00189     masterGrid->SetColLabelValue(0, {\cf22 "Category ID"});\par
+00190     masterGrid->SetColLabelValue(1, {\cf22 "Category Name"});\par
+00191     masterGrid->SetColLabelValue(2, {\cf22 "Detailed Description"});\par
+00192     masterGrid->SetColSize(1, 500);\par
+00193     masterGrid->SetColSize(2, 575);\par
+00194 \par
+00195     detailGrid = {\cf17 new} wxGrid({\cf17 this}, wxID_ANY, wxPoint(400, 0), wxSize(1200, 500));\par
+00196     detailGrid->CreateGrid(0, 4);\par
+00197     detailGrid->SetColLabelValue(0, {\cf22 "Link ID"});\par
+00198     detailGrid->SetColLabelValue(1, {\cf22 "Link Name"});\par
+00199     detailGrid->SetColLabelValue(2, {\cf22 "Link"});\par
+00200     detailGrid->SetColLabelValue(3, {\cf22 "Description"});\par
+00201     detailGrid->SetColSize(1, 500);\par
+00202     detailGrid->SetColSize(2, 300);\par
+00203     detailGrid->SetColSize(3, 325);\par
+00204     {\cf20 //BoxSizer4->Add(Panel1, 1, wxALL|wxEXPAND, 5);}\par
+00205     {\cf20 //Panel1->SetSizer(BoxSizer4);}\par
+00206     {\cf20 //BoxSizer5->Add(Panel2, 1, wxALL|wxEXPAND, 5);}\par
+00207     {\cf20 //Panel2->SetSizer(BoxSizer5);}\par
+00208     detailGrid->SetMaxSize(wxSize(-1, 150));  {\cf20 // Set the maximum height to 150}\par
+00209     BoxSizer4->Add(masterGrid, 0, wxEXPAND, 2);\par
+00210     BoxSizer5->Add(detailGrid, 0, wxEXPAND, 2);\par
+00211     {\cf20 //Panel1->Add(masterGrid, 1, wxALL|wxEXPAND, 5);}\par
+00212     {\cf20 //Panel2->Add(detailGrid, 1, wxALL|wxEXPAND, 5);}\par
+00213     Layout();\par
+00214 \par
+00215     PopulateMasterGrid();\par
+00216     detailGrid->Bind(wxEVT_GRID_CELL_LEFT_CLICK, &cppMD01Frame::OnCellClick, {\cf17 this});\par
+00217     masterGrid->Bind(wxEVT_GRID_CELL_LEFT_CLICK, &cppMD01Frame::OnMasterGridCellClick, {\cf17 this});\par
+00218     {\cf20 //masterGrid->Bind(wxEVT_GRID_CELL_LEFT_CLICK, &cppMD01Frame::OnDetailGridCellClick, this);}\par
+00219     masterGrid->Bind(wxEVT_GRID_CELL_RIGHT_CLICK, &cppMD01Frame::OnMasterGridPopup, {\cf17 this});\par
+00220     detailGrid->Bind(wxEVT_GRID_CELL_RIGHT_CLICK, &cppMD01Frame::OnDetailGridPopup, {\cf17 this});\par
+00221     detailGrid->EnableEditing({\cf17 true});\par
+00222 \par
+00223     {\cf20 //SetSizer(BoxSizer5);}\par
+00224     {\cf20 //SetSizer(BoxSizer4);}\par
+00225     {\cf20 //SetSizer(BoxSizer3);}\par
+00226     {\cf20 //SetSizer(BoxSizer2);}\par
+00227     {\cf20 //SetSizer(BoxSizer1);}\par
+00228     SetSizerAndFit(BoxSizer1);\par
+00229     {\cf20 //BoxSizer1->Fit(this);}\par
+00230     LoadDetailData(0);\par
+00231 \par
+00232 \}\par
+00233 \par
+00234 cppMD01Frame::~cppMD01Frame()\par
+00235 \{\par
+00236     {\cf20 //(*Destroy(cppMD01Frame)}\par
+00237     {\cf20 //*)}\par
+00238 \}\par
+00239 \par
+00255 {\cf18 void} cppMD01Frame::PopulateMasterGrid()\par
+00256 \{\par
+00257     {\cf20 // Attempt to connect to the MySQL database}\par
+00258     {\cf19 if} (!conn.connect({\cf22 "bcswebtools"}, {\cf22 "localhost"}, {\cf22 "bcs"}, {\cf22 "Peace007!amb"}))\par
+00259     \{\par
+00260         {\cf20 // Database connection failed, exit the function}\par
+00261         {\cf20 // wxWrite("Database connection failed.");}\par
+00262         {\cf19 return};\par
+00263     \}\par
 00264 \par
-00265     {\cf20 // Clear the current contents of the grid and append rows based on the number of records fetched}\par
-00266     masterGrid->ClearGrid();\par
-00267     masterGrid->AppendRows(res.num_rows());\par
+00265     {\cf20 // Execute the SQL query to fetch all records from the 'lk1' table, ordered by 'cat'}\par
+00266     mysqlpp::Query query = conn.query({\cf22 "SELECT * FROM lk1 ORDER BY cat"});\par
+00267     mysqlpp::StoreQueryResult res = query.store();\par
 00268 \par
-00269     {\cf20 // Populate the grid with data from the result set}\par
-00270     {\cf19 for} ({\cf18 size_t} i = 0; i < res.num_rows(); ++i)\par
-00271     \{\par
-00272         masterGrid->SetCellValue(i, 0, res[i][0].c_str());  {\cf20 // Set cell value for column 0}\par
-00273         masterGrid->SetCellValue(i, 1, res[i][1].c_str());  {\cf20 // Set cell value for column 1}\par
-00274         masterGrid->SetCellValue(i, 2, res[i][2].c_str());  {\cf20 // Set cell value for column 2}\par
-00275     \}\par
-00276 \}\par
-00277 \par
-00286 {\cf18 void} cppMD01Frame::OnCellClick(wxGridEvent& event)\par
-00287 \{\par
-00288     {\cf20 // Get the grid from the event}\par
-00289     wxGrid* grid = {\cf17 static_cast<}wxGrid*{\cf17 >}({\cf17 event}.GetEventObject());\par
-00290 \par
-00291     {\cf20 // Get the clicked cell's row and column}\par
-00292     row = {\cf17 event}.GetRow();\par
-00293     {\cf18 int} col = {\cf17 event}.GetCol();\par
+00269     {\cf20 // Clear the current contents of the grid and append rows based on the number of records fetched}\par
+00270     masterGrid->ClearGrid();\par
+00271     masterGrid->AppendRows(res.num_rows());\par
+00272 \par
+00273     {\cf20 // Populate the grid with data from the result set}\par
+00274     {\cf19 for} ({\cf18 size_t} i = 0; i < res.num_rows(); ++i)\par
+00275     \{\par
+00276         masterGrid->SetCellValue(i, 0, res[i][0].c_str());  {\cf20 // Set cell value for column 0}\par
+00277         masterGrid->SetCellValue(i, 1, res[i][1].c_str());  {\cf20 // Set cell value for column 1}\par
+00278         masterGrid->SetCellValue(i, 2, res[i][2].c_str());  {\cf20 // Set cell value for column 2}\par
+00279     \}\par
+00280 \}\par
+00281 \par
+00290 {\cf18 void} cppMD01Frame::OnCellClick(wxGridEvent& event)\par
+00291 \{\par
+00292     {\cf20 // Get the grid from the event}\par
+00293     wxGrid* grid = {\cf17 static_cast<}wxGrid*{\cf17 >}({\cf17 event}.GetEventObject());\par
 00294 \par
-00295     {\cf20 // Retrieve the cell value as a wxString}\par
-00296     wxString cellValue = grid->GetCellValue(row, col);\par
-00297 \par
-00298     {\cf20 // Check if the cell value starts with "http"}\par
-00299     {\cf19 if} (cellValue.StartsWith({\cf22 "http"}))\par
-00300     \{\par
-00301         {\cf20 // Open the URL in the default web browser}\par
-00302         wxLaunchDefaultBrowser(cellValue);\par
-00303     \}\par
-00304     {\cf19 else} {\cf19 if} (cellValue.find({\cf22 ".pdf"}) != wxNOT_FOUND)\par
-00305     \{\par
-00306         cmd = {\cf22 "okular \\""};\par
-00307         std::string tbuf;\par
-00308         tbuf = cellValue.ToStdString();\par
-00309         cmd = cmd + tbuf + {\cf22 "\\""};\par
-00310         system(cmd.c_str());\par
-00311     \}\par
-00312     {\cf19 else} {\cf19 if} (cellValue.find({\cf22 ".odt"})  != wxNOT_FOUND)\par
-00313     \{\par
-00314         std::string pbuf =  {\cf22 "\\""} + cellValue.ToStdString() + {\cf22 "\\" & "};\par
-00315         cmd = {\cf22 "openoffice4 -writer "} + pbuf;\par
-00316         system(cmd.c_str());\par
-00317     \}\par
-00318     {\cf19 else}\par
-00319     \{\par
-00320         system(cellValue.c_str());\par
+00295     {\cf20 // Get the clicked cell's row and column}\par
+00296     row = {\cf17 event}.GetRow();\par
+00297     {\cf18 int} col = {\cf17 event}.GetCol();\par
+00298 \par
+00299     {\cf20 // Retrieve the cell value as a wxString}\par
+00300     wxString cellValue = grid->GetCellValue(row, col);\par
+00301 \par
+00302     {\cf20 // Check if the cell value starts with "http"}\par
+00303     {\cf19 if} (cellValue.StartsWith({\cf22 "http"}))\par
+00304     \{\par
+00305         {\cf20 // Open the URL in the default web browser}\par
+00306         wxLaunchDefaultBrowser(cellValue);\par
+00307     \}\par
+00308     {\cf19 else} {\cf19 if} (cellValue.find({\cf22 ".pdf"}) != wxNOT_FOUND)\par
+00309     \{\par
+00310         cmd = {\cf22 "okular \\""};\par
+00311         std::string tbuf;\par
+00312         tbuf = cellValue.ToStdString();\par
+00313         cmd = cmd + tbuf + {\cf22 "\\""};\par
+00314         system(cmd.c_str());\par
+00315     \}\par
+00316     {\cf19 else} {\cf19 if} (cellValue.find({\cf22 ".odt"})  != wxNOT_FOUND)\par
+00317     \{\par
+00318         std::string pbuf =  {\cf22 "\\""} + cellValue.ToStdString() + {\cf22 "\\" & "};\par
+00319         cmd = {\cf22 "openoffice4 -writer "} + pbuf;\par
+00320         system(cmd.c_str());\par
 00321     \}\par
-00322     {\cf20 // Allow the event to continue to be processed}\par
-00323     {\cf17 event}.Skip();\par
-00324 \}\par
-00325 \par
-00334 {\cf18 void} cppMD01Frame::OnQuit(wxCommandEvent& event)\par
-00335 \{\par
-00336     Close();\par
-00337 \}\par
-00338 \par
-00347 {\cf18 void} cppMD01Frame::OnAbout(wxCommandEvent& event)\par
-00348 \{\par
-00349     wxString msg = wxbuildinfo(long_f);  \par
-00350     wxMessageBox(msg, _({\cf22 "Welcome to..."}));  \par
-00351 \}\par
-00352 \par
-00370 {\cf18 void} cppMD01Frame::LoadDetailData({\cf18 long} idlk1)\par
-00371 \{\par
-00372     mysqlpp::Query query = conn.query();\par
-00373     query << {\cf22 "SELECT idlk2, lkn, lnk, ddes FROM lk2 WHERE idlk1 = "} << idlk1 << {\cf22 " ORDER BY lkn"};\par
-00374     mysqlpp::StoreQueryResult res = query.store();\par
-00375     res.num_rows();\par
-00376     {\cf19 if} (res.num_rows() > 0)\par
-00377     \{\par
-00378         wxString zlabel = std::to_string(res.num_rows()) + {\cf22 " Records Retrieved"};\par
-00379         SetStatusText(zlabel);\par
-00380 \par
-00381         detailGrid->ClearGrid();\par
-00382         {\cf19 if} (detailGrid->GetNumberRows() >= 1)\par
-00383         \{\par
-00384             detailGrid->DeleteRows(0, detailGrid->GetNumberRows());\par
-00385         \}\par
-00386         {\cf18 int} nrow = res.num_rows();\par
-00387         detailGrid->AppendRows(nrow);\par
-00388 \par
-00389         {\cf19 for} ({\cf18 size_t} i = 0; i < res.num_rows(); ++i)\par
-00390         \{\par
-00391             detailGrid->SetCellValue(i, 0, res[i][{\cf22 "idlk2"}].c_str());\par
-00392             detailGrid->SetCellValue(i, 1, res[i][{\cf22 "lkn"}].c_str());\par
-00393             detailGrid->SetCellValue(i, 2, res[i][{\cf22 "lnk"}].c_str());\par
-00394             detailGrid->SetCellValue(i, 3, res[i][{\cf22 "ddes"}].c_str());\par
-00395         \}\par
-00396         res.clear();\par
-00397         res.empty();\par
-00398     \}\par
-00399     {\cf19 else}\par
-00400     \{\par
-00401         {\cf18 int} {\cf18 id} = 1;\par
-00402         wxCommandEvent event(wxEVT_COMMAND_BUTTON_CLICKED, {\cf18 id});\par
-00403  {\cf20 //       wxCommandEvent& event}\par
-00404         OnpumAddDocsSelected(event);\par
-00405 \par
-00406     \}\par
-00407 \par
-00408 {\cf20 //    StatusBar1->SetStatusText(zlabel), 0); // 0 is the field index for the first pane}\par
-00409     {\cf20 //StatusBar1->SetLabel(zlabel);}\par
-00410 \par
-00411 \}\par
-00412 \par
-00422 {\cf18 void} cppMD01Frame::OnMasterGridCellClick(wxGridEvent& event)\par
-00423 \{\par
-00424     row = {\cf17 event}.GetRow(); {\cf20 // Get the row index of the clicked cell}\par
-00425     wxString idlk1Str = masterGrid->GetCellValue(row, 0); {\cf20 // Retrieve the cell value from the first column}\par
-00426     {\cf18 long} idlk1;\par
-00427     idlk1Str.ToLong(&idlk1); {\cf20 // Convert the cell value to a long integer}\par
-00428     mkVal = masterGrid->GetCellValue(row, 0);\par
-00429     StaticText2->SetLabel(masterGrid->GetCellValue(row, 1));\par
-00430     {\cf20 // StaticText2->SetWindowStyle(wxALIGN_CENTER);}\par
-00431     {\cf20 //StaticText2->Refresh(true);}\par
-00432 \par
-00433 {\cf20 //    StaticText2->Center(wxBOTH);}\par
-00434     LoadDetailData(idlk1); {\cf20 // Load detailed data based on the converted value}\par
-00435 \}\par
+00322     {\cf19 else}\par
+00323     \{\par
+00324         system(cellValue.c_str());\par
+00325     \}\par
+00326     {\cf20 // Allow the event to continue to be processed}\par
+00327     {\cf17 event}.Skip();\par
+00328 \}\par
+00329 \par
+00338 {\cf18 void} cppMD01Frame::OnQuit(wxCommandEvent& event)\par
+00339 \{\par
+00340     Close();\par
+00341 \}\par
+00342 \par
+00351 {\cf18 void} cppMD01Frame::OnAbout(wxCommandEvent& event)\par
+00352 \{\par
+00353     wxString msg = wxbuildinfo(long_f);  \par
+00354     wxMessageBox(msg, _({\cf22 "Welcome to..."}));  \par
+00355 \}\par
+00356 \par
+00374 {\cf18 void} cppMD01Frame::LoadDetailData({\cf18 long} idlk1)\par
+00375 \{\par
+00376     mysqlpp::Query query = conn.query();\par
+00377     query << {\cf22 "SELECT idlk2, lkn, lnk, ddes FROM lk2 WHERE idlk1 = "} << idlk1 << {\cf22 " ORDER BY lkn"};\par
+00378     mysqlpp::StoreQueryResult res = query.store();\par
+00379     res.num_rows();\par
+00380     {\cf19 if} (res.num_rows() > 0)\par
+00381     \{\par
+00382         wxString zlabel = std::to_string(res.num_rows()) + {\cf22 " Records Retrieved"};\par
+00383         SetStatusText(zlabel);\par
+00384 \par
+00385         detailGrid->ClearGrid();\par
+00386         {\cf19 if} (detailGrid->GetNumberRows() >= 1)\par
+00387         \{\par
+00388             detailGrid->DeleteRows(0, detailGrid->GetNumberRows());\par
+00389         \}\par
+00390         {\cf18 int} nrow = res.num_rows();\par
+00391         detailGrid->AppendRows(nrow);\par
+00392 \par
+00393         {\cf19 for} ({\cf18 size_t} i = 0; i < res.num_rows(); ++i)\par
+00394         \{\par
+00395             detailGrid->SetCellValue(i, 0, res[i][{\cf22 "idlk2"}].c_str());\par
+00396             detailGrid->SetCellValue(i, 1, res[i][{\cf22 "lkn"}].c_str());\par
+00397             detailGrid->SetCellValue(i, 2, res[i][{\cf22 "lnk"}].c_str());\par
+00398             detailGrid->SetCellValue(i, 3, res[i][{\cf22 "ddes"}].c_str());\par
+00399         \}\par
+00400         res.clear();\par
+00401         res.empty();\par
+00402     \}\par
+00403     {\cf19 else}\par
+00404     \{\par
+00405         {\cf18 int} {\cf18 id} = 1;\par
+00406         wxCommandEvent event(wxEVT_COMMAND_BUTTON_CLICKED, {\cf18 id});\par
+00407 {\cf20 //       wxCommandEvent& event}\par
+00408         OnpumAddDocsSelected(event);\par
+00409 \par
+00410     \}\par
+00411 \par
+00412 {\cf20 //    StatusBar1->SetStatusText(zlabel), 0); // 0 is the field index for the first pane}\par
+00413     {\cf20 //StatusBar1->SetLabel(zlabel);}\par
+00414 \par
+00415 \}\par
+00416 \par
+00426 {\cf18 void} cppMD01Frame::OnMasterGridCellClick(wxGridEvent& event)\par
+00427 \{\par
+00428     row = {\cf17 event}.GetRow(); {\cf20 // Get the row index of the clicked cell}\par
+00429     wxString idlk1Str = masterGrid->GetCellValue(row, 0); {\cf20 // Retrieve the cell value from the first column}\par
+00430     {\cf18 long} idlk1;\par
+00431     idlk1Str.ToLong(&idlk1); {\cf20 // Convert the cell value to a long integer}\par
+00432     mkVal = masterGrid->GetCellValue(row, 0);\par
+00433     StaticText2->SetLabel(masterGrid->GetCellValue(row, 1));\par
+00434     {\cf20 // StaticText2->SetWindowStyle(wxALIGN_CENTER);}\par
+00435     {\cf20 //StaticText2->Refresh(true);}\par
 00436 \par
-00437 {\cf18 void} cppMD01Frame::OnDetailGridCellClick(wxGridEvent& event)\par
-00438 \{\par
-00439     {\cf20 //row = event.GetRow(); // Get the row index of the clicked cell}\par
-00440 {\cf20 //    wxString idlk1Str = detailGrid->GetCellValue(row, 0); // Retrieve the cell value from the first column}\par
-00441     {\cf20 //long idlk1;}\par
-00442     {\cf20 //idlk1Str.ToLong(&idlk1); // Convert the cell value to a long integer}\par
-00443     {\cf20 //mkVal = masterGrid->GetCellValue(row, 0);}\par
-00444     {\cf20 //StaticText2->SetLabel(masterGrid->GetCellValue(row, 1));}\par
-00445     {\cf20 // StaticText2->SetWindowStyle(wxALIGN_CENTER);}\par
-00446     {\cf20 //StaticText2->Refresh(true);}\par
-00447 \par
-00448 {\cf20 //    StaticText2->Center(wxBOTH);}\par
-00449     {\cf20 //LoadDetailData(idlk1); // Load detailed data based on the converted value}\par
-00450 \}\par
+00437 {\cf20 //    StaticText2->Center(wxBOTH);}\par
+00438     LoadDetailData(idlk1); {\cf20 // Load detailed data based on the converted value}\par
+00439 \}\par
+00440 \par
+00441 {\cf18 void} cppMD01Frame::OnDetailGridCellClick(wxGridEvent& event)\par
+00442 \{\par
+00443     {\cf20 //row = event.GetRow(); // Get the row index of the clicked cell}\par
+00444 {\cf20 //    wxString idlk1Str = detailGrid->GetCellValue(row, 0); // Retrieve the cell value from the first column}\par
+00445     {\cf20 //long idlk1;}\par
+00446     {\cf20 //idlk1Str.ToLong(&idlk1); // Convert the cell value to a long integer}\par
+00447     {\cf20 //mkVal = masterGrid->GetCellValue(row, 0);}\par
+00448     {\cf20 //StaticText2->SetLabel(masterGrid->GetCellValue(row, 1));}\par
+00449     {\cf20 // StaticText2->SetWindowStyle(wxALIGN_CENTER);}\par
+00450     {\cf20 //StaticText2->Refresh(true);}\par
 00451 \par
-00452 {\cf18 void} cppMD01Frame::OnMasterGridPopup(wxGridEvent& event)\par
-00453 \{\par
-00454     PopupMenu(&pumMaster);\par
+00452 {\cf20 //    StaticText2->Center(wxBOTH);}\par
+00453     {\cf20 //LoadDetailData(idlk1); // Load detailed data based on the converted value}\par
+00454 \}\par
 00455 \par
-00456 \}\par
-00457 {\cf18 void} cppMD01Frame::OnDetailGridPopup(wxGridEvent& event)\par
-00458 \{\par
-00459     PopupMenu(&pumDetail);\par
-00460 \par
-00461 \}\par
-00462 \par
-00463 {\cf18 void} cppMD01Frame::OnmenSelectCppSelected(wxCommandEvent& event)\par
-00464 \{\par
-00465     boost::filesystem::path p({\cf22 "/home/archman/workspace/cb/cpp/cppMD01/cppMD01.cpp"});\par
+00456 {\cf18 void} cppMD01Frame::OnMasterGridPopup(wxGridEvent& event)\par
+00457 \{\par
+00458     PopupMenu(&pumMaster);\par
+00459 \par
+00460 \}\par
+00461 {\cf18 void} cppMD01Frame::OnDetailGridPopup(wxGridEvent& event)\par
+00462 \{\par
+00463     PopupMenu(&pumDetail);\par
+00464 \par
+00465 \}\par
 00466 \par
-00467     std::cout << {\cf22 "Root name: "} << p.root_name() << {\cf23 '\\n'};\par
-00468     std::cout << {\cf22 "Root directory: "} << p.root_directory() << {\cf23 '\\n'};\par
-00469     std::cout << {\cf22 "Root path: "} << p.root_path() << {\cf23 '\\n'};\par
-00470     std::cout << {\cf22 "Relative path: "} << p.relative_path() << {\cf23 '\\n'};\par
-00471     std::cout << {\cf22 "Parent path: "} << p.parent_path() << {\cf23 '\\n'};\par
-00472     std::cout << {\cf22 "Filename: "} << p.filename() << {\cf23 '\\n'};\par
-00473     std::cout << {\cf22 "Extension: "} << p.extension() << {\cf23 '\\n'};\par
-00474 \par
-00475     wxFileDialog openFileDialog({\cf17 this}, _({\cf22 "Open file"}), {\cf22 ""}, {\cf22 ""},\par
-00476                                 {\cf22 "c++ files (*.cpp)|*.*"}, wxFD_OPEN | wxFD_FILE_MUST_EXIST);\par
-00477 \par
-00478     {\cf19 if} (openFileDialog.ShowModal() == wxID_OK)\par
-00479     \{\par
-00480         wxString filePath = openFileDialog.GetPath();\par
-00481         wxString fileName = openFileDialog.GetFilename();\par
-00482 \par
-00483         wxLogMessage({\cf22 "File selected: %s"}, filePath);\par
-00484         std::string path = {\cf22 "/home/user/documents/file.txt"};\par
-00485         std::vector<std::string> result;\par
-00486         {\cf20 /*}\par
-00487 {\cf20                 // Use boost::filesystem to get the path components}\par
-00488 {\cf20                 boost::filesystem::path p(path);}\par
-00489 {\cf20 }\par
-00490 {\cf20                 for (const auto& part : p)}\par
-00491 {\cf20                 \{}\par
-00492 {\cf20                     result.push_back(part.string());}\par
-00493 {\cf20                 \}}\par
-00494 {\cf20 }\par
-00495 {\cf20                 // Output the exploded path components}\par
-00496 {\cf20                 for (const auto& part : result)}\par
-00497 {\cf20                 \{}\par
-00498 {\cf20                     std::cout << part << std::endl;}\par
-00499 {\cf20                 \}}\par
-00500 {\cf20                 */}\par
-00501 \par
-00502 \par
-00503     \}\par
-00504 \}\par
+00467 {\cf18 void} cppMD01Frame::OnmenSelectCppSelected(wxCommandEvent& event)\par
+00468 \{\par
+00469     boost::filesystem::path p({\cf22 "/home/archman/workspace/cb/cpp/cppMD01/cppMD01.cpp"});\par
+00470 \par
+00471     std::cout << {\cf22 "Root name: "} << p.root_name() << {\cf23 '\\n'};\par
+00472     std::cout << {\cf22 "Root directory: "} << p.root_directory() << {\cf23 '\\n'};\par
+00473     std::cout << {\cf22 "Root path: "} << p.root_path() << {\cf23 '\\n'};\par
+00474     std::cout << {\cf22 "Relative path: "} << p.relative_path() << {\cf23 '\\n'};\par
+00475     std::cout << {\cf22 "Parent path: "} << p.parent_path() << {\cf23 '\\n'};\par
+00476     std::cout << {\cf22 "Filename: "} << p.filename() << {\cf23 '\\n'};\par
+00477     std::cout << {\cf22 "Extension: "} << p.extension() << {\cf23 '\\n'};\par
+00478 \par
+00479     wxFileDialog openFileDialog({\cf17 this}, _({\cf22 "Open file"}), {\cf22 ""}, {\cf22 ""},\par
+00480                                 {\cf22 "c++ files (*.cpp)|*.*"}, wxFD_OPEN | wxFD_FILE_MUST_EXIST);\par
+00481 \par
+00482     {\cf19 if} (openFileDialog.ShowModal() == wxID_OK)\par
+00483     \{\par
+00484         wxString filePath = openFileDialog.GetPath();\par
+00485         wxString fileName = openFileDialog.GetFilename();\par
+00486 \par
+00487         wxLogMessage({\cf22 "File selected: %s"}, filePath);\par
+00488         std::string path = {\cf22 "/home/user/documents/file.txt"};\par
+00489         std::vector<std::string> result;\par
+00490         {\cf20 /*}\par
+00491 {\cf20                 // Use boost::filesystem to get the path components}\par
+00492 {\cf20                 boost::filesystem::path p(path);}\par
+00493 {\cf20 }\par
+00494 {\cf20                 for (const auto& part : p)}\par
+00495 {\cf20                 \{}\par
+00496 {\cf20                     result.push_back(part.string());}\par
+00497 {\cf20                 \}}\par
+00498 {\cf20 }\par
+00499 {\cf20                 // Output the exploded path components}\par
+00500 {\cf20                 for (const auto& part : result)}\par
+00501 {\cf20                 \{}\par
+00502 {\cf20                     std::cout << part << std::endl;}\par
+00503 {\cf20                 \}}\par
+00504 {\cf20                 */}\par
 00505 \par
-00506 {\cf18 void} cppMD01Frame::ListFiles({\cf17 const} wxString& dir, {\cf17 const} wxString& filespec)\par
-00507 \{\par
-00508     wxArrayString *fileList;\par
-00509     fileList->Clear();\par
-00510 \par
-00511     fs::path path = std::string(dir.mb_str());\par
-00512     std::string spec = std::string(filespec.mb_str());\par
-00513 \par
-00514     {\cf19 if} (fs::exists(path) && fs::is_directory(path))\par
-00515     \{\par
-00516         {\cf19 for} ({\cf17 const} {\cf17 auto}& entry : fs::directory_iterator(path))\par
-00517         \{\par
-00518             {\cf19 if} (fs::is_regular_file(entry))\par
-00519             \{\par
-00520                 std::string filename = entry.path().filename().string();\par
-00521 \par
-00522                 {\cf20 // Apply filespec filtering}\par
-00523                 {\cf19 if} (boost::iends_with(filename, spec.substr(1)))    {\cf20 // "*.ext" -> "ext"}\par
-00524                 \{\par
-00525                     fileList->Add(wxString::FromUTF8(filename));\par
-00526                 \}\par
-00527             \}\par
-00528         \}\par
-00529     \}\par
-00530 \}\par
-00531 \par
-00532 {\cf18 void} cppMD01Frame::OnpumAddDocsSelected(wxCommandEvent& event)\par
-00533 \{\par
-00534     dlgXqt2 dlg(NULL, wxID_ANY);\par
-00535     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
-00536     \{\par
-00537         {\cf19 switch} (dlg.isel)\par
-00538         \{\par
-00539         {\cf19 case} 0:\par
-00540             procLink();\par
-00541             {\cf19 break};\par
-00542         {\cf19 case} 1:\par
-00543             procPdf();\par
-00544             {\cf19 break};\par
-00545         {\cf19 case} 2:\par
-00546             procDoc();\par
-00547             {\cf19 break};\par
-00548         {\cf19 case} 3:\par
-00549             procExe();\par
-00550             {\cf19 break};\par
-00551         {\cf19 default}:\par
-00552             {\cf20 //   to be executed if expression doesn't match any constant}\par
-00553             {\cf19 break};\par
-00554         \}\par
-00555     \}\par
-00556 \}\par
-00557 \par
-00558 {\cf18 void} cppMD01Frame::procLink()\par
-00559 \{\par
-00560     dlgNewLink dlg(NULL, wxID_ANY);\par
-00561     zrdb.initField(mkVal,dlg.edtPrim);\par
-00562 \par
-00563     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
-00564     \{\par
-00565         RefreshDetails();\par
-00566     \}\par
-00567 \}\par
-00568 \par
-00569 {\cf18 void} cppMD01Frame::procPdf()\par
-00570 \{\par
-00571     dlgNewLink dlg(NULL, wxID_ANY);\par
-00572     zrdb.initField(mkVal,dlg.edtPrim);\par
-00573     {\cf18 int} flags = wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_DEFAULT_STYLE;\par
-00574     zrdb.initField(gui01.openFileDialog(NULL, {\cf22 "Select A File"}, {\cf22 "/home/archman/Documents"}, {\cf22 ""}, {\cf22 "*.pdf"}, flags),dlg.edtLink);\par
-00575     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
-00576     \{\par
-00577 \par
-00578     \}\par
-00579     RefreshDetails();\par
-00580 \}\par
+00506 \par
+00507     \}\par
+00508 \}\par
+00509 \par
+00510 {\cf18 void} cppMD01Frame::ListFiles({\cf17 const} wxString& dir, {\cf17 const} wxString& filespec)\par
+00511 \{\par
+00512     wxArrayString *fileList;\par
+00513     fileList->Clear();\par
+00514 \par
+00515     fs::path path = std::string(dir.mb_str());\par
+00516     std::string spec = std::string(filespec.mb_str());\par
+00517 \par
+00518     {\cf19 if} (fs::exists(path) && fs::is_directory(path))\par
+00519     \{\par
+00520         {\cf19 for} ({\cf17 const} {\cf17 auto}& entry : fs::directory_iterator(path))\par
+00521         \{\par
+00522             {\cf19 if} (fs::is_regular_file(entry))\par
+00523             \{\par
+00524                 std::string filename = entry.path().filename().string();\par
+00525 \par
+00526                 {\cf20 // Apply filespec filtering}\par
+00527                 {\cf19 if} (boost::iends_with(filename, spec.substr(1)))    {\cf20 // "*.ext" -> "ext"}\par
+00528                 \{\par
+00529                     fileList->Add(wxString::FromUTF8(filename));\par
+00530                 \}\par
+00531             \}\par
+00532         \}\par
+00533     \}\par
+00534 \}\par
+00535 \par
+00536 {\cf18 void} cppMD01Frame::OnpumAddDocsSelected(wxCommandEvent& event)\par
+00537 \{\par
+00538     dlgXqt2 dlg(NULL, wxID_ANY);\par
+00539     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
+00540     \{\par
+00541         {\cf19 switch} (dlg.isel)\par
+00542         \{\par
+00543         {\cf19 case} 0:\par
+00544             procLink();\par
+00545             {\cf19 break};\par
+00546         {\cf19 case} 1:\par
+00547             procPdf();\par
+00548             {\cf19 break};\par
+00549         {\cf19 case} 2:\par
+00550             procDoc();\par
+00551             {\cf19 break};\par
+00552         {\cf19 case} 3:\par
+00553             procExe();\par
+00554             {\cf19 break};\par
+00555         {\cf19 default}:\par
+00556             {\cf20 //   to be executed if expression doesn't match any constant}\par
+00557             {\cf19 break};\par
+00558         \}\par
+00559     \}\par
+00560 \}\par
+00561 \par
+00562 {\cf18 void} cppMD01Frame::procLink()\par
+00563 \{\par
+00564     dlgNewLink dlg(NULL, wxID_ANY);\par
+00565     zrdb.initField(mkVal,dlg.edtPrim);\par
+00566 \par
+00567     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
+00568     \{\par
+00569         RefreshDetails();\par
+00570     \}\par
+00571 \}\par
+00572 \par
+00573 {\cf18 void} cppMD01Frame::procPdf()\par
+00574 \{\par
+00575     dlgNewLink dlg(NULL, wxID_ANY);\par
+00576     zrdb.initField(mkVal,dlg.edtPrim);\par
+00577     {\cf18 int} flags = wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_DEFAULT_STYLE;\par
+00578     zrdb.initField(gui01.openFileDialog(NULL, {\cf22 "Select A File"}, {\cf22 "/home/archman/Documents"}, {\cf22 ""}, {\cf22 "*.pdf"}, flags),dlg.edtLink);\par
+00579     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
+00580     \{\par
 00581 \par
-00582 {\cf18 void} cppMD01Frame::procDoc()\par
-00583 \{\par
-00584     dlgNewLink dlg(NULL, wxID_ANY);\par
-00585     zrdb.initField(mkVal,dlg.edtPrim);\par
-00586     {\cf18 int} flags = wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_DEFAULT_STYLE;\par
-00587     zrdb.initField(gui01.openFileDialog(NULL, {\cf22 "Select A Document"}, {\cf22 "/home/archman/Documents"}, {\cf22 ""}, {\cf22 "*.odt"}, flags),dlg.edtLink);\par
-00588     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
-00589     \{\par
-00590 \par
-00591     \}\par
-00592     RefreshDetails();\par
-00593 \}\par
+00582     \}\par
+00583     RefreshDetails();\par
+00584 \}\par
+00585 \par
+00586 {\cf18 void} cppMD01Frame::procDoc()\par
+00587 \{\par
+00588     dlgNewLink dlg(NULL, wxID_ANY);\par
+00589     zrdb.initField(mkVal,dlg.edtPrim);\par
+00590     {\cf18 int} flags = wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_DEFAULT_STYLE;\par
+00591     zrdb.initField(gui01.openFileDialog(NULL, {\cf22 "Select A Document"}, {\cf22 "/home/archman/Documents"}, {\cf22 ""}, {\cf22 "*.odt"}, flags),dlg.edtLink);\par
+00592     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
+00593     \{\par
 00594 \par
-00595 {\cf18 void} cppMD01Frame::procExe()\par
-00596 \{\par
-00597     dlgNewLink dlg(NULL, wxID_ANY);\par
-00598     zrdb.initField(mkVal,dlg.edtPrim);\par
-00599     {\cf18 int} flags = wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_DEFAULT_STYLE;\par
-00600     zrdb.initField(gui01.openFileDialog(NULL, {\cf22 "Select A File"}, {\cf22 "/home/archman/workspace/cb/cpp"}, {\cf22 ""}, {\cf22 ""}, flags),dlg.edtLink);\par
-00601     zrdb.initField(mkVal,dlg.edtPrim);\par
-00602     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
-00603     \{\par
-00604        mkVal = mkVal;\par
-00605     \}\par
-00606     RefreshDetails();\par
-00607 \}\par
-00608 \par
-00609 {\cf18 void} cppMD01Frame::RefreshDetails()\par
-00610 \{\par
-00611     zrdb.listLinks(std::stoi(mkVal), dRID);\par
-00612     LoadDetailData(dRID);\par
-00613     {\cf20 //StatusBar1->Refresh(true);}\par
-00614 \par
-00615     {\cf20 /*}\par
-00616 {\cf20     ListBox2->Clear();}\par
-00617 {\cf20     zrdb.listLinks(std::stoi(mkVal), dRID);}\par
-00618 {\cf20     for (size_t i=0; i < zrdb.zres.num_rows(); i++)}\par
-00619 {\cf20     \{}\par
-00620 {\cf20         ListBox2->Append(zrdb.lk2[i]);}\par
-00621 {\cf20     \}}\par
-00622 {\cf20     string zlabel = std::to_string(zrdb.zres.num_rows()) + " Records Retrieved";}\par
-00623 {\cf20     lblStatus->SetLabel(zlabel);}\par
-00624 {\cf20     //    lblStatus->Label = zlabel;}\par
-00625 {\cf20     //    lblStatus->Update();}\par
-00626 {\cf20     //    lblStatus->Refresh();Blog}\par
-00627 {\cf20     */}\par
-00628 \}\par
-00629 \par
-00630 {\cf18 void} cppMD01Frame::OnpumNewCatSelected(wxCommandEvent& event)\par
-00631 \{\par
-00632     dlgNewCat dlg(NULL,wxID_ANY);\par
-00633 {\cf20 //    zrdb.initField(mkVal,dlg.edtPrim);}\par
-00634 {\cf20 //    int flags = wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_DEFAULT_STYLE;}\par
-00635 {\cf20 //    zrdb.initField(gui01.openFileDialog(NULL, "Select A File", "/home/archman/workspace/cb/cpp", "", "", flags),dlg.edtLink);}\par
-00636     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
-00637     \{\par
-00638 \par
-00639     \}\par
-00640     RefreshDetails();\par
-00641 \}\par
+00595     \}\par
+00596     RefreshDetails();\par
+00597 \}\par
+00598 \par
+00599 {\cf18 void} cppMD01Frame::procExe()\par
+00600 \{\par
+00601     dlgNewLink dlg(NULL, wxID_ANY);\par
+00602     zrdb.initField(mkVal,dlg.edtPrim);\par
+00603     {\cf18 int} flags = wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_DEFAULT_STYLE;\par
+00604     zrdb.initField(gui01.openFileDialog(NULL, {\cf22 "Select A File"}, {\cf22 "/home/archman/workspace/cb/cpp"}, {\cf22 ""}, {\cf22 ""}, flags),dlg.edtLink);\par
+00605     zrdb.initField(mkVal,dlg.edtPrim);\par
+00606     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
+00607     \{\par
+00608         mkVal = mkVal;\par
+00609     \}\par
+00610     RefreshDetails();\par
+00611 \}\par
+00612 \par
+00613 {\cf18 void} cppMD01Frame::RefreshDetails()\par
+00614 \{\par
+00615     zrdb.listLinks(std::stoi(mkVal), dRID);\par
+00616     LoadDetailData(dRID);\par
+00617     {\cf20 //StatusBar1->Refresh(true);}\par
+00618 \par
+00619     {\cf20 /*}\par
+00620 {\cf20     ListBox2->Clear();}\par
+00621 {\cf20     zrdb.listLinks(std::stoi(mkVal), dRID);}\par
+00622 {\cf20     for (size_t i=0; i < zrdb.zres.num_rows(); i++)}\par
+00623 {\cf20     \{}\par
+00624 {\cf20         ListBox2->Append(zrdb.lk2[i]);}\par
+00625 {\cf20     \}}\par
+00626 {\cf20     string zlabel = std::to_string(zrdb.zres.num_rows()) + " Records Retrieved";}\par
+00627 {\cf20     lblStatus->SetLabel(zlabel);}\par
+00628 {\cf20     //    lblStatus->Label = zlabel;}\par
+00629 {\cf20     //    lblStatus->Update();}\par
+00630 {\cf20     //    lblStatus->Refresh();Blog}\par
+00631 {\cf20     */}\par
+00632 \}\par
+00633 \par
+00634 {\cf18 void} cppMD01Frame::OnpumNewCatSelected(wxCommandEvent& event)\par
+00635 \{\par
+00636     dlgNewCat dlg(NULL,wxID_ANY);\par
+00637 {\cf20 //    zrdb.initField(mkVal,dlg.edtPrim);}\par
+00638 {\cf20 //    int flags = wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_DEFAULT_STYLE;}\par
+00639 {\cf20 //    zrdb.initField(gui01.openFileDialog(NULL, "Select A File", "/home/archman/workspace/cb/cpp", "", "", flags),dlg.edtLink);}\par
+00640     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
+00641     \{\par
 00642 \par
-00643 {\cf18 void} cppMD01Frame::OnpumNewBlogPostSelected(wxCommandEvent& event)\par
-00644 \{\par
-00645     {\cf17 const} {\cf18 char} * c;\par
-00646     {\cf18 string} tbuf;\par
-00647     tbuf = {\cf22 "<a href=\\"https://archman.us\\" target=\\"_blank\\" rel=\\"noopener\\">"};\par
-00648     tbuf = tbuf + {\cf22 "    <img src=\\"https://archman.us/images/usa_3a.gif\\" alt=\\"USA\\" />"};\par
-00649     tbuf = tbuf + {\cf22 "</a>\\n\\n"};\par
-00650     {\cf20 //tbuf = "<img src=\\"http://archman.us/images/usa_3a.gif\\" alt=\\"\\" />\\n\\n";}\par
-00651     tbuf = tbuf + {\cf22 "Mr. <a href=\\"https://archman.us\\" target=\\"_blank\\" rel=\\"noopener\\">Arch Brooks</a>, Software Engineer, Brooks Computing Systems, LLC authored this article."};\par
-00652     {\cf19 if} (wxTheClipboard->Open())\par
-00653     \{\par
-00654         {\cf20 // This data objects are held by the clipboard,}\par
-00655         {\cf20 // so do not delete them in the app.}\par
-00656         c = tbuf.c_str();\par
-00657         wxTheClipboard->SetData({\cf17 new} wxTextDataObject(c));\par
-00658         wxTheClipboard->Close();\par
-00659     \}\par
-00660 \par
-00661 \par
-00662     cmd = defBro + {\cf22 " "} + {\cf22 "https://archman.us/b4/wp-admin/post-new.php & "};\par
-00663     system(cmd.c_str());\par
-00664 \}\par
+00643     \}\par
+00644     RefreshDetails();\par
+00645 \}\par
+00646 \par
+00647 {\cf18 void} cppMD01Frame::OnpumNewBlogPostSelected(wxCommandEvent& event)\par
+00648 \{\par
+00649     {\cf17 const} {\cf18 char} * c;\par
+00650     {\cf18 string} tbuf;\par
+00651     tbuf = {\cf22 "<a href=\\"https://archman.us\\" target=\\"_blank\\" rel=\\"noopener\\">"};\par
+00652     tbuf = tbuf + {\cf22 "    <img src=\\"https://archman.us/images/usa_3a.gif\\" alt=\\"USA\\" />"};\par
+00653     tbuf = tbuf + {\cf22 "</a>\\n\\n"};\par
+00654     {\cf20 //tbuf = "<img src=\\"http://archman.us/images/usa_3a.gif\\" alt=\\"\\" />\\n\\n";}\par
+00655     tbuf = tbuf + {\cf22 "Mr. <a href=\\"https://archman.us\\" target=\\"_blank\\" rel=\\"noopener\\">Arch Brooks</a>, Software Engineer, Brooks Computing Systems, LLC authored this article."};\par
+00656     {\cf19 if} (wxTheClipboard->Open())\par
+00657     \{\par
+00658         {\cf20 // This data objects are held by the clipboard,}\par
+00659         {\cf20 // so do not delete them in the app.}\par
+00660         c = tbuf.c_str();\par
+00661         wxTheClipboard->SetData({\cf17 new} wxTextDataObject(c));\par
+00662         wxTheClipboard->Close();\par
+00663     \}\par
+00664 \par
 00665 \par
-00666 {\cf18 void} cppMD01Frame::OnpumDelLinkSelected(wxCommandEvent& event)\par
-00667 \{\par
-00668 {\cf20 //    std::string detailtem = ListBox2->GetStringSelection().ToStdString();}\par
-00669 {\cf20 //    std::string detailtem = detailGrid->GetRowAt(row);}\par
-00670     std::string cap;\par
-00671     wxString idlk1Str = detailGrid->GetCellValue(row, 0);\par
-00672     std::string detailItem = detailGrid->GetCellValue(row, 0).ToStdString();\par
-00673     std::string linkName = detailGrid->GetCellValue(row, 1).ToStdString();\par
-00674     {\cf20 //std::string recNo = detailtem.substr(0, detailtem.find(" "));}\par
-00675     cap = {\cf22 "Are You sure You would like to delete\\n\\""} + detailItem + {\cf22 " "} + linkName + {\cf22 "\\"?"};\par
-00676     {\cf19 if} (gui01.yornQues(cap, {\cf22 "Delete This Record?"}) == wxYES)\par
-00677     \{\par
-00678         zrdb.DeleteLink(detailItem);\par
-00679         RefreshDetails();\par
-00680     \}\par
-00681 \}\par
-00682 \par
-00683 {\cf18 void} cppMD01Frame::OnpumEdCatSelected(wxCommandEvent& event)\par
-00684 \{\par
-00685     dlgNewCat dlg(NULL, wxID_ANY);\par
-00686 {\cf20 //    std::string detailtem = ListBox1->GetStringSelection().ToStdString();}\par
-00687 {\cf20 //    std::string recNo = detailtem.substr(0, detailtem.find(" "));}\par
-00688     std::string recNo = detailGrid->GetCellValue(row, 0).ToStdString();\par
-00689     zrdb.strIdlk1 = recNo;\par
-00690     dlg.btnInsert->SetLabel( {\cf22 "Edit"});\par
-00691     zrdb.getCat();\par
-00692     zrdb.initField(masterGrid->GetCellValue(row, 1).ToStdString(), dlg.edtCat);\par
-00693     zrdb.initField(masterGrid->GetCellValue(row, 2).ToStdString(), dlg.edtMemo);\par
-00694 {\cf20 //    zrdb.initField(std::string(zrdb.zres[0]["cat"]), dlg.edtCat);}\par
-00695 {\cf20 //    zrdb.initField(std::string(zrdb.zres[0]["ddes"]), dlg.edtMemo);}\par
-00696     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
-00697     \{\par
-00698         zrdb.editCat(zrdb.strIdlk1, zrdb.fieldToString(dlg.edtCat), zrdb.fieldToString(dlg.edtMemo));\par
-00699     \}\par
-00700     zrdb.listCategories({\cf17 false});\par
-00701 {\cf20 //    RefreshCats();}\par
-00702     PopulateMasterGrid();\par
-00703 \}\par
-00704 \par
-00705 {\cf18 void} cppMD01Frame::OnpumEditLinkSelected(wxCommandEvent& event)\par
-00706 \{\par
-00707 {\cf20 //        std::string detailtem = ListBox2->GetStringSelection().ToStdString();}\par
-00708 {\cf20 //    std::string recNo = detailtem.substr(0, detailtem.find(" "));}\par
-00709 {\cf20 //    recNo = detailGrid->GetCellValue(row, 0).ToStdString();}\par
-00710     recNo = detailGrid->GetCellValue(row, 0).ToStdString();\par
-00711 \par
-00712     zrdb.insertMode = {\cf17 false};\par
-00713 {\cf20 //    zrdb.getLink(std::stoi(detailtem.substr(0, detailtem.find(" "))));}\par
-00714     dlgNewLink dlg(NULL, wxID_ANY);\par
-00715 {\cf20 //    string sbuf = std::string(ares[i]["idlk2"]) + " " + std::string(ares[i]["lkn"]);}\par
-00716     zrdb.initField(detailGrid->GetCellValue(row, 0).ToStdString(), dlg.edtPrim);\par
-00717     zrdb.initField(detailGrid->GetCellValue(row, 1).ToStdString(), dlg.edtLinkName);\par
-00718     zrdb.initField(detailGrid->GetCellValue(row, 2).ToStdString(), dlg.edtLink);\par
-00719     zrdb.initField(detailGrid->GetCellValue(row, 3).ToStdString(), dlg.edtDetDes);\par
-00720     dlg.btnInset->SetLabel( {\cf22 "Edit"});\par
-00721     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
-00722     \{\par
-00723         zrdb.editLink(recNo,zrdb.fieldToString(dlg.edtPrim), zrdb.fieldToString(dlg.edtLink), zrdb.fieldToString(dlg.edtLinkName), zrdb.fieldToString(dlg.edtDetDes), zrdb.strIdlk1);\par
-00724         RefreshDetails();\par
-00725     \}\par
-00726 \}\par
-00727 \par
-00728 {\cf18 void} cppMD01Frame::OnpumEditDetailsSelected(wxCommandEvent& event)\par
-00729 \{\par
+00666     cmd = defBro + {\cf22 " "} + {\cf22 "https://archman.us/b4/wp-admin/post-new.php & "};\par
+00667     system(cmd.c_str());\par
+00668 \}\par
+00669 \par
+00670 {\cf18 void} cppMD01Frame::OnpumDelLinkSelected(wxCommandEvent& event)\par
+00671 \{\par
+00672 {\cf20 //    std::string detailtem = ListBox2->GetStringSelection().ToStdString();}\par
+00673 {\cf20 //    std::string detailtem = detailGrid->GetRowAt(row);}\par
+00674     std::string cap;\par
+00675     wxString idlk1Str = detailGrid->GetCellValue(row, 0);\par
+00676     std::string detailItem = detailGrid->GetCellValue(row, 0).ToStdString();\par
+00677     std::string linkName = detailGrid->GetCellValue(row, 1).ToStdString();\par
+00678     {\cf20 //std::string recNo = detailtem.substr(0, detailtem.find(" "));}\par
+00679     cap = {\cf22 "Are You sure You would like to delete\\n\\""} + detailItem + {\cf22 " "} + linkName + {\cf22 "\\"?"};\par
+00680     {\cf19 if} (gui01.yornQues(cap, {\cf22 "Delete This Record?"}) == wxYES)\par
+00681     \{\par
+00682         zrdb.DeleteLink(detailItem);\par
+00683         RefreshDetails();\par
+00684     \}\par
+00685 \}\par
+00686 \par
+00687 {\cf18 void} cppMD01Frame::OnpumEdCatSelected(wxCommandEvent& event)\par
+00688 \{\par
+00689     dlgNewCat dlg(NULL, wxID_ANY);\par
+00690 {\cf20 //    std::string detailtem = ListBox1->GetStringSelection().ToStdString();}\par
+00691 {\cf20 //    std::string recNo = detailtem.substr(0, detailtem.find(" "));}\par
+00692     std::string recNo = detailGrid->GetCellValue(row, 0).ToStdString();\par
+00693     zrdb.strIdlk1 = recNo;\par
+00694     dlg.btnInsert->SetLabel( {\cf22 "Edit"});\par
+00695     zrdb.getCat();\par
+00696     zrdb.initField(masterGrid->GetCellValue(row, 1).ToStdString(), dlg.edtCat);\par
+00697     zrdb.initField(masterGrid->GetCellValue(row, 2).ToStdString(), dlg.edtMemo);\par
+00698 {\cf20 //    zrdb.initField(std::string(zrdb.zres[0]["cat"]), dlg.edtCat);}\par
+00699 {\cf20 //    zrdb.initField(std::string(zrdb.zres[0]["ddes"]), dlg.edtMemo);}\par
+00700     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
+00701     \{\par
+00702         zrdb.editCat(zrdb.strIdlk1, zrdb.fieldToString(dlg.edtCat), zrdb.fieldToString(dlg.edtMemo));\par
+00703     \}\par
+00704     zrdb.listCategories({\cf17 false});\par
+00705 {\cf20 //    RefreshCats();}\par
+00706     PopulateMasterGrid();\par
+00707 \}\par
+00708 \par
+00709 {\cf18 void} cppMD01Frame::OnpumEditLinkSelected(wxCommandEvent& event)\par
+00710 \{\par
+00711 {\cf20 //        std::string detailtem = ListBox2->GetStringSelection().ToStdString();}\par
+00712 {\cf20 //    std::string recNo = detailtem.substr(0, detailtem.find(" "));}\par
+00713 {\cf20 //    recNo = detailGrid->GetCellValue(row, 0).ToStdString();}\par
+00714     recNo = detailGrid->GetCellValue(row, 0).ToStdString();\par
+00715 \par
+00716     zrdb.insertMode = {\cf17 false};\par
+00717 {\cf20 //    zrdb.getLink(std::stoi(detailtem.substr(0, detailtem.find(" "))));}\par
+00718     dlgNewLink dlg(NULL, wxID_ANY);\par
+00719 {\cf20 //    string sbuf = std::string(ares[i]["idlk2"]) + " " + std::string(ares[i]["lkn"]);}\par
+00720     zrdb.initField(detailGrid->GetCellValue(row, 0).ToStdString(), dlg.edtPrim);\par
+00721     zrdb.initField(detailGrid->GetCellValue(row, 1).ToStdString(), dlg.edtLinkName);\par
+00722     zrdb.initField(detailGrid->GetCellValue(row, 2).ToStdString(), dlg.edtLink);\par
+00723     zrdb.initField(detailGrid->GetCellValue(row, 3).ToStdString(), dlg.edtDetDes);\par
+00724     dlg.btnInset->SetLabel( {\cf22 "Edit"});\par
+00725     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
+00726     \{\par
+00727         zrdb.editLink(recNo,zrdb.fieldToString(dlg.edtPrim), zrdb.fieldToString(dlg.edtLink), zrdb.fieldToString(dlg.edtLinkName), zrdb.fieldToString(dlg.edtDetDes), zrdb.strIdlk1);\par
+00728         RefreshDetails();\par
+00729     \}\par
 00730 \}\par
+00731 \par
+00732 {\cf18 void} cppMD01Frame::OnpumEditDetailsSelected(wxCommandEvent& event)\par
+00733 \{\par
+00734 \}\par
+00735 \par
+00736 {\cf18 void} cppMD01Frame::OnpumCodeXqtSelected(wxCommandEvent& event)\par
+00737 \{\par
+00738     wxDirDialog dlg = {\cf17 new} wxDirDialog();\par
+00739     {\cf19 if} (dlg.ShowModal() == wxID_OK)\par
+00740     \{\par
+00741         wxString selected_dir = dlg.GetPath();\par
+00742 {\cf20 //           dir_label.SetLabel(f"Selected Directory: \{selected_dir\}")}\par
+00743     \}\par
+00744 \par
+00745     std::string cmd = {\cf22 ""};\par
+00746     cmd = {\cf22 "code "};\par
+00747     cmd = cmd + dlg.GetPath().ToStdString() + {\cf22 "  "};\par
+00748 \par
+00749     dlg.Destroy();\par
+00750     system(cmd.c_str());\par
+00751 \par
+00752 \}\par
 }
 \par \pard\plain 
 
@@ -4223,55 +4246,58 @@ Go to the documentation of this file.\par
 00068     {\cf18 void} OnpumEdCatSelected(wxCommandEvent& event);\par
 00069     {\cf18 void} OnpumEditLinkSelected(wxCommandEvent& event);\par
 00070     {\cf18 void} OnpumEditDetailsSelected(wxCommandEvent& event);\par
-00071     {\cf20 //*)}\par
-00072 \par
-00073     {\cf20 //(*Identifiers(cppMD01Frame)}\par
-00074     {\cf17 static} {\cf17 const} {\cf18 long} ID_STATICTEXT1;\par
-00075     {\cf17 static} {\cf17 const} {\cf18 long} ID_PANEL1;\par
-00076     {\cf17 static} {\cf17 const} {\cf18 long} ID_PANEL3;\par
-00077     {\cf17 static} {\cf17 const} {\cf18 long} ID_STATICTEXT2;\par
-00078     {\cf17 static} {\cf17 const} {\cf18 long} ID_SCROLLEDWINDOW1;\par
-00079     {\cf17 static} {\cf17 const} {\cf18 long} idMenucpp;\par
-00080     {\cf17 static} {\cf17 const} {\cf18 long} idMenuQuit;\par
-00081     {\cf17 static} {\cf17 const} {\cf18 long} idMenuAbout;\par
-00082     {\cf17 static} {\cf17 const} {\cf18 long} ID_STATUSBAR1;\par
-00083     {\cf17 static} {\cf17 const} {\cf18 long} ID_MENUITEM1;\par
-00084     {\cf17 static} {\cf17 const} {\cf18 long} idpumNewCat;\par
-00085     {\cf17 static} {\cf17 const} {\cf18 long} ID_PumEdCat;\par
-00086     {\cf17 static} {\cf17 const} {\cf18 long} ID_NewBlog;\par
-00087     {\cf17 static} {\cf17 const} {\cf18 long} ID_MENUITEM2;\par
-00088     {\cf17 static} {\cf17 const} {\cf18 long} ID_menAD;\par
-00089     {\cf17 static} {\cf17 const} {\cf18 long} ID_menNB;\par
-00090     {\cf17 static} {\cf17 const} {\cf18 long} ID_pumDel;\par
-00091     {\cf17 static} {\cf17 const} {\cf18 long} ID_pumEditLink;\par
-00092     {\cf20 //*)}\par
-00093 \par
-00094     {\cf20 //(*Declarations(cppMD01Frame)}\par
-00095     wxMenu pumDetail;\par
-00096     wxMenu pumMaster;\par
-00097     wxMenuItem* MenuItem3;\par
-00098     wxMenuItem* MenuItem4;\par
-00099     wxMenuItem* MenuItem5;\par
-00100     wxMenuItem* menNewPost;\par
-00101     wxMenuItem* menSelectCpp;\par
-00102     wxMenuItem* pumAddDocs;\par
-00103     wxMenuItem* pumDelLink;\par
-00104     wxMenuItem* pumEditDetails;\par
-00105     wxMenuItem* pumNewBlogPost;\par
-00106     wxMenuItem* pumNewCat;\par
-00107     wxPanel* Panel1;\par
-00108     wxPanel* Panel2;\par
-00109     wxScrolledWindow* ScrolledWindow1;\par
-00110     wxStaticText* StaticText1;\par
-00111     wxStaticText* StaticText2;\par
-00112     wxStatusBar* StatusBar1;\par
-00113     {\cf20 //*)}\par
-00114 \par
-00115     DECLARE_EVENT_TABLE()\par
-00116 \};\par
+00071     {\cf18 void} OnpumCodeXqtSelected(wxCommandEvent& event);\par
+00072     {\cf20 //*)}\par
+00073 \par
+00074     {\cf20 //(*Identifiers(cppMD01Frame)}\par
+00075     {\cf17 static} {\cf17 const} {\cf18 long} ID_STATICTEXT1;\par
+00076     {\cf17 static} {\cf17 const} {\cf18 long} ID_PANEL1;\par
+00077     {\cf17 static} {\cf17 const} {\cf18 long} ID_PANEL3;\par
+00078     {\cf17 static} {\cf17 const} {\cf18 long} ID_STATICTEXT2;\par
+00079     {\cf17 static} {\cf17 const} {\cf18 long} ID_SCROLLEDWINDOW1;\par
+00080     {\cf17 static} {\cf17 const} {\cf18 long} idMenucpp;\par
+00081     {\cf17 static} {\cf17 const} {\cf18 long} idMenuQuit;\par
+00082     {\cf17 static} {\cf17 const} {\cf18 long} idMenuAbout;\par
+00083     {\cf17 static} {\cf17 const} {\cf18 long} ID_STATUSBAR1;\par
+00084     {\cf17 static} {\cf17 const} {\cf18 long} ID_MENUITEM1;\par
+00085     {\cf17 static} {\cf17 const} {\cf18 long} idpumNewCat;\par
+00086     {\cf17 static} {\cf17 const} {\cf18 long} ID_PumEdCat;\par
+00087     {\cf17 static} {\cf17 const} {\cf18 long} ID_NewBlog;\par
+00088     {\cf17 static} {\cf17 const} {\cf18 long} ID_CodeLauncher;\par
+00089     {\cf17 static} {\cf17 const} {\cf18 long} ID_MENUITEM2;\par
+00090     {\cf17 static} {\cf17 const} {\cf18 long} ID_menAD;\par
+00091     {\cf17 static} {\cf17 const} {\cf18 long} ID_menNB;\par
+00092     {\cf17 static} {\cf17 const} {\cf18 long} ID_pumDel;\par
+00093     {\cf17 static} {\cf17 const} {\cf18 long} ID_pumEditLink;\par
+00094     {\cf20 //*)}\par
+00095 \par
+00096     {\cf20 //(*Declarations(cppMD01Frame)}\par
+00097     wxMenu pumDetail;\par
+00098     wxMenu pumMaster;\par
+00099     wxMenuItem* MenuItem3;\par
+00100     wxMenuItem* MenuItem4;\par
+00101     wxMenuItem* MenuItem5;\par
+00102     wxMenuItem* menNewPost;\par
+00103     wxMenuItem* menSelectCpp;\par
+00104     wxMenuItem* pumAddDocs;\par
+00105     wxMenuItem* pumCodeXqt;\par
+00106     wxMenuItem* pumDelLink;\par
+00107     wxMenuItem* pumEditDetails;\par
+00108     wxMenuItem* pumNewBlogPost;\par
+00109     wxMenuItem* pumNewCat;\par
+00110     wxPanel* Panel1;\par
+00111     wxPanel* Panel2;\par
+00112     wxScrolledWindow* ScrolledWindow1;\par
+00113     wxStaticText* StaticText1;\par
+00114     wxStaticText* StaticText2;\par
+00115     wxStatusBar* StatusBar1;\par
+00116     {\cf20 //*)}\par
 00117 \par
-00118 {\cf21 #endif }{\cf20 // CPPMYSKEL1MAIN_H}\par
-00119 \par
+00118     DECLARE_EVENT_TABLE()\par
+00119 \};\par
+00120 \par
+00121 {\cf21 #endif }{\cf20 // CPPMYSKEL1MAIN_H}\par
+00122 \par
 }
 \par \pard\plain 
 
