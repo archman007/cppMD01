@@ -3,6 +3,7 @@
 	<object class="wxFrame" name="cppMD01Frame">
 		<title>Brooks Computing Systems, LLC  ** Programmer&apos;s Workbench **</title>
 		<centered>1</centered>
+		<bg>wxSYS_COLOUR_MENUHILIGHT</bg>
 		<style>wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE</style>
 		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
 			<object class="sizeritem">
@@ -15,6 +16,7 @@
 									<orient>wxVERTICAL</orient>
 									<object class="sizeritem">
 										<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+											<bg>#23E1F2</bg>
 											<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
 												<label>Label</label>
 												<pos>8,0</pos>
@@ -33,13 +35,16 @@
 								<object class="wxBoxSizer" variable="BoxSizer5" member="no">
 									<orient>wxVERTICAL</orient>
 									<object class="sizeritem">
-										<object class="wxPanel" name="ID_PANEL3" variable="Panel2" member="yes" />
+										<object class="wxPanel" name="ID_PANEL3" variable="Panel2" member="yes">
+											<bg>#B8DCFF</bg>
+										</object>
 										<flag>wxALL|wxEXPAND</flag>
 										<border>5</border>
 									</object>
 									<object class="sizeritem">
 										<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
 											<label>Label</label>
+											<bg>#08DFF3</bg>
 											<style>wxALIGN_CENTRE</style>
 										</object>
 										<flag>wxALL|wxEXPAND</flag>
@@ -48,14 +53,6 @@
 								</object>
 								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
-							</object>
-							<object class="sizeritem">
-								<object class="wxScrolledWindow" name="ID_SCROLLEDWINDOW1" variable="ScrolledWindow1" member="yes">
-									<size>11,7</size>
-								</object>
-								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
-								<border>5</border>
-								<option>1</option>
 							</object>
 						</object>
 						<flag>wxALL|wxEXPAND</flag>
@@ -100,6 +97,8 @@
 		<object class="wxMenu" variable="pumMaster" member="yes">
 			<object class="wxMenuItem" name="ID_MENUITEM1" variable="MenuItem3" member="yes">
 				<label>Change Background Color</label>
+				<help>Change Background Color</help>
+				<handler function="OnChooseColor" entry="EVT_MENU" />
 			</object>
 			<object class="wxMenuItem" name="idpumNewCat" variable="pumNewCat" member="yes">
 				<label>Enter New Category</label>
@@ -121,10 +120,22 @@
 				<accel>Load VS Code Now</accel>
 				<handler function="OnpumCodeXqtSelected" entry="EVT_MENU" />
 			</object>
+			<object class="wxMenuItem" name="ID_ChFont" variable="pumChFont" member="yes">
+				<label>Change Font</label>
+				<help>Change Font Now</help>
+				<handler function="OnpumChFontSelected" entry="EVT_MENU" />
+			</object>
 		</object>
 		<object class="wxMenu" variable="pumDetail" member="yes">
 			<object class="wxMenuItem" name="ID_MENUITEM2" variable="MenuItem4" member="yes">
 				<label>Change Background Color</label>
+				<help>Change Background Color</help>
+				<handler function="OnChooseColor" entry="EVT_MENU" />
+			</object>
+			<object class="wxMenuItem" name="ID_CF" variable="pumChgFonts" member="yes">
+				<label>Change Fonts</label>
+				<help>Change Fonts</help>
+				<handler function="OnpumChFontSelected" entry="EVT_MENU" />
 			</object>
 			<object class="wxMenuItem" name="ID_menAD" variable="pumAddDocs" member="yes">
 				<label>addDocs</label>
@@ -147,5 +158,7 @@
 				<handler function="OnpumEditLinkSelected" entry="EVT_MENU" />
 			</object>
 		</object>
+		<object class="wxColourDialog" variable="ColourDialog1" member="yes" />
+		<object class="wxFontDialog" variable="FontDialog1" member="yes" />
 	</object>
 </wxsmith>

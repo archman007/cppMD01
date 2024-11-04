@@ -1514,14 +1514,16 @@
 1715637389 /usr/include/wx-3.2/wx/univ/theme.h
 	"wx/string.h"
 
-1728202346 /home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h
+1730678304 /home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.h
 	<mysql++.h>
 	<wx/grid.h>
 	"dlgXqt2.h"
+	<wx/wx.h>
+	<wx/colordlg.h>
+	<wx/fontdlg.h>
 	<wx/frame.h>
 	<wx/menu.h>
 	<wx/panel.h>
-	<wx/scrolwin.h>
 	<wx/sizer.h>
 	<wx/stattext.h>
 	<wx/statusbr.h>
@@ -1609,7 +1611,7 @@
 	"wx/defs.h"
 	"wx/window.h"
 
-1728202819 source:/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp
+1730678546 source:/home/archman/workspace/cb/cpp/cppMD01/cppMD01Main.cpp
 	"cppMD01Main.h"
 	<wx/msgdlg.h>
 	<wx/grid.h>
@@ -1629,7 +1631,9 @@
 	"wx/clipbrd.h"
 	"dlgSelCat.h"
 	<wx/wx.h>
+	<wx/fontdlg.h>
 	<wx/intl.h>
+	<wx/settings.h>
 	<wx/string.h>
 
 1715637389 /usr/include/wx-3.2/wx/msgdlg.h
@@ -3069,13 +3073,14 @@
 
 1715637389 /usr/include/wx-3.2/wx/qt/notebook.h
 
-1727079886 source:/home/archman/workspace/cb/cpp/cppMD01/zDB01.cpp
+1729940078 source:/home/archman/workspace/cb/cpp/cppMD01/zDB01.cpp
 	"zDB01.h"
 	<mysql++.h>
 	<wx/msgdlg.h>
 	"dlgSelDB.h"
 	"dlgDe01.h"
 	"dlgNb01.h"
+	<wx/textfile.h>
 
 1726392034 source:/home/archman/workspace/cb/cpp/cppMD01/curlStuff.cpp
 	"curlStuff.h"
@@ -3156,4 +3161,78 @@
 	<wx/dialog.h>
 	<wx/listbox.h>
 	<wx/sizer.h>
+
+1715637389 /usr/include/wx-3.2/wx/textfile.h
+	"wx/defs.h"
+	"wx/textbuf.h"
+	"wx/file.h"
+
+1715637389 /usr/include/wx-3.2/wx/textbuf.h
+	"wx/defs.h"
+	"wx/arrstr.h"
+	"wx/convauto.h"
+	"wx/string.h"
+	"wx/dynarray.h"
+
+1715637389 /usr/include/wx-3.2/wx/colordlg.h
+	"wx/defs.h"
+	"wx/colourdata.h"
+	"wx/msw/colordlg.h"
+	"wx/osx/colordlg.h"
+	"wx/gtk/colordlg.h"
+	"wx/qt/colordlg.h"
+	"wx/generic/colrdlgg.h"
+
+1715637389 /usr/include/wx-3.2/wx/colourdata.h
+	"wx/colour.h"
+
+1715637389 /usr/include/wx-3.2/wx/msw/colordlg.h
+	"wx/dialog.h"
+
+1715637389 /usr/include/wx-3.2/wx/osx/colordlg.h
+	"wx/dialog.h"
+
+1715637389 /usr/include/wx-3.2/wx/gtk/colordlg.h
+	"wx/dialog.h"
+
+1715637389 /usr/include/wx-3.2/wx/qt/colordlg.h
+	"wx/dialog.h"
+
+1715637389 /usr/include/wx-3.2/wx/generic/colrdlgg.h
+	"wx/gdicmn.h"
+	"wx/dialog.h"
+
+1715637389 /usr/include/wx-3.2/wx/fontdlg.h
+	"wx/defs.h"
+	"wx/dialog.h"
+	"wx/fontdata.h"
+	"wx/generic/fontdlgg.h"
+	"wx/msw/fontdlg.h"
+	"wx/gtk/fontdlg.h"
+	"wx/gtk1/fontdlg.h"
+	"wx/osx/fontdlg.h"
+	"wx/qt/fontdlg.h"
+
+1715637389 /usr/include/wx-3.2/wx/fontdata.h
+	"wx/font.h"
+	"wx/colour.h"
+	"wx/encinfo.h"
+
+1715637389 /usr/include/wx-3.2/wx/encinfo.h
+	"wx/string.h"
+
+1715637389 /usr/include/wx-3.2/wx/generic/fontdlgg.h
+	"wx/gdicmn.h"
+	"wx/font.h"
+
+1715637389 /usr/include/wx-3.2/wx/msw/fontdlg.h
+
+1715637389 /usr/include/wx-3.2/wx/gtk/fontdlg.h
+
+1715637389 /usr/include/wx-3.2/wx/gtk1/fontdlg.h
+
+1715637389 /usr/include/wx-3.2/wx/osx/fontdlg.h
+	"wx/dialog.h"
+
+1715637389 /usr/include/wx-3.2/wx/qt/fontdlg.h
 

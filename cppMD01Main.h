@@ -12,12 +12,14 @@
 #include <mysql++.h>
 #include <wx/grid.h>
 #include "dlgXqt2.h"
+#include <wx/wx.h>
 
 //(*Headers(cppMD01Frame)
+#include <wx/colordlg.h>
+#include <wx/fontdlg.h>
 #include <wx/frame.h>
 #include <wx/menu.h>
 #include <wx/panel.h>
-#include <wx/scrolwin.h>
 #include <wx/sizer.h>
 #include <wx/stattext.h>
 #include <wx/statusbr.h>
@@ -54,6 +56,10 @@ private:
     int row;
     void OnDetailGridCellClick(wxGridEvent& event);
     std::string recNo;
+    wxColourData data;
+    void OnChooseColor(wxCommandEvent& event);
+    wxColour color;
+
 
     //void LoadDetailData(int idlk1);
 
@@ -69,6 +75,8 @@ private:
     void OnpumEditLinkSelected(wxCommandEvent& event);
     void OnpumEditDetailsSelected(wxCommandEvent& event);
     void OnpumCodeXqtSelected(wxCommandEvent& event);
+    //    void OnChooseColor(wxCommandEvent& event);
+    void OnpumChFontSelected(wxCommandEvent& event);
     //*)
 
     //(*Identifiers(cppMD01Frame)
@@ -76,7 +84,6 @@ private:
     static const long ID_PANEL1;
     static const long ID_PANEL3;
     static const long ID_STATICTEXT2;
-    static const long ID_SCROLLEDWINDOW1;
     static const long idMenucpp;
     static const long idMenuQuit;
     static const long idMenuAbout;
@@ -86,7 +93,9 @@ private:
     static const long ID_PumEdCat;
     static const long ID_NewBlog;
     static const long ID_CodeLauncher;
+    static const long ID_ChFont;
     static const long ID_MENUITEM2;
+    static const long ID_CF;
     static const long ID_menAD;
     static const long ID_menNB;
     static const long ID_pumDel;
@@ -94,6 +103,8 @@ private:
     //*)
 
     //(*Declarations(cppMD01Frame)
+    wxColourDialog* ColourDialog1;
+    wxFontDialog* FontDialog1;
     wxMenu pumDetail;
     wxMenu pumMaster;
     wxMenuItem* MenuItem3;
@@ -102,6 +113,8 @@ private:
     wxMenuItem* menNewPost;
     wxMenuItem* menSelectCpp;
     wxMenuItem* pumAddDocs;
+    wxMenuItem* pumChFont;
+    wxMenuItem* pumChgFonts;
     wxMenuItem* pumCodeXqt;
     wxMenuItem* pumDelLink;
     wxMenuItem* pumEditDetails;
@@ -109,7 +122,6 @@ private:
     wxMenuItem* pumNewCat;
     wxPanel* Panel1;
     wxPanel* Panel2;
-    wxScrolledWindow* ScrolledWindow1;
     wxStaticText* StaticText1;
     wxStaticText* StaticText2;
     wxStatusBar* StatusBar1;

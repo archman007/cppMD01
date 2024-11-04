@@ -1,0 +1,3 @@
+
+UPDATE `lk2` SET `idlk1`=43,`lkn`="https://www.youtube.com/watch?v=sbqu00B6FqY",`lnk`=" This SHOCKING Weight Loss Secrets That ACTUALLY Work Barbara O'Neill - YouTube"`ddes`="zRipzzzzz" WHERE `idlk2` = 1305;
+UPDATE `lk2` SET `idlk1`=43,`lkn`="https://www.youtube.com/watch?v=sbqu00B6FqY",`lnk`=" This SHOCKING Weight Loss Secrets That ACTUALLY Work Barbara O'Neill - YouTube"`ddes`="zRipzzzzz" WHERE `idlk2` = 1305;

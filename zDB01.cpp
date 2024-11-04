@@ -86,7 +86,7 @@ void zDB01::listCategories(bool idPrime)
         }
         else
         {
-           query << "select idlk1, cat from lk1 order by cat";
+            query << "select idlk1, cat from lk1 order by cat";
         }
         StoreQueryResult ares = query.store();
         zres = ares;
@@ -95,7 +95,6 @@ void zDB01::listCategories(bool idPrime)
         {
 //            string sbuf = std::string(ares[i]["idlk1"]) + " " + std::string(ares[i]["cat"]);
             lk1.Add(std::string(ares[i]["idlk1"]) + " " + std::string(ares[i]["cat"]));
-
 //            wxMessageBox(std::string(ares[i]["idlk1"]) + " " + std::string(ares[i]["cat"]));
 //           wxString tbuf = buf;
 //           dbn.Insert(tbuf,0,1);
@@ -400,6 +399,9 @@ void zDB01::DeleteLink(std::string delId)
     query1.exec(qstr);
 
 }
+
+#include <wx/textfile.h>
+
 void zDB01::editLink(std::string delId, std::string idkl2, std::string ilk, std::string lnk, std::string ddes, std::string idlk1)
 
 {
@@ -414,8 +416,40 @@ void zDB01::editLink(std::string delId, std::string idkl2, std::string ilk, std:
 //    std::string qstr = "DELETE FROM `lk2` WHERE idlk2 = " + delId;
 //    std::string qstr = "UPDATE `lk2` SET `lkn` = \" " + lnk + "\"" + ", `ddes`= \"" +  ddes + "\"" + " WHERE idlk2 = " + delId ;
 //    std::string qstr = "UPDATE `lk2` SET `idlk1` =  \"" + delId + "\", " +  "`lkn` = \" " + lnk + "\"" + ", `ddes`= \"" +  ddes + "\"" + " WHERE idlk2 = " + delId ;
-    std::string qstr = "UPDATE `lk2` SET `idlk1` =  \"" + idlk1 + "\", " +  "`lkn` = \" " + lnk + "\"" + ", `ddes`= \"" +  ddes + "\"" + " WHERE idlk2 = " + delId ;
-    query1.exec(qstr);
+//    std::string qstr = "UPDATE `lk2` SET `idlk1` =  \"" + idlk1 + "\", " +  "`lkn` = \" " + lnk + "\"" + ", `ddes`= \"" +  ddes + "\"" + " WHERE idlk2 = " + delId ;
+//    std::String qtr = "UPDATE `lk2` SET `idlk1`='"+ idlk1 + "',`lkn`='" + lkn + lnk + "[value-3]',`lnk`='[value-4]',`ddes`='[value-5]' WHERE idlk2 = 10
+//    std::atring qstr = "UPDATE `lk2` SET `idlk1`=' " [value-2]" + "',`lkn`='[value-3]',`lnk`='[value-4]',`ddes`='[value-5]' WHERE idlk2 = 10
+//    std::string qstr = "UPDATE `lk2` SET `idlk1`='" + idlk1 + "',`lkn`='" + ilk + "',`lnk`='" + lnk + "',`ddes`='" + ddes + "' WHERE idlk2 = " + idkl2;
+//                       UPDATE `lk2` SET `idlk1`=162,`lkn`="https://archman.us:10000/\",`lnk`=\" Webmin",`ddes`="Note.\" WHERE `idlk2` = 1548";
+    std::string qstr = "UPDATE `lk2` SET `idlk1`=" + idlk1 + ",`lkn`=\"" + ilk + "\",`lnk`=\"" + lnk + "\"" + ",`ddes`=\"" + ddes + "\" WHERE `idlk2` = " + delId + ";";
+
+    if (query1.exec(qstr))
+    {
+        wxMessageBox("Update was OK!", "Update  OK");
+    }
+    else
+    {
+        wxTextFile file;
+        string path = "/home/archman/workspace/cb/cpp/cppMD01/ddd01.txt";
+        if (!wxFileExists(path))
+        {
+            file.Create(path);  // Create the file if it doesn't exist
+        }
+        else
+        {
+            file.Open(path);    // Open the file if it exists
+        }
+
+        // Add some lines to the file
+        file.AddLine(qstr);
+
+        // Write and save the file
+        file.Write();
+        file.Close();
+
+        wxMessageBox("Update was NOT OK!", "Update  NOT OK");
+
+    };
 
 }
 

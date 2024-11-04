@@ -27,9 +27,11 @@ namespace fs = boost::filesystem;
 #include "wx/clipbrd.h"
 #include "dlgSelCat.h"
 #include <wx/wx.h>
+#include <wx/fontdlg.h>
 
 //(*InternalHeaders(cppMD01Frame)
 #include <wx/intl.h>
+#include <wx/settings.h>
 #include <wx/string.h>
 //*)
 
@@ -69,7 +71,6 @@ const long cppMD01Frame::ID_STATICTEXT1 = wxNewId();
 const long cppMD01Frame::ID_PANEL1 = wxNewId();
 const long cppMD01Frame::ID_PANEL3 = wxNewId();
 const long cppMD01Frame::ID_STATICTEXT2 = wxNewId();
-const long cppMD01Frame::ID_SCROLLEDWINDOW1 = wxNewId();
 const long cppMD01Frame::idMenucpp = wxNewId();
 const long cppMD01Frame::idMenuQuit = wxNewId();
 const long cppMD01Frame::idMenuAbout = wxNewId();
@@ -79,7 +80,9 @@ const long cppMD01Frame::idpumNewCat = wxNewId();
 const long cppMD01Frame::ID_PumEdCat = wxNewId();
 const long cppMD01Frame::ID_NewBlog = wxNewId();
 const long cppMD01Frame::ID_CodeLauncher = wxNewId();
+const long cppMD01Frame::ID_ChFont = wxNewId();
 const long cppMD01Frame::ID_MENUITEM2 = wxNewId();
+const long cppMD01Frame::ID_CF = wxNewId();
 const long cppMD01Frame::ID_menAD = wxNewId();
 const long cppMD01Frame::ID_menNB = wxNewId();
 const long cppMD01Frame::ID_pumDel = wxNewId();
@@ -107,22 +110,24 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     wxMenuItem* MenuItem2;
 
     Create(parent, id, _("Brooks Computing Systems, LLC  ** Programmer\'s Workbench **"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE, _T("id"));
+    SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_MENUHILIGHT));
     BoxSizer1 = new wxBoxSizer(wxHORIZONTAL);
     BoxSizer2 = new wxBoxSizer(wxHORIZONTAL);
     BoxSizer3 = new wxBoxSizer(wxVERTICAL);
     BoxSizer4 = new wxBoxSizer(wxVERTICAL);
     Panel1 = new wxPanel(this, ID_PANEL1, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL1"));
+    Panel1->SetBackgroundColour(wxColour(35,225,242));
     StaticText1 = new wxStaticText(Panel1, ID_STATICTEXT1, _("Label"), wxPoint(8,0), wxDefaultSize, 0, _T("ID_STATICTEXT1"));
     BoxSizer4->Add(Panel1, 1, wxALL|wxEXPAND, 5);
     BoxSizer3->Add(BoxSizer4, 1, wxALL|wxEXPAND, 5);
     BoxSizer5 = new wxBoxSizer(wxVERTICAL);
     Panel2 = new wxPanel(this, ID_PANEL3, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL3"));
+    Panel2->SetBackgroundColour(wxColour(184,220,255));
     BoxSizer5->Add(Panel2, 0, wxALL|wxEXPAND, 5);
     StaticText2 = new wxStaticText(this, ID_STATICTEXT2, _("Label"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE, _T("ID_STATICTEXT2"));
+    StaticText2->SetBackgroundColour(wxColour(8,223,243));
     BoxSizer5->Add(StaticText2, 0, wxALL|wxEXPAND, 5);
     BoxSizer3->Add(BoxSizer5, 0, wxALL|wxEXPAND, 5);
-    ScrolledWindow1 = new wxScrolledWindow(this, ID_SCROLLEDWINDOW1, wxDefaultPosition, wxSize(11,7), wxVSCROLL|wxHSCROLL, _T("ID_SCROLLEDWINDOW1"));
-    BoxSizer3->Add(ScrolledWindow1, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     BoxSizer2->Add(BoxSizer3, 0, wxALL|wxEXPAND, 5);
     BoxSizer1->Add(BoxSizer2, 0, wxALL|wxEXPAND, 5);
     SetSizer(BoxSizer1);
@@ -144,7 +149,7 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);
     StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);
     SetStatusBar(StatusBar1);
-    MenuItem3 = new wxMenuItem((&pumMaster), ID_MENUITEM1, _("Change Background Color"), wxEmptyString, wxITEM_NORMAL);
+    MenuItem3 = new wxMenuItem((&pumMaster), ID_MENUITEM1, _("Change Background Color"), _("Change Background Color"), wxITEM_NORMAL);
     pumMaster.Append(MenuItem3);
     pumNewCat = new wxMenuItem((&pumMaster), idpumNewCat, _("Enter New Category"), _("Enter New Category"), wxITEM_NORMAL);
     pumMaster.Append(pumNewCat);
@@ -154,8 +159,12 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     pumMaster.Append(pumNewBlogPost);
     pumCodeXqt = new wxMenuItem((&pumMaster), ID_CodeLauncher, _("VS Code\tLoad VS Code Now"), wxEmptyString, wxITEM_NORMAL);
     pumMaster.Append(pumCodeXqt);
-    MenuItem4 = new wxMenuItem((&pumDetail), ID_MENUITEM2, _("Change Background Color"), wxEmptyString, wxITEM_NORMAL);
+    pumChFont = new wxMenuItem((&pumMaster), ID_ChFont, _("Change Font"), _("Change Font Now"), wxITEM_NORMAL);
+    pumMaster.Append(pumChFont);
+    MenuItem4 = new wxMenuItem((&pumDetail), ID_MENUITEM2, _("Change Background Color"), _("Change Background Color"), wxITEM_NORMAL);
     pumDetail.Append(MenuItem4);
+    pumChgFonts = new wxMenuItem((&pumDetail), ID_CF, _("Change Fonts"), _("Change Fonts"), wxITEM_NORMAL);
+    pumDetail.Append(pumChgFonts);
     pumAddDocs = new wxMenuItem((&pumDetail), ID_menAD, _("addDocs"), _("Add  New Documents / Items"), wxITEM_NORMAL);
     pumDetail.Append(pumAddDocs);
     menNewPost = new wxMenuItem((&pumDetail), ID_menNB, _("Create New Blog Post"), _("New Blog Post Now!"), wxITEM_NORMAL);
@@ -164,6 +173,10 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     pumDetail.Append(pumDelLink);
     pumEditDetails = new wxMenuItem((&pumDetail), ID_pumEditLink, _("Edit Link Details"), _("Edit Link Details"), wxITEM_NORMAL);
     pumDetail.Append(pumEditDetails);
+    ColourDialog1 = new wxColourDialog(this);
+    	wxFontData fontData_1;
+    	fontData_1.SetInitialFont(*wxNORMAL_FONT);
+    FontDialog1 = new wxFontDialog(this, fontData_1);
     BoxSizer1->Fit(this);
     BoxSizer1->SetSizeHints(this);
     Center();
@@ -171,10 +184,14 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     Connect(idMenucpp,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnmenSelectCppSelected);
     Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnQuit);
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnAbout);
+    Connect(ID_MENUITEM1,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnChooseColor);
     Connect(idpumNewCat,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewCatSelected);
     Connect(ID_PumEdCat,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumEdCatSelected);
     Connect(ID_NewBlog,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);
     Connect(ID_CodeLauncher,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumCodeXqtSelected);
+    Connect(ID_ChFont,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumChFontSelected);
+    Connect(ID_MENUITEM2,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnChooseColor);
+    Connect(ID_CF,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumChFontSelected);
     Connect(ID_menAD,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumAddDocsSelected);
     Connect(ID_menNB,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumNewBlogPostSelected);
     Connect(ID_pumDel,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumDelLinkSelected);
@@ -191,6 +208,9 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     masterGrid->SetColLabelValue(2, "Detailed Description");
     masterGrid->SetColSize(1, 500);
     masterGrid->SetColSize(2, 575);
+    masterGrid->SetDefaultCellBackgroundColour(*wxCYAN);
+    masterGrid->SetLabelBackgroundColour(*wxCYAN);
+    masterGrid->SetLabelBackgroundColour(*wxCYAN);
 
     detailGrid = new wxGrid(this, wxID_ANY, wxPoint(400, 0), wxSize(1200, 500));
     detailGrid->CreateGrid(0, 4);
@@ -201,6 +221,9 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     detailGrid->SetColSize(1, 500);
     detailGrid->SetColSize(2, 300);
     detailGrid->SetColSize(3, 325);
+    detailGrid->SetDefaultCellBackgroundColour(*wxCYAN);
+    detailGrid->SetLabelBackgroundColour(*wxCYAN);
+
     //BoxSizer4->Add(Panel1, 1, wxALL|wxEXPAND, 5);
     //Panel1->SetSizer(BoxSizer4);
     //BoxSizer5->Add(Panel2, 1, wxALL|wxEXPAND, 5);
@@ -223,7 +246,7 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     //SetSizer(BoxSizer5);
     //SetSizer(BoxSizer4);
     //SetSizer(BoxSizer3);
-    //SetSizer(BoxSizer2);
+    //SetSizer(            Panel1->SetBackgroundColour(color);
     //SetSizer(BoxSizer1);
     SetSizerAndFit(BoxSizer1);
     //BoxSizer1->Fit(this);
@@ -237,10 +260,36 @@ cppMD01Frame::~cppMD01Frame()
     //*)
 }
 
+void cppMD01Frame::OnChooseColor(wxCommandEvent& event)
+{
+
+    wxColourDialog colorDialog(this, &data);
+
+    if (colorDialog.ShowModal() == wxID_OK)
+    {
+        wxColourData retData = colorDialog.GetColourData();
+        color = retData.GetColour();
+
+        // Use the selected color (e.g., apply it to a background, print RGB values)
+        // wxLogMessage("Selected Color: R=%d, G=%d, B=%d", color.Red(), color.Green(), color.Blue());
+        SetBackgroundColour(color);
+        Panel1->SetBackgroundColour(color);
+        Panel2->SetBackgroundColour(color);
+        masterGrid->SetBackgroundColour(color);
+        detailGrid->SetBackgroundColour(color);
+        masterGrid->SetDefaultCellBackgroundColour(color);
+        masterGrid->SetLabelBackgroundColour(color);
+        detailGrid->SetDefaultCellBackgroundColour(color);
+        detailGrid->SetLabelBackgroundColour(color);
+        StaticText1->SetBackgroundColour(color);
+        StaticText2->SetBackgroundColour(color);
+
+    }
+}
 /**
  * @brief Populates the master grid with data from the MySQL database.
  *
- * This function establishes a connection to the MySQL database and retrieves
+ * This function establishes a connection to the MySQL database and relistLinkstrieves
  * all records from the "lk1" table, ordered by the "cat" column. It then clears
  * the current contents of the master grid and appends rows to match the number
  * of records fetched from the database. The grid cells are populated with the
@@ -373,13 +422,14 @@ void cppMD01Frame::OnAbout(wxCommandEvent& event)
  */
 void cppMD01Frame::LoadDetailData(long idlk1)
 {
+    wxString zlabel;
     mysqlpp::Query query = conn.query();
     query << "SELECT idlk2, lkn, lnk, ddes FROM lk2 WHERE idlk1 = " << idlk1 << " ORDER BY lkn";
     mysqlpp::StoreQueryResult res = query.store();
     res.num_rows();
     if (res.num_rows() > 0)
     {
-        wxString zlabel = std::to_string(res.num_rows()) + " Records Retrieved";
+        zlabel = std::to_string(res.num_rows()) + " Records Retrieved";
         SetStatusText(zlabel);
 
         detailGrid->ClearGrid();
@@ -408,10 +458,7 @@ void cppMD01Frame::LoadDetailData(long idlk1)
         OnpumAddDocsSelected(event);
 
     }
-
-//    StatusBar1->SetStatusText(zlabel), 0); // 0 is the field index for the first pane
-    //StatusBar1->SetLabel(zlabel);
-
+    StatusBar1->SetLabel(zlabel);
 }
 
 /**
@@ -427,14 +474,14 @@ void cppMD01Frame::OnMasterGridCellClick(wxGridEvent& event)
 {
     row = event.GetRow(); // Get the row index of the clicked cell
     wxString idlk1Str = masterGrid->GetCellValue(row, 0); // Retrieve the cell value from the first column
-    long idlk1;
-    idlk1Str.ToLong(&idlk1); // Convert the cell value to a long integer
     mkVal = masterGrid->GetCellValue(row, 0);
     StaticText2->SetLabel(masterGrid->GetCellValue(row, 1));
     // StaticText2->SetWindowStyle(wxALIGN_CENTER);
     //StaticText2->Refresh(true);
 
 //    StaticText2->Center(wxBOTH);
+    long idlk1;
+    idlk1Str.ToLong(&idlk1); // Convert the cell value to a long integer
     LoadDetailData(idlk1); // Load detailed data based on the converted value
 }
 
@@ -566,8 +613,9 @@ void cppMD01Frame::procLink()
 
     if (dlg.ShowModal() == wxID_OK)
     {
-        RefreshDetails();
+        LoadDetailData(std::stol(mkVal));
     }
+
 }
 
 void cppMD01Frame::procPdf()
@@ -578,7 +626,7 @@ void cppMD01Frame::procPdf()
     zrdb.initField(gui01.openFileDialog(NULL, "Select A File", "/home/archman/Documents", "", "*.pdf", flags),dlg.edtLink);
     if (dlg.ShowModal() == wxID_OK)
     {
-
+        LoadDetailData(std::stol(mkVal));
     }
     RefreshDetails();
 }
@@ -591,7 +639,7 @@ void cppMD01Frame::procDoc()
     zrdb.initField(gui01.openFileDialog(NULL, "Select A Document", "/home/archman/Documents", "", "*.odt", flags),dlg.edtLink);
     if (dlg.ShowModal() == wxID_OK)
     {
-
+        LoadDetailData(std::stol(mkVal));
     }
     RefreshDetails();
 }
@@ -606,6 +654,7 @@ void cppMD01Frame::procExe()
     if (dlg.ShowModal() == wxID_OK)
     {
         mkVal = mkVal;
+        LoadDetailData(std::stol(mkVal));
     }
     RefreshDetails();
 }
@@ -680,6 +729,7 @@ void cppMD01Frame::OnpumDelLinkSelected(wxCommandEvent& event)
     if (gui01.yornQues(cap, "Delete This Record?") == wxYES)
     {
         zrdb.DeleteLink(detailItem);
+        LoadDetailData(std::stol(mkVal));
         RefreshDetails();
     }
 }
@@ -724,8 +774,8 @@ void cppMD01Frame::OnpumEditLinkSelected(wxCommandEvent& event)
     dlg.btnInset->SetLabel( "Edit");
     if (dlg.ShowModal() == wxID_OK)
     {
-        zrdb.editLink(recNo,zrdb.fieldToString(dlg.edtPrim), zrdb.fieldToString(dlg.edtLink), zrdb.fieldToString(dlg.edtLinkName), zrdb.fieldToString(dlg.edtDetDes), zrdb.strIdlk1);
-        RefreshDetails();
+        zrdb.editLink(recNo,zrdb.fieldToString(dlg.edtPrim), zrdb.fieldToString(dlg.edtLink), zrdb.fieldToString(dlg.edtLinkName), zrdb.fieldToString(dlg.edtDetDes), mkVal);
+        LoadDetailData(std::stol(mkVal));
     }
 }
 
@@ -749,4 +799,29 @@ void cppMD01Frame::OnpumCodeXqtSelected(wxCommandEvent& event)
     dlg.Destroy();
     system(cmd.c_str());
 
+}
+
+//void cppMD01Frame::OnChooseColor(wxCommandEvent& event)
+//{
+//}
+
+void cppMD01Frame::OnpumChFontSelected(wxCommandEvent& event)
+{
+    wxFontData fontData;
+    fontData.EnableEffects(true);
+    fontData.SetInitialFont(masterGrid->GetFont());
+
+    wxFontDialog fontDialog(this, fontData);
+    if (fontDialog.ShowModal() == wxID_OK)
+    {
+        wxFontData retData = fontDialog.GetFontData();
+        wxFont font = retData.GetChosenFont();
+        masterGrid->SetFont(font);
+        masterGrid->SetDefaultCellFont(font);
+        detailGrid->SetDefaultCellFont(font);
+        StaticText1->SetFont(font);
+        StaticText2->SetFont(font);
+        masterGrid->Refresh();
+        detailGrid->Refresh();
+    }
 }
