@@ -3,7 +3,7 @@
 	<object class="wxFrame" name="cppMD01Frame">
 		<title>Brooks Computing Systems, LLC  ** Programmer&apos;s Workbench **</title>
 		<centered>1</centered>
-		<bg>wxSYS_COLOUR_MENUHILIGHT</bg>
+		<bg>#23E1FA</bg>
 		<style>wxDEFAULT_FRAME_STYLE|wxSYSTEM_MENU|wxRESIZE_BORDER|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE</style>
 		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
 			<object class="sizeritem">
@@ -95,6 +95,11 @@
 			<style>wxFULL_REPAINT_ON_RESIZE</style>
 		</object>
 		<object class="wxMenu" variable="pumMaster" member="yes">
+			<object class="wxMenuItem" name="ID_NewBlog" variable="pumNewBlogPost" member="yes">
+				<label>Create New Blog Post</label>
+				<help>Create A New Blog Post</help>
+				<handler function="OnpumNewBlogPostSelected" entry="EVT_MENU" />
+			</object>
 			<object class="wxMenuItem" name="ID_MENUITEM1" variable="MenuItem3" member="yes">
 				<label>Change Background Color</label>
 				<help>Change Background Color</help>
@@ -110,23 +115,42 @@
 				<help>Edit This Category</help>
 				<handler function="OnpumEdCatSelected" entry="EVT_MENU" />
 			</object>
-			<object class="wxMenuItem" name="ID_NewBlog" variable="pumNewBlogPost" member="yes">
-				<label>Create New Blog Post</label>
-				<help>Create A New Blog Post</help>
-				<handler function="OnpumNewBlogPostSelected" entry="EVT_MENU" />
-			</object>
-			<object class="wxMenuItem" name="ID_CodeLauncher" variable="pumCodeXqt" member="yes">
-				<label>VS Code</label>
-				<accel>Load VS Code Now</accel>
-				<handler function="OnpumCodeXqtSelected" entry="EVT_MENU" />
-			</object>
 			<object class="wxMenuItem" name="ID_ChFont" variable="pumChFont" member="yes">
 				<label>Change Font</label>
 				<help>Change Font Now</help>
 				<handler function="OnpumChFontSelected" entry="EVT_MENU" />
 			</object>
+			<object class="wxMenu" name="ID_SelTool" variable="MenuItem6" member="yes">
+				<label>Tools</label>
+				<help>elect A Tool</help>
+				<object class="wxMenuItem" name="ID_CodeLauncher" variable="pumCodeXqt" member="yes">
+					<label>VS Code</label>
+					<accel>Load VS Code Now</accel>
+					<handler function="OnpumCodeXqtSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_DBeav" variable="pumTlDBeaver" member="yes">
+					<label>DBeaver</label>
+					<help>Execute DBeaver</help>
+					<handler function="OnpumTlDBeaverSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_GhDt" variable="pumTGitHub" member="yes">
+					<label>Github Desktop</label>
+					<help>Start Github Desktop!</help>
+					<handler function="OnpumTGitHubSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_pumCGPT" variable="pumChGPT" member="yes">
+					<label>Chat GPT</label>
+					<help>Start chat GPT</help>
+					<handler function="OnpumChGPTSelected" entry="EVT_MENU" />
+				</object>
+			</object>
 		</object>
 		<object class="wxMenu" variable="pumDetail" member="yes">
+			<object class="wxMenuItem" name="ID_menAD" variable="pumAddDocs" member="yes">
+				<label>addDocs</label>
+				<help>Add  New Documents / Items</help>
+				<handler function="OnpumAddDocsSelected" entry="EVT_MENU" />
+			</object>
 			<object class="wxMenuItem" name="ID_MENUITEM2" variable="MenuItem4" member="yes">
 				<label>Change Background Color</label>
 				<help>Change Background Color</help>
@@ -136,11 +160,6 @@
 				<label>Change Fonts</label>
 				<help>Change Fonts</help>
 				<handler function="OnpumChFontSelected" entry="EVT_MENU" />
-			</object>
-			<object class="wxMenuItem" name="ID_menAD" variable="pumAddDocs" member="yes">
-				<label>addDocs</label>
-				<help>Add  New Documents / Items</help>
-				<handler function="OnpumAddDocsSelected" entry="EVT_MENU" />
 			</object>
 			<object class="wxMenuItem" name="ID_menNB" variable="menNewPost" member="yes">
 				<label>Create New Blog Post</label>

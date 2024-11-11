@@ -7,19 +7,19 @@
 			<Cursor1 position="43" topLine="52" />
 		</Cursor>
 	</File>
-	<File name="zDB01.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="dlgDe01.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="85" topLine="27" />
+			<Cursor1 position="0" topLine="21" />
 		</Cursor>
 	</File>
 	<File name="cppMD01Main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9185" topLine="185" />
+			<Cursor1 position="40261" topLine="1161" />
 		</Cursor>
 	</File>
-	<File name="dlgDe01.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="cppMD01Main.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="21" />
+			<Cursor1 position="1711" topLine="117" />
 		</Cursor>
 	</File>
 	<File name="dlgXqt2.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -27,9 +27,9 @@
 			<Cursor1 position="1661" topLine="29" />
 		</Cursor>
 	</File>
-	<File name="cppMD01Main.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="zDB01.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1006" topLine="11" />
+			<Cursor1 position="16264" topLine="177" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

@@ -59,6 +59,7 @@ private:
     wxColourData data;
     void OnChooseColor(wxCommandEvent& event);
     wxColour color;
+    void SetColors();
 
 
     //void LoadDetailData(int idlk1);
@@ -77,6 +78,9 @@ private:
     void OnpumCodeXqtSelected(wxCommandEvent& event);
     //    void OnChooseColor(wxCommandEvent& event);
     void OnpumChFontSelected(wxCommandEvent& event);
+    void OnpumTlDBeaverSelected(wxCommandEvent& event);
+    void OnpumTGitHubSelected(wxCommandEvent& event);
+    void OnpumChGPTSelected(wxCommandEvent& event);
     //*)
 
     //(*Identifiers(cppMD01Frame)
@@ -88,15 +92,19 @@ private:
     static const long idMenuQuit;
     static const long idMenuAbout;
     static const long ID_STATUSBAR1;
+    static const long ID_NewBlog;
     static const long ID_MENUITEM1;
     static const long idpumNewCat;
     static const long ID_PumEdCat;
-    static const long ID_NewBlog;
-    static const long ID_CodeLauncher;
     static const long ID_ChFont;
+    static const long ID_CodeLauncher;
+    static const long ID_DBeav;
+    static const long ID_GhDt;
+    static const long ID_pumCGPT;
+    static const long ID_SelTool;
+    static const long ID_menAD;
     static const long ID_MENUITEM2;
     static const long ID_CF;
-    static const long ID_menAD;
     static const long ID_menNB;
     static const long ID_pumDel;
     static const long ID_pumEditLink;
@@ -107,6 +115,7 @@ private:
     wxFontDialog* FontDialog1;
     wxMenu pumDetail;
     wxMenu pumMaster;
+    wxMenu* MenuItem6;
     wxMenuItem* MenuItem3;
     wxMenuItem* MenuItem4;
     wxMenuItem* MenuItem5;
@@ -114,12 +123,15 @@ private:
     wxMenuItem* menSelectCpp;
     wxMenuItem* pumAddDocs;
     wxMenuItem* pumChFont;
+    wxMenuItem* pumChGPT;
     wxMenuItem* pumChgFonts;
     wxMenuItem* pumCodeXqt;
     wxMenuItem* pumDelLink;
     wxMenuItem* pumEditDetails;
     wxMenuItem* pumNewBlogPost;
     wxMenuItem* pumNewCat;
+    wxMenuItem* pumTGitHub;
+    wxMenuItem* pumTlDBeaver;
     wxPanel* Panel1;
     wxPanel* Panel2;
     wxStaticText* StaticText1;
