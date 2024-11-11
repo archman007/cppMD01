@@ -81,6 +81,7 @@ private:
     void OnpumTlDBeaverSelected(wxCommandEvent& event);
     void OnpumTGitHubSelected(wxCommandEvent& event);
     void OnpumChGPTSelected(wxCommandEvent& event);
+    void OnpumCBGenSelected(wxCommandEvent& event);
     //*)
 
     //(*Identifiers(cppMD01Frame)
@@ -101,6 +102,7 @@ private:
     static const long ID_DBeav;
     static const long ID_GhDt;
     static const long ID_pumCGPT;
+    static const long IG_CPPGen;
     static const long ID_SelTool;
     static const long ID_menAD;
     static const long ID_MENUITEM2;
@@ -122,6 +124,7 @@ private:
     wxMenuItem* menNewPost;
     wxMenuItem* menSelectCpp;
     wxMenuItem* pumAddDocs;
+    wxMenuItem* pumCBGen;
     wxMenuItem* pumChFont;
     wxMenuItem* pumChGPT;
     wxMenuItem* pumChgFonts;

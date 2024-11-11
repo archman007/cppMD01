@@ -83,6 +83,7 @@ const long cppMD01Frame::ID_CodeLauncher = wxNewId();
 const long cppMD01Frame::ID_DBeav = wxNewId();
 const long cppMD01Frame::ID_GhDt = wxNewId();
 const long cppMD01Frame::ID_pumCGPT = wxNewId();
+const long cppMD01Frame::IG_CPPGen = wxNewId();
 const long cppMD01Frame::ID_SelTool = wxNewId();
 const long cppMD01Frame::ID_menAD = wxNewId();
 const long cppMD01Frame::ID_MENUITEM2 = wxNewId();
@@ -171,6 +172,8 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     MenuItem6->Append(pumTGitHub);
     pumChGPT = new wxMenuItem(MenuItem6, ID_pumCGPT, _("Chat GPT"), _("Start chat GPT"), wxITEM_NORMAL);
     MenuItem6->Append(pumChGPT);
+    pumCBGen = new wxMenuItem(MenuItem6, IG_CPPGen, _("Generate Code BLocks Project"), _("Create A new Codebloks Project"), wxITEM_NORMAL);
+    MenuItem6->Append(pumCBGen);
     pumMaster.Append(ID_SelTool, _("Tools"), MenuItem6, _("elect A Tool"));
     pumAddDocs = new wxMenuItem((&pumDetail), ID_menAD, _("addDocs"), _("Add  New Documents / Items"), wxITEM_NORMAL);
     pumDetail.Append(pumAddDocs);
@@ -204,6 +207,7 @@ cppMD01Frame::cppMD01Frame(wxWindow* parent,wxWindowID id)
     Connect(ID_DBeav,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumTlDBeaverSelected);
     Connect(ID_GhDt,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumTGitHubSelected);
     Connect(ID_pumCGPT,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumChGPTSelected);
+    Connect(IG_CPPGen,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumCBGenSelected);
     Connect(ID_menAD,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumAddDocsSelected);
     Connect(ID_MENUITEM2,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnChooseColor);
     Connect(ID_CF,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&cppMD01Frame::OnpumChFontSelected);
@@ -1229,3 +1233,25 @@ void cppMD01Frame::OnpumChGPTSelected(wxCommandEvent& event)
     system("chat-gpt & ");
 }
 
+
+/**
+ * @brief Event handler for the "OnpumCBGenSelected" event.
+ *
+ * This method is triggered when a specific event (likely a user interaction with a ComboBox or
+ * similar control) occurs in the application. When the event is triggered, the handler executes
+ * a system command to run an external program.
+ *
+ * In this case, the method runs the executable `cppDemo01` located in the directory
+ * `/home/archman/workspace/cb/cpp/cppDemo01/bin/Debug/` in the background. The `&` symbol
+ * ensures that the process is run asynchronously, allowing the program to continue without waiting
+ * for the external command to finish.
+ *
+ * @param event wxCommandEvent& : A reference to the event object, which is passed automatically
+ *                                 by wxWidgets when the event is triggered. The event contains
+ *                                 information about the user action that initiated this handler.
+ */
+void cppMD01Frame::OnpumCBGenSelected(wxCommandEvent& event)
+{
+    // Execute the external command to run the cppDemo01 program in the background
+    system("/home/archman/workspace/cb/cpp/cppDemo01/bin/Debug/cppDemo01 & ");
+}
