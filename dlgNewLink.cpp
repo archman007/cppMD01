@@ -1,6 +1,7 @@
 #include "dlgNewLink.h"
 #include "zDB01.h"
 #include "curlStuff.h"
+#include <boost/algorithm/string.hpp>
 
 zDB01 db02;
 curlStuff cs01;
@@ -90,7 +91,10 @@ dlgNewLink::~dlgNewLink()
 
 void dlgNewLink::OnbtnInsetClick(wxCommandEvent& event)
 {
-    db02.insertLink(db02.fieldToString(edtPrim), db02.fieldToString(edtLinkName), db02.fieldToString(edtLink), db02.fieldToString(edtDetDes));
+    std::string buf = db02.fieldToString(edtLinkName);
+    boost::replace_all(buf, "\"", "");
+    boost::replace_all(buf, "amp;", "");
+    db02.insertLink(db02.fieldToString(edtPrim), buf, db02.fieldToString(edtLink), db02.fieldToString(edtDetDes));
     EndModal(wxID_OK);
 }
 
